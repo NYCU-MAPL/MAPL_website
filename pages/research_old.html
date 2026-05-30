@@ -1,0 +1,1480 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <!-- jquery-->
+    <title>MAPL - RESEARCH</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Self-defined-->
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+    <!--<script src="nav.js"></script><!--navbar-fixed-top-->
+    <script src="js/index.js"></script>
+    <script src="js/research.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/publication.js"></script>
+    <script src="js/teaching.js"></script>
+    <script src="js/member.js"></script>
+    <script type="text/javascript">
+    </script>
+    <style>
+        @media screen and (max-width: 768px) {
+            #header {
+                display: none;
+            }
+
+            #main {
+
+                display: block;
+
+            }
+
+            body {
+                background-image: none;
+            }
+
+            .element-container {
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!------------------------Responsive Menu------------------>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="container">
+            <a href="../" onclick=''><img src="figures/home_black.png" style="height:15px;width:60px;"></a>
+            <a href="research.html" onclick='' style="color:white;font-size:20px">Research</a>
+            <a href="teaching.html" onclick='' style="color:white;font-size:20px">Teaching</a>
+            <a href="#col3" data-toggle="collapse" style="color:white;font-size:20px">Members</a>
+            <div id="col3" class="collapse">
+                <a href="members.html" onclick=''>Current Members</a>
+                <a href="alumni.html" onclick=''>Alumni</a>
+            </div>
+            <a href="joinus.html" onclick='' style="color:white;font-size:20px">Join Us</a>
+            <a href="publication.html" onclick='' style="color:white;font-size:20px">Publication</a>
+        </div>
+    </div>
+    <div id="main">
+        <span class="sidebar" onclick="openNav()">&#9776;</span>
+    </div>
+    <!------------------------Responsive Menu------------------>
+    <nav id="header" class="navbar header_css fill" style="top:0px;">
+        <div id="header-container" class="container navbar-container">
+            <div id="navbar" class="collapse navbar-collapse" style="text-align:center;">
+                <ul class="nav_self_css nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="../" onclick=''>
+                            <img src="figures/home_black.png" style="height:15px;width:60px;margin-top:-8%">
+                        </a>
+                    </li>
+                    <li class="dropdown"><a href="research.html" onclick=''>Research</a>
+                        <!--<ul class="dropdown-menu" style="padding-top: 0px;">
+                <li><a href="#" onclick='go_IVC();'>Image/Video Compression</a></li>
+                <li><a href="#" onclick='go_SS();'>Semantic Segmentation</a></li>
+                                <li><a href="#" onclick='go_IL();'>Incremental Learning</a></li>
+                                <li><a href="#" onclick='go_drone();'>AI drone</a></li>
+              </ul>-->
+                    </li><!-- data-toggle="dropdown" for click-->
+
+                    <li class="dropdown"><a href="teaching.html" onclick=''>Teaching</a>
+                        <!--<ul class="dropdown-menu" style="padding-top: 0px;">
+                <li><a href="#" onclick='go_lec_DLP();'>Deep Learning and Practice</a></li>
+                <li><a href="#" onclick='go_lec_MM();'>Matrix Method and Data Science</a></li>
+                <li><a href="#" onclick='go_lec_VC();'>Video Compression</a></li>
+              </ul>-->
+                    </li>
+                    <li class="dropdown"><a href="#">Members</a>
+                        <ul class="dropdown-menu" style="padding-top: 0px;">
+                            <li><a href="members.html" onclick=''>Current Members</a></li>
+                            <li><a href="alumni.html" onclick=''>Alumni</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="joinus.html" onclick=''>Join Us</a></li>
+                    <li class="dropdown"><a href="publication.html" onclick=''>Publication</a></li>
+                </ul>
+
+            </div><!-- /.nav-collapse -->
+        </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+    <div class="container-fluid element-container">
+        <div class="row">
+            <div id="left_parent" style="text-align:center">
+                <!--<div class="left_ele title_style">
+              Research
+          </div>-->
+            </div>
+            <!--<div class="col-md-4" style="text-align:center"></div>-->
+            <div id="left_parent2">
+                <!--class="col-md-12"-->
+                <div class="left_ele ele_container">
+                    <div class="topic">
+                        <span class="title">Research Content</span>
+                        <!-- <span style="font-size:14px" ><a href="research/MAPL.pdf">[pdf]</a></span> -->
+                    </div>
+                    <!--border-style:solid;#FFE6D9-->
+                    <div style="font-size:16px;font-weight:800;background-color:#E6DEEF;padding:10px 0px 10px 0px">
+                        <ul>
+                            <li>
+                                Image/Video Compression
+                                <ul>
+                                    <li>
+                                        <a href="#lbvc">Learning-based Video Compression</a>
+                                        <img style="width:35px;height:35px;margin-right:2px;margin-top: -5px;"
+                                            src='figures/new.gif'>
+                                    </li>
+                                    <li>
+                                        <a href="#lbic">Learning-based Image Compression</a>
+                                        <img style="width:35px;height:35px;margin-right:2px;margin-top: -5px;"
+                                            src='figures/new.gif'>
+                                    </li>
+                                    <li>
+                                        <a href="#livcm">Learned Image and Video Coding for Machines</a>
+                                        <img style="width:35px;height:35px;margin-right:2px;margin-top: -5px;"
+                                            src='figures/new.gif'>
+                                    </li>
+                                    <li>
+                                        <a href="#rc">Reinforcement Learning for Video Encoder Control</a>
+                                    </li>
+                                    <li>
+                                        <a href="#dvp">Deep Video Prediction</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                Semantic Segmentation
+                                <ul>
+                                    <li>
+                                        <a href="#dass">Domain Adaptation</a>
+                                    </li>
+                                    <li>
+                                        <a href="#vss">Image / Video Semantic Segmentation</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#hpe">Human Pose Estimation Using Radar</a>
+                                <img style="width:35px;height:35px;margin-right:2px;margin-top: -5px;"
+                                            src='figures/new.gif'>
+                            </li>
+                            <li>
+                                <a href="#vsr">Video Synthesis</a>
+                                <img style="width:35px;height:35px;margin-right:2px;margin-top: -5px;"
+                                            src='figures/new.gif'>
+                            </li>
+                            <li>
+                                <a href="#il">Incremental Learning</a>
+                            </li>
+                            <li>
+                                <a href="#vqa">Visual Question Answering</a>
+                            </li>
+                            <li>
+                                <a href="#dgm">Deep Generative Model</a>
+                            </li>
+                            <li>
+                                <a href="#ai_drone">AI Drone</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <h1 id="lbvc"></h1>
+                    <div class="topic">
+                        <span class="title">Learning-based Video Compression</span>
+                    </div>
+                    <table class="research_table">
+                        <tbody>
+                            <tr>
+                                <td class="research_td">
+                                    <img class="research_img"
+                                        src="research/compression/Compression/video_compression6.png"></img>
+                                    <div class="research_title"><img
+                                            style="width:35px;height:35px;margin-right:2px;margin-top: -5px;"
+                                            src='figures/new.gif'>B-CANF: Adaptive B-frame Coding with
+                                            Conditional Augmented Normalizing Flows </div>
+                                    <div class="research_author">Mu-Jung Chen, Yi-Hsin Chen, and Wen-Hsiao Peng </div>
+                                    <div class="research_from"> Transactions on Circuits and Systems for Video Technology (TCSVT), 2023.</div>
+                                    <div class="link"><a
+                                            href="https://arxiv.org/pdf/2209.01769.pdf">PDF</a>
+                                            | <a href="https://github.com/NYCU-MAPL/B-CANF">Github</a>
+                                             | <a href="https://nycu-mapl.github.io/B-CANF_Page/">Project Page</a></div>
+                                    <button class="button"
+                                        onclick="ShowAbstract('research_VC_2023tcsvt');">Abstract</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="abstract" id="research_VC_2023tcsvt">
+                                        Over the past few years, learning-based video compression has become an active research 
+                                        area. However, most works focus on P-frame coding. Learned B-frame coding is under-explored 
+                                        and more challenging. This work introduces a novel B-frame coding framework, termed B-CANF, 
+                                        that exploits conditional augmented normalizing flows for B-frame coding. B-CANF additionally 
+                                        features two novel elements: frame-type adaptive coding and B*-frames. Our frame-type adaptive 
+                                        coding learns better bit allocation for hierarchical B-frame coding by dynamically adapting 
+                                        the feature distributions according to the B-frame type. Our B*-frames allow greater 
+                                        flexibility in specifying the group-of-pictures (GOP) structure by reusing the B-frame codec 
+                                        to mimic P-frame coding, without the need for an additional, separate P-frame codec. On 
+                                        commonly used datasets, B-CANF achieves the state-of-the-art compression performance as 
+                                        compared to the other learned B-frame codecs.
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="research_td">
+                                    <img class="research_img"
+                                        src="research/compression/Compression/video_compression5.png"></img>
+                                    <div class="research_title"><img
+                                            style="width:35px;height:35px;margin-right:2px;margin-top: -5px;"
+                                            src='figures/new.gif'>Learned Hierarchical B-frame Coding with
+                                            Adaptive Feature Modulation for YUV 4:2:0 Content </div>
+                                    <div class="research_author">Mu-Jung Chen, Hong-Sheng Xie, Cheng Chien, Wen-Hsiao Peng, and Hsueh-Ming Hang </div>
+                                    <div class="research_from"> International Symposium on Circuits and Systems (ISCAS), May 2023.</div>
+                                    <div class="link"><a
+                                            href="./research/ISCAS_2023.pdf">PDF</a>
+                                             | <a href="https://personalworkingspace.github.io/MAPL-ISCAS2023-GC/">Project Page</a></div>
+                                    <button class="button"
+                                        onclick="ShowAbstract('research_VC_2023iscas');">Abstract</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="abstract" id="research_VC_2023iscas">
+                                        This paper introduces a learned hierarchical Bframe coding scheme in response to the 
+                                        Grand Challenge on Neural Network-based Video Coding at ISCAS 2023. We address specifically 
+                                        three issues, including (1) B-frame coding, (2) YUV 4:2:0 coding, and (3) content-adaptive 
+                                        variable-rate coding with only one single model. Most learned video codecs operate internally 
+                                        in the RGB domain for P-frame coding. Bframe coding for YUV 4:2:0 content is largely 
+                                        under-explored. In addition, while there have been prior works on variable-rate coding with 
+                                        conditional convolution, most of them fail to consider the content information. We build our 
+                                        scheme on conditional augmented normalized flows (CANF). It features conditional motion and 
+                                        inter-frame codecs for efficient B-frame coding. To cope with YUV 4:2:0 content, two 
+                                        conditional inter-frame codecs are used to process the Y and UV components separately, with 
+                                        the coding of the UV components conditioned additionally on the Y component. Moreover, we 
+                                        introduce adaptive feature modulation in every convolutional layer, taking into account both 
+                                        the content information and the coding levels of B-frames to achieve contentadaptive 
+                                        variable-rate coding. Experimental results show that our model outperforms x265 and the winner 
+                                        of last year's challenge on commonly used datasets in terms of PSNR-YUV.
+                                    </div>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td class="research_td">
+                                    <img class="research_img"
+                                        src="research/compression/Compression/video_compression4.png"></img>
+                                    <div class="research_title"><img
+                                            style="width:35px;height:35px;margin-right:2px;margin-top: -5px;"
+                                            src='figures/new.gif'>Content-adaptive Motion Rate Adaption for
+                                        Learned Video Compression </div>
+                                    <div class="research_author">Chih-Hsuan Lin, Yi-Hsin Chen, and Wen-Hsiao Peng </div>
+                                    <div class="research_from"> Picture Coding Symposium (PCS), December 2022.</div>
+                                    <div class="link"><a
+                                            href="./research/PCS_2022.pdf">PDF</a>
+                                             | <a href="./../../PCS/">Project Page</a></div>
+                                    <button class="button"
+                                        onclick="ShowAbstract('research_VC_2022pcs');">Abstract</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="abstract" id="research_VC_2022pcs">
+                                        This paper introduces an online motion rate adaptation scheme for learned
+                                        video compression, with the aim of
+                                        achieving content-adaptive coding on individual test sequences
+                                        to mitigate the domain gap between training and test data. It
+                                        features a patch-level bit allocation map, termed the α-map, to
+                                        trade off between the bit rates for motion and inter-frame coding
+                                        in a spatially-adaptive manner. We optimize the α-map through
+                                        an online back-propagation scheme at inference time. Moreover,
+                                        we incorporate a look-ahead mechanism to consider its impact
+                                        on future frames. Extensive experimental results confirm that
+                                        the proposed scheme, when integrated into a conditional learned
+                                        video codec, is able to adapt motion bit rate effectively, showing
+                                        much improved rate-distortion performance particularly on test
+                                        sequences with complicated motion characteristics.
+                                        Index Terms—content-adaptive learned video compression,
+                                        conditional inter-frame coding, bit allocation.
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="research_td">
+                                    <img class="research_img"
+                                        src="research/compression/Compression/video_compression3.png"></img>
+                                    <div class="research_title">CANF-VC: Conditional Augmented Normalizing Flows for
+                                        Video Compression </div>
+                                    <div class="research_author">Yung-Han Ho, Chih-Peng Chang, Peng-Yu Chen, A. Gnutti,
+                                        and Wen-Hsiao Peng </div>
+                                    <div class="research_from"> European Conference on Computer Vision (ECCV), Oct.
+                                        2022.</div>
+                                    <div class="link"><a
+                                            href="https://arxiv.org/abs/2207.05315?context=eess&fbclid=IwAR09I1p3MZ10Du1-9AK_lC6EKS2bIb2yWvR5nbutnxG7rf2xy_6Pzc6NjYg">PDF</a>
+                                        | <a
+                                            href="https://hongsheng416.github.io/CANFVC-project_page/?fbclid=IwAR1eFTNoQxbPrfimtg43MUuXYvW6Mhc650RjGEKR6hZ9EJcdyFmVJhWvF_I">Project
+                                            Page</a></div>
+                                    <button class="button"
+                                        onclick="ShowAbstract('research_VC_2022eccv');">Abstract</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="abstract" id="research_VC_2022eccv">
+                                        This paper presents an end-to-end learning-based video compression system,
+                                        termed CANF-VC, based on conditional augmented normalizing flows (ANF).
+                                        Most learned video compression systems adopt the same hybrid-based coding
+                                        architecture as
+                                        the traditional codecs. Recent research on conditional coding has shown the
+                                        sub-optimality
+                                        of the hybrid-based coding and opens up opportunities for deep generative models
+                                        to take
+                                        a key role in creating new coding frameworks. CANF-VC represents a new attempt
+                                        that
+                                        leverages the conditional ANF to learn a video generative model for conditional
+                                        inter-frame coding.
+                                        We choose ANF because it is a special type of generative model, which includes
+                                        variational
+                                        autoencoder as a special case and is able to achieve better expressiveness.
+                                        CANF-VC also extends the idea of conditional coding to motion coding, forming a
+                                        purely conditional coding framework. Extensive experimental results on commonly
+                                        used datasets confirm the superiority of CANF-VC to the state-of-the-art
+                                        methods.
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="research_td">
+                                    <img class="research_img"
+                                        src="research/compression/Compression/video_compression2.png"></img>
+                                    <div class="research_title">Learned Video Compression for YUV 4:2:0 Content Using
+                                        Flow-Based Conditional Inter-Frame Coding </div>
+                                    <div class="research_author">Yung-Han Ho, Chih-Hsuan Lin, Peng-Yu Chen, Mu-Jung
+                                        Chen, Chih-Peng Chang, Wen-Hsiao Peng</div>
+                                    <div class="research_from">IEEE International Symposium on Circuits and Systems
+                                        (ISCAS), May. 2022.</div>
+                                    <button class="button"
+                                        onclick="ShowAbstract('research_VC_2022iscas');">Abstract</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="abstract" id="research_VC_2022iscas">
+                                        This paper proposes a learning-based video compression framework that applies a
+                                        conditional flow-based model for inter-frame coding and takes YUV 4:2:0 as the
+                                        input format. Most learning-based video compression models use predictive coding
+                                        and directly encode the residual signal, which is considered a sub-optimal
+                                        solution.
+                                        In addition, those models usually only operate on RGB, which is also regarded as
+                                        an inefficient format. Furthermore, they require multiple models to fit on
+                                        different
+                                        bit rates. To solve these issues, we introduce a conditional flow-based video
+                                        compression
+                                        framework to improve the coding efficiency. To adapt to YUV 4:2:0 format, we
+                                        incorporate
+                                        lossless space-to-depth and depth-to-space transformation in our design. Lastly,
+                                        we apply
+                                        rate-adaption net on both I-frame and P-frame coder to achieve variable-rate
+                                        coding and
+                                        can further be extended to rate control applications. Our experimental results
+                                        show comparable
+                                        or better performance against x265 for UVG and MCL-JCV common test datasets in
+                                        terms of PSNR-YUV.
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="research_table">
+                        <tbody>
+                            <tr>
+                                <td class="research_td">
+                                    <img class="research_img"
+                                        src="research/compression/Compression/video_compression1.png"></img>
+                                    <div class="research_title">P-frame Coding Proposal by NCTU: Parametric Video
+                                        Prediction through Backprop-based Motion Estimation</div>
+                                    <div class="research_author">Yung-Han Ho, Chih-Chun Chan, David Alexandre, Wen-Hsiao
+                                        Peng, Chih-Peng Chang</div>
+                                    <div class="research_from">IEEE Conference on Computer Vision and Pattern
+                                        Recognition (CVPR) Workshops, Jun. 2020.</div>
+                                    <div class="link"><a
+                                            href="https://openaccess.thecvf.com/content_CVPRW_2020/papers/w7/Ho_P-Frame_Coding_Proposal_by_NCTU_Parametric_Video_Prediction_Through_Backprop-Based_CVPRW_2020_paper.pdf">PDF</a>
+                                    </div>
+                                    <button class="button"
+                                        onclick="ShowAbstract('research_VC_2020cvprw');">Abstract</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="abstract" id="research_VC_2020cvprw">
+                                        This paper presents a parametric video prediction
+                                        scheme with backprop-based motion estimation, in response
+                                        to the CLIC challenge on P-frame compression. Recognizing
+                                        that most learning-based video codecs rely on optical
+                                        flow-based temporal prediction and suffer from having to
+                                        signal a large amount of motion information, we propose
+                                        to perform parametric overlapped block motion compensation
+                                        on a sparse motion field. In forming this sparse motion
+                                        field, we conduct the steepest descent algorithm on a loss
+                                        function for identifying critical pixels, of which the motion
+                                        vectors are communicated to the decoder. Moreover, we introduce
+                                        a critical pixel dropout mechanism to strike a good
+                                        balance between motion overhead and prediction quality.
+                                        Compression results with HEVC-based residual coding on
+                                        CLIC validation sequences show that our parametric video
+                                        prediction achieves higher PSNR and MS-SSIM than optical
+                                        flow-based warping. Moreover, our critical pixel dropout
+                                        mechanism is found beneficial in terms of rate-distortion
+                                        performance. Our scheme offers the potential for working
+                                        with learned residual coding.
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h1 id="lbic"></h1>
+                    <div class="topic">
+                        <span class="title">Learning-based Image Compression</span>
+                    </div>
+                    <table class="research_table">
+                        <tbody>
+                            <tr>
+                                <td class="research_td">
+                                    <img class="research_img"
+                                        src="research/compression/Compression/image_compression6.png"></img>
+                                    <div class="research_title"><img
+                                            style="width:35px;height:35px;margin-right:2px;margin-top: -5px;"
+                                            src='figures/new.gif'>Transformer-based Variable-rate Image Compression With 
+                                            Region-of-interest Control </div>
+                                    <div class="research_author"> Chia-Hao Kao, Ying-Chieh Weng, Yi-Hsin Chen, Wei-Chen Chiu, 
+                                        Wen-Hsiao Peng </div>
+                                    <div class="research_from"> IEEE International Conference on Image Processing (ICIP), Oct. 2023.</div>
+                                    <div class="link"><a
+                                            href="https://arxiv.org/pdf/2305.10807.pdf">PDF</a>
+                                        | <a
+                                            href="https://github.com/NYCU-MAPL/Transformer_VariableROI">Github</a>
+                                        | <a
+                                            href="https://joek6279.github.io/Prompt_VariableRateROI/">Project
+                                            Page</a></div>
+                                    <button class="button"
+                                        onclick="ShowAbstract('research_VC_2023icip');">Abstract</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="abstract" id="research_VC_2023icip">
+                                        This paper proposes a transformer-based learned image compression system. It is 
+                                        capable of achieving variable-rate compression with a single model while 
+                                        supporting the regionof-interest (ROI) functionality. Inspired by prompt tuning, 
+                                        we introduce prompt generation networks to condition the transformer-based 
+                                        autoencoder of compression. Our prompt generation networks generate content-adaptive 
+                                        tokens according to the input image, an ROI mask, and a rate parameter. The 
+                                        separation of the ROI mask and the rate parameter allows an intuitive way to 
+                                        achieve variable-rate and ROI coding simultaneously. Extensive experiments 
+                                        validate the effectiveness of our proposed method and confirm its superiority over 
+                                        the other competing methods.
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="research_td">
+                                    <img class="research_img"
+                                        src="research/compression/Compression/image_compression5.png"></img>
+                                    <div class="research_title">ANFIC: Image Compression Using Augmented
+                                        Normalizing Flows</div>
+                                    <div class="research_author">Yung-Han Ho, Chih-Chun Chan, Wen-Hsiao Peng, Hsueh-Ming
+                                        Hang, Marek Domanski</div>
+                                    <div class="research_from">IEEE Open Journal of Circuits and Systems, Dec. 2021.
+                                    </div>
+                                    <div class="link"><a href="https://arxiv.org/pdf/2107.08470.pdf">PDF</a> | <a
+                                            href="https://github.com/dororojames/ANFIC">Github</a> | <a
+                                            href="https://hongsheng416.github.io/ANFIC_project_page/?fbclid=IwAR2ApsG_NrI8K6FS54XaQNsWpLuYySK0OwmExR3VvMRLqvyZnTrdCIp6uZM">Project
+                                            page</a></div>
+                                    <button class="button"
+                                        onclick="ShowAbstract('research_IC_2020OJCAS');">Abstract</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="abstract" id="research_IC_2020OJCAS">
+                                        This paper introduces an end-to-end learned image compression system, termed
+                                        ANFIC, based on Augmented Normalizing Flows (ANF). ANF is a new type of flow
+                                        model, which stacks multiple variational autoencoders (VAE) for greater model
+                                        expressiveness. The VAE-based image compression has gone mainstream, showing
+                                        promising compression performance. Our work presents the first attempt to
+                                        leverage VAE-based compression in a flow-based framework. ANFIC advances further
+                                        compression efficiency by stacking and extending hierarchically multiple VAE's.
+                                        The invertibility of ANF, together with our training strategies, enables ANFIC
+                                        to support a wide range of quality levels without changing the encoding and
+                                        decoding networks. Extensive experimental results show that in terms of
+                                        PSNR-RGB, ANFIC performs comparably to or better than the state-of-the-art
+                                        learned image compression. Moreover, it performs close to VVC intra coding, from
+                                        low-rate compression up to perceptually lossless compression. In particular,
+                                        ANFIC achieves the state-of-the-art performance, when extended with conditional
+                                        convolution for variable rate compression with a single model. The source code
+                                        of ANFIC can be found at https://github.com/dororojames/ANFIC.
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="research_td">
+                                    <img class="research_img"
+                                        src="research/compression/Compression/image_compression4.png"></img>
+                                    <div class="research_title"></img>End-to-End Learned Image Compression with
+                                        Augmented Normalizing Flows</div>
+                                    <div class="research_author">Yung-Han Ho, Chih-Chun Chan, Wen-Hsiao Peng, Hsueh-Ming
+                                        Hang</div>
+                                    <div class="research_from">IEEE Conference on Computer Vision and Pattern
+                                        Recognition (CVPR) Workshops, Jun. 2021.</div>
+                                    <div class="link"><a
+                                            href="https://openaccess.thecvf.com/content/CVPR2021W/CLIC/papers/Ho_End-to-End_Learned_Image_Compression_With_Augmented_Normalizing_Flows_CVPRW_2021_paper.pdf">PDF</a>
+                                    </div>
+                                    <button class="button"
+                                        onclick="ShowAbstract('research_IC_2021ICCV');">Abstract</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="abstract" id="research_IC_2021ICCV">
+                                        This paper presents a new attempt at using augmented normalizing flows (ANF) for
+                                        lossy image compression. ANF is a specific type of normalizing flow models that
+                                        augment the input with an independent noise, allowing a smoother transformation
+                                        from the augmented input space to the latent space. Inspired by the fact that
+                                        ANF can offer greater expressivity by stacking multiple variational autoencoders
+                                        (VAE), we generalize the popular VAE-based compression framework by the
+                                        autoencoding transforms of ANF. When evaluated on Kodak dataset, our ANF-based
+                                        model provides 3.4% higher BD-rate saving as compared with a VAE-based baseline
+                                        that implements hyper-prior with mean prediction. Interestingly, it benefits
+                                        even more from the incorporation of a post-processing network, showing 11.8%
+                                        rate saving as compared to 6.0% with the baseline plus post-processing.
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="research_td">
+                                    <img class="research_img"
+                                        src="research/compression/Compression/image_compression3.png"></img>
+                                    <div class="research_title">A Hybrid Layered Image Compressor with Deep-Learning
+                                        Technique</div>
+                                    <div class="research_author">Wei-Cheng Lee, Chih-Peng Chang, Wen-Hsiao Peng,
+                                        Hsueh-Ming Hang</div>
+                                    <div class="research_from">IEEE International Workshop on Multimedia Signal
+                                        Processing (MMSP), Sep. 2020.</div>
+                                    <div class="link"><a href="https://ieeexplore.ieee.org/document/9287130">PDF</a>
+                                    </div>
+                                    <button class="button"
+                                        onclick="ShowAbstract('research_IC_2020mmsp');">Abstract</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="abstract" id="research_IC_2020mmsp">
+                                        The proposed compression system features a VVC intra codec as the base layer and
+                                        a learning-based residual codec as the enhancement layer. The latter aims to
+                                        reﬁne the quality of the base layer via sending a latent residual signal. In
+                                        particular, a base-layer-guided attention module is employed to focus the
+                                        residual extraction on critical high-frequency areas. To reconstruct the image,
+                                        this latent residual signal is combined with the base-layer output in a
+                                        non-linear fashion by a neural-network-based synthesizer. The proposed method
+                                        shows comparable rate-distortion performance to single-layer VVC intra in terms
+                                        of common objective metrics, but presents better subjective quality particularly
+                                        at high compression ratios in some cases. It consistently outperforms HEVC
+                                        intra, JPEG 2000, and JPEG. The proposed system incurs 18M network parameters in
+                                        16-bit ﬂoating-point format. On average, the encoding of an image on Intel Xeon
+                                        Gold 6154 takes about 13.5 minutes, with the VVC base layer dominating the
+                                        encoding runtime. On the contrary, the decoding is dominated by the residual
+                                        decoder and the synthesizer, requiring 31 seconds per image.
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="research_td">
+                                    <img class="research_img"
+                                        src="research/compression/Compression/image_compression1.png"></img>
+                                    <div class="research_title">Learned Image Compression With Soft Bit-based
+                                        Rate-distortion Optimization</div>
+                                    <div class="research_author">David Alexandre, Chih-Peng Chang, Wen-Hsiao Peng,
+                                        Hsueh-Ming Hang</div>
+                                    <div class="research_from">IEEE International Conference on Image Processing (ICIP),
+                                        Oct. 2019.</div>
+                                    <div class="link"><a href="https://arxiv.org/abs/1905.00190">PDF</a></div>
+                                    <button class="button"
+                                        onclick="ShowAbstract('research_IC_2019icip');">Abstract</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="abstract" id="research_IC_2019icip">
+                                        This paper introduces the notion of soft bits to address the
+                                        rate-distortion optimization for learning-based image compression.
+                                        Recent methods for such compression train an autoencoder
+                                        end-to-end with an objective to strike a balance between
+                                        distortion and rate. They are faced with the zero gradient
+                                        issue due to quantization and the difficulty of estimating
+                                        the rate accurately. Inspired by soft quantization, we represent
+                                        quantization indices of feature maps with differentiable
+                                        soft bits. This allows us to couple tightly the rate estimation
+                                        with context-adaptive binary arithmetic coding. It also
+                                        provides a differentiable distortion objective function. Experimental
+                                        results show that our approach achieves the state-ofthe-
+                                        art compression performance among the learning-based
+                                        schemes in terms of MS-SSIM and PSNR.
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="research_td">
+                                    <img class="research_img"
+                                        src="research/compression/Compression/image_compression2.png"></img>
+                                    <div class="research_title">An Autoencoder-based Image Compressor with Principle
+                                        Component Analysis and Soft-Bit Rate Estimation</div>
+                                    <div class="research_author">Chih-Peng Chang, David Alexandre, Wen-Hsiao Peng,
+                                        Hsueh-Ming Hang</div>
+                                    <div class="research_from">IEEE Conference on Computer Vision and Pattern
+                                        Recognition (CVPR) Workshops, Jun. 2019.</div>
+                                    <div class="link"><a href="https://arxiv.org/abs/1902.07385">PDF</a></div>
+                                    <button class="button"
+                                        onclick="ShowAbstract('research_IC_2019cvprw');">Abstract</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="abstract" id="research_IC_2019cvprw">
+                                        We propose a lossy image compression system using the
+                                        deep-learning autoencoder structure to participate in the
+                                        Challenge on Learned Image Compression (CLIC) 2018.
+                                        Our autoencoder uses the residual blocks with skip connections to reduce the
+                                        correlation among image pixels and condense the input image into a set of
+                                        feature maps, a compact
+                                        representation of the original image. The bit allocation and
+                                        bitrate control are implemented by using the importance
+                                        maps and quantizer. The importance maps are generated
+                                        by a separate neural net in the encoder. The autoencoder
+                                        and the importance net are trained jointly based on minimizing a weighted sum of
+                                        mean squared error, MS-SSIM,
+                                        and a rate estimate. Our aim is to produce reconstructed
+                                        images with good subjective quality subject to the 0.15 bitsper-pixel
+                                        constraint.
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h1 id="livcm"></h1>
+                    <div class="topic">
+                        <span class="title">Learned Image and Video Coding for Machines</span>
+                    </div>
+                    <table class="research_table">
+                        <tbody>
+                            <tr>
+                                <td class="research_td">
+                                    <img class="research_img"
+                                        src="research/compression/CodeM/learned_CodeM1.png"></img>
+                                    <div class="research_title"><img
+                                            style="width:35px;height:35px;margin-right:2px;margin-top: -5px;"
+                                            src='figures/new.gif'>TransTIC: Transferring Transformer-based Image Compression 
+                                            from Human Perception to Machine Perception </div>
+                                    <div class="research_author">Yi-Hsin Chen, Ying-Chieh Weng, Chia-Hao Kao, Cheng Chien, 
+                                        Wei-Chen Chiu, and Wen-Hsiao Peng </div>
+                                    <div class="research_from"> International Conference on Computer Vision (ICCV), Oct. 2023.</div>
+                                    <div class="link"><a
+                                            href="https://arxiv.org/pdf/2306.05085">PDF</a>
+                                             | <a href="https://github.com/NYCU-MAPL/TransTIC">Github</a>
+                                             | <a href="https://alan0817.github.io/TransTIC_project_page/">Project Page</a></div>
+                                    <button class="button"
+                                        onclick="ShowAbstract('research_CM_2023iccv');">Abstract</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="abstract" id="research_CM_2023iccv">
+                                        This work aims for transferring a Transformer-based image compression codec 
+                                        from human perception to machine perception without fine-tuning the codec. 
+                                        We propose a transferable Transformer-based image compression framework, 
+                                        termed TransTIC. Inspired by visual prompt tuning, TransTIC adopts an 
+                                        instance-specific prompt generator to inject instance-specific prompts to 
+                                        the encoder and task-specific prompts to the decoder. Extensive experiments 
+                                        show that our proposed method is capable of transferring the base codec to 
+                                        various machine tasks and outperforms the competing methods significantly. 
+                                        To our best knowledge, this work is the first attempt to utilize prompting 
+                                        on the low-level image compression task.
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h1 id="rc"></h1>
+                    <div class="topic">
+                        <span class="title">Reinforcement Learning for Video Encoder Control</span>
+                    </div>
+                    <table class="research_table">
+                        <tbody>
+                            <tr>
+                                <td class="research_td">
+                                    <img class="research_img" src="research/compression/RLencoder/rc5.png"></img>
+                                    <div class="research_title">Neural Frank-Wolfe Policy Optimization for
+                                        Region-of-Interest Intra-Frame Coding with HEVC/H.265</div>
+                                    <!--<div class="research_title"><span style="border:2px red solid;background-color:red;color:white;font-weight:100;font-family: 'Raleway',sans-serif;">NEW</span> A Dual-Critic Reinforcement Learning Framework for Frame-level Bit Allocation in HEVC/H.265</div>-->
+                                    <div class="research_author">Yung-Han Ho, Chia-Hao Kao, Wen-Hsiao Peng, Ping-Chun
+                                        Hsieh</div>
+                                    <div class="research_from">IEEE Visual Communications and Image Processing (VCIP),
+                                        December. 2022.</div>
+                                    <div class="link"><a href="https://arxiv.org/abs/2104.01735">PDF</a> | <a
+                                            href="https://joek6279.github.io/NFWPO-Coding/?fbclid=IwAR3cBv1yjjQ_iF57Hs-aSmwKAHpQPJLryqA9FYVg8k8FkkH_AQd6GkS18lw">Project
+                                            Page</a></div>
+                                    <button class="button"
+                                        onclick="ShowAbstract('research_rc_2022vcip');">Abstract</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="abstract" id="research_rc_2022vcip">
+                                        This paper presents a reinforcement learning (RL) framework that utilizes
+                                        Frank-Wolfe policy optimization to solve Coding-Tree-Unit (CTU) bit allocation
+                                        for Region-of-Interest (ROI) intra-frame coding. Most previous RL-based methods
+                                        employ the single-critic design, where the rewards for distortion minimization
+                                        and rate regularization are weighted by an empirically chosen hyper-parameter.
+                                        Recently, the dual-critic design is proposed to update the actor by alternating
+                                        the rate and distortion critics. However, its convergence is not guaranteed. To
+                                        address these issues, we introduce Neural Frank-Wolfe Policy Optimization
+                                        (NFWPO) in formulating the CTU-level bit allocation as an action-constrained RL
+                                        problem. In this new framework, we exploit a rate critic to predict a feasible
+                                        set of actions. With this feasible set, a distortion critic is invoked to update
+                                        the actor to maximize the ROI-weighted image quality subject to a rate
+                                        constraint. Experimental results produced with x265 confirm the superiority of
+                                        the proposed method to the other baselines.
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="research_td">
+                                    <img class="research_img" src="research/compression/RLencoder/rc4.png"></img>
+                                    <div class="research_title">A Dual-Critic Reinforcement Learning
+                                        Framework for Frame-level Bit Allocation in HEVC/H.265</div>
+                                    <!--<div class="research_title"><span style="border:2px red solid;background-color:red;color:white;font-weight:100;font-family: 'Raleway',sans-serif;">NEW</span> A Dual-Critic Reinforcement Learning Framework for Frame-level Bit Allocation in HEVC/H.265</div>-->
+                                    <div class="research_author">Yung-Han Ho, Guo-Lun Jin, Yun Liang, Wen-Hsiao Peng,
+                                        Xiao-Bo Li</div>
+                                    <div class="research_from">Data Compression Conference (DCC), Mar. 2021.</div>
+                                    <div class="link"><a href="https://arxiv.org/abs/2104.01735">PDF</a> | <a
+                                            href="./../../RL_Rate_Control">Project Page</a></div>
+                                    <button class="button"
+                                        onclick="ShowAbstract('research_rc_2021dcc');">Abstract</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="abstract" id="research_rc_2021dcc">
+                                        This paper introduces a dual-critic reinforcement learning (RL) framework to
+                                        address the problem of frame-level bit allocation in HEVC/H.265. The objective
+                                        is to minimize the distortion of a group of pictures (GOP) under a rate
+                                        constraint. Previous RL-based methods tackle such a constrained optimization
+                                        problem by maximizing a single reward function that often combines a distortion
+                                        and a rate reward. However, the way how these rewards are combined is usually ad
+                                        hoc and may not generalize well to various coding conditions and video
+                                        sequences. To overcome this issue, we adapt the deep deterministic policy
+                                        gradient (DDPG) reinforcement learning algorithm for use with two critics, with
+                                        one learning to predict the distortion reward and the other the rate reward. In
+                                        particular, the distortion critic works to update the agent when the rate
+                                        constraint is satisfied. By contrast, the rate critic makes the rate constraint
+                                        a priority when the agent goes over the bit budget. Experimental results on
+                                        commonly used datasets show that our method outperforms the bit allocation
+                                        scheme in x265 and the single-critic baseline by a significant margin in terms
+                                        of rate-distortion performance while offering fairly precise rate control.
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="research_td">
+                                    <img class="research_img" src="research/compression/RLencoder/rc2.png"></img>
+                                    <div class="research_title">Reinforcement Learning for HEVC/H.265 Intra-Frame Rate
+                                        Control</div>
+                                    <div class="research_author">Jun-Hao Hu, Wen-Hsiao Peng, Chia-Hua Chung</div>
+                                    <div class="research_from">IEEE International Symposium on Circuits and Systems
+                                        (ISCAS), Italy, May 2018.</div>
+                                    <div class="link"><a href="https://ieeexplore.ieee.org/document/8351575">PDF</a>
+                                    </div>
+                                    <button class="button"
+                                        onclick="ShowAbstract('research_rc_2018iscas');">Abstract</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="abstract" id="research_rc_2018iscas">
+                                        Reinforcement learning has proven effective for solving decision making
+                                        problems. However, its application to modern video codecs has yet to be
+                                        seen. This paper presents an early attempt to introduce reinforcement
+                                        learning to HEVC/H.265 intra-frame rate control. The task is to determine
+                                        a quantization parameter value for every coding tree unit in a frame,
+                                        with the objective being to minimize the frame-level distortion subject
+                                        to a rate constraint. We draw an analogy between the rate control problem
+                                        and the reinforcement learning problem, by considering the texture complexity
+                                        of coding tree units and bit balance as the environment state, the
+                                        quantization parameter value as an action that an agent needs to take,
+                                        and the negative distortion of the coding tree unit as an immediate reward.
+                                        We train a neural network based on Q-learning to be our agent, which
+                                        observes the state to evaluate the reward for each possible action. When
+                                        trained on only limited sequences, the proposed model can already perform
+                                        comparably with the rate control algorithm in HM-16.15.
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="research_td">
+                                    <img class="research_img" src="research/compression/RLencoder/rc1.png"></img>
+                                    <div class="research_title">Reinforcement Learning for HEVC/H.265 Frame-level Bit
+                                        Allocation</div>
+                                    <div class="research_author">Lian-Ching Chen, Jun-Hao Hu, Wen-Hsiao Peng</div>
+                                    <div class="research_from">IEEE International Conference on Digital Signal
+                                        Processing (DSP), China, Nov. 2018.</div>
+                                    <div class="link"><a href="https://ieeexplore.ieee.org/document/8631541">PDF</a>
+                                    </div>
+                                    <button class="button"
+                                        onclick="ShowAbstract('research_rc_2018dsp');">Abstract</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="abstract" id="research_rc_2018dsp">
+                                        Frame-level bit allocation is crucial to video rate control.
+                                        The problem is often cast as minimizing the distortions of a
+                                        group of video frames subjective to a rate constraint.
+                                        When these video frames are related through inter-frame
+                                        prediction, the bit allocation for different frames exhibits
+                                        dependency. To address such dependency, this paper introduces
+                                        reinforcement learning. We first consider frame-level texture
+                                        complexity and bit balance as a state signal, define the bit
+                                        allocation for each frame as an action, and compute the negative
+                                        frame-level distortion as an immediate reward signal. We then train
+                                        a neural network to be our agent, which observes the state to
+                                        allocate bits to each frame in order to maximize cumulative reward.
+                                        As compared to the rate control scheme in HM-16.15, our method shows
+                                        better PSNR performance while having smaller bit rate fluctuations.
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="research_td">
+                                    <img class="research_img" src="research/compression/RLencoder/rc3.png"></img>
+                                    <div class="research_title">HEVC/H.265 Coding Unit Split Decision Using Deep
+                                        Reinforcement Learning</div>
+                                    <div class="research_author">Chia-Hua Chung, Wen-Hsiao Peng, Jun-Hao Hu</div>
+                                    <div class="research_from">IEEE International Symposium on Intelligent Signal
+                                        Processing and Communication Systems (ISPACS), Xiamen, Nov. 2017.</div>
+                                    <div class="link"><a href="https://ieeexplore.ieee.org/document/8266543">PDF</a>
+                                    </div>
+                                    <button class="button"
+                                        onclick="ShowAbstract('research_rc_2017ispacs');">Abstract</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="abstract" id="research_rc_2017ispacs">
+                                        The video coding community has long been seeking more effective
+                                        rate-distortion optimization techniques than the widely adopted
+                                        greedy approach. The difficulty arises when we need to predict how
+                                        the coding mode decision made in one stage would affect subsequent
+                                        decisions and thus the overall coding performance. Taking a data-driven
+                                        approach, we introduce in this paper deep reinforcement learning (RL)
+                                        as a mechanism for the coding unit (CU) split decision in HEVC/H.265.
+                                        We propose to regard the luminance samples of a CU together with the
+                                        quantization parameter as its state, the split decision as an action,
+                                        and the reduction in ratedistortion cost relative to keeping the current
+                                        CU intact as the immediate reward. Based on the Q-learning algorithm,
+                                        we learn a convolutional neural network to approximate the ratedistortion
+                                        cost reduction of each possible state-action pair. The proposed scheme
+                                        performs compatibly with the current full rate-distortion optimization
+                                        scheme in HM-16.15, incurring a 2.5% average BD-rate loss. While also
+                                        performing similarly to a conventional scheme that treats the split
+                                        decision as a binary classification problem, our scheme can additionally
+                                        quantify the rate-distortion cost reduction, enabling more applications.
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h1 id="dvp"></h1>
+                    <div class="topic">
+                        <span class="title">Deep Video Prediction</span>
+                    </div>
+                    <table class="research_table">
+                        <tbody>
+                            <tr>
+                                <td class="research_td">
+                                    <img class="research_img"
+                                        src="research/compression/Videopred/Video_Prediction2.png"></img>
+                                    <div class="research_title">Deep Video Prediction Through Sparse Motion
+                                        Regularization</div>
+                                    <div class="research_author">Yung-Han Ho, Chih Chun Chan, Wen-Hsiao Peng</div>
+                                    <div class="research_from">IEEE International Conference on Image Processing (ICIP),
+                                        Oct. 2020.</div>
+                                    <div class="link"><a href="https://ieeexplore.ieee.org/document/9191154">PDF</a>
+                                    </div>
+                                    <button class="button"
+                                        onclick="ShowAbstract('research_DVP_2020icip');">Abstract</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="abstract" id="research_DVP_2020icip">
+                                        This paper leverages a classic prediction technique,
+                                        known as parametric overlapped block motion compensation (POBMC), in a
+                                        reinforcement learning framework for
+                                        video prediction. Learning-based prediction methods with
+                                        explicit motion models often suffer from having to estimate
+                                        large numbers of motion parameters with artificial regularization. Inspired by
+                                        the success of sparse motion-based
+                                        prediction for video compression, we propose a parametric video prediction on a
+                                        sparse motion field composed of
+                                        few critical pixels and their motion vectors. The prediction
+                                        is achieved by gradually refining the estimate of a future
+                                        frame in iterative, discrete steps. Along the way, the identification of
+                                        critical pixels and their motion estimation are addressed by two neural networks
+                                        trained under a reinforcement learning setting. Our model achieves the
+                                        state-of-theart performance on CaltchPed, UCF101 and CIF datasets
+                                        in one-step and multi-step prediction tests. It shows good
+                                        generalization results and is able to learn well on small
+                                        training data
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="research_td">
+                                    <img class="research_img"
+                                        src="research/compression/Videopred/Video_Prediction.png"></img>
+                                    <div class="research_title">SME-Net: Sparse Motion Estimation for Parametric Video
+                                        Prediction through Reinforcement Learning</div>
+                                    <div class="research_author">Yung-Han Ho, Chuan-Yuan Cho, Wen-Hsiao Peng, Guo-Lun
+                                        Jin</div>
+                                    <div class="research_from">IEEE International Conference on Computer Vision (ICCV),
+                                        Oct. 2019.</div>
+                                    <div class="link"><a
+                                            href="https://openaccess.thecvf.com/content_ICCV_2019/papers/Ho_SME-Net_Sparse_Motion_Estimation_for_Parametric_Video_Prediction_Through_Reinforcement_ICCV_2019_paper.pdf">PDF</a>
+                                        | <a href="https://hackmd.io/BcC_oFbuQBSp5jWyzgHFwA?view">Project Page</a></div>
+                                    <button class="button"
+                                        onclick="ShowAbstract('research_DVP_2019iccv');">Abstract</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="abstract" id="research_DVP_2019iccv">
+                                        This paper leverages a classic prediction technique,
+                                        known as parametric overlapped block motion compensation (POBMC), in a
+                                        reinforcement learning framework for
+                                        video prediction. Learning-based prediction methods with
+                                        explicit motion models often suffer from having to estimate
+                                        large numbers of motion parameters with artificial regularization. Inspired by
+                                        the success of sparse motion-based
+                                        prediction for video compression, we propose a parametric video prediction on a
+                                        sparse motion field composed of
+                                        few critical pixels and their motion vectors. The prediction
+                                        is achieved by gradually refining the estimate of a future
+                                        frame in iterative, discrete steps. Along the way, the identification of
+                                        critical pixels and their motion estimation are addressed by two neural networks
+                                        trained under a reinforcement learning setting. Our model achieves the
+                                        state-of-theart performance on CaltchPed, UCF101 and CIF datasets
+                                        in one-step and multi-step prediction tests. It shows good
+                                        generalization results and is able to learn well on small
+                                        training data.
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h1 id="dass"></h1>
+                    <div class="topic">
+                        <span class="title">Domain Adaptation for Semantic Segmentation</span>
+                    </div>
+                    <table class="research_table">
+                        <tbody>
+                            <tr>
+                                <td class="research_td">
+                                    <img class="research_img" src="research/segmentation/DA_1.png"></img>
+                                    <div class="research_title">All about Structure: Adapting Structural Information
+                                        across Domains for Boosting Semantic Segmentation</div>
+                                    <div class="research_author">Wei-Lun Chang, Hui-Po Wang, Wen-Hsiao Peng, Wei-Chen
+                                        Chiu</div>
+                                    <div class="research_from">IEEE Computer Society Conference on Computer Vision and
+                                        Pattern Recognition (CVPR), June 2019.</div>
+                                    <div class="link"><a href="https://arxiv.org/abs/1903.12212">PDF</a> | <a
+                                            href="https://github.com/a514514772/DISE-Domain-Invariant-Structure-Extraction">Github</a>
+                                        | <a
+                                            href="https://a514514772.github.io/DISE-Domain-Invariant-Structure-Extraction/">Project
+                                            Page</a></div>
+                                    <button class="button"
+                                        onclick="ShowAbstract('research_DA_2019cvpr');">Abstract</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="abstract" id="research_DA_2019cvpr">
+                                        In this paper we tackle the problem of unsupervised
+                                        domain adaptation for the task of semantic segmentation,
+                                        where we attempt to transfer the knowledge learned upon
+                                        synthetic datasets with ground-truth labels to real-world
+                                        images without any annotation. With the hypothesis that
+                                        the structural content of images is the most informative and
+                                        decisive factor to semantic segmentation and can be readily shared across
+                                        domains, we propose a Domain Invariant
+                                        Structure Extraction (DISE) framework to disentangle images into
+                                        domain-invariant structure and domain-specific
+                                        texture representations, which can further realize imagetranslation across
+                                        domains and enable label transfer to improve segmentation performance. Extensive
+                                        experiments
+                                        verify the effectiveness of our proposed DISE model and
+                                        demonstrate its superiority over several state-of-the-art approaches.
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h1 id="vss"></h1>
+                    <div class="topic">
+                        <span class="title">Image / Video Semantic Segmentation</span>
+                    </div>
+                    <table class="research_table">
+                        <tbody>
+                            <tr>
+                                <td class="research_td">
+                                    <img class="research_img" src="research/segmentation/VSS_2.png"></img>
+                                    <div class="research_title"></img>GSVNet: Guided Spatially-Varying Convolution for
+                                        Fast Semantic Segmentation on Video</div>
+                                    <div class="research_author">Shih-Po Lee, Si-Cun Chen, Wen-Hsiao Peng</div>
+                                    <div class="research_from">IEEE International Conference on Multimedia and Expo
+                                        (ICME), July 2021.</div>
+                                    <div class="link"><a href="https://arxiv.org/abs/2103.08834" target="_blank">PDF</a>
+                                        | <a href="https://github.com/robert80203/GSVNet" target="_blank">Github</a> |
+                                        <a href="./../../GSVNet/" target="_blank">Project Page</a>
+                                    </div>
+                                    <button class="button"
+                                        onclick="ShowAbstract('research_VSS_2021icme');">Abstract</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="abstract" id="research_VSS_2021icme">
+                                        This paper addresses fast semantic segmentation on video.
+                                        Video segmentation often calls for real-time, or even faster
+                                        than real-time, processing. One common recipe for conserving
+                                        computation arising from feature extraction is to propagate
+                                        features of few selected keyframes. However, recent advances
+                                        in fast image segmentation make these solutions less
+                                        attractive. To leverage fast image segmentation for furthering
+                                        video segmentation, we propose a simple yet efficient propagation
+                                        framework. Specifically, we perform lightweight flow
+                                        estimation in 1/8-downscaled image space for temporal warping
+                                        in segmentation outpace space. Moreover, we introduce
+                                        a guided spatially-varying convolution for fusing segmentations
+                                        derived from the previous and current frames, to mitigate
+                                        propagation error and enable lightweight feature extraction
+                                        on non-keyframes. Experimental results on Cityscapes
+                                        and CamVid show that our scheme achieves the state-of-the-art
+                                        accuracy-throughput trade-off on video segmentation.
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="research_td">
+                                    <img class="research_img" src="research/segmentation/ISS_GCN.png"></img>
+                                    <div class="research_title"></img>Weakly-Supervised Image Semantic Segmentation
+                                        Using Graph Convolutional Networks</div>
+                                    <div class="research_author">Shun-Yi Pan*, Cheng-You Lu*, Shih-Po Lee, Wen-Hsiao
+                                        Peng</div>
+                                    <div class="research_from">IEEE International Conference on Multimedia and Expo
+                                        (ICME), July 2021.</div>
+                                    <div class="link"><a href="https://arxiv.org/abs/2103.16762">PDF</a> | <a
+                                            href="https://github.com/Xavier-Pan/WSGCN">Github</a> | <a
+                                            href="./../../WSGCN/">Project Page</a></div>
+                                    <button class="button"
+                                        onclick="ShowAbstract('research_ISS_2021icme');">Abstract</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="abstract" id="research_ISS_2021icme">
+                                        This work addresses weakly-supervised image semantic seg-mentation
+                                        based on image-level class labels. One commonapproach to this task
+                                        is to propagate the activation scores ofClass Activation Maps (CAMs)
+                                        using a random-walk mecha-nism in order to arrive at complete pseudo
+                                        labels for traininga semantic segmentation network in a fully-supervised
+                                        man-ner. However, the feed-forward nature of the random walkimposes
+                                        no regularization on the quality of the resulting com-plete pseudo labels.
+                                        To overcome this issue, we propose aGraph Convolutional Network
+                                        (GCN)-based feature propaga-tion framework. We formulate the
+                                        generation of completepseudo labels as a semi-supervised learning
+                                        task and learna 2-layer GCN separately for every training image by
+                                        back-propagating a Laplacian and an entropy regularization loss.Experimental
+                                        results on the PASCAL VOC 2012 dataset con-firm the superiority of our
+                                        scheme to several state-of-the-artbaselines.Index Terms?�Weakly-supervised
+                                        image semantic seg-mentation, Graph Convolutional Networks
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="research_td">
+                                    <img class="research_img" src="research/segmentation/VSS_1.png"></img>
+                                    <div class="research_title">Semantic Segmentation on Compressed Video Using Block
+                                        Motion Compensation and Guided Inpainting</div>
+                                    <div class="research_author">Stefanie Tanujaya, Tieh Chu, Jia-Hao Liu, Wen-Hsiao
+                                        Peng</div>
+                                    <div class="research_from">IEEE International Symposium on Circuits and Systems
+                                        (ISCAS), Spain, Oct 2020.</div>
+                                    <div class="link"><a
+                                            href="https://ieeexplore.ieee.org/abstract/document/9181054">PDF</a></div>
+                                    <button class="button"
+                                        onclick="ShowAbstract('research_VSS_2020iscas');">Abstract</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="abstract" id="research_VSS_2020iscas">
+                                        This paper addresses the problem of fast semantic segmentation on compressed
+                                        video.
+                                        Unlike most prior works for video segmentation, which perform feature
+                                        propagation based on optical flow estimates or sophisticated warping techniques,
+                                        ours takes advantage of block motion vectors in the compressed bitstream to
+                                        propagate the segmentation of a keyframe to subsequent non-keyframes.
+                                        This approach, however, needs to respect the inter-frame prediction structure,
+                                        which often suggests recursive, multi-step prediction with error propagation and
+                                        accumulation in the temporal dimension. To tackle the issue,
+                                        we refine the motion-compensated segmentation using inpainting. Our inpainting
+                                        network incorporates guided non-local attention for long-range reference and
+                                        pixel-adaptive convolution for ensuring the local coherence of the segmentation.
+                                        A fusion step then follows to combine both the motion-compensated and inpainted
+                                        segmentations.
+                                        Experimental results show that our method outperforms the state-of-the-art
+                                        baselines in terms of segmentation accuracy.
+                                        Moreover, it introduces the least amount of network parameters and multiply-add
+                                        operations for non-keyframe segmentation.
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h1 id="hpe"></h1>
+                    <div class="topic">
+                        <span class="title">Human Pose Estimation Using Radar</span>
+                    </div>
+                    <table class="research_table">
+                        <tbody>
+                            <tr>
+                                <td class="research_td">
+                                    <img class="research_img" src="research/HumanPoseEstimation/hpe.png"></img>
+                                    <div class="research_title"></img>Human Pose Estimation Using Millimeter Wave Radar
+                                    </div>
+                                    <div class="research_author"> Shih-Po Lee, Niraj Prakash Kini, Wen-Hsiao Peng, 
+                                        Ching-Wen Ma, Jenq-Neng Hwang</div>
+                                    <div class="research_from">IEEE Winter Conference on Applications of Computer Vision 
+                                        (WACV), Jan. 2023.</div>
+                                    <div class="link"><a href="https://arxiv.org/abs/2210.12564">PDF</a> | 
+                                        <a href="./../../HuPR/">Project Page</a> | <a
+                                        href="https://github.com/robert80203/HuPR-A-Benchmark-for-Human-Pose-Estimation-Using-Millimeter-Wave-Radar">Github</a></div>
+                                    <button class="button" onclick="ShowAbstract('research_radar');">Abstract</button>
+                                </td>
+                            </tr>
+                            <td>
+                                <div class="abstract" id="research_radar">
+                                    This paper introduces a novel human pose estimation benchmark, Human Pose with
+                                    Millimeter Wave Radar (HuPR), that includes synchronized vision and radio signal
+                                    components. This dataset is created using cross-calibrated mmWave radar sensors and
+                                    a monocular RGB camera for cross-modality training of radar-based human pose
+                                    estimation. In addition to the benchmark, we propose a cross-modality training
+                                    framework that leverages the ground-truth 2D keypoints representing human body
+                                    joints for training, which are systematically generated from the pre-trained 2D pose
+                                    estimation network based on a monocular camera input image, avoiding laborious
+                                    manual label annotation efforts. Our intensive experiments on the HuPR benchmark
+                                    show that the proposed scheme achieves better human pose estimation performance with
+                                    only radar data, as compared to traditional pre-processing solutions and previous
+                                    radio-frequency-based methods.
+                                </div>
+                        </tbody>
+                    </table>
+
+                    <h1 id="vsr"></h1>
+                    <div class="topic">
+                        <span class="title">Video Synthesis</span>
+                    </div>
+                    <table class="research_table">
+                        <tbody>
+                            <tr>
+                                <td class="research_td">
+                                    <img class="research_img" src="research/VideoSuperResolution/vsr2.png"></img>
+                                    <div class="research_title"><img
+                                        style="width:35px;height:35px;margin-right:2px;margin-top: -5px;"
+                                        src='figures/new.gif'>MoTIF: Learning Motion Trajectories with Local Implicit Neural
+                                        Functions for Continuous Space-Time Video Super-Resolution</div>
+                                    <div class="research_author"> Yi-Hsin Chen*, Si-Cun Chen*, Yi-Hsin Chen, Yen-Yu Lin, Wen-Hsiao Peng</div>
+                                    <div class="research_from">IEEE International Conference
+                                        on Computer Vision (ICCV), Oct. 2023.</div>
+                                    <div class="link"><a href="https://arxiv.org/abs/2307.07988">PDF</a> | <a
+                                            href="https://sichun233746.github.io/MoTIF/">Project Page</a> | <a
+                                            href="https://github.com/sichun233746/MoTIF">Github</a></div>
+                                    <button class="button"
+                                        onclick="ShowAbstract('research_vsr_2023iccv');">Abstract</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="abstract" id="research_vsr_2023iccv">
+                                        This work addresses continuous space-time video super-resolution (C-STVSR) that 
+                                        aims to up-scale an input video both spatially and temporally by any scaling 
+                                        factors. One key challenge of C-STVSR is to propagate information temporally 
+                                        among the input video frames. To this end, we introduce a space-time local 
+                                        implicit neural function. It has the striking feature of learning forward motion 
+                                        for a continuum of pixels. We motivate the use of forward motion from the 
+                                        perspective of learning individual motion trajectories, as opposed to learning a 
+                                        mixture of motion trajectories with backward motion. To ease motion interpolation, 
+                                        we encode sparsely sampled forward motion extracted from the input video as the 
+                                        contextual input. Along with a reliability-aware splatting and decoding scheme, 
+                                        our framework, termed MoTIF, achieves the state-of-the-art performance on C-STVSR.
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="research_td">
+                                    <img class="research_img" src="research/VideoSuperResolution/vsr1.png"></img>
+                                    <div class="research_title"></img>Video Rescaling Networks with Joint Optimization
+                                        Strategies for Downscaling and Upscaling</div>
+                                    <div class="research_author"> Yan-Cheng Huang*, Yi-Hsin Chen*, Cheng-You Lu, Hui-Po
+                                        Wang, Wen-Hsiao Peng and Ching-Chun Huang</div>
+                                    <div class="research_from">IEEE Conference on Computer Vision and Pattern
+                                        Recognition (CVPR), June 2021.</div>
+                                    <div class="link"><a href="https://arxiv.org/abs/2103.14858">PDF</a> | <a
+                                            href="https://ding3820.github.io/MIMO-VRN/">Project Page</a></div>
+                                    <button class="button"
+                                        onclick="ShowAbstract('research_vsr_2021cvpr');">Abstract</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="abstract" id="research_vsr_2021cvpr">
+                                        This paper addresses the video rescaling task, which arises from the needs of
+                                        adapting the video spatial resolution to
+                                        suit individual viewing devices. We aim to jointly optimize video downscaling
+                                        and upscaling as a combined task. Most recent
+                                        studies focus on image-based solutions, which do not consider temporal
+                                        information. We present two joint optimization
+                                        approaches based on invertible neural networks with coupling layers. Our Long
+                                        Short-Term Memory Video Rescaling Network
+                                        (LSTM-VRN) leverages temporal information in the low-resolution video to form an
+                                        explicit prediction of the missing
+                                        high-frequency information for upscaling. Our Multi-input Multi-output Video
+                                        Rescaling Network (MIMO-VRN) proposes a new
+                                        strategy for downscaling and upscaling a group of video frames simultaneously.
+                                        Not only do they outperform the image-based
+                                        invertible model in terms of quantitative and qualitative results, but also show
+                                        much improved upscaling quality than the
+                                        video rescaling methods without joint optimization. To our best knowledge, this
+                                        work is the first attempt at the joint optimization
+                                        of video downscaling and upscaling.
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+                    <h1 id="il"></h1>
+                    <div class="topic">
+                        <span class="title">Incremental Learning</span>
+                    </div>
+                    <table class="research_table">
+                        <tbody>
+                            <tr>
+                                <td class="research_td">
+                                    <img class="research_img" src="research/IncrementalLearning/il1.png"></img>
+                                    <div class="research_title">Class-incremental Learning with Rectified Feature-Graph
+                                        Preservation</div>
+                                    <div class="research_author"> Cheng-Hsun Lei*, Yi-Hsin Chen*, Wen-Hsiao Peng,
+                                        Wei-Chen Chiu</div>
+                                    <div class="research_from">Asian Conference on Computer Vision (ACCV), Japan, Nov.
+                                        2020.</div>
+                                    <div class="link"><a href="https://arxiv.org/abs/2012.08129">PDF</a> | <a
+                                            href="https://github.com/yhchen12101/FGP-ICL">Github</a></div>
+                                    <button class="button"
+                                        onclick="ShowAbstract('research_il_2020accv');">Abstract</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="abstract" id="research_il_2020accv">
+                                        In this paper, we address the problem of distillation-based class-incremental
+                                        learning with a single head. A central theme
+                                        of this task is to learn new classes that arrive in sequential phases over time
+                                        while keeping the model's capability of
+                                        recognizing seen classes with only limited memory for preserving seen data
+                                        samples. Many regularization strategies have
+                                        been proposed to mitigate the phenomenon of catastrophic forgetting. To
+                                        understand better the essence of these
+                                        regularizations, we introduce a feature-graph preservation perspective. Insights
+                                        into their merits and faults motivate our
+                                        weighted-Euclidean regularization for old knowledge preservation. We further
+                                        propose rectified cosine normalization and show
+                                        how it can work with binary cross-entropy to increase class separation for
+                                        effective learning of new classes. Experimental
+                                        results on both CIFAR-100 and ImageNet datasets demonstrate that our method
+                                        outperforms the state-of-the-art approaches in
+                                        reducing classification error, easing catastrophic forgetting, and encouraging
+                                        evenly balanced accuracy over different classes.
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h1 id="vqa"></h1>
+                    <div class="topic">
+                        <span class="title">Visual Question Answering</span>
+                    </div>
+                    <table class="research_table">
+                        <tbody>
+                            <tr>
+                                <td class="research_td">
+                                    <img class="research_img" src="research/VQA/vqa1.png"></img>
+                                    <div class="research_title">Learning Goal-oriented Visual Dialogue: Imitating and
+                                        Surpassing Analytic Experts</div>
+                                    <div class="research_author">Yen-Wei Chang, Wen-Hsiao Peng</div>
+                                    <div class="research_from">IEEE International Conference on Multimedia and Expo
+                                        (ICME), July 2019.</div>
+                                    <div class="link"><a href="https://arxiv.org/abs/1907.10500">PDF</a> </div>
+                                    <button class="button"
+                                        onclick="ShowAbstract('research_vqa_2019icme');">Abstract</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="abstract" id="research_vqa_2019icme">
+                                        This paper tackles the problem of learning a questioner in
+                                        the goal-oriented visual dialog task. Several previous works
+                                        adopt model-free reinforcement learning. Most pretrain the
+                                        model from a finite set of human-generated data. We argue
+                                        that using limited demonstrations to kick-start the questioner
+                                        is insufficient due to the large policy search space. Inspired
+                                        by a recently proposed information theoretic approach, we
+                                        develop two analytic experts to serve as a source of highquality demonstrations
+                                        for imitation learning. We then take
+                                        advantage of reinforcement learning to refine the model towards the
+                                        goal-oriented objective. Experimental results on the
+                                        GuessWhat?! dataset show that our method has the combined
+                                        merits of imitation and reinforcement learning, achieving the
+                                        state-of-the-art performance.
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h1 id="dgm"></h1>
+                    <div class="topic">
+                        <span class="title">Deep Generative Model</span>
+                    </div>
+                    <table class="research_table">
+                        <tbody>
+                            <tr>
+                                <td class="research_td">
+                                    <img class="research_img" src="research/GAN/gan1.png"></img>
+                                    <div class="research_title">Learning Priors for Adversarial Autoencoders</div>
+                                    <div class="research_author">Hui-Po Wang, Wen-Hsiao Peng, Wei-Jan Ko</div>
+                                    <div class="research_from">Asia-Pacific Signal and Information Processing
+                                        Association (APSIPA), USA, Nov. 2018.</div>
+                                    <div class="link"><a href="https://arxiv.org/abs/1909.04443">PDF</a> </div>
+                                    <button class="button"
+                                        onclick="ShowAbstract('research_dgm_apsipa2018');">Abstract</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="abstract" id="research_dgm_apsipa2018">
+                                        Most deep latent factor models choose simple priors for simplicity, tractability
+                                        or not knowing what prior to use. Recent
+                                        studies show that the choice of the prior may have a profound effect on the
+                                        expressiveness of the model, especially when
+                                        its generative network has limited capacity. In this paper, we propose to learn
+                                        a proper prior from data for adversarial
+                                        autoencoders (AAEs). We introduce the notion of code generators to transform
+                                        manually selected simple priors into ones
+                                        that can better characterize the data distribution. Experimental results show
+                                        that the proposed model can generate better
+                                        image quality and learn better disentangled representations than AAEs in both
+                                        supervised and unsupervised settings.
+                                        Lastly, we present its ability to do cross-domain translation in a text-to-image
+                                        synthesis task.
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h1 id="ai_drone"></h1>
+                    <div class="topic">
+                        <span class="title">AI Drone</span>
+                    </div>
+                    <table class="research_table">
+                        <tbody>
+                            <tr>
+                                <td class="research_td">
+                                    <img class="research_img" src="research/AIDrone/AI_Drone_Dreamer.png"></img>
+                                    <div class="research_title"></img>Learning to Fly with a Video Generator</div>
+                                    <div class="research_author">Chia-Chun Chung, Wen-Hsiao Peng, Teng-Hu Cheng and
+                                        Chia-Hau Yu</div>
+                                    <div class="research_from">IEEE International Conference on Visual Communications
+                                        and Image Processing (VCIP), Dec. 2021.</div>
+                                    <div class="link"><a href="./../../AIDrone_VCIP/">Project Page</a>
+                                    </div>
+                                    <button class="button"
+                                        onclick="ShowAbstract('research_vcip_ai_drone');">Abstract</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="abstract" id="research_vcip_ai_drone">
+                                        This paper demonstrates a model-based reinforcement learning framework for
+                                        training a self-flying drone.
+                                        We implement the Dreamer proposed in a prior work as an environment model that
+                                        responds to the action taken
+                                        by the drone by predicting the next video frame as a new state signal. The
+                                        Dreamer is a conditional video sequence generator.
+                                        This model-based environment avoids the time-consuming interactions between the
+                                        agent and the environment,
+                                        speeding up largely the training process. This demonstration showcases for the
+                                        first time the application of the
+                                        Dreamer to train an agent that can finish the racing task in the Airsim
+                                        simulator.
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div style="height:100px" class="footer_css">
+        <div style="position:absolute;bottom:5px;text-align:justify;white-space: pre;">
+            ## <img src="figures/home_small2.gif" style="width:260px;height:90px;"></img>
+            Copyright @ National Chiao Tung University MAPL all rights reserved.
+            Telephone: +886-3-5712121 ext. 54779
+            Address: 1001 Ta-Hsueh Rd., Hsinchu, 30010, Taiwan, R.O.C. EC621, EC714 Department of Computer Science
+        </div>
+    </div> -->
+    <div style="height:100px" class="footer_left">
+		<div style="position:absolute;bottom:5px;text-align:justify;white-space: pre;">
+			<!--<img src="figures/home_small2.gif" style="width:260px;height:90px;"></img>-->
+			Copyright @ National Yang Ming Chiao Tung University MAPL all rights reserved.
+			Telephone: +886-3-5712121 ext. 54779
+			Address: 1001 Ta-Hsueh Rd., Hsinchu, 30010, Taiwan, R.O.C. EC621, EC714 Department of Computer Science
+		</div>
+	</div>
+	<div style="height:100px" class="footer_right">
+		<div>
+			<a href="https://info.flagcounter.com/Y0ks"><img src="https://s01.flagcounter.com/count2/Y0ks/bg_F0F0F0/txt_3C3C3C/border_C9C9C9/columns_3/maxflags_9/viewers_0/labels_1/pageviews_1/flags_0/percent_0/" alt="Flag Counter" style="border:0px"></a>
+		</div>
+	</div>
+</body>
+
+</html>

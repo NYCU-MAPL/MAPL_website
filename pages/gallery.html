@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<!--<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">-->
+	<!-- jquery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- Self-defined-->
+	<link href="css/index.css" rel="stylesheet" type="text/css">
+	<!--<script src="nav.js"></script><!--navbar-fixed-top-->
+	<script src="js/index.js"></script>
+	<script src="js/research.js"></script>
+	<script src="js/home.js"></script>
+	<script src="js/publication.js"></script>
+	<script src="js/teaching.js"></script>
+	<script src="js/member.js"></script>
+	<script type="text/javascript">
+	</script>
+	<style>
+		@media screen and (max-width: 768px) {
+			#header {
+				display: none;
+			}
+			#main {
+
+				display: block;
+			}
+
+			body {
+				background-image: none;
+			}
+			.element-container {
+				margin-top: 20px;
+			}
+		}
+        .intro { 
+        text-align: center; 
+        font-family: Arial;
+        }
+
+        h2 { 
+        font-size: 36px;
+        }
+
+        p { 
+        font-size: 14pt;
+        }
+
+        #image-gallery { 
+        width: 700px; 
+        margin: 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        }
+
+        #current-image { 
+        height: 380px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        } 
+
+        #image-thumbs { 
+        display: flex; 
+        justify-content: center; 
+        margin-top: 20px;
+        }
+
+        .thumb { 
+        width: 80px; 
+        height: 80px; 
+        object-fit: cover; 
+        margin-right: 10px; 
+        cursor: pointer;
+        }
+	</style>
+</head>
+
+<body>
+	<!------------------------Responsive Menu------------------>
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<div class="container">
+			<a href="../" onclick=''><img src="figures/home_black.png" style="height:15px;width:60px;"></a>
+			<a href="research.html" onclick='' style="color:white;font-size:20px">Research</a>
+			<a href="teaching.html" onclick='' style="color:white;font-size:20px">Teaching</a>
+			<a href="#col3" data-toggle="collapse" style="color:white;font-size:20px">Members</a>
+			<div id="col3" class="collapse">
+				<a href="members.html" onclick=''>Current Members</a>
+				<a href="alumni.html" onclick=''>Alumni</a>
+			</div>
+			<a href="joinus.html" onclick='' style="color:white;font-size:20px">Join Us</a>
+			<a href="publication.html" onclick='' style="color:white;font-size:20px">Publication</a>
+		</div>
+	</div>
+	<div id="main">
+		<span class="sidebar" onclick="openNav()">&#9776;</span>
+	</div>
+	<!------------------------Responsive Menu------------------>
+	<nav id="header" class="navbar header_css fill" style="top:0px;">
+		<div id="header-container" class="container navbar-container">
+			<div id="navbar" class="collapse navbar-collapse" style="text-align:center;">
+				<ul class="nav_self_css nav navbar-nav">
+					<li class="dropdown">
+						<a href="../" onclick=''>
+							<img src="figures/home_black.png" style="height:15px;width:60px;margin-top:-8%">
+						</a>
+					</li>
+					<li class="dropdown"><a href="research.html" onclick=''>Research</a>
+						<!--<ul class="dropdown-menu" style="padding-top: 0px;">
+								<li><a href="#" onclick='go_IVC();'>Image/Video Compression</a></li>
+								<li><a href="#" onclick='go_SS();'>Semantic Segmentation</a></li>
+                                <li><a href="#" onclick='go_IL();'>Incremental Learning</a></li>
+                                <li><a href="#" onclick='go_drone();'>AI drone</a></li>
+							</ul>-->
+					</li><!-- data-toggle="dropdown" for click-->
+
+					<li class="dropdown"><a href="teaching.html" onclick=''>Teaching</a>
+						<!--<ul class="dropdown-menu" style="padding-top: 0px;">
+								<li><a href="#" onclick='go_lec_DLP();'>Deep Learning and Practice</a></li>
+								<li><a href="#" onclick='go_lec_MM();'>Matrix Method and Data Science</a></li>
+								<li><a href="#" onclick='go_lec_VC();'>Video Compression</a></li>
+							</ul>-->
+					</li>
+					<li class="dropdown"><a href="#">Members</a>
+						<ul class="dropdown-menu" style="padding-top: 0px;">
+							<li><a href="members.html" onclick=''>Current Members</a></li>
+							<li><a href="alumni.html" onclick=''>Alumni</a></li>
+						</ul>
+					</li>
+					<li class="dropdown"><a href="joinus.html" onclick=''>Join Us</a>
+					</li>
+					<li class="dropdown"><a href="publication.html" onclick=''>Publication</a>
+					</li>
+
+				</ul>
+
+			</div><!-- /.nav-collapse -->
+		</div><!-- /.container -->
+	</nav><!-- /.navbar -->
+	<div class="container-fluid element-container">
+		<div class="row">
+			<!--<div class="col-md-4" style="text-align:center"></div>-->
+			<div id="left_parent2">
+				<!--class="col-md-12"-->
+				<div class="left_ele ele_container">
+					<div class="intro"> 
+                        <!-- <h2>Image Gallery</h2>  -->
+                        <div id="image-gallery">
+                            <img id="current-image" src="photos/ICCV/image (1).jpeg" alt="Image 1">
+                            <div id="image-thumbs"></div>
+                        </div>
+                    </div> 
+                    <script src="js/gallery.js"></script>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- <div style="height:100px" class="footer_css">
+		<div style="position:absolute;bottom:5px;text-align:justify;white-space: pre;">
+			## <img src="figures/home_small2.gif" style="width:260px;height:90px;"></img>
+			Copyright @ National Chiao Tung University MAPL all rights reserved.
+			Telephone: +886-3-5712121 ext. 54779
+			Address: 1001 Ta-Hsueh Rd., Hsinchu, 30010, Taiwan, R.O.C. EC621, EC714 Department of Computer Science
+		</div>
+	</div> -->
+	<div style="height:100px" class="footer_left">
+		<div style="position:absolute;bottom:5px;text-align:justify;white-space: pre;">
+			Copyright @ National Yang Ming Chiao Tung University MAPL all rights reserved.
+			Telephone: +886-3-5712121 ext. 54779
+			Address: 1001 Ta-Hsueh Rd., Hsinchu, 30010, Taiwan, R.O.C. EC621, EC714 Department of Computer Science
+		</div>
+	</div>
+	<div style="height:100px" class="footer_right">
+		<div>
+			<a href="https://info.flagcounter.com/Y0ks"><img src="https://s01.flagcounter.com/count2/Y0ks/bg_F0F0F0/txt_3C3C3C/border_C9C9C9/columns_3/maxflags_9/viewers_0/labels_1/pageviews_1/flags_0/percent_0/" alt="Flag Counter" style="border:0px"></a>
+		</div>
+	</div>
+</body>
+
+</html>

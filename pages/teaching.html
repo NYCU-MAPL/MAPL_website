@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!--<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">-->
+		<!-- jquery-->
+        <title>MAPL - TEACHING</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<!-- Self-defined-->
+		<link href="css/index.css" rel="stylesheet" type="text/css">
+		<!--<script src="nav.js"></script><!--navbar-fixed-top-->
+		<script src="js/index.js"></script>
+		<script src="js/research.js"></script>
+		<script src="js/home.js"></script>
+		<script src="js/publication.js"></script>
+		<script src="js/teaching.js"></script>
+		<script src="js/member.js"></script>
+		<script type="text/javascript">
+		</script>
+		<style>
+			@media screen and (max-width: 768px) {
+				#header {
+					display:none;
+				}
+				#main{
+
+					display:block;
+
+				}
+				body {
+					background-image:none;
+				}
+				.element-container{
+					margin-top:20px;
+				}
+			}
+
+		</style>
+	</head>
+	<body>
+		<!------------------------Responsive Menu------------------>
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<div class="container">
+				<a href="../" onclick=''><img src="figures/home_black.png" style="height:15px;width:60px;"></a>
+				<a href="research.html" onclick='' style="color:white;font-size:20px">Research</a>
+				<a href="teaching.html" onclick='' style="color:white;font-size:20px">Teaching</a>
+				<a href="#col3" data-toggle="collapse" style="color:white;font-size:20px">Members</a>
+				<div id="col3" class="collapse">
+					<a href="members.html" onclick=''>Current Members</a>
+					<a href="alumni.html" onclick=''>Alumni</a>
+				</div>
+				<a href="joinus.html" onclick='' style="color:white;font-size:20px">Join Us</a>
+				<a href="publication.html" onclick='' style="color:white;font-size:20px">Publication</a>
+			</div>
+		</div>
+		<div id="main">
+		  <span class="sidebar" onclick="openNav()">&#9776;</span>
+		</div>
+		<!------------------------Responsive Menu------------------>
+		<nav id="header" class="navbar header_css fill" style="top:0px;">
+			<div id="header-container" class="container navbar-container" >
+				<div id="navbar" class="collapse navbar-collapse"  style="text-align:center;">
+					<ul class="nav_self_css nav navbar-nav">
+						<li class="dropdown">
+                            <a href="../" onclick=''>
+                                <img src="figures/home_black.png" style="height:15px;width:60px;margin-top:-8%">
+                            </a>
+						</li>
+						<li class="dropdown" ><a href="research.html" onclick=''>Research</a>
+							<!--<ul class="dropdown-menu" style="padding-top: 0px;">
+								<li><a href="#" onclick='go_IVC();'>Image/Video Compression</a></li>
+								<li><a href="#" onclick='go_SS();'>Semantic Segmentation</a></li>
+                                <li><a href="#" onclick='go_IL();'>Incremental Learning</a></li>
+                                <li><a href="#" onclick='go_drone();'>AI drone</a></li>
+							</ul>-->
+						</li><!-- data-toggle="dropdown" for click-->
+						
+						<li class="dropdown"><a  href="teaching.html" onclick=''>Teaching</a>
+							<!--<ul class="dropdown-menu" style="padding-top: 0px;">
+								<li><a href="#" onclick='go_lec_DLP();'>Deep Learning and Practice</a></li>
+								<li><a href="#" onclick='go_lec_MM();'>Matrix Method and Data Science</a></li>
+								<li><a href="#" onclick='go_lec_VC();'>Video Compression</a></li>
+							</ul>-->
+						</li> 
+						<li class="dropdown"><a  href="#">Members</a>
+							<ul class="dropdown-menu" style="padding-top: 0px;">
+								<li><a href="members.html" onclick=''>Current Members</a></li>
+								<li><a href="alumni.html" onclick=''>Alumni</a></li>
+							</ul>
+						</li>
+                        <li class="dropdown"><a href="joinus.html" onclick=''>Join Us</a>
+						</li>
+                        <li class="dropdown"><a href="publication.html" onclick=''>Publication</a>
+						</li>
+						
+					</ul>
+
+				</div><!-- /.nav-collapse -->
+			</div><!-- /.container -->
+		</nav><!-- /.navbar -->
+		<div  class="container-fluid element-container">
+      <div class="row">
+        <!--<div id="left_parent" style="text-align:center">
+		    <div class="left_ele title_style">
+		        Teaching
+		    </div>
+        </div>-->
+        <!--<div class="col-md-4" style="text-align:center"></div>-->
+        <div id="left_parent2" ><!--class="col-md-12"-->
+            <div class="left_ele ele_container">
+	            <ul>
+	                <div class="content">
+	                    <li>
+	                        <div class="topic">
+	                            <div class="title">Deep Learning and Practice (IOC5184)</div>
+	                            <a href="#" onclick="go_lec_DLP();">Course Page</a>
+	                            <ul>
+	                                <li>Summer Semester 2020</li>
+	                                <li>Spring Semester 2020</li>
+	                                <li>Summer Semester 2019</li>
+	                                <li>Spring Semester 2019</li>
+	                            </ul>
+	                        </div>
+	                    </li>
+	                </div>
+	                <div class="content">
+	                    <li>
+	                        <div class="topic">
+	                            <div class="title">Matrix Method in Data Science (IDS5009)</div>
+	                            <a href="#" onclick="go_lec_MM();">Course Page</a>
+	                            <ul>
+	                                <li>Fall Semester 2019</li>
+	                            </ul>
+	                        </div>
+	                    </li>
+	                </div>
+	                <div class="content">
+	                    <li>
+	                        <div class="topic">
+	                            <div class="title">Video Compression (ILE5242)</div>
+	                            <ul>
+	                                <li><a href="#">Fall Semester 2020</a></li>
+	                                <li><a href="./../../course/VC_2013/index.php">Spring Semester 2013</a></li>
+	                                <li><a href="./../../course/VC_2012/index.php">Spring Semester 2012</a></li>
+	                                <li><a href="./../../course/VC_2009/index.php">Spring Semester 2009</a></li>
+	                                <li><a href="./../../course/VC_2008/index.php">Spring Semester 2008</a></li>
+	                            </ul>
+	                        </div>
+	                    </li>
+	                </div>
+	                <div class="content">
+	                    <li>
+	                        <div class="topic">
+	                            <div class="title">Linear Algebra (DCP2354)</div>
+	                            <ul>
+	                                <li><a href="./../../course/LA_2017/index.php">Fall Semester 2017</a></li>
+	                                <li><a href="./../../course/LA_2016/index.php">Fall Semester 2016</a></li>
+	                                <li><a href="./../../course/LA_2013/index.php">Fall Semester 2013</a></li>
+	                                <li><a href="./../../course/LA_2012/index.php">Fall Semester 2012</a></li>
+	                                <li><a href="./../../course/LA_2010/index.php">Fall Semester 2010</a></li>
+	                                <li><a href="./../../course/LA_2008/index.php">Fall Semester 2008</a></li>
+	                            </ul>
+	                        </div>
+	                    </li>
+	                </div>
+	                <div class="content">
+	                    <li>
+	                        <div class="topic">
+	                            <div class="title">Stochastic Processes (IOC5127)</div>
+	                            <ul>
+	                                <li><a href="./../../course/SP_2017/index.php">Fall Semester 2017</a></li>
+	                                <li><a href="./../../course/SP_2014/index.php">Spring Semester 2014</a></li>
+	                                <li><a href="./../../course/SP_2012/index.php">Fall Semester 2012</a></li>
+	                                <li><a href="./../../course/SP_2009/index.php">Fall Semester 2009</a></li>
+	                            </ul>
+	                        </div>
+	                    </li>
+	                </div>
+	                <div class="content">
+	                    <li>
+	                        <div class="topic">
+	                            <div class="title">Probability Theroy (DCP3351)</div>
+	                            <ul>
+	                                <li><a href="./../../course/Pro_2014/index.php">Fall Semester 2014</a></li>
+	                                <li><a href="./../../course/Pro_2011/index.php">Spring Semester 2011</a></li>
+	                                <li><a href="./../../course/Pro_2010/index.php">Fall Semester 2010</a></li>
+	                                <li><a href="./../../course/Pro_2009/index.php">Spring Semester 2009</a></li>
+	                            </ul>
+	                        </div>
+	                    </li>
+	                </div>
+	            </ul>
+	        </div>
+        </div>
+      </div>
+    </div>
+		<!-- <div style="height:100px" class="footer_css">
+			<div style="position:absolute;bottom:5px;text-align:justify;white-space: pre;">
+				## <img src="figures/home_small2.gif" style="width:260px;height:90px;"></img>
+				Copyright @ National Chiao Tung University MAPL all rights reserved.
+				Telephone: +886-3-5712121 ext. 54779
+				Address: 1001 Ta-Hsueh Rd., Hsinchu, 30010, Taiwan, R.O.C. EC621, EC714 Department of Computer Science
+			</div>
+		</div> -->
+		<div style="height:100px" class="footer_left">
+            <div style="position:absolute;bottom:5px;text-align:justify;white-space: pre;">
+                Copyright @ National Yang Ming Chiao Tung University MAPL all rights reserved.
+                Telephone: +886-3-5712121 ext. 54779
+                Address: 1001 Ta-Hsueh Rd., Hsinchu, 30010, Taiwan, R.O.C. EC621, EC714 Department of Computer Science
+            </div>
+        </div>
+        <div style="height:100px" class="footer_right">
+            <div>
+                <a href="https://info.flagcounter.com/Y0ks"><img src="https://s01.flagcounter.com/count2/Y0ks/bg_F0F0F0/txt_3C3C3C/border_C9C9C9/columns_3/maxflags_9/viewers_0/labels_1/pageviews_1/flags_0/percent_0/" alt="Flag Counter" style="border:0px"></a>
+            </div>
+        </div>
+	</body>
+</html>

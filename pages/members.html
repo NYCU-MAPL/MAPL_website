@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<!--<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">-->
+	<!-- jquery-->
+	<title>MAPL - MEMBERS</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- Self-defined-->
+	<link href="css/index.css" rel="stylesheet" type="text/css">
+	<!--<script src="nav.js"></script><!--navbar-fixed-top-->
+	<script src="js/index.js"></script>
+	<script src="js/research.js"></script>
+	<script src="js/home.js"></script>
+	<script src="js/publication.js"></script>
+	<script src="js/teaching.js"></script>
+	<script src="js/member.js"></script>
+	<script type="text/javascript">
+	</script>
+	<style>
+		@media screen and (max-width: 768px) {
+			#header {
+				display: none;
+			}
+
+			#main {
+
+				display: block;
+
+			}
+
+			body {
+				background-image: none;
+			}
+
+			.element-container {
+				margin-top: 20px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<!------------------------Responsive Menu------------------>
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<div class="container">
+			<a href="../" onclick=''><img src="figures/home_black.png" style="height:15px;width:60px;"></a>
+			<a href="research.html" onclick='' style="color:white;font-size:20px">Research</a>
+			<a href="teaching.html" onclick='' style="color:white;font-size:20px">Teaching</a>
+			<a href="#col3" data-toggle="collapse" style="color:white;font-size:20px">Members</a>
+			<div id="col3" class="collapse">
+				<a href="members.html" onclick=''>Current Members</a>
+				<a href="alumni.html" onclick=''>Alumni</a>
+			</div>
+			<a href="joinus.html" onclick='' style="color:white;font-size:20px">Join Us</a>
+			<a href="publication.html" onclick='' style="color:white;font-size:20px">Publication</a>
+		</div>
+	</div>
+	<div id="main">
+		<span class="sidebar" onclick="openNav()">&#9776;</span>
+	</div>
+	<!------------------------Responsive Menu------------------>
+	<nav id="header" class="navbar header_css fill" style="top:0px;position: fixed;"> <!-- style="top:0px;" -->
+		<div id="header-container" class="container navbar-container">
+			<div id="navbar" class="collapse navbar-collapse" style="text-align:center;">
+				<ul class="nav_self_css nav navbar-nav">
+					<li class="dropdown">
+						<a href="../" onclick=''>
+							<img src="figures/home_black.png" style="height:15px;width:60px;margin-top:-8%">
+						</a>
+					</li>
+					<li class="dropdown"><a href="research.html" onclick=''>Research</a>
+						<!--<ul class="dropdown-menu" style="padding-top: 0px;">
+								<li><a href="#" onclick='go_IVC();'>Image/Video Compression</a></li>
+								<li><a href="#" onclick='go_SS();'>Semantic Segmentation</a></li>
+                                <li><a href="#" onclick='go_IL();'>Incremental Learning</a></li>
+                                <li><a href="#" onclick='go_drone();'>AI drone</a></li>
+							</ul>-->
+					</li><!-- data-toggle="dropdown" for click-->
+
+					<li class="dropdown"><a href="teaching.html" onclick=''>Teaching</a>
+						<!--<ul class="dropdown-menu" style="padding-top: 0px;">
+								<li><a href="#" onclick='go_lec_DLP();'>Deep Learning and Practice</a></li>
+								<li><a href="#" onclick='go_lec_MM();'>Matrix Method and Data Science</a></li>
+								<li><a href="#" onclick='go_lec_VC();'>Video Compression</a></li>
+							</ul>-->
+					</li>
+					<li class="dropdown"><a href="#">Members</a>
+						<ul class="dropdown-menu" style="padding-top: 0px;">
+							<li><a href="members.html" onclick=''>Current Members</a></li>
+							<li><a href="alumni.html" onclick=''>Alumni</a></li>
+						</ul>
+					</li>
+					<li class="dropdown"><a href="joinus.html" onclick=''>Join Us</a>
+					</li>
+					<li class="dropdown"><a href="publication.html" onclick=''>Publication</a>
+					</li>
+
+				</ul>
+
+			</div><!-- /.nav-collapse -->
+		</div><!-- /.container -->
+	</nav><!-- /.navbar -->
+	<div class="container-fluid element-container">
+		<div class="row">
+			<div id="left_parent" style="text-align:center">
+				<!--<div class="left_ele title_style">
+				Current Members
+			</div>-->
+			</div>
+			<!--<div class="col-md-4" style="text-align:center"></div>-->
+			<div id="left_parent2">
+				<!--class="col-md-12"-->
+				<div class="left_ele member_container"> <!-- <div class="left_ele member_container_6_people_wide"> <div class="left_ele member_container_7_people_wide"> <div class="left_ele ele_container"> -->
+					<div class="title">Advisor</div>
+					<table class="member_table">
+						<tbody>
+							<tr>
+								<td><img class="advisor_style" src='members/advisor.png'><img></td>
+								<td>
+									<div style="font-weight:bolder;color:blue">Prof. Wen-Hsiao Peng, NYCU CS</div>
+									<div><a href="https://www.cs.nycu.edu.tw/">Department of Computer Science, National
+										 Yang Ming Chiao Tung University</a></div>
+									<div><span style="font-weight:bolder;">Research Highlights: </span>Machine/deep
+										learning, ISO/IEC & ITU-T video coding standards</div>
+									<div><span style="font-weight:bolder;">Office: </span>Room 431, Engineering Building
+										3</div>
+									<div><img class="icon_css" src='figures/email.jpg'></img><a
+											href="mailto:wpeng@cs.nctu.edu.tw"> wpeng@cs.nctu.edu.tw</a></div>
+									<div>
+										<img class="icon_css" src='figures/web.png'></img>
+										<a href="https://sites.google.com/g2.nctu.edu.tw/wpeng">Personal Website</a> |
+										<a href="https://scholar.google.com/citations?user=HucsFB4AAAAJ&hl=en">Google
+											Scholar</a> |
+										<a
+											href="https://www.google.com/url?q=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fwen-hsiao-peng-02752b141%2F&sa=D&sntz=1&usg=AFQjCNF4fUU-UdJ0UaACYsu17FzEh1LdAA">LinkedIn</a>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="title" style="overflow-x: auto;">Visiting Researchers</div>
+					<table class="member_table" style="text-align:center;table-layout:fixed;">
+						<tbody>
+							<tr>
+								<td>
+									<img class="member_style" src='members/visitor/Ruhan.jpg'></img>
+									<div>Ruhan Conceição</div>
+									<div>Federal University<br>of Pelotas, Brasil</div>
+									<span><img class="icon_css" src='figures/email.jpg'></img></span>
+									<a href="mailto:radconceicao@inf.ufpel.edu.br">Email</a>
+									<span><img class="icon_css" src='figures/web.png'></img></span>
+									<a href="https://ruhan.com.br/">Website</a>
+								</td>
+								<td>
+									<img class="member_style" src='members/visitor/Leandro.jpg'></img>
+									<div>Leandro</div>
+									<div>Federal University<br>of Pelotas, Brasil</div>
+									<span><img class="icon_css" src='figures/email.jpg'></img></span>
+									<a href="mailto:lwtavares@inf.ufpel.edu.br">Email</a>
+									<span><img class="icon_css" src='figures/web.png'></img></span>
+									<a href="">Website</a>
+								</td>
+								<!-- <td>
+									<img class="member_style" src='members/visitor/Martin.jpg'></img>
+									<div>Martin Benjak</div>
+									<div>Leibniz Universität<br>Hannover, Germany</div>
+									<span><img class="icon_css" src='figures/email.jpg'></img></span>
+									<a href="mailto:benjak@tnt.uni-hannover.de">Email</a>
+									<span><img class="icon_css" src='figures/web.png'></img></span>
+									<a href="https://www.tnt.uni-hannover.de/en/staff/benjak/">Website</a>
+								</td> -->
+								<!-- <td>
+									<img class="member_style" src='members/visitor/Alessandro.jpg'></img>
+									<div>Alessandro Gnutti</div>
+									<div>University of Brescia,<br> Italy</div>
+									<span><img class="icon_css" src='figures/email.jpg'></img></span>
+									<a href="mailto:alessandro.gnutti@unibs.it">Email</a>
+									<span><img class="icon_css" src='figures/web.png'></img></span>
+									<a href="https://scholar.google.com/citations?user=m57EUcoAAAAJ">Website</a>
+								</td> -->
+							</tr>
+						</tbody>
+					</table>
+					<div class="title">Ph.D. Students</div>
+					<table class="member_table" style="text-align:center;">
+						<tbody>
+							<tr>
+								<td>
+									<img class="member_style" src='members/Niraj.jpg'></img>
+									<div>尼拉杰 (Niraj)</div>
+									<div>Niraj Prakash Kini</div>
+									<span><img class="icon_css" src='figures/email.jpg'></img></span>
+									<a href="mailto:nirajnctu17@gmail.com">Email</a>
+									<span><img class="icon_css" src='figures/web.png'></img></span>
+									<a href="#">Website</a>
+								</td>
+								
+								<td>
+									<img class="member_style" src='members/阮光瀧.jpg'></img>
+									<div>阮光瀧 (Sang)</div>
+									<div>Nguyen Quang Sang</div>
+									<span><img class="icon_css" src='figures/email.jpg'></img></span>
+									<a href="mailto:mailto:ngsang998@gmail.com">Email</a>
+									<span><img class="icon_css" src='figures/web.png'></img></span>
+									<a href="https://sites.google.com/view/sangnq/">Website</a>
+								</td>
+								<td>
+									<img class="member_style" src='members/馮友才.jpg'></img>
+									<div>馮友才 (Tai)</div>
+									<div>Phung Huu Tai</div>
+									<span><img class="icon_css" src='figures/email.jpg'></img></span>
+									<a href="mailto:mailto:huutaibkdn@gmail.com">Email</a>
+									<span><img class="icon_css" src='figures/web.png'></img></span>
+									<a href="https://linktr.ee/whatwedontknowyet">Website</a>
+								</td>
+								<!-- <td>
+									<img class="member_style" src='members/曾薇修.jpg'></img>
+									<div>曾薇修 (Ting)</div>
+									<div>Wei-Hsiu Tseng</div>
+									<span><img class="icon_css" src='figures/email.jpg'></img></span>
+									<a href="mailto:mailto:whtseng.cs13@nycu.edu.tw">Email</a>
+									<span><img class="icon_css" src='figures/web.png'></img></span>
+									<a href="https://www.linkedin.com/in/wei-hsiu-tseng%EF%BC%88%E6%9B%BE%E8%96%87%E4%BF%AE%EF%BC%89-8a6a74203/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">Website</a>
+								</td> -->
+							</tr>
+						</tbody>
+					</table>
+					<!-- <div class="title">Research Assistants</div>
+					<table class="member_table" style="text-align:center;">
+						<tbody>
+							<tr>
+								<td>
+									<img class="member_style" src='members/高嘉豪.jpg'></img>
+									<div>高嘉豪 (Joe)</div>
+									<div>Chia-Hao Kao</div>
+									<span><img class="icon_css" src='figures/email.jpg'></img></span>
+									<a href="mailto:marshmallowct@gmail.com">Email</a>
+									<span><img class="icon_css" src='figures/web.png'></img></span>
+									<a href="#">Website</a>
+								</td>
+							</tr>
+						</tbody>
+					</table> -->
+					<div class="title" style="overflow-x: auto;">Master's Students</div>
+					<table class="member_table" style="text-align:center;table-layout:fixed;">
+						<tbody>
+							<!-- <tr>
+								<td>
+									<img class="member_style" src='members/鍾嘉峻.jpg'></img>
+									<div>鍾嘉峻 (Ziv)</div>
+									<div>Chia-Chun Chung</div>
+									<span><img class="icon_css" src='figures/email.jpg'></img></span>
+									<a href="mailto:zhongturtle@gmail.com">Email</a>
+									<span><img class="icon_css" src='figures/web.png'></img></span>
+									<a href="https://sites.google.com/site/zhongjiajunprofile/">Website</a>
+								</td>
+								<td>
+									<img class="member_style" src='members/panga.jpg'></img>
+									<div>潘嘉達 (Panga)</div>
+									<div>Panga Dhananjaya</div>
+									<span><img class="icon_css" src='figures/email.jpg'></img></span>
+									<a href="mailto:panga.dhananjaya@gmail.com">Email</a>
+									<span><img class="icon_css" src='figures/web.png'></img></span>
+									<a href="#">Website</a>
+								</td>
+							</tr> -->
+							<tr style="white-space:nowrap;">
+								
+								
+								<td>
+									<img class="member_style" src='members/陳政瑋.jpg'></img>
+									<div>陳政瑋 (Wayne)</div>
+									<div>Cheng-Wei Chen</div>
+									<span><img class="icon_css" src='figures/email.jpg'></img></span>
+									<a href="mailto:starfish.cs11@nycu.edu.tw">Email</a>
+									<span><img class="icon_css" src='figures/web.png'></img></span>
+									<a href="#">Website</a>
+								</td>
+                            </tr>
+							<!-- <tr style="white-space:nowrap;">
+								<td>
+									<img class="member_style" src='members/蔡小融.jpg'></img>
+									<div>蔡小融 (Mick)</div>
+									<div>Shiau-Rung Tsai</div>
+									<span><img class="icon_css" src='figures/email.jpg'></img></span>
+									<a href="mailto:mick20001108@gmail.com">Email</a>
+									<span><img class="icon_css" src='figures/web.png'></img></span>
+									<a href="#">Website</a>
+								</td>
+								<td>
+									<img class="member_style" src='members/林冠勳.jpg'></img>
+									<div>林冠勳 (Toby)</div>
+									<div>Guan-Hsun Lin</div>
+									<span><img class="icon_css" src='figures/email.jpg'></img></span>
+									<a href="mailto:abc900203abc@gmail.com">Email</a>
+									<span><img class="icon_css" src='figures/web.png'></img></span>
+									<a href="#">Website</a>
+								</td>
+								
+								<td>
+									<img class="member_style" src='members/曾昱仁.jpg'></img>
+									<div>曾昱仁 (Alan)</div>
+									<div>Yu-Jen Tseng</div>
+									<span><img class="icon_css" src='figures/email.jpg'></img></span>
+									<a href="mailto:alan90817@gmail.com">Email</a>
+									<span><img class="icon_css" src='figures/web.png'></img></span>
+									<a href="#">Website</a>
+								</td>
+								<td>
+									<img class="member_style" src='members/何承原.jpeg'></img>
+									<div>何承原 (Kelvin)</div>
+									<div>Cheng-Yuan Ho</div>
+									<span><img class="icon_css" src='figures/email.jpg'></img></span>
+									<a href="mailto:kelvinhe0218@gmail.com">Email</a>
+									<span><img class="icon_css" src='figures/web.png'></img></span>
+									<a href="#">Website</a>
+								</td>
+								
+								
+							</tr> -->
+							<tr style="white-space:nowrap;">
+								<td>
+									<img class="member_style" src='members/何彥寬.jpg'></img>
+									<div>何彥寬 (Kris)</div>
+									<div>Yen-Kuan Ho</div>
+									<span><img class="icon_css" src='figures/email.jpg'></img></span>
+									<a href="mailto:axzzreety.cs13@gmail.com">Email</a>
+									<span><img class="icon_css" src='figures/web.png'></img></span>
+									<a href="#">Website</a>
+								</td>
+								<td>
+									<img class="member_style" src='members/楊賀弼.jpg'></img>
+									<div>楊賀弼 (Steven)</div>
+									<div>He-Bi Yang</div>
+									<span><img class="icon_css" src='figures/email.jpg'></img></span>
+									<a href="mailto:mrrrimge32.cs13@nycu.edu.tw">Email</a>
+									<span><img class="icon_css" src='figures/web.png'></img></span>
+									<a href="#">Website</a>
+								</td>
+								<td>
+									<img class="member_style" src='members/吳俊宏.jpg'></img>
+									<div>吳俊宏 (Michael)</div>
+									<div>Chun-Hung Wu</div>
+									<span><img class="icon_css" src='figures/email.jpg'></img></span>
+									<a href="mailto:wu891123@gmail.com">Email</a>
+									<span><img class="icon_css" src='figures/web.png'></img></span>
+									<a href="#">Website</a>
+								</td>
+								<td>
+									<img class="member_style" src='members/陳敬中.jpg'></img>
+									<div>陳敬中 (Bill)</div>
+									<div>Jing-Zhong Chen</div>
+									<span><img class="icon_css" src='figures/email.jpg'></img></span>
+									<a href="mailto:jingzhongchen.cs13@nycu.edu.tw">Email</a>
+									<span><img class="icon_css" src='figures/web.png'></img></span>
+									<a href="#">Website</a>
+								</td>
+								<td>
+									<img class="member_style" src='members/林于翔.jpg'></img>
+									<div>林于翔 (Percy)</div>
+									<div>Yu-Hsiang Lin</div>
+									<span><img class="icon_css" src='figures/email.jpg'></img></span>
+									<a href="mailto:percylin0929@gmail.com">Email</a>
+									<span><img class="icon_css" src='figures/web.png'></img></span>
+									<a href="#">Website</a>
+								</td>
+								<td>
+									<img class="member_style" src='members/鄧暐宣.jpg'></img>
+									<div>鄧暐宣 (Jason)</div>
+									<div>Wei-Syuan Teng</div>
+									<span><img class="icon_css" src='figures/email.jpg'></img></span>
+									<a href="mailto:jteng2127@gmail.com">Email</a>
+									<span><img class="icon_css" src='figures/web.png'></img></span>
+									<a href="#">Website</a>
+								</td>
+							</tr>
+                        
+							<tr style="white-space:nowrap;">
+								<td>
+									<img class="member_style" src='members/林俊良.jpg'></img>
+									<div>林俊良 (Ken)</div>
+									<div>Chun-Liang Lin</div>
+									<span><img class="icon_css" src='figures/email.jpg'></img></span>
+									<a href="mailto:lin710277nycu.cs14@nycu.edu.tw">Email</a>
+									<span><img class="icon_css" src='figures/web.png'></img></span>
+									<a href="#">Website</a>
+								</td>
+								<td>
+									<img class="member_style" src='members/楊成偉.jpg'></img>
+									<div>楊成偉 (Billy)</div>
+									<div>Cheng-Wei Yang</div>
+									<span><img class="icon_css" src='figures/email.jpg'></img></span>
+									<a href="mailto:yangchengwei920428@gmail.com">Email</a>
+									<span><img class="icon_css" src='figures/web.png'></img></span>
+									<a href="#">Website</a>
+								</td>
+								<td>
+									<img class="member_style" src='members/何銘哲.jpg'></img>
+									<div>何銘哲 (Ethan)</div>
+									<div>Ming-Zhe He</div>
+									<span><img class="icon_css" src='figures/email.jpg'></img></span>
+									<a href="mailto:ethan920508@gmail.com">Email</a>
+									<span><img class="icon_css" src='figures/web.png'></img></span>
+									<a href="#">Website</a>
+								</td>
+								<!-- <td>
+									<img class="member_style" src='members/林丰筑.jpg'></img>
+									<div>林丰筑 (Jasmine)</div>
+									<div>Feng-Chu Lin</div>
+									<span><img class="icon_css" src='figures/email.jpg'></img></span>
+									<a href="mailto:a0905373664@gmail.com">Email</a>
+									<span><img class="icon_css" src='figures/web.png'></img></span>
+									<a href="#">Website</a>
+								</td> -->
+								<td>
+									<img class="member_style" src='members/周子翔.jpg'></img>
+									<div>周子翔 (Sean)</div>
+									<div>Tzu-Hsiang Chou</div>
+									<span><img class="icon_css" src='figures/email.jpg'></img></span>
+									<a href="mailto: sean1352468@gmail.com">Email</a>
+									<span><img class="icon_css" src='figures/web.png'></img></span>
+									<a href="#">Website</a>
+								</td>
+							</tr>
+
+							<tr style="white-space:nowrap;">
+								<td>
+									<img class="member_style" src='members/Dhivya.jpg'></img>
+									<div>媞芙雅 (Dhivya)</div>
+									<div>Dhivya Dharsini</div>
+									<span><img class="icon_css" src='figures/email.jpg'></img></span>
+									<a href="mailto:dhivya212003@gmail.com">Email</a>
+									<span><img class="icon_css" src='figures/web.png'></img></span>
+									<a href="#">Website</a>
+								</td>
+								<td>
+									<img class="member_style" src='members/朱心慈.jpg'></img>
+									<div>朱心慈 (Anna)</div>
+									<div>Shin-Tzu Chu</div>
+									<span><img class="icon_css" src='figures/email.jpg'></img></span>
+									<a href="mailto:shintzu.cs14@nycu.edu.tw">Email</a>
+									<span><img class="icon_css" src='figures/web.png'></img></span>
+									<a href="#">Website</a>
+								</td>									
+                        </tbody>
+                    </table>
+					<div class="title">Undergraduate Students</div>
+					<table class="member_table" style="text-align:center;">
+						<tbody>
+							<tr>
+								<td>
+									<img class="member_style" src='members/李昀祐.jpg'></img>
+									<div>李昀祐 (Rae)</div>
+									<div>Yun-Yu Lee</div>
+									<span><img class="icon_css" src='figures/email.jpg'></img></span>
+									<a href="mailto:#">Email</a>
+									<span><img class="icon_css" src='figures/web.png'></img></span>
+									<a href="#">Website</a>
+								</td>
+								<td>
+									<img class="member_style" src='members/徐凡懿.jpg'></img>
+									<div>徐凡懿 (Faye)</div>
+									<div>Fan-Yi Hsu</div>
+									<span><img class="icon_css" src='figures/email.jpg'></img></span>
+									<a href="mailto:#">Email</a>
+									<span><img class="icon_css" src='figures/web.png'></img></span>
+									<a href="#">Website</a>
+								</td>
+								<!-- <td>
+									<img class="member_style" src='members/楊賀弼.jpg'></img>
+									<div>楊賀弼</div>
+									<div>He-Bi Yang</div>
+									<span><img class="icon_css" src='figures/email.jpg'></img></span>
+									<a href="mailto:mrrrimge32.cs09@nycu.edu.tw">Email</a>
+									<span><img class="icon_css" src='figures/web.png'></img></span>
+									<a href="#">Website</a>
+								</td>
+								<td>
+									<img class="member_style" src='members/楊傑宇.jpeg'></img>
+									<div>楊傑宇</div>
+									<div>Chieh-Yu Yang</div>
+									<span><img class="icon_css" src='figures/email.jpg'></img></span>
+									<a href="mailto:jerrychild999922@gmail.com">Email</a>
+									<span><img class="icon_css" src='figures/web.png'></img></span>
+									<a href="#">Website</a>
+								</td>
+								<td>
+									<img class="member_style" src='members/何彥寬.jpg'></img>
+									<div>何彥寬</div>
+									<div>Yen-Kuan He</div>
+									<span><img class="icon_css" src='figures/email.jpg'></img></span>
+									<a href="mailto:axzzreety1800@gmail.com">Email</a>
+									<span><img class="icon_css" src='figures/web.png'></img></span>
+									<a href="#">Website</a>
+								</td>
+								<td>
+									<img class="member_style" src='members/徐聖哲.jpg'></img>
+									<div>徐聖哲</div>
+									<div>Hsu-Sheng Che</div>
+									<span><img class="icon_css" src='figures/email.jpg'></img></span>
+									<a href="mailto:rickydanzel@gmail.com">Email</a>
+									<span><img class="icon_css" src='figures/web.png'></img></span>
+									<a href="#">Website</a>
+								</td>
+								<td>
+									<img class="member_style" src='members/楊璨聰.jpg'></img>
+									<div>楊璨聰</div>
+									<div>Tsan-Tsung Yang</div>
+									<span><img class="icon_css" src='figures/email.jpg'></img></span>
+									<a href="mailto:alex3205ya.c@nycu.edu.tw">Email</a>
+									<span><img class="icon_css" src='figures/web.png'></img></span>
+									<a href="#">Website</a>
+								</td>
+                            </tr>
+							<tr>
+								<td>
+									<img class="member_style" src='members/黃淯莊.jpg'></img>
+									<div>黃淯莊</div>
+									<div>Yu-Zhuang Huang</div>
+									<span><img class="icon_css" src='figures/email.jpg'></img></span>
+									<a href="mailto:yj510429@gmail.com">Email</a>
+									<span><img class="icon_css" src='figures/web.png'></img></span>
+									<a href="#">Website</a>
+								</td>
+								<td>
+									<img class="member_style" src='members/李驊恩.jpeg'></img>
+									<div>李驊恩</div>
+									<div>Hua-En Lee</div>
+									<span><img class="icon_css" src='figures/email.jpg'></img></span>
+									<a href="mailto:enen1015@gmail.com">Email</a>
+									<span><img class="icon_css" src='figures/web.png'></img></span>
+									<a href="#">Website</a>
+								</td> -->
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- <div style="height:100px" class="footer_css">
+		<div style="position:absolute;bottom:5px;text-align:justify;white-space: pre;">
+			## <img src="figures/home_small2.gif" style="width:260px;height:90px;"></img>
+			Copyright @ National Chiao Tung University MAPL all rights reserved.
+			Telephone: +886-3-5712121 ext. 54779
+			Address: 1001 Ta-Hsueh Rd., Hsinchu, 30010, Taiwan, R.O.C. EC621, EC714 Department of Computer Science
+		</div>
+	</div> -->
+	<div style="height:100px" class="footer_left">
+		<div style="position:absolute;bottom:5px;text-align:justify;white-space: pre;">
+			<!--<img src="figures/home_small2.gif" style="width:260px;height:90px;"></img>-->
+			Copyright @ National Yang Ming Chiao Tung University MAPL all rights reserved.
+			Telephone: +886-3-5712121 ext. 54779
+			Address: 1001 Ta-Hsueh Rd., Hsinchu, 30010, Taiwan, R.O.C. EC621, EC714 Department of Computer Science
+		</div>
+	</div>
+	<div style="height:100px" class="footer_right">
+		<div>
+			<a href="https://info.flagcounter.com/Y0ks"><img src="https://s01.flagcounter.com/count2/Y0ks/bg_F0F0F0/txt_3C3C3C/border_C9C9C9/columns_3/maxflags_9/viewers_0/labels_1/pageviews_1/flags_0/percent_0/" alt="Flag Counter" style="border:0px"></a>
+		</div>
+	</div>
+</body>
+
+</html>

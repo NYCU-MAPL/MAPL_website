@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">    
+	<!--<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">-->
+	<!-- jquery-->
+    <title>MAPL - NYCU CS</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- Self-defined-->
+	<link href="pages/css/index.css" rel="stylesheet" type="text/css">
+	<!--<script src="nav.js"></script><!--navbar-fixed-top-->
+	<script src="pages/js/index.js"></script>
+	<script src="pages/js/research.js"></script>
+	<script src="pages/js/home.js"></script>
+	<script src="pages/js/publication.js"></script>
+	<script src="pages/js/teaching.js"></script>
+	<script src="pages/js/member.js"></script>
+	<script type="text/javascript">
+	</script>
+	<style>
+		@media screen and (max-width: 768px) {
+			#header {
+				display: none;
+			}
+
+			#main {
+
+				display: block;
+
+			}
+
+			body {
+				background-image: none;
+			}
+
+			.element-container {
+				margin-top: 20px;
+			}
+            .modal-content {
+                width: 100%;
+            }
+		}
+        #myImg {
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+        }
+
+        #myImg:hover {opacity: 0.7;}
+
+        /* The Modal (background) */
+        .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+        }
+
+        /* Modal Content (image) */
+        .modal-content {
+        margin: auto;
+        display: block;
+        width: auto;
+        max-height: 480px;
+        max-width: 700px;
+        }
+
+        /* Add Animation */
+        .modal-content {  
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+        }
+
+        @-webkit-keyframes zoom {
+        from {-webkit-transform:scale(0)} 
+        to {-webkit-transform:scale(1)}
+        }
+
+        @keyframes zoom {
+        from {transform:scale(0)} 
+        to {transform:scale(1)}
+        }
+
+        /* The Close Button */
+        .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+        }
+
+        .close:hover,
+        .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+        }
+	</style>
+</head>
+<script>
+    function show(id){
+        modal = document.getElementById("myModal");
+        modalImg = document.getElementById("img01");
+        modal.style.display = "block";
+        modalImg.src = href="./pages/photos/ICCV/image ("+id+").jpeg";
+    }
+    function hide(){
+        modal = document.getElementById("myModal");
+        modal.style.display = "none";
+    }
+</script>
+<script>
+    function showimg(folder, id){
+        modal = document.getElementById("myModal");
+        modalImg = document.getElementById("img01");
+        modal.style.display = "block";
+        modalImg.src = href="./pages/photos/"+folder+"/image_"+id+".jpg";
+    }
+    function hide(){
+        modal = document.getElementById("myModal");
+        modal.style.display = "none";
+    }
+</script>
+
+<body>
+	<!------------------------Responsive Menu------------------>
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<div class="container">
+			<a href="../" onclick=''><img src="pages/figures/home_black.png" style="height:15px;width:60px;"></a>
+			<a href="pages/research.html" onclick='' style="color:white;font-size:20px">Research</a>
+			<a href="pages/teaching.html" onclick='' style="color:white;font-size:20px">Teaching</a>
+			<a href="#col3" data-toggle="collapse" style="color:white;font-size:20px">Members</a>
+			<div id="col3" class="collapse">
+				<a href="pages/members.html" onclick=''>Current Members</a>
+				<a href="pages/alumni.html" onclick=''>Alumni</a>
+			</div>
+			<a href="pages/joinus.html" onclick='' style="color:white;font-size:20px">Join Us</a>
+			<a href="pages/publication.html" onclick='' style="color:white;font-size:20px">Publication</a>
+		</div>
+	</div>
+	<div id="main">
+		<span class="sidebar" onclick="openNav()">&#9776;</span>
+	</div>
+	<!------------------------Responsive Menu------------------>
+	<nav id="header" class="navbar header_css fill" style="top:0px;">
+		<div id="header-container" class="container navbar-container">
+			<div id="navbar" class="collapse navbar-collapse" style="text-align:center;">
+				<ul class="nav_self_css nav navbar-nav">
+					<li class="dropdown">
+						<a href="./" onclick=''>
+							<img src="pages/figures/home_black.png" style="height:15px;width:60px;margin-top:-8%">
+						</a>
+					</li>
+					<li class="dropdown"><a href="pages/research.html" onclick=''>Research</a>
+						<!--<ul class="dropdown-menu" style="padding-top: 0px;">
+								<li><a href="#" onclick='go_IVC();'>Image/Video Compression</a></li>
+								<li><a href="#" onclick='go_SS();'>Semantic Segmentation</a></li>
+                                <li><a href="#" onclick='go_IL();'>Incremental Learning</a></li>
+                                <li><a href="#" onclick='go_drone();'>AI drone</a></li>
+							</ul>-->
+					</li><!-- data-toggle="dropdown" for click-->
+
+					<li class="dropdown"><a href="pages/teaching.html" onclick=''>Teaching</a>
+						<!--<ul class="dropdown-menu" style="padding-top: 0px;">
+								<li><a href="#" onclick='go_lec_DLP();'>Deep Learning and Practice</a></li>
+								<li><a href="#" onclick='go_lec_MM();'>Matrix Method and Data Science</a></li>
+								<li><a href="#" onclick='go_lec_VC();'>Video Compression</a></li>
+							</ul>-->
+					</li>
+					<li class="dropdown"><a href="#">Members</a>
+						<ul class="dropdown-menu" style="padding-top: 0px;">
+							<li><a href="pages/members.html" onclick=''>Current Members</a></li>
+							<li><a href="pages/alumni.html" onclick=''>Alumni</a></li>
+						</ul>
+					</li>
+					<li class="dropdown"><a href="pages/joinus.html" onclick=''>Join Us</a>
+					</li>
+					<li class="dropdown"><a href="pages/publication.html" onclick=''>Publication</a>
+					</li>
+
+				</ul>
+
+			</div><!-- /.nav-collapse -->
+		</div><!-- /.container -->
+	</nav><!-- /.navbar -->
+    <div id="myModal" class="modal">
+        <span class="close" style="padding-top: 50px;" onclick="hide()">&times;</span>
+        <img class="modal-content" id="img01" onclick="hide()">
+    </div>
+	<div class="container-fluid element-container">
+		<div class="row">
+			<div id="left_parent" style="text-align:center">
+				<div class="left_ele ele_container">
+					<div class="topic">
+						<div
+							style="text-align:center; color: brown; font-family: 'Raleway',sans-serif; font-size: 26px; font-weight: 800;">
+							Multimedia Architecture and Processing Laboratory</div>
+					</div>
+					<!--<img src="pages/photos/pic1.jpg" style="height:230px;width:430px;float: right;"></img>-->
+					<!--<img src="pages/photos/pic1.jpg" style="height:500px;width:900px;"></img>-->
+
+					<!--<div class="home_content">
+                            We are developing real-word applications related to computer vision and data compression by using deep learning techniques.
+                            We specifically focus on the topics like image/video compression, semantic segmentation, incremental learning, and video super-resolution.
+                       </div>-->
+				</div>
+				<div class="left_ele home_image">
+				</div>
+			</div>
+			<!--<div class="col-md-4" style="text-align:center"></div>-->
+			<div id="left_parent2">
+				<!--class="col-md-12"-->
+				<div class="ele_container left_ele">
+					<div class="topic" style="margin-top:5%">
+						<span class="title">News & Events</span>
+					</div>
+						
+					<div class="content"><span class="date">May 2026</span>
+						The APSIPA Taipei Local Chapter and H & J Global Chair Program hosted a Workshop on Emerging and Immersive Visual Media: Hardware, Compression, and 3D/4D Representation organized by Prof. Wen-Hsiao Peng, featuring talks that address spatial-temporal multi-modal Gaussian splatting, hardware design for video coding, post-training quantization for overfitted image compression, and neural coding for efficient 3D/4D multimedia representations.
+						(<a href="https://sites.google.com/view/apsipataiwan/news-events?authuser=3" target="_blank">Link</a>)
+					</div>
+
+					<div class="content"><span class="date">May 2026</span>
+						Congratulations to H.-B. Yang, M.-Z. He, C.-W. Yang, J.-C. Chiang, Y.-L. Liu, and W.-H. Peng on having one ICIP 2026 paper "IC-4DGS: Illumination-Compensated 4D Gaussian Splatting under Photometric Variations" accepted for publication.
+					</div>
+
+					<div class="content"><span class="date">May 2026</span>
+						Congratulations to H.-T. Phung, Y.-H. Lin, C.-H. Wu, R. Conceição, T.-H. Chou, M. Porto, L. V. Agostini, and W.-H. Peng on having one ICIP 2026 paper "Network Quantization in Neural Video Coding: A Comparative Study Across Coding Frameworks and Temporal Buffering Strategies" accepted for publication.
+					</div>
+
+					<div class="content"><span class="date">May 2026</span>
+						Congratulations to Y.-K. Ho, F.-C. Lin, T.-H. Lin, H.-T. Phung, C.-C. Huang, A. Gnutti, and W.-H. Peng on having one ICIP 2026 paper "ADAPT: Any-Codec Diffusion-Based Adaptation for Per-Image Perception-Distortion Trade-Off" accepted for publication.
+					</div>
+
+					<div class="content"><span class="date">May 2026</span>
+						Congratulations to R. L. de Queiroz, D. C. Garcia, Y.-H. Chen, R. Conceição, W.-H. Peng, and L. V. Agostini on having one ICIP 2026 paper "Rate-Distortion-Complexity Analysis of Parametric Video Codecs" accepted for publication.
+					</div>
+
+					<div class="content"><span class="date">April 2026</span>
+						Congratulations to C.-H. Kao, A. Gnutti, W.-H. Peng and R. Leonardi on having one TMM 2026 paper "LiDAR-Guided Learned Image Compression for Machine Vision" accepted for publication.
+					</div>
+
+					<div class="content"><span class="date">January 2026</span> 
+						我們正在招募積極、有熱忱的學生加入我們的實驗室！
+						<strong>這份 <a href="https://drive.google.com/file/d/1aX_9aQJZOITeNPXm16asW55b6iU9puiK/view?usp=sharing">PDF</a> 是關於實驗室的簡介。</strong>
+						如需面談或是了解更多實驗室資訊，請聯絡 Billy (<a href="mailto:yangchengwei920428@gmail.com">Email</a>)。
+						若想了解更多關於彭文孝教授(<a href="mailto:wpeng@cs.nctu.edu.tw">Email</a>)的資訊，請參閱他的<a href="https://sites.google.com/g2.nctu.edu.tw/wpeng/cv">個人網頁</a>。
+						
+						We are recruiting highly self-motivated students to <a href="./pages/joinus.html">join our lab</a>! 
+						<strong>This <a href="https://drive.google.com/file/d/1aX_9aQJZOITeNPXm16asW55b6iU9puiK/view?usp=sharing">PDF</a> 
+						is a brief introduction about our lab.</strong> Please contact Billy (<a
+						href="mailto:yangchengwei920428@gmail.com">Email</a>) for further details or interview! 
+						For more information about Prof.
+						Wen-Hsiao Peng (<a href="mailto:wpeng@cs.nctu.edu.tw">Email</a>), please check out his personal webpage
+							<a href="https://sites.google.com/g2.nctu.edu.tw/wpeng/cv"> here</a>.
+							
+					</div>
+					
+					<div class="content"><span class="date">January 2026</span>
+						Congratulations to Yi-Hsin Chen on winning the 2025 Best PhD Dissertation Award from the IEEE Taipei Section for the dissertation "Contextual Image and Video Coding: Coding Frameworks, Temporal Buffering Strategies, and Applications."
+						(<a href="https://ieee.org.tw/🎉賀榜🎉-2025-年-ieee-taipei-section-碩博士論文獎-獲獎公告/" target="_blank">Link</a>)
+					</div>
+					
+					<div class="content"><span class="date">November 2025</span>
+						Congratulations to C.-Y. Ho, H.-B. Yang, J.-C. Chiang, Y.-L. Liu, and W.-H. Peng on having one WACV 2026 paper "TED-4DGS: Temporally Activated and Embedding-based Deformation for 4DGS Compression" accepted for publication.
+					</div>
+					<div class="content"><span class="date">November 2025</span>
+						Congratulations to Y.-J. Tseng, C.-H. Kao, J.-Z. Chen, A. Gnutti, S.-Y. Lo, Y.-Y. Lin, and W.-H. Peng on having one WACV 2026 paper "CSGaussian: Progressive Rate-Distortion Compression and Segmentation for 3D Gaussian Splatting" accepted for publication.
+					</div>
+					<div class="content"><span class="date">November 2025</span>
+						Congratulations to N. P. Kini, S.-R. Tsai, G.-H. Lin, W.-H. Peng, C.-W. Ma, and J.-N. Hwang on having one WACV 2026 paper "milliMamba: Specular-Aware Human Pose Estimation via Dual mmWave Radar with Multi-Frame Mamba Fusion" accepted for publication.
+					</div>
+					<div class="content"><span class="date">November 2025</span>
+						Congratulations to K.-H. Hsieh, M. Yim, W.-H. Peng, and J.-C. Chiang on having one WACV 2026 paper "MEGA-PCC: A Mamba-based Efficient Approach for Joint Geometry and Attribute Point Cloud Compression" accepted for publication.
+					</div>
+					
+					
+					<div class="content"><span class="date">September 2025</span>
+						Congratulations to Yi-Hsin Chen on winning the Excellence Award (Doctoral Division) at the 18th TSC Thesis Award: Al Application Competition Award (崇越論文大賞) for the paper "Learning-Based Contextual Video Coding: Coding Frameworks and Temporal Buffering Strategies" 
+						(<a href="https://www.cs.nycu.edu.tw/announcements/detail/13215" target="_blank">Link</a>)
+					</div>
+					<div class="content"><span class="date">September 2025</span>
+						Prof. Wen Hsiao Peng gave a tutorial on “End-to-End Learned Image and Video Coding: Recent Advances and the Rate-Distortion-Complexity Trade-offs” at The European Signal Processing Conference (EUSIPCO), Italy, Sep. '8.
+						(<a href="https://eusipco2025.org/tutorials/#tutorial-6" target="_blank">Link</a>)
+					</div>
+					<div class="content"><span class="date">August 2025</span>
+						Congratulations to Yi-Hsin Chen on receiving the PhD Dissertation Award from the Chinese Image Processing and Pattern Recognition Society at the 18th for the paper "Contextual Image and Video Coding: Coding Frameworks, Temporal Buffering Strategies, and Applications."
+						(<a href="https://ippr.org.tw/wp-content/uploads/2025/08/%E7%AC%AC18%E5%B1%86%E5%8D%9A%E7%A2%A9%E5%A3%AB%E8%AB%96%E6%96%87%E7%8D%8E%E7%8D%B2%E7%8D%8E%E5%90%8D%E5%96%AE.pdf" target="_blank">Link</a>)
+					</div>
+					<div class="content"><span class="date">August 2025</span>
+						Congratulations to A. Gnutti, C.-H. Kao, W.-H. Peng, and R. Leonardi on having one PCS 2025 paper "Rate Distortion Learned Transform For Image Compression" accepted for publication.
+					</div>
+					<div class="content"><span class="date">August 2025</span>
+						Congratulations to M. Benjak, Y.-H. Chen, W.-H. Peng, and J. Ostermann on having one PCS 2025 paper "Scalable COOL-CHIC: Dual-Resolution Images from a Single Bitstream" accepted for publication.
+					</div>
+					<div class="content"><span class="date">August 2025</span>
+						Congratulations to H.-T. Phung, Y.-H. Lin, Y.-K. Ho, and W.-H. Peng on having one PCS 2025 paper "Exploring Autoregressive Vision Foundation Models for Image Compression" accepted for publication.
+					</div>
+					<div class="content"><span class="date">August 2025</span>
+						Congratulations to K.-W. Ho, Y.-H. Chen, M. Benjak, J. Ostermann, and W.-H. Peng on having one PCS 2025 paper "A Cross-Framework Study of Temporal Information Buffering Strategies for Learned Video Compression" accepted for publication.
+					</div>
+					<div class="content"><span class="date">August 2025</span>
+						Congratulations to S. NguyenQuang, C.-W. Chen, X. HoangVan, and W.-H. Peng on having one APSIPA ASC 2025 paper "A Rate-Quality Model for Learned Video Coding" accepted for publication.
+					</div>
+					<div class="content"><span class="date">July 2025</span>
+						Congratulations to M. Benjak, S. Khan, Y.-H. Chen, W.-H. Peng, and J. Ostermann on having one ICIP 2025 paper "Learned Hybrid Video Coding for Human Perception and Multiple Machine Vision Tasks" accepted for publication.
+					</div>
+					<div class="content"><span class="date">June 2025</span>
+						Congratulations to Y.-H. Chen, Y.-C. Yao, K.-W. Ho, C.-H. Wu, H.-T. Phung, M. Benjak, J. Ostermann, and W.-H. Peng on having one ICCV 2025 paper "HyTIP: Hybrid Temporal Information Propagation for Masked Conditional Residual Video Coding" accepted for publication.
+					</div>
+					<div class="content"><span class="date">June 2025</span>
+						Congratulations to H.-T. Phung*, Z.-L. Gao*, Y.-C. Yao, K.-W. Ho, Y.-H. Chen, Y.-H. Lin, A. Gnutti, and W.-H. Peng on having one ICCV 2025 paper "MH-LVC: Multi-Hypothesis Temporal Prediction for Learned Conditional Residual Video Coding" accepted for publication. 
+					</div>
+					<div class="content"><span class="date">June 2025</span>
+						The APSIPA Taiwan and H&J Global Chair hosted an Invited Talk on <strong>Cosmos World Foundation Models for Physical AI</strong> by <strong>Dr. Ming-Yu Liu</strong>, featuring models that help intelligent agents simulate and reason about the physical world.
+						(Pics:
+						<a class="myImg" href="javascript:void(0)" onclick="showimg('APSIPA_MingYuLiu', 1)">1</a>,
+						<a class="myImg" href="javascript:void(0)" onclick="showimg('APSIPA_MingYuLiu', 2)">2</a>,
+						<a class="myImg" href="javascript:void(0)" onclick="showimg('APSIPA_MingYuLiu', 3)">3</a>)
+					</div>
+					<div class="content"><span class="date">June 2025</span>
+						Congratulations to Prof. Wen-Hsiao Peng on receiving the 2025 <strong>Best Paper Award</strong> in the Information and Communication Technology category from the Far Eastern Y. Z. Hsu Foundation(有庠科技論文獎)— one of the most prestigious paper awards conferred on experts in Taiwan
+						 (<a href="https://yzhsu.feg.com.tw/NewsPage.html?selectID=d8a4f6da-aac0-49ab-aebd-778c26ef6d6a" target="_blank">Link</a>)
+						
+					</div>
+					<div class="content"><span class="date">June 2025</span>
+						The APSIPA Taiwan hosted a DL Talk on <strong>Conditional Information-Aware Neural Image and Video Coding</strong>, delivered by <strong>Dr. Ying Liu</strong>, an APSIPA Distinguished Lecturer and was hosted by Prof. Wen-Hsiao Peng. The talk offered key insights into the background and theoretical basis of conditional coding, and extend to hybrid machine-human tasks and multimodal visual coding. 
+						Visit <a href="https://sites.google.com/view/apsipataiwan/news-events" target="_blank">APSIPA Website</a> for more information 
+						(Pics:
+						<a class="myImg" href="javascript:void(0)" onclick="showimg('APSIPA_YingLiu', 1)">1</a>,
+						<a class="myImg" href="javascript:void(0)" onclick="showimg('APSIPA_YingLiu', 2)">2</a>)
+					</div>
+					<div class="content"><span class="date">June 2025</span>
+						Prof. Wen-Hsiao Peng visited the University of Bristol, engaging in academic discussions and delivering a lecture on "On the Rate-Distortion-Complexity (RDC) Trade-offs of Neural Video Coding" His visit strengthened ties between the University of Bristol and NYCU, promoting collaboration in neural video coding research.						
+						(Pics: 
+						<a class="myImg" href="javascript:void(0)" onclick="showimg('Visit_Bristrol', 1)">1</a>,
+						<a class="myImg" href="javascript:void(0)" onclick="showimg('Visit_Bristrol', 2)">2</a>)
+
+						<!-- <a class="myImg" href="javascript:void(0)" onclick="showimg('LASCAS2025', 5)">5</a>,
+						<a class="myImg" href="javascript:void(0)" onclick="showimg('LASCAS2025', 6)">6</a>) -->
+
+					</div>
+					
+					<div class="content"><span class="date">May 2025</span>
+						Congratulations to Y.-T. Zhan, H.-B. Yang, C.-Y. Ho, J.-C. Chiang, and W.-H. Peng on having one EUSIPCO 2025 paper "CAT-3DGS Pro: A New Benchmark for Efficient 3DGS Compression" accepted for publication.					
+					</div>
+					<div class="content"><span class="date">May 2025</span>
+						Visit the <strong> APSIPA Taiwan Local Chapter </strong> website to explore academic events, research activities, and regional collaborations in signal and information processing. 
+						<a href="https://sites.google.com/view/apsipataiwan/home" target="_blank">Visit Website</a>.
+					</div>
+					<div class="content"><span class="date">March 2025</span>
+						Congratulations to Y.-H. Chen, K.-W. Ho, M. Benjak, J. Ostermann, and W.-H. Peng having one ICME 2025 paper "Conditional Residual Coding with Explicit-Implicit Temporal Buffering for Learned Video Compression" accepted for publication.
+					</div>
+					
+					<div class="content"><span class="date">March 2025</span> We are recruiting highly self-motivated
+						students to <a href="./pages/joinus.html">join our lab</a>! Please contact Kris (<a
+							href="mailto:axzzreety.cs13@nycu.edu.tw">Email</a>) for further details! 
+							<strong>This <a href="./pages/research/MAPL_Intro/MAPL_2025.pdf">PDF</a> 
+                            is a brief introduction about our research.</strong> For more information about Prof.
+							Wen-Hsiao Peng (<a
+							href="mailto:wpeng@cs.nctu.edu.tw">Email</a>), please check out his personal webpage
+								<a href="https://sites.google.com/g2.nctu.edu.tw/wpeng/cv"> here</a>.
+					</div>
+					<div class="content"><span class="date">Feburary 2025</span>
+						Prof. Wen-Hsiao Peng visited the IEEE Student Branch at Federal University of Pelotas (UFPel), delivering a lecture on "Rate-Distortion-Complexity Trade-offs of Neural Video Coding." This insightful exchange further strengthened the ties between UFPel and NYCU, fostering collaboration in advanced neural video coding research.
+						<a href="https://www.linkedin.com/posts/video-technology-research-group_vitech-vitechlab-international-activity-7299804387126697984-84fr?utm_source=share&utm_medium=member_desktop&rcm=ACoAADCG66MBZDgDzP-T8qu3pxYvxnU5saPW2XE"> Link1</a>
+						<a href="https://www.linkedin.com/posts/vit%C3%B3ria-fabricio-418a432b3_yesterday-i-had-the-pleasure-of-meeting-activity-7299134948525907968-rxXd?utm_source=share&utm_medium=member_desktop&rcm=ACoAADCG66MBZDgDzP-T8qu3pxYvxnU5saPW2XE"> Link2</a>
+						(Pics: 
+						<a class="myImg" href="javascript:void(0)" onclick="showimg('LASCAS2025', 1)">1</a>,
+						<a class="myImg" href="javascript:void(0)" onclick="showimg('LASCAS2025', 2)">2</a>,
+						<a class="myImg" href="javascript:void(0)" onclick="showimg('LASCAS2025', 3)">3</a>,
+						<a class="myImg" href="javascript:void(0)" onclick="showimg('LASCAS2025', 4)">4</a>)
+						<!-- <a class="myImg" href="javascript:void(0)" onclick="showimg('LASCAS2025', 5)">5</a>,
+						<a class="myImg" href="javascript:void(0)" onclick="showimg('LASCAS2025', 6)">6</a>) -->
+
+					</div>
+					
+
+					<div class="content"><span class="date">Janurary 2025</span>
+						Congratulations to Y.-T. Zhan*, C.-Y. Ho*, H.-B. Yang, Y.-H. Chen, J.-C. Chiang, Y.-L. Liu, and W.-H. Peng on having one ICLR 2025 paper "CAT-3DGS: A
+						Context-Adaptive Triplane Approach to Rate-Distortion-Optimized 3DGS Compression" accepted for publication.
+					</div>
+					
+					<div class="content"><span class="date">Janurary 2025</span>
+						Congratulations to C.-H. Kao, C. Chien, Y.-J. Tseng, Y.-H. Chen, A. Gnutti, S.-Y. Lo, W.-H. Peng, and R. Leonardi on having one ICLR 2025 paper "Bridging Compressed Image Latents and Multimodal Large Language Models" accepted for publication.
+					</div>
+
+					<!-- <div class="content"><span class="date">Janurary 2025</span>
+						Congratulations to H.-C. Hsueh, W.-H. Peng, and C.-C. Huang on having one ICLR 2025 paper "Warm Diffusion: Recipe for Blur-Noise Mixture Diffusion Models" accepted for publication.
+					</div> -->
+
+					<div class="content"><span class="date">Janurary 2025</span>
+						Congratulations to R. Conceição, M. Porto, W.-H. Peng, and L. Agostini on having one ISCAS 2025 paper "Cross-Platform Neural Video Coding: A Case Study" accepted for publication.
+					</div>
+					
+					<div class="content"><span class="date">Janurary 2025</span>
+						Congratulations to Z.-L. Gao, Y.-C. Yao, K.-W. Ho, Y.-H. Chen, and W.-H. Peng on having one ISCAS 2025 paper "MaskCRT-B: Masked Conditional Residual Transformer for Learned B-frame Coding" accepted for publication.
+					</div>
+					
+					<div class="content"><span class="date">December 2024</span>
+                        Prof. Wen-Hsiao Peng was elevated to <a href="https://ieee-cas.org/post/announcement/congratulations-2025-cas-society-class-ieee-fellows"> <strong>IEEE Fellow</strong></a> of Class 2025 for contributions to the design and implementation of video coding algorithms and standards. 
+					</div>
+
+					<div class="content"><span class="date">November 2024</span> We are recruiting highly self-motivated
+						students to <a href="./pages/joinus.html">join our lab</a>! Please contact Mick (<a
+							href="mailto:mick20001108.cs12@nycu.edu.tw">Email</a>) for further details! 
+							This <a href="./pages/research/MAPL_Intro/MAPL_2024_Mick.pdf">PDF</a> 
+                            is a brief introduction about our research. For more information about Prof.
+							Wen-Hsiao Peng (<a
+							href="mailto:wpeng@cs.nctu.edu.tw">Email</a>), please check out his personal webpage
+								<a href="https://sites.google.com/g2.nctu.edu.tw/wpeng/cv"> here</a>.
+					</div>
+					
+					<div class="content"><span class="date">October 2024</span>
+                        Picture Coding Symposium 2025 is calling for papers (<a
+                        href="./pages/research/PCS2025_CfP_f.pdf" target="_blank">PDF</a>). 
+                        Visit the conference website for more details: 
+                        <a href="https://2025.picturecodingsymposium.org/">here</a> 
+					</div>
+
+					<div class="content"><span class="date">October 2024</span>
+						Congratulations to S. NguyenQuang, Z.-L. Gao, K.-W. Ho, X. HoangVan and W.-H. Peng on having one LASCAS 2025 paper "Fast-OMRA: Fast Online Motion Resolution Adaptation for Neural B-Frame Coding" accepted for publication.
+					</div>
+
+					<!-- <div class="content"><span class="date">August 2024</span>
+						[Invited Talk] H&J Global Chair<br>
+						<b>Time</b>: 8/5 (Monday) 13:30 - 17:15<br>
+						<b>Topic</b>: Learning to Understand Our Multimodal World<br>
+						<b>Speaker</b>: Prof. Yong Jae Lee (University of Wisconsin-Madison, USA)<br>
+						<b>Topic</b>: Controllable Visual Imagination<br>
+						<b>Speaker</b>: Prof. Jia-Bin Huang (University of Maryland, USA)<br><br>
+						<b>Time</b>: 8/6 (Tuesday) 13:45 - 17:15<br>
+						<b>Topic</b>: Generating Images and Detecting Them<br>
+						<b>Speaker</b>: Prof. Yong Jae Lee (University of Wisconsin-Madison, USA)<br>
+						<b>Topic</b>: Dynamic 3D Reconstruction in the Wild<br>
+						<b>Speaker</b>: Prof. Jia-Bin Huang (University of Maryland, USA)<br><br>
+						<b>Venue</b>: National Yang Ming Chiao Tung University, Room EC114<br>
+						<b>Information</b>: <a href="./pages/research/華仁全球講座20240805.jpg">More..</a>
+					</div> -->
+					
+					<div class="content"><span class="date">August 2024</span>
+						[Invited Talk] H&J Global Chair<br>
+						
+						<b>Topic</b>: (1) Learning to Understand Our Multimodal World, (2) Generating Images and Detecting Them<br>
+						<b>Speaker</b>: Prof. Yong Jae Lee (University of Wisconsin-Madison, USA)<br><br>
+						<b>Topic</b>: (1) Controllable Visual Imagination, (2) Dynamic 3D Reconstruction in the Wild<br>
+						<b>Speaker</b>: Prof. Jia-Bin Huang (University of Maryland, USA)<br><br>
+						<b>Time</b>: (1) 8/5 (Monday) 13:30 - 17:15, (2) 8/6 (Tuesday) 13:45 - 17:15<br>
+						<b>Venue</b>: National Yang Ming Chiao Tung University, Room EC114<br>
+						<b>Information</b>: <a href="./pages/research/華仁全球講座20240805.jpg">More..</a>
+					</div>
+					
+					<div class="content"><span class="date">August 2024</span>
+						Congratulations to Y.-H. Chen, K.-W. Ho, M. Benjak, J. Ostermann, and W.-H. Peng on having one MMSP 2024 paper "On the Rate-Distortion-Complexity
+						Trade-offs of Neural Video Coding" accepted for publication.
+					</div>
+					
+					<div class="content"><span class="date">July 2024</span>
+						Congratulations to N. P. Kini, R.-H. Shiue, R. Chandra, W.-H. Peng, C.-W. Ma, and J.-N. Hwang on having one BMVC 2024 paper "TransHuPR: Cross-View Fusion Transformer for Human Pose Estimation Using mmWave Radar" accepted for publication.
+					</div>
+					
+					<div class="content"><span class="date">July 2024</span>
+						Congratulations to Y.-H. Chen, H.-S. Xie, C.-W. Chen, Z.-L. Gao, M. Benjak, W.-H. Peng, and J. Ostermann on having one TCSVT 2024 paper "MaskCRT: Masked Conditional Residual Transformer for Learned Video Compression" accepted for publication.
+					</div>
+
+					<div class="content"><span class="date">June 2024</span>
+						Congratulations to Y.-H. Chen, Y.-K. Ho, T.-H. Lin, W.-H. Peng, and C.-C. Huang on having one WOCC 2024 paper "Using Conditional Video Compressors for Image Restoration" accepted for publication.
+					</div>
+
+					<div class="content"><span class="date">June 2024</span>
+						Prof. Wen-Hsiao Peng served as the Technical Program Chair of the 2024 Picture Coding Symposium held in Taichung, Taiwan. <a href="https://picturecoding.web.nycu.edu.tw/">Link</a>; (Pics: 
+						<a class="myImg" href="javascript:void(0)" onclick="showimg('PCS2024', 1)">1</a>,
+						<a class="myImg" href="javascript:void(0)" onclick="showimg('PCS2024', 2)">2</a>,
+						<a class="myImg" href="javascript:void(0)" onclick="showimg('PCS2024', 3)">3</a>,
+						<a class="myImg" href="javascript:void(0)" onclick="showimg('PCS2024', 4)">4</a>,
+						<a class="myImg" href="javascript:void(0)" onclick="showimg('PCS2024', 5)">5</a>,
+						<a class="myImg" href="javascript:void(0)" onclick="showimg('PCS2024', 6)">6</a>,
+						<a class="myImg" href="javascript:void(0)" onclick="showimg('PCS2024', 7)">7</a>)
+					</div>
+
+					<div class="content"><span class="date">June 2024</span>
+						Congratulations to Prof. Wen-Hsiao Peng for receiving the First Academia-Industry Collaboration Excellent Research Award from the MediaTek Advanced Research Center (MARC).
+					</div>
+					
+					<div class="content"><span class="date">June 2024</span>
+						[Invited Talk] Workshop on Visual Data Coding, Standards, and Quality Assessment
+						<br>
+						<b>Speaker</b>: 
+						<br>&nbsp; Prof. C.-C. Jay Kuo (University of Southern California, USA),
+						<br>&nbsp; Prof. Jörn Ostermann (Leibniz Universität Hannover, Germany),
+						<br>&nbsp; Prof. Jens-Rainer Ohm (RWTH Aachen University, Germany),
+						<br>&nbsp; PD Mathias Wien (RWTH Aachen University, Germany),
+						<br>&nbsp; Prof. Wen-Hsiao Peng (National Yang Ming Chiao Tung University, Taiwan)
+						<br>
+						<b>Time</b>: 6/11 (Tuesday) 10:00 - 12:10<br>
+						<b>Venue</b>: National Yang Ming Chiao Tung University, Room EC329<br>
+						<b>Information</b>: <a href="./pages/research/華仁全球講座20240611.jpg">More..</a>
+					</div>
+
+					<div class="content"><span class="date">June 2024</span>
+						Congratulations to Z.-L. Gao, S. NguyenQuang, W.-H. Peng, and X. HoangVan on having one ICIP 2024 paper "OMRA: Online Motion Resolution Adaptation to Remedy Domain Shift in Learned Hierarchical B-frame Coding" accepted for publication.
+					</div>
+					
+					<div class="content"><span class="date">April 2024</span>
+						Prof. Wen-Hsiao Peng gave a talk on “End-to-End Learned Image and Video Compression: Design, Implementation, and Computer Vision Applications” at Qualcomm, San Diego.
+					</div>
+
+					<div class="content"><span class="date">February 2024</span>
+						Congratulations to Y.-H. Chen, K.-W. Ho, S.-R. Tsai, G.-H. Lin, A. Gnutti, W.-H. Peng, and R. Leonardi on having one PCS 2024 paper "Transformer-based Learned Image Compression for Joint Decoding and Denoising" accepted for publication.
+					</div>
+
+					<div class="content"><span class="date">January 2024</span>
+						Congratulations to Z.-L. Gao, C.-W. Chen, Y.-C. Yao, C.-Y. Ho, and W.-H. Peng on having one ISCAS 2024 paper "Conditional Variational Autoencoders for Hierarchical B-Frame Coding" accepted for publication.
+					</div>
+
+					<div class="content"><span class="date">January 2024</span> Congratulations to Prof. Wen-Hsiao Peng on being appointed as the Editor-in-Chief of IEEE Journal on Emerging and Selected Topics in Circuits and Systems (<a href=https://ieee-cas.org/publication/JETCAS>JETCAS</a>). <a href="https://www.linkedin.com/posts/ieeejetcas_meettheeditors-activity-7135642819343331328-8qy2/"> More.. </a>
+					</div>
+
+					
+					
+					<a href="#" onclick='go_pastnews();'>Past news and events</a>
+                    <script src="js/gallery.js"></script>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- <div style="height:100px" class="footer_css"> -->
+	<div style="height:100px" class="footer_left">
+		<div style="position:absolute;bottom:5px;text-align:justify;white-space: pre;">
+			<!--<img src="figures/home_small2.gif" style="width:260px;height:90px;"></img>-->
+			Copyright @ National Yang Ming Chiao Tung University MAPL all rights reserved.
+			Telephone: +886-3-5712121 ext. 54779
+			Address: 1001 Ta-Hsueh Rd., Hsinchu, 30010, Taiwan, R.O.C. EC621, EC714 Department of Computer Science
+		</div>
+	</div>
+	<div style="height:100px" class="footer_right">
+		<div>
+			<a href="https://info.flagcounter.com/Y0ks"><img src="https://s01.flagcounter.com/count2/Y0ks/bg_F0F0F0/txt_3C3C3C/border_C9C9C9/columns_3/maxflags_9/viewers_0/labels_1/pageviews_1/flags_0/percent_0/" alt="Flag Counter" style="border:0px"></a>
+		</div>
+	</div>
+	
+</body>
+
+</html>
