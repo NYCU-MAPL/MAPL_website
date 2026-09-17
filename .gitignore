@@ -1,0 +1,27 @@
+# Local orchestration and browser state
+.omo/
+.playwright-mcp/
+
+# Dependencies and generated output
+node_modules/
+dist/
+coverage/
+artifacts/
+reports/
+test-results/
+playwright-report/
+.cache/
+.vite/
+*.log
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Editors and operating systems
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
