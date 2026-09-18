@@ -41,7 +41,7 @@ const parseType = (object: JsonObject, context: ParseContext): PublicationType =
 }
 
 const parseAuthors = (object: JsonObject, context: ParseContext): readonly string[] => {
-  const values = arrayValue(object.authors, context)
+  const values = arrayValue(object["authors"], context)
   if (values.length === 0) return fail(context, "authors", "must contain at least one author")
   return values.map((value) => {
     if (typeof value !== "string" || value.trim().length === 0) {
@@ -74,7 +74,7 @@ export const parsePublications = (input: unknown, source: string): readonly Publ
     strictKeys(object, PUBLICATION_KEYS, context)
     const year = requiredInteger(object, "year", context)
     if (year < 1990 || year > 2100) fail(context, "year", "must be between 1990 and 2100")
-    const links = "links" in object ? parseLinks(object.links, context) : undefined
+    const links = "links" in object ? parseLinks(object["links"], context) : undefined
     return {
       id: parseId(object, context),
       title: requiredString(object, "title", context),
@@ -85,7 +85,7 @@ export const parsePublications = (input: unknown, source: string): readonly Publ
       topic: parseTopic(object, context),
       type: parseType(object, context),
       featured: requiredBoolean(object, "featured", context),
-      image: parseImage(object.image, context),
+      image: parseImage(object["image"], context),
       ...(links === undefined ? {} : { links }),
     }
   })

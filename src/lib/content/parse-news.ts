@@ -20,7 +20,7 @@ export const parseNews = (input: unknown, source: string): readonly NewsItem[] =
     const object = objectValue(value, context)
     strictKeys(object, NEWS_KEYS, context)
     const url = parseUrl(object, "url", context)
-    const image = "image" in object ? parseImage(object.image, context) : undefined
+    const image = "image" in object ? parseImage(object["image"], context) : undefined
     const featured = "featured" in object ? requiredBoolean(object, "featured", context) : false
     return {
       id: parseId(object, context),
