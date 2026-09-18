@@ -8,6 +8,9 @@ export type ParseContext = {
   readonly record?: number
 }
 
+const isJsonObject = (value: unknown): value is JsonObject =>
+  typeof value === "object" && value !== null && !Array.isArray(value)
+
 const ID_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/u
 const ISO_DATE_PATTERN = /^\d{4}-(?:0[1-9]|1[0-2])(?:-(?:0[1-9]|[12]\d|3[01]))?$/u
 const MEDIA_PATTERN = /^media\/(?:people|publications|news|join)\/[a-z0-9][a-z0-9._/-]*\.(?:jpe?g|png|webp)$/u
@@ -21,7 +24,7 @@ export const objectValue = (
   context: ParseContext,
   field = "record",
 ): JsonObject => {
-  if (typeof value !== "object" || value === null || Array.isArray(value)) {
+  if (!isJsonObject(value)) {
     return fail(context, field, "must be an object")
   }
   return value
