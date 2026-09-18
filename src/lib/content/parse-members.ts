@@ -18,6 +18,21 @@ const MEMBER_KEYS = [
   "graduationYear", "affiliation", "image", "website", "scholarUrl",
 ] as const
 
+const ROLES_BY_STATUS = {
+  advisor: ["advisor"],
+  current: ["visiting-researcher", "phd-student", "masters-student", "undergraduate-student"],
+  alumni: ["alumnus"],
+} as const satisfies Readonly<Record<MemberStatus, readonly MemberRole[]>>
+
+const GROUPS_BY_ROLE = {
+  advisor: ["advisor"],
+  "visiting-researcher": ["visiting-researchers"],
+  "phd-student": ["phd-students"],
+  "masters-student": ["masters-students"],
+  "undergraduate-student": ["undergraduate-students"],
+  alumnus: ["phd-graduates", "alumni"],
+} as const satisfies Readonly<Record<MemberRole, readonly MemberGroup[]>>
+
 const parseStatus = (object: JsonObject, context: ParseContext): MemberStatus => {
   const value = requiredString(object, "status", context)
   if (value === "advisor" || value === "current" || value === "alumni") return value
@@ -56,14 +71,16 @@ const parseGroup = (object: JsonObject, context: ParseContext): MemberGroup => {
 }
 
 const validateMembership = (
-  member: Pick<Member, "status" | "role" | "graduationYear">,
+  member: Pick<Member, "status" | "role" | "group" | "graduationYear">,
   context: ParseContext,
 ): void => {
-  if (member.status === "advisor" && member.role !== "advisor") {
-    fail(context, "role", "advisor status requires advisor role")
+  const validRoles: readonly MemberRole[] = ROLES_BY_STATUS[member.status]
+  if (!validRoles.includes(member.role)) {
+    fail(context, "role", `${member.status} status does not allow ${member.role} role`)
   }
-  if (member.status === "alumni" && member.role !== "alumnus") {
-    fail(context, "role", "alumni status requires alumnus role")
+  const validGroups: readonly MemberGroup[] = GROUPS_BY_ROLE[member.role]
+  if (!validGroups.includes(member.group)) {
+    fail(context, "group", `${member.role} role does not allow ${member.group} group`)
   }
   if (member.status === "alumni" && member.graduationYear === undefined) {
     fail(context, "graduationYear", "is required for alumni")

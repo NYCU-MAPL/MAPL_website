@@ -1,5 +1,5 @@
 import assert from "node:assert/strict"
-import { mkdtemp, readFile, rm, writeFile } from "node:fs/promises"
+import { mkdir, mkdtemp, readFile, rm, writeFile } from "node:fs/promises"
 import { tmpdir } from "node:os"
 import { join } from "node:path"
 import test from "node:test"
@@ -29,6 +29,27 @@ const rejectsFixture = async (
   )
 }
 
+const newsRecord = (date: string): readonly Readonly<Record<string, unknown>>[] => [{
+  id: "calendar-test",
+  date,
+  title: "Calendar test",
+  summary: "Calendar validation fixture.",
+}]
+
+const memberRecord = (
+  status: string,
+  role: string,
+  group: string,
+  graduationYear?: number,
+): Readonly<Record<string, unknown>> => ({
+  id: "membership-test",
+  name: "Membership Test",
+  status,
+  role,
+  group,
+  ...(graduationYear === undefined ? {} : { graduationYear }),
+})
+
 test("rejects duplicate IDs when news records repeat an ID", async () => {
   await rejectsFixture(parseNews, "duplicate-news-ids.json", "id")
 })
@@ -53,6 +74,63 @@ test("rejects an unknown member role", async () => {
   await rejectsFixture(parseMembers, "member-unknown-role.json", "role")
 })
 
+for (const date of ["2026-02-31", "2025-02-29"]) {
+  test(`rejects impossible calendar date ${date}`, () => {
+    assert.throws(
+      () => parseNews(newsRecord(date), "calendar-test.json"),
+      (error: unknown) => error instanceof ContentValidationError && error.field === "date",
+    )
+  })
+}
+
+for (const [status, role, group, field] of [
+  ["current", "alumnus", "alumni", "role"],
+  ["advisor", "advisor", "alumni", "group"],
+  ["current", "masters-student", "phd-students", "group"],
+] as const) {
+  test(`rejects mismatched member tuple ${status}/${role}/${group}`, () => {
+    assert.throws(
+      () => parseMembers([memberRecord(status, role, group)], "membership-test.json"),
+      (error: unknown) => error instanceof ContentValidationError && error.field === field,
+    )
+  })
+}
+
+test("accepts every supported member tuple", () => {
+  const records = [
+    memberRecord("advisor", "advisor", "advisor"),
+    memberRecord("current", "visiting-researcher", "visiting-researchers"),
+    memberRecord("current", "phd-student", "phd-students"),
+    memberRecord("current", "masters-student", "masters-students"),
+    memberRecord("current", "undergraduate-student", "undergraduate-students"),
+    memberRecord("alumni", "alumnus", "phd-graduates", 2024),
+    memberRecord("alumni", "alumnus", "alumni", 2023),
+  ].map((record, index) => ({ ...record, id: `supported-${index}` }))
+
+  assert.equal(parseMembers(records, "supported-members.json").length, records.length)
+})
+
+test("rejects unknown member fields", () => {
+  const input = [{ ...memberRecord("current", "phd-student", "phd-students"), biography: "Unexpected" }]
+  assert.throws(
+    () => parseMembers(input, "unknown-member-field.json"),
+    (error: unknown) => error instanceof ContentValidationError && error.field === "biography",
+  )
+})
+
+test("sorts members deterministically and omits absent optional fields", () => {
+  const input = [
+    { id: "zoe", name: "Zoe", status: "current", role: "phd-student", group: "phd-students" },
+    { id: "amy", name: "Amy", status: "current", role: "phd-student", group: "phd-students" },
+    { id: "older", name: "Older", status: "alumni", role: "alumnus", group: "alumni", graduationYear: 2020 },
+    { id: "newer", name: "Newer", status: "alumni", role: "alumnus", group: "alumni", graduationYear: 2024 },
+  ]
+
+  const parsed = parseMembers(input, "member-order.json")
+  assert.deepEqual(parsed.map(({ id }) => id), ["amy", "zoe", "newer", "older"])
+  assert.deepEqual(Object.keys(parsed[0] ?? {}).toSorted(), ["group", "id", "name", "role", "status"])
+})
+
 test("rejects an unknown publication type", async () => {
   await rejectsFixture(parsePublications, "publication-unknown-type.json", "type")
 })
@@ -70,6 +148,42 @@ test("reports a referenced media file when it is missing", async () => {
   try {
     const report = await auditMedia(["media/publications/missing.png"], mediaRoot)
     assert.deepEqual(report.errors, ["media/publications/missing.png: file does not exist"])
+  } finally {
+    await rm(mediaRoot, { recursive: true })
+  }
+})
+
+test("reports duplicate media references", async () => {
+  const mediaRoot = await mkdtemp(join(tmpdir(), "mapl-media-test-"))
+  try {
+    await mkdir(join(mediaRoot, "media", "people"), { recursive: true })
+    await writeFile(join(mediaRoot, "media", "people", "duplicate.png"), Uint8Array.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a]))
+    const report = await auditMedia(["media/people/duplicate.png", "media/people/duplicate.png"], mediaRoot)
+    assert.deepEqual(report.errors, ["media/people/duplicate.png: referenced 2 times"])
+  } finally {
+    await rm(mediaRoot, { recursive: true })
+  }
+})
+
+test("reports orphan media files", async () => {
+  const mediaRoot = await mkdtemp(join(tmpdir(), "mapl-media-test-"))
+  try {
+    await mkdir(join(mediaRoot, "media", "people"), { recursive: true })
+    await writeFile(join(mediaRoot, "media", "people", "orphan.png"), Uint8Array.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a]))
+    const report = await auditMedia([], mediaRoot)
+    assert.deepEqual(report.errors, ["media/people/orphan.png: orphan file is not referenced by JSON"])
+  } finally {
+    await rm(mediaRoot, { recursive: true })
+  }
+})
+
+test("reports media whose extension does not match its signature", async () => {
+  const mediaRoot = await mkdtemp(join(tmpdir(), "mapl-media-test-"))
+  try {
+    await mkdir(join(mediaRoot, "media", "people"), { recursive: true })
+    await writeFile(join(mediaRoot, "media", "people", "invalid.png"), "not a PNG")
+    const report = await auditMedia(["media/people/invalid.png"], mediaRoot)
+    assert.deepEqual(report.errors, ["media/people/invalid.png: extension does not match supported image content"])
   } finally {
     await rm(mediaRoot, { recursive: true })
   }

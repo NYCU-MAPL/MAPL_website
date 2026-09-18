@@ -106,8 +106,11 @@ export const parseId = (object: JsonObject, context: ParseContext): string => {
 export const parseIsoDate = (object: JsonObject, context: ParseContext): string => {
   const date = requiredString(object, "date", context)
   if (!ISO_DATE_PATTERN.test(date)) return fail(context, "date", "must be an ISO date or month")
-  if (date.length === 10 && Number.isNaN(Date.parse(`${date}T00:00:00Z`))) {
-    return fail(context, "date", "must be a real calendar date")
+  if (date.length === 10) {
+    const parsed = new Date(`${date}T00:00:00Z`)
+    if (Number.isNaN(parsed.valueOf()) || parsed.toISOString().slice(0, 10) !== date) {
+      return fail(context, "date", "must be a real calendar date")
+    }
   }
   return date
 }
