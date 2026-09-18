@@ -125,6 +125,6 @@
     "type": "conference",
     "featured": false,
     "image": { "src": "media/publications/dise-cvpr-2019.png", "alt": "DISE domain-invariant structure extraction framework" },
-    "links": { "paper": "https://arxiv.org/abs/1903.12212", "code": "https://github.com/a514514772/DISE-Domain-Invariant-Structure-Extraction", "project": "https://a514514772.github.io/DISE-Domain-Invariant-Structure-Extraction/" }
+    "links": { "paper": "https://arxiv.org/abs/1903.12212", "code": "https://github.com/a514514772/DISE-Domain-Invariant-Structure-Extraction", "project": "https://hui-po-wang.github.io/DISE-Domain-Invariant-Structure-Extraction/" }
   }
 ]
