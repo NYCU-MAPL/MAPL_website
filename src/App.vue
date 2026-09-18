@@ -1,47 +1,30 @@
 <script setup lang="ts">
-import { FlaskConical } from "@lucide/vue"
-import { RouterLink, RouterView } from "vue-router"
+import { ref } from "vue"
+import { RouterView } from "vue-router"
 
-const navigation = [
-  { label: "Home", to: "/" },
-  { label: "About", to: "/about" },
-  { label: "Publications", to: "/publications" },
-  { label: "Teaching", to: "/teaching" },
-  { label: "Join Us", to: "/join-us" },
-] as const
+import MobileNavigation from "./components/layout/MobileNavigation.vue"
+import SiteFooter from "./components/layout/SiteFooter.vue"
+import SiteHeader from "./components/layout/SiteHeader.vue"
+import SkipLink from "./components/layout/SkipLink.vue"
+import { primaryDestinations } from "./components/layout/navigation.ts"
+
+const isNavigationOpen = ref(false)
 </script>
 
 <template>
   <div class="app-shell">
-    <a
-      class="skip-link"
-      href="#main-content"
-    >Skip to main content</a>
-    <header class="site-header">
-      <RouterLink
-        class="site-title"
-        to="/"
-        aria-label="MAPL home"
-      >
-        <FlaskConical
-          :size="24"
-          aria-hidden="true"
-        />
-        <span>MAPL</span>
-      </RouterLink>
-      <nav aria-label="Primary navigation">
-        <ul class="nav-list">
-          <li
-            v-for="item in navigation"
-            :key="item.to"
-          >
-            <RouterLink :to="item.to">
-              {{ item.label }}
-            </RouterLink>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <SkipLink target-id="main-content" />
+    <SiteHeader
+      :destinations="primaryDestinations"
+      :navigation-open="isNavigationOpen"
+      @open-navigation="isNavigationOpen = true"
+    />
+    <MobileNavigation
+      v-model:open="isNavigationOpen"
+      :destinations="primaryDestinations"
+      trigger-id="mobile-navigation-trigger"
+      main-id="main-content"
+    />
     <main
       id="main-content"
       class="site-main"
@@ -49,5 +32,6 @@ const navigation = [
     >
       <RouterView />
     </main>
+    <SiteFooter :destinations="primaryDestinations" />
   </div>
 </template>

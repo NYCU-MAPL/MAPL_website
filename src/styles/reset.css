@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-inline-size: 20rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-block-size: 100dvh;
+  margin: 0;
+  overflow-wrap: anywhere;
+  color: var(--color-ink);
+  background: var(--color-canvas);
+}
+
+body,
+button {
+  font-family: var(--font-ui);
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  color: inherit;
+}
+
+a {
+  color: var(--color-forest);
+}
+
+img,
+svg {
+  display: block;
+  max-inline-size: 100%;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+:focus-visible {
+  outline: var(--focus-width) solid var(--color-focus);
+  outline-offset: var(--space-1);
+}
+
+::selection {
+  color: var(--color-white);
+  background: var(--color-forest);
+}

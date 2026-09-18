@@ -1,0 +1,50 @@
+body {
+  font-size: var(--text-body);
+  line-height: 1.65;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-block-start: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: var(--text-h1);
+  line-height: 1;
+  letter-spacing: -0.035em;
+}
+
+h2 {
+  font-size: var(--text-h2);
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+}
+
+h3 {
+  font-size: var(--text-h3);
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+}
+
+.eyebrow {
+  margin-block-end: var(--space-4);
+  color: var(--color-copper);
+  font-family: var(--font-mono);
+  font-size: var(--text-label);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}

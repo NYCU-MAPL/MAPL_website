@@ -13,6 +13,7 @@
     "lint": "eslint .",
     "check": "vue-tsc --noEmit && tsc -p tsconfig.node.json --noEmit",
     "test:content": "node --experimental-strip-types --test tests/content-contracts.test.ts",
+    "test:shell": "node --experimental-strip-types --test tests/shell-contracts.test.ts",
     "validate:content": "node --experimental-strip-types scripts/validate-content.ts",
     "verify:assets": "node --experimental-strip-types scripts/validate-content.ts && node scripts/verify-built-assets.mjs && npm run verify:engines",
     "verify:engines": "node scripts/verify-node-engine.mjs"

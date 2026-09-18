@@ -1,17 +1,31 @@
 <script setup lang="ts">
+import SectionHeading from "../components/ui/SectionHeading.vue"
+
 defineProps<{
   readonly title: string
 }>()
 </script>
 
 <template>
-  <section aria-labelledby="page-title">
-    <p class="eyebrow">
-      MAPL website
-    </p>
-    <h1 id="page-title">
-      {{ title }}
-    </h1>
-    <p>This route is ready for content in a later implementation phase.</p>
+  <section
+    class="placeholder-view"
+    aria-labelledby="page-title"
+  >
+    <SectionHeading
+      :title="title"
+      label="MAPL · Route index"
+      :level="1"
+    >
+      <p>This route is prepared for its dedicated content phase.</p>
+    </SectionHeading>
+    <div
+      class="placeholder-view__register"
+      aria-hidden="true"
+    >
+      <span>Multimedia</span>
+      <span>Architecture</span>
+      <span>Processing</span>
+      <span>Laboratory</span>
+    </div>
   </section>
 </template>

@@ -1,0 +1,45 @@
+.icon-button {
+  transition: color var(--motion-micro), background-color var(--motion-micro), transform var(--motion-micro);
+}
+
+.icon-button:active {
+  transform: scale(var(--press-scale));
+}
+
+.drawer-backdrop-enter-active,
+.drawer-backdrop-leave-active,
+.drawer-panel-enter-active,
+.drawer-panel-leave-active {
+  transition: opacity var(--motion-standard), transform var(--motion-standard);
+}
+
+.drawer-backdrop-enter-from,
+.drawer-backdrop-leave-to {
+  opacity: 0;
+}
+
+.drawer-panel-enter-from,
+.drawer-panel-leave-to {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+
+  .drawer-panel-enter-from,
+  .drawer-panel-leave-to {
+    transform: none;
+  }
+}
