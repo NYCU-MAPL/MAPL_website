@@ -1,0 +1,4 @@
+[
+  { "id": "duplicate-item", "date": "2026-09", "title": "First", "summary": "First item." },
+  { "id": "duplicate-item", "date": "2026-08", "title": "Second", "summary": "Second item." }
+]

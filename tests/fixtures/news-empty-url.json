@@ -1,0 +1,9 @@
+[
+  {
+    "id": "empty-url",
+    "date": "2026-09",
+    "title": "Empty URL",
+    "summary": "The URL must be absent instead of empty.",
+    "url": ""
+  }
+]

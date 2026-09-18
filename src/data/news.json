@@ -1,0 +1,139 @@
+[
+  {
+    "id": "recruitment-september-2026",
+    "date": "2026-09",
+    "title": "MAPL is recruiting students",
+    "summary": "MAPL is recruiting highly self-motivated students. The current laboratory introduction and interview information are available through the linked recruitment brief.",
+    "url": "https://maplintro2027.pse.is/9lnn2m",
+    "image": { "src": "media/join/nycu-engineering-building.jpg", "alt": "NYCU Engineering Building" },
+    "featured": true
+  },
+  {
+    "id": "peng-merl-visiting-faculty-2026",
+    "date": "2026-08",
+    "title": "Prof. Peng joins MERL as Visiting Faculty",
+    "summary": "Prof. Wen-Hsiao Peng is serving as Visiting Faculty at Mitsubishi Electric Research Laboratories in Massachusetts from August 2026 to January 2027.",
+    "url": "https://www.merl.com/people/wpeng",
+    "featured": true
+  },
+  {
+    "id": "peng-hannover-part-time-professor-2026",
+    "date": "2026-06",
+    "title": "Prof. Peng appointed at Leibniz University Hannover",
+    "summary": "Prof. Wen-Hsiao Peng is serving as Part-time Professor in Generative Models for Artificial Intelligence at Leibniz University Hannover from June 2026 to June 2028.",
+    "url": "https://www.tnt.uni-hannover.de/en/staff/peng/",
+    "featured": true
+  },
+  {
+    "id": "apsipa-immersive-visual-media-workshop-2026",
+    "date": "2026-05",
+    "title": "Workshop on Emerging and Immersive Visual Media",
+    "summary": "The APSIPA Taipei Local Chapter and H & J Global Chair Program hosted a workshop organized by Prof. Wen-Hsiao Peng on multimodal Gaussian splatting, video-coding hardware, post-training quantization, and neural 3D/4D media coding.",
+    "url": "https://sites.google.com/view/apsipataiwan/news-events?authuser=3",
+    "featured": false
+  },
+  {
+    "id": "ic4dgs-icip-2026-accepted",
+    "date": "2026-05",
+    "title": "IC-4DGS accepted to ICIP 2026",
+    "summary": "The paper “IC-4DGS: Illumination-Compensated 4D Gaussian Splatting under Photometric Variations” was accepted for publication at ICIP 2026.",
+    "featured": true
+  },
+  {
+    "id": "network-quantization-icip-2026-accepted",
+    "date": "2026-05",
+    "title": "Neural video coding quantization study accepted to ICIP 2026",
+    "summary": "The paper “Network Quantization in Neural Video Coding: A Comparative Study Across Coding Frameworks and Temporal Buffering Strategies” was accepted for publication at ICIP 2026.",
+    "featured": false
+  },
+  {
+    "id": "adapt-icip-2026-accepted",
+    "date": "2026-05",
+    "title": "ADAPT accepted to ICIP 2026",
+    "summary": "The paper “ADAPT: Any-Codec Diffusion-Based Adaptation for Per-Image Perception-Distortion Trade-Off” was accepted for publication at ICIP 2026.",
+    "featured": true
+  },
+  {
+    "id": "parametric-codecs-icip-2026-accepted",
+    "date": "2026-05",
+    "title": "Parametric video codec analysis accepted to ICIP 2026",
+    "summary": "The paper “Rate-Distortion-Complexity Analysis of Parametric Video Codecs” was accepted for publication at ICIP 2026.",
+    "featured": false
+  },
+  {
+    "id": "lidar-image-compression-tmm-2026",
+    "date": "2026-04",
+    "title": "LiDAR-guided image compression paper accepted to TMM",
+    "summary": "The paper “LiDAR-Guided Learned Image Compression for Machine Vision” was accepted for publication in IEEE Transactions on Multimedia in 2026.",
+    "featured": false
+  },
+  {
+    "id": "chen-ieee-taipei-dissertation-award-2026",
+    "date": "2026-01",
+    "title": "Yi-Hsin Chen receives IEEE Taipei dissertation award",
+    "summary": "Yi-Hsin Chen received the 2025 Best PhD Dissertation Award from the IEEE Taipei Section for work on contextual image and video coding.",
+    "url": "https://ieee.org.tw/%F0%9F%8E%89%E8%B3%80%E6%A6%9C%F0%9F%8E%89-2025-%E5%B9%B4-ieee-taipei-section-%E7%A2%A9%E5%8D%9A%E5%A3%AB%E8%AB%96%E6%96%87%E7%8D%8E-%E7%8D%B2%E7%8D%8E%E5%85%AC%E5%91%8A/",
+    "featured": false
+  },
+  {
+    "id": "wacv-2026-papers-accepted",
+    "date": "2025-11",
+    "title": "Four MAPL papers accepted to WACV 2026",
+    "summary": "MAPL co-authors contributed to accepted WACV 2026 papers on 4D Gaussian compression, joint 3D Gaussian compression and segmentation, radar pose estimation, and point-cloud compression.",
+    "featured": true
+  },
+  {
+    "id": "chen-tsc-thesis-award-2025",
+    "date": "2025-09",
+    "title": "Yi-Hsin Chen receives TSC thesis award",
+    "summary": "Yi-Hsin Chen received the Excellence Award in the doctoral division of the 18th TSC Thesis Award for work on learning-based contextual video coding.",
+    "url": "https://www.cs.nycu.edu.tw/announcements/detail/13215",
+    "featured": false
+  },
+  {
+    "id": "hytip-mhlvc-iccv-2025",
+    "date": "2025-06",
+    "title": "HyTIP and MH-LVC accepted to ICCV 2025",
+    "summary": "Two MAPL papers on hybrid temporal information propagation and multi-hypothesis temporal prediction were accepted for publication at ICCV 2025.",
+    "featured": true
+  },
+  {
+    "id": "apsipa-cosmos-workshop-2025",
+    "date": "2025-06",
+    "title": "APSIPA talk on Cosmos World Foundation Models",
+    "summary": "APSIPA Taiwan and the H&J Global Chair hosted an invited talk by Dr. Ming-Yu Liu on world foundation models for physical AI.",
+    "image": { "src": "media/news/apsipa-cosmos-workshop.jpg", "alt": "Participants at the APSIPA Cosmos World Foundation Models talk" },
+    "featured": false
+  },
+  {
+    "id": "peng-ieee-fellow-2025",
+    "date": "2024-12",
+    "title": "Prof. Peng elevated to IEEE Fellow",
+    "summary": "Prof. Wen-Hsiao Peng was elevated to IEEE Fellow, Class of 2025, for contributions to the design and implementation of video coding algorithms and standards.",
+    "url": "https://ieee-cas.org/post/announcement/congratulations-2025-cas-society-class-ieee-fellows",
+    "featured": true
+  },
+  {
+    "id": "transhupr-bmvc-2024",
+    "date": "2024-07",
+    "title": "TransHuPR accepted to BMVC 2024",
+    "summary": "The paper “TransHuPR: Cross-View Fusion Transformer for Human Pose Estimation Using mmWave Radar” was accepted for publication at BMVC 2024.",
+    "featured": false
+  },
+  {
+    "id": "pcs-2024-program-chair",
+    "date": "2024-06",
+    "title": "Prof. Peng serves as PCS 2024 Technical Program Chair",
+    "summary": "Prof. Wen-Hsiao Peng served as Technical Program Chair of the 2024 Picture Coding Symposium in Taichung, Taiwan.",
+    "url": "https://picturecoding.web.nycu.edu.tw/",
+    "featured": false
+  },
+  {
+    "id": "peng-jetcas-editor-in-chief-2024",
+    "date": "2024-01",
+    "title": "Prof. Peng appointed JETCAS Editor-in-Chief",
+    "summary": "Prof. Wen-Hsiao Peng was appointed Editor-in-Chief of the IEEE Journal on Emerging and Selected Topics in Circuits and Systems.",
+    "url": "https://ieee-cas.org/publication/JETCAS",
+    "featured": false
+  }
+]

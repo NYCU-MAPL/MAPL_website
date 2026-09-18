@@ -12,7 +12,9 @@
     "preview": "vite preview",
     "lint": "eslint .",
     "check": "vue-tsc --noEmit",
-    "verify:assets": "node scripts/verify-built-assets.mjs && npm run verify:engines",
+    "test:content": "node --experimental-strip-types --test tests/content-contracts.test.ts",
+    "validate:content": "node --experimental-strip-types scripts/validate-content.ts",
+    "verify:assets": "node --experimental-strip-types scripts/validate-content.ts && node scripts/verify-built-assets.mjs && npm run verify:engines",
     "verify:engines": "node scripts/verify-node-engine.mjs"
   },
   "dependencies": {

@@ -1,0 +1,9 @@
+[
+  {
+    "id": "unknown-role",
+    "name": "Test Member",
+    "status": "current",
+    "role": "intern",
+    "group": "Interns"
+  }
+]

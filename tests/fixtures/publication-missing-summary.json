@@ -1,0 +1,13 @@
+[
+  {
+    "id": "missing-summary",
+    "title": "Missing summary",
+    "authors": ["A. Author"],
+    "venue": "Test Conference",
+    "year": 2026,
+    "topic": "learned-video-compression",
+    "type": "conference",
+    "featured": false,
+    "image": { "src": "media/publications/test.png", "alt": "Test diagram" }
+  }
+]
