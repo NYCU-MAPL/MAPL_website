@@ -18,6 +18,8 @@
     "qa:static": "node scripts/run-static-qa.mjs",
     "browser:install": "playwright install chromium",
     "qa:browser": "playwright test",
+    "qa:workflows": "node --experimental-strip-types --test tests/deployment-policy.test.ts",
+    "deploy:dry-run": "npm run build && node scripts/verify-gh-pages-publication.mjs",
     "validate:content": "node --experimental-strip-types scripts/validate-content.ts",
     "validate:site": "node --experimental-strip-types scripts/validate-site.ts",
     "verify:assets": "node --experimental-strip-types scripts/validate-content.ts && node scripts/verify-built-assets.mjs && npm run verify:engines",
