@@ -70,6 +70,8 @@ test("deployment is limited to successful CI runs for main pushes", async () => 
   assert.match(workflow, /ls-remote origin refs\/heads\/main/u)
   assert.doesNotMatch(workflow, /peaceiris|--force|force-with-lease/u)
   const publishJob = workflow.slice(workflow.indexOf("  publish:"))
+  const publicationStep = publishJob.slice(publishJob.indexOf("      - name: Publish validated tree to gh-pages"))
+  assert.match(publicationStep, /GH_TOKEN: \$\{\{ secrets\.GITHUB_TOKEN \}\}/u)
   assert.doesNotMatch(publishJob, /actions\/checkout|npm (?:ci|run)|node scripts\//u)
   assert.equal(workflow.match(/contents: write/gu)?.length, 1)
   assertActionsArePinned(workflow)

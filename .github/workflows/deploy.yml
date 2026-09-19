@@ -86,6 +86,7 @@ jobs:
         run: gh auth setup-git
       - name: Publish validated tree to gh-pages
         env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VALIDATED_SHA: ${{ github.event.workflow_run.head_sha }}
         run: |
           set -euo pipefail
