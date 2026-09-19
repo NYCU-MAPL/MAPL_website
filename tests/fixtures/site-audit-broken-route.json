@@ -1,0 +1,10 @@
+{
+  "routes": ["#/"],
+  "entries": [
+    {
+      "kind": "internal-route",
+      "source": "tests/fixtures/site-audit-broken-route.json:entries[0].value",
+      "value": "#/not-a-route"
+    }
+  ]
+}

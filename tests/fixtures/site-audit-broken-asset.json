@@ -1,0 +1,10 @@
+{
+  "routes": ["#/"],
+  "entries": [
+    {
+      "kind": "local-asset",
+      "source": "tests/fixtures/site-audit-broken-asset.json:entries[0].value",
+      "value": "media/publications/does-not-exist.png"
+    }
+  ]
+}
