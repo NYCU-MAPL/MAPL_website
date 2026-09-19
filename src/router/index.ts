@@ -1,28 +1,29 @@
 import { createRouter, createWebHashHistory } from "vue-router"
 import type { RouteRecordRaw } from "vue-router"
 
-import PlaceholderView from "../views/PlaceholderView.vue"
+import AboutView from "../views/AboutView.vue"
+import HomeView from "../views/HomeView.vue"
+import JoinUsView from "../views/JoinUsView.vue"
+import PublicationsView from "../views/PublicationsView.vue"
+import TeachingView from "../views/TeachingView.vue"
 
 const routes = [
-  { path: "/", name: "home", component: PlaceholderView, props: { title: "Home" } },
-  { path: "/about", name: "about", component: PlaceholderView, props: { title: "About" } },
+  { path: "/", name: "home", component: HomeView },
+  { path: "/about", name: "about", component: AboutView },
   {
     path: "/publications",
     name: "publications",
-    component: PlaceholderView,
-    props: { title: "Publications" },
+    component: PublicationsView,
   },
   {
     path: "/teaching",
     name: "teaching",
-    component: PlaceholderView,
-    props: { title: "Teaching" },
+    component: TeachingView,
   },
   {
     path: "/join-us",
     name: "join-us",
-    component: PlaceholderView,
-    props: { title: "Join Us" },
+    component: JoinUsView,
   },
 ] satisfies readonly RouteRecordRaw[]
 
