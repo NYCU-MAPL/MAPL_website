@@ -15,7 +15,7 @@ import type { Member, MemberGroup, MemberRole, MemberStatus } from "./types.ts"
 
 const MEMBER_KEYS = [
   "id", "name", "nativeName", "nickname", "status", "role", "group",
-  "graduationYear", "affiliation", "image", "website", "scholarUrl",
+  "enrollmentYear", "graduationYear", "affiliation", "image", "email", "website", "scholarUrl",
 ] as const
 
 const ROLES_BY_STATUS = {
@@ -30,7 +30,7 @@ const GROUPS_BY_ROLE = {
   "phd-student": ["phd-students"],
   "masters-student": ["masters-students"],
   "undergraduate-student": ["undergraduate-students"],
-  alumnus: ["phd-graduates", "alumni"],
+  alumnus: ["phd-graduates", "masters-graduates", "alumni"],
 } as const satisfies Readonly<Record<MemberRole, readonly MemberGroup[]>>
 
 const parseStatus = (object: JsonObject, context: ParseContext): MemberStatus => {
@@ -63,6 +63,7 @@ const parseGroup = (object: JsonObject, context: ParseContext): MemberGroup => {
     case "masters-students":
     case "undergraduate-students":
     case "phd-graduates":
+    case "masters-graduates":
     case "alumni":
       return value
     default:
@@ -97,9 +98,11 @@ export const parseMembers = (input: unknown, source: string): readonly Member[] 
     strictKeys(object, MEMBER_KEYS, context)
     const nativeName = optionalString(object, "nativeName", context)
     const nickname = optionalString(object, "nickname", context)
+    const enrollmentYear = optionalInteger(object, "enrollmentYear", context)
     const graduationYear = optionalInteger(object, "graduationYear", context)
     const affiliation = optionalString(object, "affiliation", context)
     const image = "image" in object ? parseImage(object["image"], context) : undefined
+    const email = optionalString(object, "email", context)
     const website = parseUrl(object, "website", context)
     const scholarUrl = parseUrl(object, "scholarUrl", context)
     const member: Member = {
@@ -110,9 +113,11 @@ export const parseMembers = (input: unknown, source: string): readonly Member[] 
       group: parseGroup(object, context),
       ...(nativeName === undefined ? {} : { nativeName }),
       ...(nickname === undefined ? {} : { nickname }),
+      ...(enrollmentYear === undefined ? {} : { enrollmentYear }),
       ...(graduationYear === undefined ? {} : { graduationYear }),
       ...(affiliation === undefined ? {} : { affiliation }),
       ...(image === undefined ? {} : { image }),
+      ...(email === undefined ? {} : { email }),
       ...(website === undefined ? {} : { website }),
       ...(scholarUrl === undefined ? {} : { scholarUrl }),
     }

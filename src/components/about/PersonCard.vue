@@ -12,12 +12,21 @@ const props = defineProps<{
 
 const profileLinks = computed(() => memberProfileLinks(props.member))
 const baseUrl = import.meta.env.BASE_URL
+
+const academicYear = computed(() => {
+  if (!props.member.enrollmentYear || props.member.role !== "masters-student") return null
+  const currentYear = new Date().getFullYear()
+  return currentYear - props.member.enrollmentYear + 1
+})
 </script>
 
 <template>
   <article
     class="person-card"
-    :class="{ 'person-card--prominent': prominent }"
+    :class="{
+      'person-card--prominent': prominent,
+      'person-card--advisor': member.role === 'advisor'
+    }"
   >
     <div class="person-card__portrait">
       <img
@@ -34,40 +43,41 @@ const baseUrl = import.meta.env.BASE_URL
       >{{ member.name.charAt(0) }}</span>
     </div>
     <div class="person-card__content">
-      <p
-        v-if="member.nickname || member.nativeName"
-        class="person-card__identity"
-      >
-        <span
-          v-if="member.nativeName"
-          lang="zh-Hant"
-        >{{ member.nativeName }}</span>
-        <span v-if="member.nickname">Known as {{ member.nickname }}</span>
-      </p>
-      <h3>{{ member.name }}</h3>
-      <p
-        v-if="member.affiliation"
-        class="person-card__affiliation"
-      >
-        {{ member.affiliation }}
-      </p>
+      <div class="person-card__name-section">
+        <h3>
+          <span v-if="member.nativeName" lang="zh-Hant">{{ member.nativeName }}</span>
+          <span v-if="member.nickname"> ({{ member.nickname }})</span>
+        </h3>
+        <p v-if="!member.affiliation" class="person-card__english-name">{{ member.name }}</p>
+        <p v-else class="person-card__english-name">Prof. {{ member.name }}</p>
+      </div>
+
+      <!-- 教授詳細資訊 -->
+      <div v-if="member.role === 'advisor'" class="person-card__advisor-info">
+        <p class="person-card__affiliation">NYCU Computer Science</p>
+        <p class="person-card__research"><strong>Research:</strong> Machine/deep learning, Video coding</p>
+        <p class="person-card__office"><strong>Office:</strong> Room 431, Eng. Bldg 3</p>
+      </div>
+
       <nav
-        v-if="profileLinks.length > 0"
+        class="person-card__links"
         aria-label="Profile links"
       >
         <a
-          v-for="link in profileLinks"
-          :key="link.label"
-          class="text-action"
-          :href="link.href"
+          v-if="member.email"
+          class="person-card__link"
+          :href="`mailto:${member.email}`"
+        >
+          Email
+        </a>
+        <a
+          v-if="member.website"
+          class="person-card__link"
+          :href="member.website"
           target="_blank"
           rel="noreferrer"
         >
-          {{ link.label }}
-          <ArrowUpRight
-            :size="16"
-            aria-hidden="true"
-          />
+          Website
         </a>
       </nav>
     </div>

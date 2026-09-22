@@ -13,7 +13,7 @@ const isJsonObject = (value: unknown): value is JsonObject =>
 
 const ID_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/u
 const ISO_DATE_PATTERN = /^\d{4}-(?:0[1-9]|1[0-2])(?:-(?:0[1-9]|[12]\d|3[01]))?$/u
-const MEDIA_PATTERN = /^media\/(?:people|publications|news|join)\/[a-z0-9][a-z0-9._/-]*\.(?:jpe?g|png|webp)$/u
+const MEDIA_PATTERN = /^media\/(?:people|publications|news|join)\/[\w.\-/一-鿿]+\.(?:jpe?g|png|webp)$/u
 
 export const fail = (context: ParseContext, field: string, detail: string): never => {
   throw new ContentValidationError(context.source, context.record, field, detail)

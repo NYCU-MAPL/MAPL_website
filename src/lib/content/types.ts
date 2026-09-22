@@ -14,6 +14,7 @@ export const MEMBER_GROUPS = [
   "masters-students",
   "undergraduate-students",
   "phd-graduates",
+  "masters-graduates",
   "alumni",
 ] as const
 export const PUBLICATION_TYPES = ["conference", "journal"] as const
@@ -56,9 +57,11 @@ export type Member = {
   readonly status: MemberStatus
   readonly role: MemberRole
   readonly group: MemberGroup
+  readonly enrollmentYear?: number
   readonly graduationYear?: number
   readonly affiliation?: string
   readonly image?: ContentImage
+  readonly email?: string
   readonly website?: string
   readonly scholarUrl?: string
 }

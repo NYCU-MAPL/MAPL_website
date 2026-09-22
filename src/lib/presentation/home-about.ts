@@ -9,7 +9,7 @@ const CURRENT_GROUPS = [
 
 const ALUMNI_GROUPS = [
   { group: "phd-graduates", title: "Ph.D. graduates" },
-  { group: "alumni", title: "Alumni" },
+  { group: "masters-graduates", title: "Master's graduates" },
 ] as const satisfies readonly Readonly<{ group: MemberGroup; title: string }>[]
 
 type CollectionState<T> =
