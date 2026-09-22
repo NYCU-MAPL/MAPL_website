@@ -63,7 +63,10 @@ const yearGroups = computed(() => {
     </template>
 
     <!-- Other groups: regular grid -->
-    <div v-else class="people-grid">
+    <div
+      v-else
+      class="people-grid"
+    >
       <PersonCard
         v-for="member in sortedMembers"
         :key="member.id"

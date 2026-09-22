@@ -1,10 +1,8 @@
 <script setup lang="ts">
-import { computed } from "vue"
-
 import type { Member } from "../../lib/content/types.ts"
 import { resolveMediaPath } from "../../lib/presentation/home-about.ts"
 
-const props = defineProps<{
+defineProps<{
   readonly member: Member
   readonly prominent?: boolean
 }>()
@@ -34,18 +32,40 @@ const baseUrl = import.meta.env.BASE_URL
     <div class="person-card__content">
       <div class="person-card__name-section">
         <h3>
-          <span v-if="member.nativeName" lang="zh-Hant">{{ member.nativeName }}</span>
+          <span
+            v-if="member.nativeName"
+            lang="zh-Hant"
+          >{{ member.nativeName }}</span>
           <span v-if="member.nickname"> ({{ member.nickname }})</span>
         </h3>
-        <p v-if="!member.affiliation" class="person-card__english-name">{{ member.name }}</p>
-        <p v-else class="person-card__english-name">Prof. {{ member.name }}</p>
+        <p
+          v-if="!member.affiliation"
+          class="person-card__english-name"
+        >
+          {{ member.name }}
+        </p>
+        <p
+          v-else
+          class="person-card__english-name"
+        >
+          Prof. {{ member.name }}
+        </p>
       </div>
 
       <!-- 教授詳細資訊 -->
-      <div v-if="member.role === 'advisor'" class="person-card__advisor-info">
-        <p class="person-card__affiliation">NYCU Computer Science</p>
-        <p class="person-card__research"><strong>Research:</strong> Machine/deep learning, Video coding</p>
-        <p class="person-card__office"><strong>Office:</strong> Room 431, Eng. Bldg 3</p>
+      <div
+        v-if="member.role === 'advisor'"
+        class="person-card__advisor-info"
+      >
+        <p class="person-card__affiliation">
+          NYCU Computer Science
+        </p>
+        <p class="person-card__research">
+          <strong>Research:</strong> Machine/deep learning, Video coding
+        </p>
+        <p class="person-card__office">
+          <strong>Office:</strong> Room 431, Eng. Bldg 3
+        </p>
       </div>
 
       <nav
