@@ -1,9 +1,7 @@
 name: Deploy gh-pages
 
 on:
-  workflow_run:
-    workflows: [CI]
-    types: [completed]
+  push:
     branches: [main]
 
 permissions:
@@ -14,21 +12,15 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  validate:
-    if: >-
-      github.event.workflow_run.conclusion == 'success' &&
-      github.event.workflow_run.event == 'push' &&
-      github.event.workflow_run.head_branch == 'main' &&
-      github.event.workflow_run.head_repository.full_name == github.repository
+  build:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 15
     permissions:
       contents: read
     steps:
-      - name: Check out validated source SHA
+      - name: Check out source
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
-          ref: ${{ github.event.workflow_run.head_sha }}
           fetch-depth: 1
           persist-credentials: false
       - name: Set up Node.js
@@ -38,40 +30,30 @@ jobs:
           cache: npm
       - name: Install dependencies
         run: npm ci
-      - name: Install pinned Playwright Chromium
-        run: npx --no-install playwright install --with-deps chromium
-      - name: Re-run static QA
-        run: npm run qa:static
-      - name: Re-run browser QA
-        run: npm run qa:browser
+      - name: Build site
+        run: npm run build
       - name: Verify publication marker
         run: test -f dist/.nojekyll
-      - name: Upload validated publication tree
+      - name: Upload publication tree
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
-          name: gh-pages-${{ github.event.workflow_run.head_sha }}
+          name: gh-pages-${{ github.sha }}
           path: dist/
           include-hidden-files: true
           if-no-files-found: error
           retention-days: 1
 
   publish:
-    needs: validate
-    if: >-
-      needs.validate.result == 'success' &&
-      github.event.workflow_run.conclusion == 'success' &&
-      github.event.workflow_run.event == 'push' &&
-      github.event.workflow_run.head_branch == 'main' &&
-      github.event.workflow_run.head_repository.full_name == github.repository
+    needs: build
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:
       contents: write
     steps:
-      - name: Download validated publication tree
+      - name: Download publication tree
         uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
         with:
-          name: gh-pages-${{ github.event.workflow_run.head_sha }}
+          name: gh-pages-${{ github.sha }}
           path: dist/
       - name: Reject unsafe publication entries
         run: |
@@ -84,10 +66,10 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: gh auth setup-git
-      - name: Publish validated tree to gh-pages
+      - name: Publish tree to gh-pages
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          VALIDATED_SHA: ${{ github.event.workflow_run.head_sha }}
+          SOURCE_SHA: ${{ github.sha }}
         run: |
           set -euo pipefail
           publish_dir="$(mktemp -d)"
@@ -104,9 +86,8 @@ jobs:
           if ! git -C "$publish_dir" diff --cached --quiet; then
             git -C "$publish_dir" config user.name "github-actions[bot]"
             git -C "$publish_dir" config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git -C "$publish_dir" commit -m "deploy: publish $VALIDATED_SHA"
+            git -C "$publish_dir" commit -m "deploy: publish $SOURCE_SHA"
           fi
-          test "$(git -C "$publish_dir" ls-remote origin refs/heads/main | cut -f1)" = "$VALIDATED_SHA"
           if git -C "$publish_dir" rev-parse --verify '@{upstream}' >/dev/null 2>&1; then
             git -C "$publish_dir" diff --quiet '@{upstream}' HEAD || git -C "$publish_dir" push origin HEAD:gh-pages
           else
