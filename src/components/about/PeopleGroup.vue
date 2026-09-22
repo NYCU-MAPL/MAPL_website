@@ -49,7 +49,11 @@ const yearGroups = computed(() => {
 
     <!-- Masters Students: grouped by year -->
     <template v-if="presentation.group === 'masters-students'">
-      <div v-for="group in yearGroups" :key="group.year" class="people-grid">
+      <div
+        v-for="group in yearGroups"
+        :key="group.year"
+        class="people-grid"
+      >
         <PersonCard
           v-for="member in group.members"
           :key="member.id"

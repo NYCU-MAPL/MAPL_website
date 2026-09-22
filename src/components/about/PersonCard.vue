@@ -1,32 +1,21 @@
 <script setup lang="ts">
-import { ArrowUpRight } from "@lucide/vue"
 import { computed } from "vue"
 
 import type { Member } from "../../lib/content/types.ts"
-import { memberProfileLinks, resolveMediaPath } from "../../lib/presentation/home-about.ts"
+import { resolveMediaPath } from "../../lib/presentation/home-about.ts"
 
 const props = defineProps<{
   readonly member: Member
   readonly prominent?: boolean
 }>()
 
-const profileLinks = computed(() => memberProfileLinks(props.member))
 const baseUrl = import.meta.env.BASE_URL
-
-const academicYear = computed(() => {
-  if (!props.member.enrollmentYear || props.member.role !== "masters-student") return null
-  const currentYear = new Date().getFullYear()
-  return currentYear - props.member.enrollmentYear + 1
-})
 </script>
 
 <template>
   <article
     class="person-card"
-    :class="{
-      'person-card--prominent': prominent,
-      'person-card--advisor': member.role === 'advisor'
-    }"
+    :class="{ 'person-card--prominent': prominent, 'person-card--advisor': member.role === 'advisor' }"
   >
     <div class="person-card__portrait">
       <img
