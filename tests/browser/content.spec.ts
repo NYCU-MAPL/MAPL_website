@@ -34,7 +34,7 @@ test("renders advisor, current-member groups, alumni, and the Join Us pathway", 
   await expect(page.locator("#group-masters-students")).toBeVisible()
   await expect(page.locator("#group-undergraduate-students")).toBeVisible()
   await expect(page.locator("#alumni-phd-graduates")).toBeVisible()
-  await expect(page.locator("#alumni-alumni")).toBeVisible()
+  await expect(page.locator("#alumni-masters-graduates")).toBeVisible()
   await page.getByRole("link", { name: "Explore opportunities" }).click()
   await expect(page.getByRole("heading", { level: 1, name: "Join MAPL" })).toBeVisible()
 })
