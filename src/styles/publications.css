@@ -67,9 +67,12 @@
 }
 
 .publication-card__media {
+  align-self: center;
   overflow: hidden;
   aspect-ratio: 16 / 9;
-  background: var(--color-paper-subdued);
+  background: white;
+  box-shadow: 0 0 0 15px white;
+  border-radius: var(--radius-control);
 }
 
 .publication-card__media img {
