@@ -1,9 +1,0 @@
-[
-  {
-    "id": "invalid-url",
-    "date": "2026-09",
-    "title": "Invalid URL",
-    "summary": "The URL must be a valid HTTPS URL.",
-    "url": "not a URL"
-  }
-]

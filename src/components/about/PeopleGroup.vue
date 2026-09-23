@@ -17,22 +17,6 @@ const sortedMembers = computed(() => {
   return members
 })
 
-const yearGroups = computed(() => {
-  if (props.presentation.group !== "masters-students") return []
-
-  const groups = new Map<number, typeof sortedMembers.value>()
-  sortedMembers.value.forEach(member => {
-    const year = member.enrollmentYear ?? 0
-    if (!groups.has(year)) {
-      groups.set(year, [])
-    }
-    groups.get(year)!.push(member)
-  })
-
-  return Array.from(groups.entries())
-    .sort((a, b) => a[0] - b[0])
-    .map(([year, members]) => ({ year, members }))
-})
 </script>
 
 <template>
@@ -47,25 +31,9 @@ const yearGroups = computed(() => {
       <span v-if="presentation.group !== 'masters-students'">{{ presentation.count }}</span>
     </header>
 
-    <!-- Masters Students: grouped by year -->
-    <template v-if="presentation.group === 'masters-students'">
-      <div
-        v-for="group in yearGroups"
-        :key="group.year"
-        class="people-grid"
-      >
-        <PersonCard
-          v-for="member in group.members"
-          :key="member.id"
-          :member="member"
-        />
-      </div>
-    </template>
-
-    <!-- Other groups: regular grid -->
     <div
-      v-else
       class="people-grid"
+      :class="{ 'people-grid--masters': presentation.group === 'masters-students' }"
     >
       <PersonCard
         v-for="member in sortedMembers"

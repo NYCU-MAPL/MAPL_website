@@ -216,8 +216,7 @@
   }
 
   .join-view__contact {
-    padding-inline: var(--space-8);
-    border-inline-start: var(--border-hairline);
+    padding: var(--space-8);
   }
 
   .join-view__contact dl div {

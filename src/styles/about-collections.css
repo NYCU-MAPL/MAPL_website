@@ -1,6 +1,19 @@
-.people-groups {
+@import "./about-people.css";
+
+.people-groups,
+.people-group {
   display: grid;
-  gap: var(--space-16);
+  min-inline-size: 0;
+  inline-size: 100%;
+  max-inline-size: 100%;
+}
+
+.people-groups {
+  gap: var(--space-8);
+}
+
+.people-group {
+  gap: var(--space-4);
 }
 
 .people-group__heading,
@@ -9,8 +22,7 @@
   align-items: baseline;
   justify-content: space-between;
   gap: var(--space-2);
-  margin-block-end: var(--space-6);
-  padding-block: var(--space-3);
+  padding-block: var(--space-2);
   border-block: var(--border-strong);
 }
 
@@ -28,10 +40,36 @@
 
 .people-grid {
   display: flex;
+  min-inline-size: 0;
+  inline-size: 100%;
+  max-inline-size: 100%;
   flex-wrap: nowrap;
   gap: var(--space-2);
   overflow-x: auto;
-  margin-block-end: var(--space-12);
+  overflow-y: hidden;
+  overscroll-behavior-inline: contain;
+  padding-block-end: var(--space-2);
+  scroll-snap-type: inline proximity;
+  scrollbar-width: none;
+}
+
+.people-grid::-webkit-scrollbar {
+  display: none;
+}
+
+.people-grid--masters {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-2);
+  overflow: visible;
+  padding-block-end: 0;
+  scroll-snap-type: none;
+}
+
+.people-grid--masters > .person-card {
+  inline-size: 100%;
+  flex: none;
+  scroll-snap-align: none;
 }
 
 .alumni-section {
@@ -113,6 +151,10 @@
 }
 
 @media (min-width: 48rem) {
+  .people-grid--masters {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .alumni-ledger,
   .pathways__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -134,5 +176,11 @@
 
   .pathways article {
     padding-inline-end: var(--space-8);
+  }
+}
+
+@media (min-width: 64rem) {
+  .people-grid--masters {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 }

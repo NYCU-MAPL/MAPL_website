@@ -1,0 +1,192 @@
+.person-card {
+  display: flex;
+  flex: 0 0 calc(var(--space-24) + var(--space-24));
+  min-inline-size: 0;
+  inline-size: calc(var(--space-24) + var(--space-24));
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+  scroll-snap-align: start;
+}
+
+.person-card__portrait {
+  display: grid;
+  inline-size: calc(var(--space-24) + var(--space-8));
+  block-size: calc(var(--space-24) + var(--space-8));
+  flex: none;
+  place-items: center;
+  overflow: hidden;
+  color: var(--color-forest-deep);
+  background: var(--color-white);
+  border: var(--border-hairline);
+  border-radius: 50%;
+  font-family: var(--font-display);
+  font-size: var(--text-h2);
+}
+
+.person-card__portrait img {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.person-card__portrait-link {
+  color: var(--color-forest);
+  text-decoration: none;
+  transition: color var(--motion-micro), border-color var(--motion-micro), transform var(--motion-micro);
+}
+
+.person-card__portrait-link:hover {
+  color: var(--color-forest-deep);
+  border-color: var(--color-forest);
+}
+
+.person-card__portrait-link:active {
+  transform: scale(var(--press-scale));
+}
+
+.person-card__portrait-link:focus-visible,
+.person-card__name-link:focus-visible {
+  outline: var(--focus-width) solid var(--color-focus);
+  outline-offset: var(--space-1);
+}
+
+.person-card__content {
+  display: grid;
+  min-inline-size: 0;
+  inline-size: 100%;
+  justify-items: center;
+}
+
+.person-card__name-section {
+  min-inline-size: 0;
+  text-align: center;
+  overflow-wrap: break-word;
+}
+
+.person-card__name-link {
+  display: grid;
+  min-block-size: var(--control-size);
+  padding-inline: var(--space-2);
+  align-items: center;
+  color: var(--color-forest);
+  text-decoration: none;
+  text-underline-offset: var(--space-1);
+  transition: color var(--motion-micro), text-decoration-color var(--motion-micro), transform var(--motion-micro);
+}
+
+.person-card__name-link--website {
+  text-decoration-line: underline;
+  text-decoration-color: var(--color-rule);
+  text-decoration-thickness: 1px;
+}
+
+.person-card__name-link:hover,
+.person-card__name-link:focus-visible {
+  text-decoration-line: underline;
+  text-decoration-color: var(--color-ink);
+}
+
+.person-card__name-link:hover {
+  color: var(--color-forest-deep);
+}
+
+.person-card__name-link:active {
+  transform: scale(var(--press-scale));
+}
+
+.person-card h3 {
+  margin-block-end: var(--space-1);
+  font-size: var(--text-body);
+}
+
+.person-card__english-name {
+  margin-block-end: var(--space-4);
+  color: var(--color-ink-muted);
+  font-size: var(--text-small);
+}
+
+.person-card--advisor {
+  flex-basis: 100%;
+  inline-size: 100%;
+}
+
+.person-card--advisor .person-card__portrait {
+  inline-size: calc(var(--space-24) + var(--space-8));
+  block-size: auto;
+  aspect-ratio: 4 / 5;
+  border-radius: 0;
+}
+
+.person-card--advisor .person-card__portrait img {
+  object-fit: contain;
+}
+
+.person-card--advisor .person-card__content {
+  max-inline-size: var(--measure-reading);
+}
+
+.person-card--advisor h3 {
+  font-size: var(--text-h2);
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+}
+
+.person-card--advisor .person-card__english-name {
+  color: var(--color-ink);
+  font-size: var(--text-h3);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+}
+
+.person-card__advisor-info {
+  margin-block-start: var(--space-3);
+  padding-block-start: var(--space-3);
+  color: var(--color-ink-muted);
+  border-block-start: var(--border-hairline);
+  font-size: var(--text-small);
+  text-align: center;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.person-card__advisor-info p {
+  margin-block-end: var(--space-2);
+}
+
+.person-card__affiliation,
+.person-card__research,
+.person-card__office {
+  margin: 0;
+}
+
+.person-card__affiliation {
+  font-size: var(--text-small);
+  line-height: 1.4;
+}
+
+@media (min-width: 48rem) {
+  .person-card--advisor {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: var(--space-8);
+  }
+
+  .person-card--advisor .person-card__portrait {
+    inline-size: calc(var(--space-24) + var(--space-24));
+  }
+
+  .person-card--advisor .person-card__content {
+    flex: 1;
+    inline-size: auto;
+    justify-items: start;
+  }
+
+  .person-card--advisor .person-card__name-section,
+  .person-card--advisor .person-card__advisor-info {
+    text-align: start;
+  }
+
+}

@@ -1,6 +1,15 @@
 .about-view {
   display: grid;
+  min-inline-size: 0;
+  inline-size: 100%;
+  max-inline-size: 100%;
   gap: var(--space-24);
+}
+
+.about-section {
+  min-inline-size: 0;
+  inline-size: 100%;
+  max-inline-size: 100%;
 }
 
 .about-intro {
@@ -52,152 +61,6 @@
   gap: var(--space-10);
 }
 
-.person-card {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-3);
-  align-items: center;
-  width: 12rem;
-  flex-shrink: 0;
-}
-
-.person-card--advisor {
-  flex-direction: row;
-  width: auto;
-  gap: var(--space-6);
-  align-items: flex-start;
-}
-
-.person-card__portrait {
-  display: grid;
-  aspect-ratio: 3 / 4;
-  place-items: center;
-  overflow: hidden;
-  color: var(--color-white);
-  background: var(--color-forest-deep);
-  border-block-end: none;
-  font-family: var(--font-display);
-  font-size: var(--text-h2);
-  max-width: 8rem;
-  height: auto;
-}
-
-.person-card--advisor .person-card__portrait {
-  max-width: 14rem;
-  flex-shrink: 0;
-}
-
-.person-card__portrait img {
-  inline-size: 100%;
-  block-size: 100%;
-  object-fit: cover;
-}
-
-.person-card__name-section {
-  text-align: center;
-  word-break: break-word;
-  overflow-wrap: break-word;
-  white-space: normal;
-}
-
-.person-card h3 {
-  margin-block-end: var(--space-1);
-  font-size: var(--text-body);
-}
-
-.person-card__english-name {
-  margin-block-end: var(--space-4);
-  color: var(--color-ink-muted);
-  font-size: var(--text-small);
-}
-
-.person-card__advisor-info {
-  font-size: var(--text-small);
-  color: var(--color-ink-muted);
-  text-align: left;
-  border-top: var(--border-hairline);
-  padding-top: var(--space-3);
-  margin-top: var(--space-3);
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  white-space: normal;
-  hyphens: auto;
-}
-
-.person-card__advisor-info p {
-  margin-block-end: var(--space-2);
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-}
-
-.person-card__affiliation {
-  margin: 0;
-  font-size: var(--text-small);
-  line-height: 1.4;
-}
-
-.person-card__research,
-.person-card__office {
-  margin: 0;
-}
-
-.person-card__links {
-  display: flex;
-  flex-direction: row;
-  gap: var(--space-2);
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.person-card__link {
-  display: inline-block;
-  padding: var(--space-2) var(--space-4);
-  color: var(--color-focus);
-  text-decoration: none;
-  font-size: var(--text-small);
-  border: 1px solid var(--color-focus);
-  border-radius: var(--radius-control);
-  transition: all var(--motion-micro);
-}
-
-.person-card__link:hover {
-  background: var(--color-focus);
-  color: var(--color-white);
-}
-
-.person-card__identity {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-2);
-  margin-block-end: var(--space-2);
-  color: var(--color-copper);
-  font-family: var(--font-mono);
-  font-size: var(--text-label);
-}
-
-.person-card__identity span + span::before {
-  content: "·";
-  margin-inline-end: var(--space-2);
-}
-
-.person-card__affiliation {
-  margin-block-end: var(--space-3);
-  color: var(--color-ink-muted);
-  font-size: var(--text-small);
-}
-
-.person-card nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-4);
-}
-
-.person-card--prominent {
-  grid-template-columns: minmax(8rem, 14rem) minmax(0, 1fr);
-  align-items: center;
-}
-
 .advisor-section__statement {
   align-self: center;
   padding-inline-start: var(--space-6);
@@ -241,7 +104,4 @@
     padding-inline: var(--space-4);
   }
 
-  .person-card--prominent {
-    grid-template-columns: 7rem minmax(0, 1fr);
-  }
 }

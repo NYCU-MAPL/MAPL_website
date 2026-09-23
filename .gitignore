@@ -1,15 +1,10 @@
-# Local orchestration and browser state
+# Local orchestration
 .omo/
-.playwright-mcp/
 
 # Dependencies and generated output
 node_modules/
 dist/
-coverage/
 artifacts/
-reports/
-test-results/
-playwright-report/
 .cache/
 .vite/
 *.log
