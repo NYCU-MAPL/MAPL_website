@@ -9,7 +9,7 @@
     "topic": "learned-image-compression",
     "type": "conference",
     "featured": true,
-    "image": { "src": "media/publications/adapt-icip-2026.png", "alt": "ADAPT diffusion-based image codec adaptation architecture" }
+    "image": { "src": "media/publications/adapt-icip-2026.webp", "alt": "ADAPT diffusion-based image codec adaptation architecture" }
   },
   {
     "id": "ic4dgs-illumination-compensated-2026",
@@ -21,7 +21,7 @@
     "topic": "gaussian-splatting",
     "type": "conference",
     "featured": true,
-    "image": { "src": "media/publications/ic4dgs-icip-2026.png", "alt": "IC-4DGS illumination compensation overview" }
+    "image": { "src": "media/publications/ic4dgs-icip-2026.webp", "alt": "IC-4DGS illumination compensation overview" }
   },
   {
     "id": "csgaussian-compression-segmentation-2026",
@@ -33,7 +33,7 @@
     "topic": "gaussian-splatting",
     "type": "conference",
     "featured": true,
-    "image": { "src": "media/publications/csgaussian-wacv-2026.png", "alt": "CSGaussian compression and segmentation framework" },
+    "image": { "src": "media/publications/csgaussian-wacv-2026.webp", "alt": "CSGaussian compression and segmentation framework" },
     "links": { "paper": "https://arxiv.org/abs/2601.12814" }
   },
   {
@@ -46,7 +46,7 @@
     "topic": "gaussian-splatting",
     "type": "conference",
     "featured": true,
-    "image": { "src": "media/publications/ted-4dgs-wacv-2026.png", "alt": "TED-4DGS temporal activation and deformation framework" },
+    "image": { "src": "media/publications/ted-4dgs-wacv-2026.webp", "alt": "TED-4DGS temporal activation and deformation framework" },
     "links": { "paper": "https://arxiv.org/abs/2512.05446", "project": "https://nycu-mapl.github.io/TED-4DGS_page/" }
   },
   {
@@ -59,7 +59,7 @@
     "topic": "human-pose-estimation",
     "type": "conference",
     "featured": true,
-    "image": { "src": "media/publications/millimamba-wacv-2026.png", "alt": "milliMamba dual-radar pose estimation pipeline" },
+    "image": { "src": "media/publications/millimamba-wacv-2026.webp", "alt": "milliMamba dual-radar pose estimation pipeline" },
     "links": { "paper": "https://arxiv.org/abs/2512.20128", "code": "https://github.com/NYCU-MAPL/milliMamba" }
   },
   {
@@ -72,7 +72,7 @@
     "topic": "learned-video-compression",
     "type": "conference",
     "featured": true,
-    "image": { "src": "media/publications/hytip-iccv-2025.png", "alt": "HyTIP hybrid temporal information propagation architecture" },
+    "image": { "src": "media/publications/hytip-iccv-2025.webp", "alt": "HyTIP hybrid temporal information propagation architecture" },
     "links": { "paper": "https://arxiv.org/abs/2508.02072", "code": "https://github.com/NYCU-MAPL/HyTIP" }
   },
   {
@@ -85,7 +85,7 @@
     "topic": "learned-video-compression",
     "type": "conference",
     "featured": true,
-    "image": { "src": "media/publications/mh-lvc-iccv-2025.png", "alt": "MH-LVC multi-hypothesis temporal prediction architecture" },
+    "image": { "src": "media/publications/mh-lvc-iccv-2025.webp", "alt": "MH-LVC multi-hypothesis temporal prediction architecture" },
     "links": { "paper": "https://arxiv.org/abs/2510.12479", "code": "https://github.com/NYCU-MAPL/MHLVC" }
   },
   {
@@ -98,7 +98,7 @@
     "topic": "image-restoration",
     "type": "conference",
     "featured": false,
-    "image": { "src": "media/publications/conditional-restoration-wocc-2024.png", "alt": "Conditional video compressor adapted for image restoration" },
+    "image": { "src": "media/publications/conditional-restoration-wocc-2024.webp", "alt": "Conditional video compressor adapted for image restoration" },
     "links": { "paper": "https://ieeexplore.ieee.org/document/10786066" }
   },
   {
@@ -111,7 +111,7 @@
     "topic": "video-synthesis",
     "type": "conference",
     "featured": false,
-    "image": { "src": "media/publications/motif-iccv-2023.png", "alt": "MoTIF continuous space-time video super-resolution framework" },
+    "image": { "src": "media/publications/motif-iccv-2023.webp", "alt": "MoTIF continuous space-time video super-resolution framework" },
     "links": { "paper": "https://arxiv.org/abs/2307.07988", "code": "https://github.com/sichun233746/MoTIF", "project": "https://sichun233746.github.io/MoTIF/" }
   },
   {
@@ -124,7 +124,7 @@
     "topic": "semantic-segmentation",
     "type": "conference",
     "featured": false,
-    "image": { "src": "media/publications/dise-cvpr-2019.png", "alt": "DISE domain-invariant structure extraction framework" },
+    "image": { "src": "media/publications/dise-cvpr-2019.webp", "alt": "DISE domain-invariant structure extraction framework" },
     "links": { "paper": "https://arxiv.org/abs/1903.12212", "code": "https://github.com/a514514772/DISE-Domain-Invariant-Structure-Extraction", "project": "https://hui-po-wang.github.io/DISE-Domain-Invariant-Structure-Extraction/" }
   }
 ]
