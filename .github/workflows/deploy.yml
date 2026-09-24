@@ -88,8 +88,23 @@ jobs:
             git -C "$publish_dir" config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git -C "$publish_dir" commit -m "deploy: publish $SOURCE_SHA"
           fi
+          push_with_retry() {
+            local max_attempts=3 attempt=1 delay=2
+            while true; do
+              if git -C "$publish_dir" push origin HEAD:gh-pages; then
+                return 0
+              fi
+              if [ "$attempt" -ge "$max_attempts" ]; then
+                return 1
+              fi
+              echo "Push failed (attempt ${attempt}/${max_attempts}). Retrying in ${delay}s..." >&2
+              sleep "$delay"
+              attempt=$((attempt + 1))
+              delay=$((delay * 2))
+            done
+          }
           if git -C "$publish_dir" rev-parse --verify '@{upstream}' >/dev/null 2>&1; then
-            git -C "$publish_dir" diff --quiet '@{upstream}' HEAD || git -C "$publish_dir" push origin HEAD:gh-pages
+            git -C "$publish_dir" diff --quiet '@{upstream}' HEAD || push_with_retry
           else
-            git -C "$publish_dir" push origin HEAD:gh-pages
+            push_with_retry
           fi
