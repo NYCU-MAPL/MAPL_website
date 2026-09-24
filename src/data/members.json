@@ -8,7 +8,7 @@
     "group": "advisor",
     "affiliation": "Department of Computer Science, National Yang Ming Chiao Tung University",
     "image": {
-      "src": "media/people/wen-hsiao-peng.png",
+      "src": "media/people/wen-hsiao-peng.webp",
       "alt": "Prof. Wen-Hsiao Peng"
     },
     "website": "https://sites.google.com/g2.nctu.edu.tw/wpeng",
@@ -24,7 +24,7 @@
     "group": "visiting-researchers",
     "affiliation": "Federal University of Pelotas, Brazil",
     "image": {
-      "src": "media/people/ruhan-conceicao.jpg",
+      "src": "media/people/ruhan-conceicao.webp",
       "alt": "Ruhan Conceição"
     },
     "email": "radconceicao@inf.ufpel.edu.br"
@@ -38,7 +38,7 @@
     "group": "visiting-researchers",
     "affiliation": "Federal University of Pelotas, Brasil",
     "image": {
-      "src": "media/people/leandro.jpg",
+      "src": "media/people/leandro.webp",
       "alt": "Leandro"
     },
     "email": "lwtavares@inf.ufpel.edu.br"
@@ -52,7 +52,7 @@
     "role": "phd-student",
     "group": "phd-students",
     "image": {
-      "src": "media/people/niraj-prakash-kini.jpg",
+      "src": "media/people/niraj-prakash-kini.webp",
       "alt": "Niraj Prakash Kini"
     },
     "email": "nirajnctu17@gmail.com"
@@ -66,7 +66,7 @@
     "role": "phd-student",
     "group": "phd-students",
     "image": {
-      "src": "media/people/nguyen-quang-sang.jpg",
+      "src": "media/people/nguyen-quang-sang.webp",
       "alt": "Nguyen Quang Sang"
     },
     "website": "https://sites.google.com/view/sangnq/",
@@ -81,7 +81,7 @@
     "role": "phd-student",
     "group": "phd-students",
     "image": {
-      "src": "media/people/huu-tai-phung.jpg",
+      "src": "media/people/huu-tai-phung.webp",
       "alt": "Huu-Tai Phung"
     },
     "website": "https://linktr.ee/whatwedontknowyet",
@@ -110,7 +110,7 @@
     "role": "masters-student",
     "group": "masters-students",
     "image": {
-      "src": "media/people/yen-kuan-ho.jpg",
+      "src": "media/people/yen-kuan-ho.webp",
       "alt": "Yen-Kuan Ho"
     },
     "enrollmentYear": 2024,
@@ -125,7 +125,7 @@
     "role": "masters-student",
     "group": "masters-students",
     "image": {
-      "src": "media/people/he-bi-yang.jpg",
+      "src": "media/people/he-bi-yang.webp",
       "alt": "He-Bi Yang"
     },
     "enrollmentYear": 2024,
@@ -140,7 +140,7 @@
     "role": "masters-student",
     "group": "masters-students",
     "image": {
-      "src": "media/people/chun-hung-wu.jpg",
+      "src": "media/people/chun-hung-wu.webp",
       "alt": "Chun-Hung Wu"
     },
     "enrollmentYear": 2024,
@@ -155,7 +155,7 @@
     "role": "masters-student",
     "group": "masters-students",
     "image": {
-      "src": "media/people/jing-zhong-chen.jpg",
+      "src": "media/people/jing-zhong-chen.webp",
       "alt": "Jing-Zhong Chen"
     },
     "enrollmentYear": 2024,
@@ -170,7 +170,7 @@
     "role": "masters-student",
     "group": "masters-students",
     "image": {
-      "src": "media/people/yu-hsiang-lin.jpg",
+      "src": "media/people/yu-hsiang-lin.webp",
       "alt": "Yu-Hsiang Lin"
     },
     "enrollmentYear": 2024,
@@ -185,7 +185,7 @@
     "role": "masters-student",
     "group": "masters-students",
     "image": {
-      "src": "media/people/wei-syuan-teng.jpg",
+      "src": "media/people/wei-syuan-teng.webp",
       "alt": "Wei-Syuan Teng"
     },
     "enrollmentYear": 2024,
@@ -200,7 +200,7 @@
     "role": "masters-student",
     "group": "masters-students",
     "image": {
-      "src": "media/people/chun-liang-lin.jpg",
+      "src": "media/people/chun-liang-lin.webp",
       "alt": "Chun-Liang Lin"
     },
     "enrollmentYear": 2025,
@@ -215,7 +215,7 @@
     "role": "masters-student",
     "group": "masters-students",
     "image": {
-      "src": "media/people/cheng-wei-yang.jpg",
+      "src": "media/people/cheng-wei-yang.webp",
       "alt": "Cheng-Wei Yang"
     },
     "enrollmentYear": 2025,
@@ -230,7 +230,7 @@
     "role": "masters-student",
     "group": "masters-students",
     "image": {
-      "src": "media/people/ming-zhe-he.jpg",
+      "src": "media/people/ming-zhe-he.webp",
       "alt": "Ming-Zhe He"
     },
     "enrollmentYear": 2025,
@@ -245,7 +245,7 @@
     "role": "masters-student",
     "group": "masters-students",
     "image": {
-      "src": "media/people/tzu-hsiang-chou.jpg",
+      "src": "media/people/tzu-hsiang-chou.webp",
       "alt": "Tzu-Hsiang Chou"
     },
     "enrollmentYear": 2025,
@@ -260,7 +260,7 @@
     "role": "masters-student",
     "group": "masters-students",
     "image": {
-      "src": "media/people/dhivya-dharsini.jpg",
+      "src": "media/people/dhivya-dharsini.webp",
       "alt": "Dhivya Dharsini"
     },
     "enrollmentYear": 2026,
@@ -275,7 +275,7 @@
     "role": "masters-student",
     "group": "masters-students",
     "image": {
-      "src": "media/people/shin-tzu-chu.jpg",
+      "src": "media/people/shin-tzu-chu.webp",
       "alt": "Shin-Tzu Chu"
     },
     "enrollmentYear": 2026,
@@ -290,7 +290,7 @@
     "role": "undergraduate-student",
     "group": "undergraduate-students",
     "image": {
-      "src": "media/people/yun-yu-lee.jpg",
+      "src": "media/people/yun-yu-lee.webp",
       "alt": "Yun-Yu Lee"
     }
   },
@@ -303,7 +303,7 @@
     "role": "undergraduate-student",
     "group": "undergraduate-students",
     "image": {
-      "src": "media/people/fan-yi-hsu.jpg",
+      "src": "media/people/fan-yi-hsu.webp",
       "alt": "Fan-Yi Hsu"
     }
   },
@@ -610,7 +610,7 @@
     "group": "masters-students",
     "enrollmentYear": 2026,
     "image": {
-      "src": "media/people/陳彥廷.png",
+      "src": "media/people/陳彥廷.webp",
       "alt": "Yen-Ting Chen"
     },
     "email": "yenting.cs15@nycu.edu.tw"
@@ -625,7 +625,7 @@
     "group": "masters-students",
     "enrollmentYear": 2026,
     "image": {
-      "src": "media/people/朱驛庭.jpg",
+      "src": "media/people/朱驛庭.webp",
       "alt": "I-Ting Chu"
     },
     "email": "chueating1005.cs15@nycu.edu.tw"
@@ -640,7 +640,7 @@
     "group": "masters-students",
     "enrollmentYear": 2026,
     "image": {
-      "src": "media/people/嚴聲遠.jpg",
+      "src": "media/people/嚴聲遠.webp",
       "alt": "Sheng-Yuan Yen"
     },
     "email": "spacesnyencu.cs15@nycu.edu.tw"
@@ -654,7 +654,7 @@
     "group": "masters-students",
     "enrollmentYear": 2026,
     "image": {
-      "src": "media/people/阮青春.jpg",
+      "src": "media/people/阮青春.webp",
       "alt": "Nguyen Thanh Xuan"
     },
     "email": "txuan0164@gmail.com"
@@ -669,7 +669,7 @@
     "group": "masters-students",
     "enrollmentYear": 2026,
     "image": {
-      "src": "media/people/奧德麗.jpg",
+      "src": "media/people/奧德麗.webp",
       "alt": "Audrea Arjaemi Tadios Tabadero"
     },
     "email": "aud.ee15@nycu.edu.tw"
