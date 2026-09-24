@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ArrowRight } from "@lucide/vue"
+import { ref } from "vue"
 import { RouterLink } from "vue-router"
 
 import AlumniLedger from "../components/about/AlumniLedger.vue"
@@ -12,6 +13,7 @@ import "../styles/about.css"
 import "../styles/about-collections.css"
 
 const presentation = buildAboutPresentation(members)
+const showCurrentEmails = ref(false)
 </script>
 
 <template>
@@ -84,7 +86,7 @@ const presentation = buildAboutPresentation(members)
     </section>
 
     <section
-      class="about-section"
+      class="about-section current-people"
       aria-label="Current people"
     >
       <SectionHeading
@@ -94,6 +96,21 @@ const presentation = buildAboutPresentation(members)
       >
         <p>A group organized by role, from visiting researchers to undergraduate students.</p>
       </SectionHeading>
+      <button
+        type="button"
+        role="switch"
+        class="current-people__email-toggle"
+        :aria-checked="showCurrentEmails"
+        @click="showCurrentEmails = !showCurrentEmails"
+      >
+        <span>Show email</span>
+        <span
+          class="current-people__email-track"
+          aria-hidden="true"
+        >
+          <span class="current-people__email-knob" />
+        </span>
+      </button>
       <div
         v-if="presentation.currentGroups.length > 0"
         class="people-groups"
@@ -102,6 +119,7 @@ const presentation = buildAboutPresentation(members)
           v-for="group in presentation.currentGroups"
           :key="group.group"
           :presentation="group"
+          :show-email="showCurrentEmails"
         />
       </div>
       <p

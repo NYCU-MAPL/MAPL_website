@@ -5,6 +5,7 @@ import PersonCard from "./PersonCard.vue"
 
 const props = defineProps<{
   readonly presentation: MemberGroupPresentation
+  readonly showEmail: boolean
 }>()
 
 const sortedMembers = computed(() => {
@@ -31,14 +32,12 @@ const sortedMembers = computed(() => {
       <span v-if="presentation.group !== 'masters-students'">{{ presentation.count }}</span>
     </header>
 
-    <div
-      class="people-grid"
-      :class="{ 'people-grid--masters': presentation.group === 'masters-students' }"
-    >
+    <div class="people-grid">
       <PersonCard
         v-for="member in sortedMembers"
         :key="member.id"
         :member="member"
+        :show-email="showEmail"
       />
     </div>
   </section>
