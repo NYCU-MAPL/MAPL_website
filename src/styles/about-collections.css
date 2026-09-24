@@ -16,6 +16,69 @@
   gap: var(--space-4);
 }
 
+.current-people {
+  display: grid;
+}
+
+.current-people__email-toggle {
+  display: inline-flex;
+  min-block-size: var(--control-size);
+  align-items: center;
+  gap: var(--space-2);
+  margin-block: calc(-1 * var(--space-8)) var(--space-4);
+  margin-inline-start: auto;
+  padding-inline: var(--space-2);
+  color: var(--color-ink-muted);
+  background: transparent;
+  border: 0;
+  border-radius: var(--radius-control);
+  cursor: pointer;
+  font-size: var(--text-small);
+  font-weight: 500;
+  line-height: 1.5;
+  transition: color var(--motion-micro), background-color var(--motion-micro), transform var(--motion-micro);
+}
+
+.current-people__email-toggle:hover {
+  color: var(--color-ink);
+  background: var(--color-paper-subdued);
+}
+
+.current-people__email-toggle:active {
+  transform: scale(var(--press-scale));
+}
+
+.current-people__email-track {
+  display: flex;
+  inline-size: var(--space-10);
+  block-size: var(--space-6);
+  flex: none;
+  align-items: center;
+  padding: var(--space-1);
+  background: var(--color-paper-subdued);
+  border: var(--border-hairline);
+  border-radius: calc(var(--space-6) / 2);
+  transition: background-color var(--motion-micro), border-color var(--motion-micro);
+}
+
+.current-people__email-knob {
+  inline-size: var(--space-4);
+  block-size: var(--space-4);
+  background: var(--color-ink-muted);
+  border-radius: 50%;
+  transition: background-color var(--motion-micro), transform var(--motion-micro);
+}
+
+.current-people__email-toggle[aria-checked="true"] .current-people__email-track {
+  background: var(--color-forest);
+  border-color: var(--color-forest);
+}
+
+.current-people__email-toggle[aria-checked="true"] .current-people__email-knob {
+  background: var(--color-paper);
+  transform: translateX(var(--space-4));
+}
+
 .people-group__heading,
 .alumni-group > header {
   display: flex;
@@ -39,37 +102,12 @@
 }
 
 .people-grid {
-  display: flex;
+  display: grid;
   min-inline-size: 0;
   inline-size: 100%;
   max-inline-size: 100%;
-  flex-wrap: nowrap;
-  gap: var(--space-2);
-  overflow-x: auto;
-  overflow-y: hidden;
-  overscroll-behavior-inline: contain;
-  padding-block-end: var(--space-2);
-  scroll-snap-type: inline proximity;
-  scrollbar-width: none;
-}
-
-.people-grid::-webkit-scrollbar {
-  display: none;
-}
-
-.people-grid--masters {
-  display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: var(--space-2);
-  overflow: visible;
-  padding-block-end: 0;
-  scroll-snap-type: none;
-}
-
-.people-grid--masters > .person-card {
-  inline-size: 100%;
-  flex: none;
-  scroll-snap-align: none;
 }
 
 .alumni-section {
@@ -151,7 +189,7 @@
 }
 
 @media (min-width: 48rem) {
-  .people-grid--masters {
+  .people-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
@@ -180,7 +218,7 @@
 }
 
 @media (min-width: 64rem) {
-  .people-grid--masters {
+  .people-grid {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 }
