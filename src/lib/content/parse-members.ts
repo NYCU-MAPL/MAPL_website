@@ -103,7 +103,8 @@ export const parseMembers = (input: unknown, source: string): readonly Member[] 
     const affiliation = optionalString(object, "affiliation", context)
     const image = "image" in object ? parseImage(object["image"], context) : undefined
     const email = optionalString(object, "email", context)
-    const website = parseUrl(object, "website", context)
+    // Preserve historical personal website URLs imported from the legacy site.
+    const website = parseUrl(object, "website", context, { allowHttp: object["status"] === "alumni" })
     const scholarUrl = parseUrl(object, "scholarUrl", context)
     const member: Member = {
       id: parseId(object, context),

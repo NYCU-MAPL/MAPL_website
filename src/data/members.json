@@ -99,7 +99,8 @@
       "src": "media/people/cheng-wei-chen.jpg",
       "alt": "Cheng-Wei Chen"
     },
-    "graduationYear": 2026
+    "graduationYear": 2026,
+    "email": "starfish.cs11@nycu.edu.tw"
   },
   {
     "id": "yen-kuan-ho",
@@ -151,9 +152,10 @@
     "name": "Jing-Zhong Chen",
     "nativeName": "陳敬中",
     "nickname": "Bill",
-    "status": "current",
-    "role": "masters-student",
-    "group": "masters-students",
+    "status": "alumni",
+    "role": "alumnus",
+    "group": "masters-graduates",
+    "graduationYear": 2026,
     "image": {
       "src": "media/people/jing-zhong-chen.webp",
       "alt": "Jing-Zhong Chen"
@@ -316,7 +318,13 @@
     "role": "alumnus",
     "group": "phd-graduates",
     "graduationYear": 2025,
-    "affiliation": "MediaTek, Taiwan"
+    "affiliation": "MediaTek, Taiwan",
+    "email": "yhchen12101@gmail.com",
+    "website": "https://www.linkedin.com/in/yihsinchen/",
+    "image": {
+      "src": "media/people/yi-hsin-chen.webp",
+      "alt": "Yi-Hsin Chen"
+    }
   },
   {
     "id": "hui-ting-lin",
@@ -326,7 +334,12 @@
     "status": "alumni",
     "role": "alumnus",
     "group": "phd-graduates",
-    "graduationYear": 2024
+    "graduationYear": 2024,
+    "email": "lin.huiting.christine@gmail.com",
+    "image": {
+      "src": "media/people/hui-ting-lin.webp",
+      "alt": "Hui-Ting Lin"
+    }
   },
   {
     "id": "yung-han-ho",
@@ -337,7 +350,12 @@
     "role": "alumnus",
     "group": "phd-graduates",
     "graduationYear": 2022,
-    "affiliation": "Qualcomm, Taiwan"
+    "affiliation": "Qualcomm, Taiwan",
+    "email": "hectorho0409@gmail.com",
+    "image": {
+      "src": "media/people/yung-han-ho.webp",
+      "alt": "Yung-Han Ho"
+    }
   },
   {
     "id": "chun-chi-chen",
@@ -347,7 +365,13 @@
     "role": "alumnus",
     "group": "phd-graduates",
     "graduationYear": 2017,
-    "affiliation": "Qualcomm, San Diego, USA"
+    "affiliation": "Qualcomm, San Diego, USA",
+    "email": "cheerchen73@gmail.com",
+    "website": "https://www.linkedin.com/in/chun-chi-chen-09393610a",
+    "image": {
+      "src": "media/people/chun-chi-chen.webp",
+      "alt": "Chun-Chi Chen"
+    }
   },
   {
     "id": "yi-wen-chen",
@@ -358,7 +382,13 @@
     "role": "alumnus",
     "group": "phd-graduates",
     "graduationYear": 2011,
-    "affiliation": "Kwai, San Diego, USA"
+    "affiliation": "Kwai, San Diego, USA",
+    "email": "yiwenchen@kwai.com",
+    "website": "https://tw.linkedin.com/in/yi-wen-chen-180b1059",
+    "image": {
+      "src": "media/people/yi-wen-chen.webp",
+      "alt": "Yi-Wen Chen"
+    }
   },
   {
     "id": "hung-chih-lin",
@@ -368,7 +398,12 @@
     "role": "alumnus",
     "group": "phd-graduates",
     "graduationYear": 2010,
-    "affiliation": "MediaTek, Hsinchu, Taiwan"
+    "affiliation": "MediaTek, Hsinchu, Taiwan",
+    "email": "hclin.ee93g@nctu.edu.tw",
+    "image": {
+      "src": "media/people/hung-chih-lin.webp",
+      "alt": "Hung-Chih Lin"
+    }
   },
   {
     "id": "chih-hung-li",
@@ -378,7 +413,12 @@
     "role": "alumnus",
     "group": "phd-graduates",
     "graduationYear": 2010,
-    "affiliation": "Ambarella, Hsinchu, Taiwan"
+    "affiliation": "Ambarella, Hsinchu, Taiwan",
+    "email": "chihhung.li@gmail.com",
+    "image": {
+      "src": "media/people/chih-hung-li.webp",
+      "alt": "Chih-Hung Li"
+    }
   },
   {
     "id": "zong-lin-gao",
@@ -388,7 +428,12 @@
     "status": "alumni",
     "role": "alumnus",
     "group": "masters-graduates",
-    "graduationYear": 2025
+    "graduationYear": 2025,
+    "email": "zxc1679876@gmail.com",
+    "image": {
+      "src": "media/people/zong-lin-gao.webp",
+      "alt": "Zong-Lin Gao"
+    }
   },
   {
     "id": "yu-ting-zhan",
@@ -398,7 +443,12 @@
     "status": "alumni",
     "role": "alumnus",
     "group": "masters-graduates",
-    "graduationYear": 2025
+    "graduationYear": 2025,
+    "email": "rinsue27129@gmail.com",
+    "image": {
+      "src": "media/people/yu-ting-zhan.webp",
+      "alt": "Yu-Ting Zhan"
+    }
   },
   {
     "id": "ting-han-lin",
@@ -408,7 +458,12 @@
     "status": "alumni",
     "role": "alumnus",
     "group": "masters-graduates",
-    "graduationYear": 2025
+    "graduationYear": 2025,
+    "email": "freefrit.ee07@nycu.edu.tw",
+    "image": {
+      "src": "media/people/ting-han-lin.webp",
+      "alt": "Ting-Han Lin"
+    }
   },
   {
     "id": "kuan-wei-ho",
@@ -418,7 +473,13 @@
     "status": "alumni",
     "role": "alumnus",
     "group": "masters-graduates",
-    "graduationYear": 2025
+    "graduationYear": 2025,
+    "email": "kwho@cs.nycu.edu.tw",
+    "website": "https://www.linkedin.com/in/jefferykho",
+    "image": {
+      "src": "media/people/kuan-wei-ho.webp",
+      "alt": "Kuan-Wei Ho"
+    }
   },
   {
     "id": "yi-chen-yao",
@@ -428,7 +489,12 @@
     "status": "alumni",
     "role": "alumnus",
     "group": "masters-graduates",
-    "graduationYear": 2025
+    "graduationYear": 2025,
+    "email": "yyc.cs12@nycu.edu.tw",
+    "image": {
+      "src": "media/people/yi-chen-yao.webp",
+      "alt": "Yi-Chen Yao"
+    }
   },
   {
     "id": "cheng-yuan-ho",
@@ -438,7 +504,12 @@
     "status": "alumni",
     "role": "alumnus",
     "group": "masters-graduates",
-    "graduationYear": 2025
+    "graduationYear": 2025,
+    "email": "kelvinhe0218@gmail.com",
+    "image": {
+      "src": "media/people/cheng-yuan-ho.webp",
+      "alt": "Cheng-Yuan Ho"
+    }
   },
   {
     "id": "yu-jen-tseng",
@@ -448,7 +519,12 @@
     "status": "alumni",
     "role": "alumnus",
     "group": "masters-graduates",
-    "graduationYear": 2025
+    "graduationYear": 2025,
+    "email": "alan90817@gmail.com",
+    "image": {
+      "src": "media/people/yu-jen-tseng.webp",
+      "alt": "Yu-Jen Tseng"
+    }
   },
   {
     "id": "shiau-rung-tsai",
@@ -458,7 +534,12 @@
     "status": "alumni",
     "role": "alumnus",
     "group": "masters-graduates",
-    "graduationYear": 2025
+    "graduationYear": 2025,
+    "email": "mick20001108@gmail.com",
+    "image": {
+      "src": "media/people/shiau-rung-tsai.webp",
+      "alt": "Shiau-Rung Tsai"
+    }
   },
   {
     "id": "guan-hsun-lin",
@@ -468,7 +549,12 @@
     "status": "alumni",
     "role": "alumnus",
     "group": "masters-graduates",
-    "graduationYear": 2025
+    "graduationYear": 2025,
+    "email": "abc900203abc@gmail.com",
+    "image": {
+      "src": "media/people/guan-hsun-lin.webp",
+      "alt": "Guan-Hsun Lin"
+    }
   },
   {
     "id": "hong-sheng-xie",
@@ -478,7 +564,12 @@
     "status": "alumni",
     "role": "alumnus",
     "group": "masters-graduates",
-    "graduationYear": 2024
+    "graduationYear": 2024,
+    "email": "a0983061037@gmail.com",
+    "image": {
+      "src": "media/people/hong-sheng-xie.webp",
+      "alt": "Hong-Sheng Xie"
+    }
   },
   {
     "id": "yi-hsin-cindy-chen",
@@ -488,7 +579,12 @@
     "status": "alumni",
     "role": "alumnus",
     "group": "masters-graduates",
-    "graduationYear": 2024
+    "graduationYear": 2024,
+    "email": "karta6120@gmail.com",
+    "image": {
+      "src": "media/people/yi-hsin-cindy-chen.webp",
+      "alt": "Yi-Hsin Chen"
+    }
   },
   {
     "id": "cheng-chien",
@@ -498,7 +594,13 @@
     "status": "alumni",
     "role": "alumnus",
     "group": "masters-graduates",
-    "graduationYear": 2024
+    "graduationYear": 2024,
+    "email": "jamesqian1999@gmail.com",
+    "website": "https://jamesqian1999.github.io",
+    "image": {
+      "src": "media/people/cheng-chien.webp",
+      "alt": "Cheng Chien"
+    }
   },
   {
     "id": "ruey-horng-shiue",
@@ -508,7 +610,12 @@
     "status": "alumni",
     "role": "alumnus",
     "group": "masters-graduates",
-    "graduationYear": 2024
+    "graduationYear": 2024,
+    "email": "raymondshiue@gmail.com",
+    "image": {
+      "src": "media/people/ruey-horng-shiue.webp",
+      "alt": "Ruey-Horng Shiue"
+    }
   },
   {
     "id": "ryan-chandra",
@@ -518,7 +625,12 @@
     "status": "alumni",
     "role": "alumnus",
     "group": "masters-graduates",
-    "graduationYear": 2024
+    "graduationYear": 2024,
+    "email": "ryanchandra2015@gmail.com",
+    "image": {
+      "src": "media/people/ryan-chandra.webp",
+      "alt": "Ryan Chandra"
+    }
   },
   {
     "id": "ying-chieh-weng",
@@ -528,7 +640,12 @@
     "status": "alumni",
     "role": "alumnus",
     "group": "masters-graduates",
-    "graduationYear": 2023
+    "graduationYear": 2023,
+    "email": "wengyc@cs.nctu.edu.tw",
+    "image": {
+      "src": "media/people/ying-chieh-weng.webp",
+      "alt": "Ying-Chieh Weng"
+    }
   },
   {
     "id": "chia-hao-kao",
@@ -538,7 +655,12 @@
     "status": "alumni",
     "role": "alumnus",
     "group": "masters-graduates",
-    "graduationYear": 2023
+    "graduationYear": 2023,
+    "email": "marshmallowct@gmail.com",
+    "image": {
+      "src": "media/people/chia-hao-kao.webp",
+      "alt": "Chia-Hao Kao"
+    }
   },
   {
     "id": "peng-yu-chen",
@@ -548,7 +670,12 @@
     "status": "alumni",
     "role": "alumnus",
     "group": "masters-graduates",
-    "graduationYear": 2023
+    "graduationYear": 2023,
+    "email": "brian90218774@gmail.com",
+    "image": {
+      "src": "media/people/peng-yu-chen.webp",
+      "alt": "Peng-Yu Chen"
+    }
   },
   {
     "id": "mu-jung-chen",
@@ -558,7 +685,12 @@
     "status": "alumni",
     "role": "alumnus",
     "group": "masters-graduates",
-    "graduationYear": 2023
+    "graduationYear": 2023,
+    "email": "mujung.cs10@nycu.edu.tw",
+    "image": {
+      "src": "media/people/mu-jung-chen.webp",
+      "alt": "Mu-Jung Chen"
+    }
   },
   {
     "id": "yun-liang",
@@ -568,7 +700,12 @@
     "status": "alumni",
     "role": "alumnus",
     "group": "masters-graduates",
-    "graduationYear": 2022
+    "graduationYear": 2022,
+    "email": "leoleo30539@gmail.com",
+    "image": {
+      "src": "media/people/yun-liang.webp",
+      "alt": "Yun Liang"
+    }
   },
   {
     "id": "chih-peng-chang",
@@ -578,7 +715,12 @@
     "status": "alumni",
     "role": "alumnus",
     "group": "masters-graduates",
-    "graduationYear": 2022
+    "graduationYear": 2022,
+    "email": "cpchang.cs08g@nctu.edu.tw",
+    "image": {
+      "src": "media/people/chih-peng-chang.webp",
+      "alt": "Chih-Peng Chang"
+    }
   },
   {
     "id": "chih-hsuan-lin",
@@ -588,7 +730,12 @@
     "status": "alumni",
     "role": "alumnus",
     "group": "masters-graduates",
-    "graduationYear": 2022
+    "graduationYear": 2022,
+    "email": "jason603078@gmail.com",
+    "image": {
+      "src": "media/people/chih-hsuan-lin.webp",
+      "alt": "Chih-Hsuan Lin"
+    }
   },
   {
     "id": "si-cun-chen",
@@ -598,7 +745,12 @@
     "status": "alumni",
     "role": "alumnus",
     "group": "masters-graduates",
-    "graduationYear": 2022
+    "graduationYear": 2022,
+    "email": "abdc233746@gmail.com",
+    "image": {
+      "src": "media/people/si-cun-chen.webp",
+      "alt": "Si-Cun Chen"
+    }
   },
   {
     "id": "yen-ting-chen",
@@ -681,7 +833,12 @@
     "status": "alumni",
     "role": "alumnus",
     "group": "masters-graduates",
-    "graduationYear": 2020
+    "graduationYear": 2020,
+    "email": "sypan.cser@gmail.com",
+    "image": {
+      "src": "media/people/shun-yi-pan.webp",
+      "alt": "Shun-Yi Pan"
+    }
   },
   {
     "id": "shih-po-lee",
@@ -690,7 +847,12 @@
     "status": "alumni",
     "role": "alumnus",
     "group": "masters-graduates",
-    "graduationYear": 2020
+    "graduationYear": 2020,
+    "email": "robert80203@gmail.com",
+    "image": {
+      "src": "media/people/shih-po-lee.webp",
+      "alt": "Shih-Po Lee"
+    }
   },
   {
     "id": "meng-wang",
@@ -699,7 +861,12 @@
     "status": "alumni",
     "role": "alumnus",
     "group": "masters-graduates",
-    "graduationYear": 2019
+    "graduationYear": 2019,
+    "email": "mm20103462@gmail.com",
+    "image": {
+      "src": "media/people/meng-wang.webp",
+      "alt": "Meng Wang"
+    }
   },
   {
     "id": "yen-wei-chang",
@@ -708,7 +875,12 @@
     "status": "alumni",
     "role": "alumnus",
     "group": "masters-graduates",
-    "graduationYear": 2019
+    "graduationYear": 2019,
+    "email": "francis87192@gmail.com",
+    "image": {
+      "src": "media/people/yen-wei-chang.webp",
+      "alt": "Yen-Wei Chang"
+    }
   },
   {
     "id": "chia-hua-chung",
@@ -717,7 +889,12 @@
     "status": "alumni",
     "role": "alumnus",
     "group": "masters-graduates",
-    "graduationYear": 2017
+    "graduationYear": 2017,
+    "email": "jason0602q@gmail.com",
+    "image": {
+      "src": "media/people/chia-hua-chung.webp",
+      "alt": "Chia-Hua Chung"
+    }
   },
   {
     "id": "wei-lin-ku",
@@ -726,7 +903,12 @@
     "status": "alumni",
     "role": "alumnus",
     "group": "masters-graduates",
-    "graduationYear": 2015
+    "graduationYear": 2015,
+    "email": "hughku@gmail.com",
+    "image": {
+      "src": "media/people/wei-lin-ku.webp",
+      "alt": "Wei-Lin Ku"
+    }
   },
   {
     "id": "wendy-tseng",
@@ -736,7 +918,12 @@
     "role": "alumnus",
     "group": "masters-graduates",
     "graduationYear": 2015,
-    "nickname": "Wendy"
+    "nickname": "Wendy",
+    "email": "bowlbear10@gmail.com",
+    "image": {
+      "src": "media/people/wendy-tseng.webp",
+      "alt": "Wendy Tseng"
+    }
   },
   {
     "id": "hung-chun-chou",
@@ -745,7 +932,12 @@
     "status": "alumni",
     "role": "alumnus",
     "group": "masters-graduates",
-    "graduationYear": 2015
+    "graduationYear": 2015,
+    "email": "chouhc.cs02g@nctu.edu.tw",
+    "image": {
+      "src": "media/people/hung-chun-chou.webp",
+      "alt": "Hung-Chun Chou"
+    }
   },
   {
     "id": "ru-ling-liao",
@@ -754,7 +946,12 @@
     "status": "alumni",
     "role": "alumnus",
     "group": "masters-graduates",
-    "graduationYear": 2015
+    "graduationYear": 2015,
+    "email": "jlliao.cs02g@nctu.edu.tw",
+    "image": {
+      "src": "media/people/ru-ling-liao.webp",
+      "alt": "Ru-Ling Liao"
+    }
   },
   {
     "id": "yin-an-jian",
@@ -763,7 +960,12 @@
     "status": "alumni",
     "role": "alumnus",
     "group": "masters-graduates",
-    "graduationYear": 2015
+    "graduationYear": 2015,
+    "email": "yachien.cs02g@nctu.edu.tw",
+    "image": {
+      "src": "media/people/yin-an-jian.webp",
+      "alt": "Yin-An Jian"
+    }
   },
   {
     "id": "syuan-yu-sie",
@@ -772,7 +974,12 @@
     "status": "alumni",
     "role": "alumnus",
     "group": "masters-graduates",
-    "graduationYear": 2015
+    "graduationYear": 2015,
+    "email": "kyodaisuki@gmail.com",
+    "image": {
+      "src": "media/people/syuan-yu-sie.webp",
+      "alt": "Syuan-Yu Sie"
+    }
   },
   {
     "id": "tsui-shan-chang",
@@ -781,7 +988,12 @@
     "status": "alumni",
     "role": "alumnus",
     "group": "masters-graduates",
-    "graduationYear": 2014
+    "graduationYear": 2014,
+    "email": "abaibai1122@gmail.com",
+    "image": {
+      "src": "media/people/tsui-shan-chang.webp",
+      "alt": "Tsui-Shan Chang"
+    }
   },
   {
     "id": "hsin-yen-wang",
@@ -790,7 +1002,12 @@
     "status": "alumni",
     "role": "alumnus",
     "group": "masters-graduates",
-    "graduationYear": 2014
+    "graduationYear": 2014,
+    "email": "wsx789456w@gmail.com",
+    "image": {
+      "src": "media/people/hsin-yen-wang.webp",
+      "alt": "Hsin-Yen Wang"
+    }
   },
   {
     "id": "nguyen-tang-kha-duy",
@@ -799,7 +1016,12 @@
     "status": "alumni",
     "role": "alumnus",
     "group": "masters-graduates",
-    "graduationYear": 2013
+    "graduationYear": 2013,
+    "email": "ntkduy@cs.nctu.edu.tw",
+    "image": {
+      "src": "media/people/nguyen-tang-kha-duy.webp",
+      "alt": "Nguyen Tang Kha Duy"
+    }
   },
   {
     "id": "yu-hsing-wu",
@@ -808,7 +1030,12 @@
     "status": "alumni",
     "role": "alumnus",
     "group": "masters-graduates",
-    "graduationYear": 2013
+    "graduationYear": 2013,
+    "email": "djken0106@gmail.com",
+    "image": {
+      "src": "media/people/yu-hsing-wu.webp",
+      "alt": "Yu-Hsing Wu"
+    }
   },
   {
     "id": "hung-cheng-chu",
@@ -817,7 +1044,12 @@
     "status": "alumni",
     "role": "alumnus",
     "group": "masters-graduates",
-    "graduationYear": 2013
+    "graduationYear": 2013,
+    "email": "ted0958.am96@nctu.edu.tw",
+    "image": {
+      "src": "media/people/hung-cheng-chu.webp",
+      "alt": "Hung-Cheng Chu"
+    }
   },
   {
     "id": "yan-yu-chen",
@@ -826,7 +1058,12 @@
     "status": "alumni",
     "role": "alumnus",
     "group": "masters-graduates",
-    "graduationYear": 2012
+    "graduationYear": 2012,
+    "email": "ratedrko825@gmail.com",
+    "image": {
+      "src": "media/people/yan-yu-chen.webp",
+      "alt": "Yan-Yu Chen"
+    }
   },
   {
     "id": "mu-hsuan-wu",
@@ -835,6 +1072,11 @@
     "status": "alumni",
     "role": "alumnus",
     "group": "masters-graduates",
-    "graduationYear": 2012
+    "graduationYear": 2012,
+    "email": "s934727@mail.yzu.edu.tw",
+    "image": {
+      "src": "media/people/mu-hsuan-wu.webp",
+      "alt": "Mu-Hsuan Wu"
+    }
   }
 ]

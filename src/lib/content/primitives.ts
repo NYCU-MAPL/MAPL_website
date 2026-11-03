@@ -122,6 +122,7 @@ export const parseUrl = (
   object: JsonObject,
   field: string,
   context: ParseContext,
+  options: Readonly<{ allowHttp?: boolean }> = {},
 ): string | undefined => {
   const value = optionalString(object, field, context)
   if (value === undefined) return undefined
@@ -129,10 +130,12 @@ export const parseUrl = (
   try {
     url = new URL(value)
   } catch (error) {
-    if (error instanceof TypeError) return fail(context, field, "must be a valid HTTPS URL")
+    if (error instanceof TypeError) return fail(context, field, options.allowHttp ? "must be a valid HTTP or HTTPS URL" : "must be a valid HTTPS URL")
     throw error
   }
-  if (url.protocol !== "https:") return fail(context, field, "must use HTTPS")
+  if (url.protocol !== "https:" && !(options.allowHttp && url.protocol === "http:")) {
+    return fail(context, field, options.allowHttp ? "must use HTTP or HTTPS" : "must use HTTPS")
+  }
   return url.href
 }
 
