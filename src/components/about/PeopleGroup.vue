@@ -29,7 +29,7 @@ const sortedMembers = computed(() => {
       <h3 :id="`group-${presentation.group}`">
         {{ presentation.title }}
       </h3>
-      <span v-if="presentation.group !== 'masters-students'">{{ presentation.count }}</span>
+      <span>{{ presentation.count }}</span>
     </header>
 
     <div class="people-grid">

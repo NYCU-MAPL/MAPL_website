@@ -6,14 +6,17 @@ import { RouterLink } from "vue-router"
 import AlumniLedger from "../components/about/AlumniLedger.vue"
 import PeopleGroup from "../components/about/PeopleGroup.vue"
 import PersonCard from "../components/about/PersonCard.vue"
+import ImageLightbox from "../components/ui/ImageLightbox.vue"
 import SectionHeading from "../components/ui/SectionHeading.vue"
 import { members } from "../lib/content/index.ts"
+import { resolveMediaPath } from "../lib/media-path.ts"
 import { buildAboutPresentation } from "../lib/presentation/home-about.ts"
 import "../styles/about.css"
 import "../styles/about-collections.css"
 
 const presentation = buildAboutPresentation(members)
-const showCurrentEmails = ref(false)
+const showEmails = ref(false)
+const collaborationImageExpanded = ref(false)
 </script>
 
 <template>
@@ -100,8 +103,9 @@ const showCurrentEmails = ref(false)
         type="button"
         role="switch"
         class="current-people__email-toggle"
-        :aria-checked="showCurrentEmails"
-        @click="showCurrentEmails = !showCurrentEmails"
+        :aria-checked="showEmails"
+        aria-label="Show email for current members and alumni"
+        @click="showEmails = !showEmails"
       >
         <span>Show email</span>
         <span
@@ -119,7 +123,7 @@ const showCurrentEmails = ref(false)
           v-for="group in presentation.currentGroups"
           :key="group.group"
           :presentation="group"
-          :show-email="showCurrentEmails"
+          :show-email="showEmails"
         />
       </div>
       <p
@@ -145,6 +149,7 @@ const showCurrentEmails = ref(false)
       <AlumniLedger
         v-if="presentation.alumni.kind === 'populated'"
         :groups="presentation.alumni.groups"
+        :show-email="showEmails"
       />
       <p
         v-else
@@ -170,6 +175,15 @@ const showCurrentEmails = ref(false)
         <article>
           <span>01 · Careers</span>
           <h3>Research with an onward path.</h3>
+          <img
+            class="pathways__image"
+            :src="resolveMediaPath('media/about/01-careers.png')"
+            alt="Technology company logos featured in MAPL's career overview"
+            width="1838"
+            height="854"
+            loading="lazy"
+            decoding="async"
+          >
           <p>MAPL recruits graduate students interested in research for publication. Alumni records show careers across semiconductor, imaging, and computing organizations in Taiwan and abroad.</p>
           <RouterLink
             class="text-action"
@@ -185,6 +199,31 @@ const showCurrentEmails = ref(false)
         <article>
           <span>02 · International collaboration</span>
           <h3>Ideas travel through people.</h3>
+          <button
+            class="pathways__image-trigger"
+            type="button"
+            aria-label="Enlarge international collaboration map"
+            aria-haspopup="dialog"
+            title="Enlarge image"
+            @click="collaborationImageExpanded = true"
+          >
+            <img
+              class="pathways__image"
+              :src="resolveMediaPath('media/about/02-international-collaboration.jpg')"
+              alt="Map of MAPL research collaborations across Asia, Europe, Brazil, and the United States"
+              width="868"
+              height="316"
+              loading="lazy"
+              decoding="async"
+            >
+          </button>
+          <ImageLightbox
+            v-if="collaborationImageExpanded"
+            :src="resolveMediaPath('media/about/02-international-collaboration.jpg')"
+            alt="Map of MAPL research collaborations across Asia, Europe, Brazil, and the United States"
+            label="International collaboration map"
+            @close="collaborationImageExpanded = false"
+          />
           <p>The laboratory has a documented history of student exchanges, internships, visiting researchers, and academic work connecting Taiwan with institutions in Europe, Brazil, and the United States.</p>
           <p class="pathways__note">
             Opportunities vary by project and year; current arrangements are discussed directly with the laboratory.

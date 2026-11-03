@@ -85,7 +85,8 @@
   align-items: baseline;
   justify-content: space-between;
   gap: var(--space-2);
-  padding-block: var(--space-2);
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-shell);
   border-block: var(--border-strong);
 }
 
@@ -117,19 +118,23 @@
 
 .alumni-ledger {
   display: grid;
-  gap: var(--space-12);
+  align-items: start;
+  gap: var(--space-8);
 }
 
-.alumni-group ul {
-  border-block-start: var(--border-hairline);
+.alumni-group {
+  min-inline-size: 0;
 }
 
 .alumni-group li {
   display: grid;
-  grid-template-columns: 4rem minmax(0, 1fr);
-  gap: var(--space-3);
-  padding-block: var(--space-4);
+  grid-template-columns: 3rem 3rem minmax(0, 1fr);
+  align-items: center;
+  gap: var(--space-1) var(--space-3);
+  padding: var(--space-3) var(--space-2);
   border-block-end: var(--border-hairline);
+  font-size: var(--text-small);
+  line-height: 1.4;
 }
 
 .alumni-group__year {
@@ -139,7 +144,76 @@
 }
 
 .alumni-group strong {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-weight: 600;
+}
+
+.alumni-group__identity {
+  display: grid;
+  min-inline-size: 0;
+  min-block-size: var(--control-size);
+  align-content: center;
+}
+
+.alumni-group__avatar {
+  display: grid;
+  inline-size: 3rem;
+  block-size: 3rem;
+  place-items: center;
+  overflow: hidden;
+  color: var(--color-forest);
+  background: var(--color-paper-subdued);
+  border: var(--border-hairline);
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.alumni-group__avatar img {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  object-position: center 25%;
+}
+
+.alumni-group__avatar[href]:hover {
+  border-color: var(--color-forest);
+}
+
+.alumni-group__details {
+  min-inline-size: 0;
+}
+
+.alumni-group__email {
   display: block;
+  padding-block: var(--space-2);
+  color: var(--color-forest);
+  font-size: var(--text-label);
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.alumni-group__email:hover {
+  text-decoration: underline;
+  text-underline-offset: var(--space-1);
+}
+
+.alumni-group__name-link {
+  color: var(--color-forest);
+  text-decoration: none;
+}
+
+.alumni-group__name-link:hover .alumni-group__name-label,
+.alumni-group__name-link:focus-visible .alumni-group__name-label {
+  text-decoration: underline;
+  text-underline-offset: var(--space-1);
+}
+
+.alumni-group__external-icon {
+  flex: none;
+  opacity: 0.6;
 }
 
 .alumni-group small {
@@ -148,6 +222,7 @@
   gap: var(--space-2);
   margin-block-start: var(--space-1);
   color: var(--color-ink-muted);
+  font-size: var(--text-label);
 }
 
 .alumni-group small span + span::before {
@@ -156,9 +231,48 @@
 }
 
 .alumni-group__affiliation {
-  grid-column: 2;
+  display: block;
+  margin-block-start: var(--space-1);
   color: var(--color-ink-muted);
+  font-size: var(--text-label);
+}
+
+.alumni-group__footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  padding: var(--space-2);
+  color: var(--color-ink-muted);
+  font-size: var(--text-label);
+}
+
+.alumni-group__toggle {
+  display: inline-flex;
+  min-block-size: var(--control-size);
+  align-items: center;
+  gap: var(--space-1);
+  padding: 0 var(--space-2);
+  color: var(--color-forest);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
   font-size: var(--text-small);
+  font-weight: 600;
+}
+
+.alumni-group__toggle:hover {
+  text-decoration: underline;
+  text-underline-offset: var(--space-1);
+}
+
+.alumni-group__toggle svg {
+  transition: transform var(--motion-standard);
+}
+
+.alumni-group__toggle[aria-expanded="true"] svg {
+  transform: rotate(180deg);
 }
 
 .pathways__grid {
@@ -182,6 +296,29 @@
   color: var(--color-ink-muted);
 }
 
+.pathways__image {
+  display: block;
+  inline-size: 100%;
+  aspect-ratio: 2 / 1;
+  block-size: auto;
+  margin-block: var(--space-6);
+  object-fit: contain;
+}
+
+.pathways__image-trigger {
+  display: block;
+  inline-size: 100%;
+  margin-block: var(--space-6);
+  padding: 0;
+  background: transparent;
+  border: 0;
+  cursor: zoom-in;
+}
+
+.pathways__image-trigger .pathways__image {
+  margin-block: 0;
+}
+
 .pathways__note {
   padding-inline-start: var(--space-4);
   border-inline-start: var(--border-accent);
@@ -202,14 +339,6 @@
   .pathways article + article {
     padding-inline-start: var(--space-8);
     border-inline-start: var(--border-hairline);
-  }
-
-  .alumni-group li {
-    grid-template-columns: 4rem minmax(0, 1fr) minmax(9rem, 0.7fr);
-  }
-
-  .alumni-group__affiliation {
-    grid-column: auto;
   }
 
   .pathways article {

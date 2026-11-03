@@ -34,6 +34,9 @@ const readJson = async (path: string): Promise<unknown> => {
 }
 
 const collectMedia = (collections: ContentCollections): readonly string[] => [
+  "media/brand/mapl-wordmark.png",
+  "media/about/01-careers.png",
+  "media/about/02-international-collaboration.jpg",
   ...collections.news.flatMap((item) => item.image === undefined ? [] : [item.image.src]),
   ...collections.members.flatMap((member) => member.image === undefined ? [] : [member.image.src]),
   ...collections.publications.map((publication) => publication.image.src),
