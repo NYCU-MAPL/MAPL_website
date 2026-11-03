@@ -90,6 +90,18 @@ export type PublicationLinks = {
   readonly project?: string
 }
 
+export type AuthorProfile = {
+  readonly name: string
+  readonly aliases: readonly string[]
+  readonly memberId?: string
+  readonly website?: string
+  readonly sourceUrl?: string
+  readonly publications?: readonly {
+    readonly id: string
+    readonly authorIndex: number
+  }[]
+}
+
 export type Publication = {
   readonly id: string
   readonly title: string

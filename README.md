@@ -30,6 +30,10 @@ Validate the site's content data with:
 npm run validate:content
 ```
 
+## Publication author links
+
+Publication author links reuse member websites and a verified external-author directory. See [the author-link maintenance guide](docs/publication-authors.md) for aliases, same-name authors, sources, and validation.
+
 ## GitHub Pages deployment
 
 The `Deploy gh-pages` workflow runs on pushes to `main`. It installs the lockfile-pinned dependencies, builds the site, verifies `dist/.nojekyll`, and publishes the complete `dist/` tree to the `gh-pages` branch. The workflow publishes directly and does not require a separate CI workflow or local deployment simulation.

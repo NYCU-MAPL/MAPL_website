@@ -311,6 +311,17 @@
   color: var(--color-ink-muted);
 }
 
+.publication-card__authors a {
+  color: var(--color-forest-deep);
+  text-decoration: none;
+}
+
+.publication-card__authors a:hover,
+.publication-card__authors a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .publication-card__venue {
   color: var(--color-forest-deep);
   font-weight: 600;

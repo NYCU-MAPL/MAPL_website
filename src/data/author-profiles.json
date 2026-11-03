@@ -1,0 +1,285 @@
+[
+  {
+    "name": "Nguyen Quang Sang",
+    "aliases": [
+      "Sang NguyenQuang"
+    ],
+    "memberId": "nguyen-quang-sang"
+  },
+  {
+    "name": "Leandro Weber Tavares",
+    "aliases": [
+      "Leandro Tavares"
+    ],
+    "memberId": "leandro"
+  },
+  {
+    "name": "Yi-Hsin Chen",
+    "memberId": "yi-hsin-chen",
+    "sourceUrl": "https://www.linkedin.com/in/yihsinchen/",
+    "publications": [
+      {
+        "id": "hytip-video-coding-2025",
+        "authorIndex": 0
+      },
+      {
+        "id": "mh-lvc-video-coding-2025",
+        "authorIndex": 4
+      },
+      {
+        "id": "motif-video-super-resolution-2023",
+        "authorIndex": 0
+      },
+      {
+        "id": "conditional-residual-coding-with-explicit-implicit-temporal-buffering-for-learned-video-compression-2025",
+        "authorIndex": 0
+      },
+      {
+        "id": "maskcrt-b-masked-conditional-residual-transformer-for-learned-b-frame-coding-2025",
+        "authorIndex": 3
+      },
+      {
+        "id": "on-the-rate-distortion-complexity-trade-offs-of-neural-video-coding-2024",
+        "authorIndex": 0
+      },
+      {
+        "id": "maskcrt-masked-conditional-residual-transformer-for-learned-video-compression-2024",
+        "authorIndex": 0
+      },
+      {
+        "id": "rate-adaptation-for-learned-two-layer-b-frame-coding-without-signaling-motion-information-2023",
+        "authorIndex": 1
+      },
+      {
+        "id": "learning-based-scalable-video-coding-with-spatial-and-temporal-prediction-2023",
+        "authorIndex": 1
+      },
+      {
+        "id": "b-canf-adaptive-b-frame-coding-with-conditional-augmented-normalizing-flows-2023",
+        "authorIndex": 1
+      },
+      {
+        "id": "content-adaptive-motion-rate-adaption-for-learned-video-compression-2022",
+        "authorIndex": 1
+      },
+      {
+        "id": "lidar-depth-map-guided-image-compression-model-2024",
+        "authorIndex": 3
+      },
+      {
+        "id": "transformer-based-learned-image-compression-for-joint-decoding-and-denoising-2024",
+        "authorIndex": 0
+      },
+      {
+        "id": "transformer-based-image-compression-with-variable-image-quality-objectives-2023",
+        "authorIndex": 1
+      },
+      {
+        "id": "transformer-based-variable-rate-image-compression-with-region-of-interest-control-2023",
+        "authorIndex": 2
+      },
+      {
+        "id": "bridging-compressed-image-latents-and-multimodal-large-language-models-2025",
+        "authorIndex": 3
+      },
+      {
+        "id": "transtic-transferring-transformer-based-image-compression-from-human-perception-to-machine-perception-2023",
+        "authorIndex": 0
+      },
+      {
+        "id": "cat-3dgs-a-context-adaptive-triplane-approach-to-rate-distortion-optimized-3dgs-compression-2025",
+        "authorIndex": 3
+      },
+      {
+        "id": "video-rescaling-networks-with-joint-optimization-strategies-for-downscaling-and-upscaling-2021",
+        "authorIndex": 1
+      },
+      {
+        "id": "class-incremental-learning-with-rectified-feature-graph-preservation-2020",
+        "authorIndex": 1
+      }
+    ]
+  },
+  {
+    "name": "Ge Gao",
+    "website": "https://research-information.bris.ac.uk/en/persons/ge-gao/",
+    "sourceUrl": "https://research-information.bris.ac.uk/en/persons/ge-gao/"
+  },
+  {
+    "name": "Siyue Teng",
+    "website": "https://research-information.bris.ac.uk/en/persons/siyue-teng/",
+    "sourceUrl": "https://research-information.bris.ac.uk/en/persons/siyue-teng/"
+  },
+  {
+    "name": "Changqi Wang",
+    "website": "https://wangchangqi98.github.io/",
+    "sourceUrl": "https://wangchangqi98.github.io/"
+  },
+  {
+    "name": "Fan Zhang",
+    "website": "https://fan-aaron-zhang.github.io/",
+    "sourceUrl": "https://fan-aaron-zhang.github.io/"
+  },
+  {
+    "name": "Nantheera Anantrasirichai",
+    "website": "https://pui-nantheera.github.io/",
+    "sourceUrl": "https://www.bristol.ac.uk/person/Pui-Anantrasirichai-49b2250e-53e4-4631-aedc-8154b2cff568/"
+  },
+  {
+    "name": "David Bull",
+    "website": "https://david-bull.github.io/",
+    "sourceUrl": "https://david-bull.github.io/"
+  },
+  {
+    "name": "Jui-Chiu Chiang",
+    "website": "https://chiang.ccu.edu.tw/index.php",
+    "sourceUrl": "https://ieee-cas.org/contact/jui-chiu-chiang"
+  },
+  {
+    "name": "Alessandro Gnutti",
+    "website": "https://expertise.unibs.it/individual?uri=http%3A%2F%2Firises.unibs.it%2Fresource%2Fperson%2F6450",
+    "sourceUrl": "https://expertise.unibs.it/individual?uri=http%3A%2F%2Firises.unibs.it%2Fresource%2Fperson%2F6450"
+  },
+  {
+    "name": "Martin Benjak",
+    "website": "https://www.tnt.uni-hannover.de/staff/benjak/",
+    "sourceUrl": "https://www.tnt.uni-hannover.de/staff/benjak/"
+  },
+  {
+    "name": "Jörn Ostermann",
+    "website": "https://www.tnt.uni-hannover.de/staff/osterman/",
+    "sourceUrl": "https://www.tnt.uni-hannover.de/staff/osterman/"
+  },
+  {
+    "name": "Hsueh-Ming Hang",
+    "website": "https://iee.nycu.edu.tw/en/teacher/p1.php?kind=20&num=100&page=1",
+    "sourceUrl": "https://iee.nycu.edu.tw/en/teacher/p1.php?kind=20&num=100&page=1"
+  },
+  {
+    "name": "Wei-Chen Chiu",
+    "website": "https://walonchiu.github.io/",
+    "sourceUrl": "https://walonchiu.github.io/"
+  },
+  {
+    "name": "Yu-Lun Liu",
+    "website": "https://www.cmlab.csie.ntu.edu.tw/~yulunliu/",
+    "sourceUrl": "https://www.cmlab.csie.ntu.edu.tw/~yulunliu/"
+  },
+  {
+    "name": "Shao-Yuan Lo",
+    "website": "https://shaoyuanlo.github.io/",
+    "sourceUrl": "https://www.csie.ntu.edu.tw/en/member/Faculty/Shao-Yuan-Lo-85992013"
+  },
+  {
+    "name": "Yen-Yu Lin",
+    "website": "https://scholar.nycu.edu.tw/en/persons/yen-yu-lin/",
+    "sourceUrl": "https://scholar.nycu.edu.tw/en/persons/yen-yu-lin/"
+  },
+  {
+    "name": "Ching-Chun Huang",
+    "website": "https://acm.cs.nycu.edu.tw/members/Ching-Chun-Huang.html",
+    "sourceUrl": "https://acm.cs.nycu.edu.tw/members/Ching-Chun-Huang.html"
+  },
+  {
+    "name": "Ching-Wen Ma",
+    "website": "https://scholar.nycu.edu.tw/en/persons/ching-wen-ma/",
+    "sourceUrl": "https://scholar.nycu.edu.tw/en/persons/ching-wen-ma/"
+  },
+  {
+    "name": "Jenq-Neng Hwang",
+    "website": "https://people.ece.uw.edu/hwang/",
+    "sourceUrl": "https://www.ece.uw.edu/people/jenq-neng-hwang/"
+  },
+  {
+    "name": "Hui-Po Wang",
+    "website": "https://hui-po-wang.github.io/",
+    "sourceUrl": "https://hui-po-wang.github.io/"
+  },
+  {
+    "name": "Wei-Lun Chang",
+    "website": "https://wilsonchang0223.github.io/",
+    "sourceUrl": "https://wilsonchang0223.github.io/"
+  },
+  {
+    "name": "Xiem HoangVan",
+    "website": "https://sites.google.com/site/xiemhoang/",
+    "sourceUrl": "https://fet.uet.vnu.edu.vn/2021/04/01/hoang-van-xiem/"
+  },
+  {
+    "name": "Riccardo Leonardi",
+    "website": "https://expertise.unibs.it/individual?uri=http%3A%2F%2Firises.unibs.it%2Fresource%2Fperson%2F2317",
+    "sourceUrl": "https://expertise.unibs.it/individual?uri=http%3A%2F%2Firises.unibs.it%2Fresource%2Fperson%2F2317"
+  },
+  {
+    "name": "Stefano Della Fiore",
+    "website": "https://stefano-dellafiore.unibs.it/",
+    "sourceUrl": "https://stefano-dellafiore.unibs.it/"
+  },
+  {
+    "name": "Mattia Savardi",
+    "website": "https://expertise.unibs.it/get/person/56691",
+    "sourceUrl": "https://expertise.unibs.it/get/person/56691"
+  },
+  {
+    "name": "Marcelo Schiavon Porto",
+    "aliases": [
+      "Marcelo Porto"
+    ],
+    "website": "https://ieee-cas.org/contact/marcelo-porto",
+    "sourceUrl": "https://ieee-cas.org/contact/marcelo-porto"
+  },
+  {
+    "name": "Luciano Volcan Agostini",
+    "aliases": [
+      "Luciano Agostini",
+      "Luciano V. Agostini"
+    ],
+    "website": "https://ieee-cas.org/contact/luciano-volcan-agostini",
+    "sourceUrl": "https://ieee-cas.org/contact/luciano-volcan-agostini"
+  },
+  {
+    "name": "Ricardo L. de Queiroz",
+    "website": "https://cic.unb.br/professores/103-queiroz",
+    "sourceUrl": "https://cic.unb.br/professores/103-queiroz"
+  },
+  {
+    "name": "Diogo C. Garcia",
+    "website": "https://sigaa.unb.br/sigaa/public/docente/portal.jsf?siape=1838398",
+    "sourceUrl": "https://sigaa.unb.br/sigaa/public/docente/portal.jsf?siape=1838398"
+  },
+  {
+    "name": "Guilherme Ribeiro Corrêa",
+    "website": "https://ieee-cas.org/contact/guilherme-correa",
+    "sourceUrl": "https://ieee-cas.org/contact/guilherme-correa"
+  },
+  {
+    "name": "Huang-Chia Shih",
+    "website": "https://eea.ee.yzu.edu.tw/teacher_detail/hcshih?lang=zh-tw",
+    "sourceUrl": "https://eea.ee.yzu.edu.tw/teacher_detail/hcshih?lang=zh-tw"
+  },
+  {
+    "name": "Marek Domanski",
+    "website": "https://multimedia.edu.pl/?page=mdomanski",
+    "sourceUrl": "https://multimedia.edu.pl/?page=mdomanski"
+  },
+  {
+    "name": "Ping-Chun Hsieh",
+    "website": "https://pinghsieh.github.io/",
+    "sourceUrl": "https://pinghsieh.github.io/"
+  },
+  {
+    "name": "Cheng-You Lu",
+    "website": "https://johnnylu305.github.io/",
+    "sourceUrl": "https://johnnylu305.github.io/"
+  },
+  {
+    "name": "Ying Liu",
+    "website": "https://www.cse.scu.edu/~yliu1/",
+    "sourceUrl": "https://www.cse.scu.edu/~yliu1/"
+  },
+  {
+    "name": "Teng-Hu Cheng",
+    "website": "https://tenghu.weebly.com/",
+    "sourceUrl": "https://en.ncrl.lab.nycu.edu.tw/2024/04/17/teng-hu-cheng-%E7%A8%8B%E7%99%BB%E6%B9%96/"
+  }
+]

@@ -2,6 +2,7 @@
 import { ArrowUpRight, Image as ImageIcon, ZoomIn } from "@lucide/vue"
 import { computed, ref } from "vue"
 
+import { authorWebsite } from "../../features/publications/authors.ts"
 import {
   formatPublicationDate,
   formatPublicationTag,
@@ -18,6 +19,10 @@ const props = defineProps<{
 
 const actions = publicationActions(props.publication)
 const isNew = computed(() => isRecentPublication(props.publication))
+const authors = computed(() => props.publication.authors.map((name, authorIndex) => ({
+  name,
+  website: authorWebsite(name, { id: props.publication.id, authorIndex }),
+})))
 const abstractExpanded = ref(false)
 const imageExpanded = ref(false)
 const abstractTriggerId = `publication-${props.publication.id}-abstract-trigger`
@@ -69,7 +74,17 @@ const abstractPanelId = `publication-${props.publication.id}-abstract-panel`
         <span v-if="isNew" class="publication-card__new-badge" title="Published within the last three months">NEW</span>{{ publication.title }}
       </h3>
       <p class="publication-card__authors">
-        {{ publication.authors.join(", ") }}
+        <template v-for="(author, index) in authors" :key="`${author.name}-${index}`">
+          <template v-if="index > 0">{{ ", " }}</template>
+          <a
+            v-if="author.website"
+            :href="author.website"
+            target="_blank"
+            rel="noopener noreferrer"
+            :aria-label="`Visit ${author.name}'s website (opens in a new tab)`"
+          >{{ author.name }}</a>
+          <span v-else>{{ author.name }}</span>
+        </template>
       </p>
       <p class="publication-card__venue">
         {{ publication.venue }}
