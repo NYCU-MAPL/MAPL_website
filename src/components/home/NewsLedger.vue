@@ -108,9 +108,18 @@ const displayDate = (date: string, includeYear = false): string =>
       >
         <h3 :id="`${timelineId}-${group.year}`" class="news-year__heading">{{ group.year }}</h3>
         <ol class="news-year__entries">
-          <li v-for="item in group.items" :key="item.id" class="news-entry">
+          <li
+            v-for="item in group.items"
+            :key="item.id"
+            class="news-entry"
+            :class="{ 'news-entry--recruiting': item.category === 'opportunities' && item.featured }"
+          >
             <time :datetime="item.date" :aria-label="displayDate(item.date, true)">{{ displayDate(item.date) }}</time>
             <p class="news-entry__headline">
+              <span
+                v-if="item.category === 'opportunities' && item.featured"
+                class="news-entry__recruiting-badge"
+              >Recruiting</span>
               <template v-if="item.headlines.length > 0">
                 <template v-if="item.headlines.length > 1">
                   {{ item.headlines.length }} papers accepted to <strong>{{ item.headlines[0]?.venue }}</strong>{{ ": " }}
