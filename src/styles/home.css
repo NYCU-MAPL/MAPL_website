@@ -87,14 +87,192 @@
   border-inline-start: var(--border-hairline);
 }
 
-.signal-field > * {
+.signal-card {
   display: grid;
+  min-inline-size: 0;
   align-content: center;
-  padding: var(--space-6);
+  padding: var(--space-5) var(--space-6);
   border-block-end: var(--border-hairline);
+  background: linear-gradient(120deg, var(--color-paper), var(--color-paper-subdued));
+  transition: background-color var(--motion-standard);
 }
 
-.signal-field span,
+.signal-card__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+.signal-visual {
+  inline-size: min(52%, 10.5rem);
+  block-size: 4.5rem;
+  overflow: visible;
+  fill: var(--color-forest);
+  transition: transform var(--motion-standard);
+}
+
+.signal-visual__guide,
+.signal-vision__grid,
+.signal-vision__skeleton,
+.signal-vision__focus,
+.signal-systems__wire,
+.signal-systems__flow,
+.signal-systems__output {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.signal-visual__guide,
+.signal-systems__wire {
+  stroke: var(--color-moss);
+  stroke-width: 1.25;
+}
+
+.signal-visual__accent {
+  fill: var(--color-copper);
+}
+
+.signal-compression__particle {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: signal-compress 6s cubic-bezier(0.45, 0, 0.2, 1) var(--delay) infinite;
+}
+
+.signal-compression__packed {
+  opacity: 0.15;
+  animation: signal-packed 6s ease-in-out infinite;
+}
+
+.signal-vision__grid {
+  stroke: var(--color-rule);
+  stroke-width: 0.75;
+}
+
+.signal-vision__skeleton {
+  stroke: var(--color-forest);
+  stroke-width: 1;
+  opacity: 0.3;
+}
+
+.signal-vision__point {
+  animation: signal-recognize 4.8s ease-in-out var(--delay) infinite;
+}
+
+.signal-vision__focus {
+  stroke: var(--color-copper);
+  stroke-width: 1.75;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: signal-focus 4.8s ease-in-out infinite;
+}
+
+.signal-vision__scanner {
+  stroke: var(--color-forest);
+  stroke-width: 1.5;
+  animation: signal-scan 4.8s ease-in-out infinite alternate;
+}
+
+.signal-systems__flow {
+  stroke: var(--color-copper);
+  stroke-width: 2;
+  stroke-dasharray: 7 145;
+  animation: signal-transmit 4s linear infinite;
+}
+
+.signal-systems__flow--second {
+  stroke: var(--color-forest);
+  animation-delay: -2s;
+}
+
+.signal-systems__node {
+  fill: var(--color-white);
+  stroke: var(--color-forest);
+  stroke-width: 1.5;
+}
+
+.signal-systems__core {
+  fill: var(--color-accent-soft);
+}
+
+.signal-systems__halo {
+  fill: none;
+  stroke: var(--color-copper);
+  stroke-width: 1;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: signal-process 4s ease-out infinite;
+}
+
+.signal-systems__output {
+  stroke: var(--color-forest);
+  stroke-width: 1.25;
+}
+
+.signal-field:not(.signal-field--active) .signal-visual * {
+  animation-play-state: paused;
+}
+
+@media (hover: hover) {
+  .signal-card:hover {
+    background: var(--color-accent-soft);
+  }
+
+  .signal-card:hover .signal-visual {
+    transform: translateY(-2px) scale(1.05);
+  }
+}
+
+@keyframes signal-compress {
+  0%, 15%, 100% { transform: translate(0, 0) scale(1); opacity: 0.7; }
+  55%, 70% { transform: translate(var(--dx), var(--dy)) scale(0.7); opacity: 1; }
+  80%, 90% { transform: translate(var(--dx), var(--dy)) scale(0.7); opacity: 0; }
+  95% { transform: translate(0, 0) scale(1); opacity: 0; }
+}
+
+@keyframes signal-packed {
+  0%, 15%, 100% { opacity: 0.15; }
+  60%, 80% { opacity: 0.8; }
+}
+
+@keyframes signal-scan {
+  0%, 10% { transform: translateX(0); }
+  90%, 100% { transform: translateX(95px); }
+}
+
+@keyframes signal-recognize {
+  0%, 100% { opacity: 0.35; }
+  45%, 65% { opacity: 1; }
+}
+
+@keyframes signal-focus {
+  0%, 100% { transform: scale(1.13); opacity: 0.45; }
+  45%, 70% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes signal-transmit {
+  from { stroke-dashoffset: 152; }
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes signal-process {
+  0%, 100% { transform: scale(0.75); opacity: 0; }
+  35% { opacity: 0.5; }
+  85% { transform: scale(1.2); opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .signal-visual * {
+    animation: none !important;
+  }
+
+  .signal-card:hover .signal-visual {
+    transform: none;
+  }
+}
+
+.signal-card__index,
 .publication-highlight__meta,
 .news-entry time,
 .news-archive time {
@@ -104,16 +282,17 @@
   text-transform: uppercase;
 }
 
-.signal-field span,
+.signal-card__index,
 .signal-field small {
   color: var(--color-ink-muted);
 }
 
 /* Number markers echo the orange navigation dots in the lab slides. */
-.signal-field span {
+.signal-card__index {
   display: grid;
   inline-size: 1.875rem;
   block-size: 1.875rem;
+  flex: none;
   place-items: center;
   color: var(--color-white);
   background: var(--color-copper);
@@ -129,14 +308,33 @@
   font-weight: 600;
 }
 
-.signal-field a {
+.signal-field__news {
   display: flex;
   min-block-size: var(--control-size);
   align-items: center;
   justify-content: space-between;
+  padding: var(--space-4) var(--space-6);
   color: var(--color-forest);
+  background: transparent;
+  border: 0;
+  font-family: var(--font-ui);
+  font-size: var(--text-small);
   font-weight: 700;
-  text-decoration: none;
+  cursor: pointer;
+  transition: background-color var(--motion-micro);
+}
+
+.signal-field__news:hover,
+.signal-field__news:focus-visible {
+  background: var(--color-accent-soft);
+}
+
+.signal-field__news svg {
+  transition: transform var(--motion-micro);
+}
+
+.signal-field__news:hover svg {
+  transform: translateY(3px);
 }
 
 @media (min-width: 48rem) {

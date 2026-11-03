@@ -1,9 +1,11 @@
 <script setup lang="ts">
-import { ArrowDown, ArrowRight } from "@lucide/vue"
+import { ArrowRight } from "@lucide/vue"
+import { ref } from "vue"
 import { RouterLink } from "vue-router"
 
 import HomeSlider from "../components/home/HomeSlider.vue"
 import NewsLedger from "../components/home/NewsLedger.vue"
+import ResearchSignals from "../components/home/ResearchSignals.vue"
 import SectionHeading from "../components/ui/SectionHeading.vue"
 import { news, publications } from "../lib/content/index.ts"
 import { buildHomePresentation } from "../lib/presentation/home-about.ts"
@@ -11,6 +13,16 @@ import "../styles/home.css"
 import "../styles/home-content.css"
 
 const presentation = buildHomePresentation(news, publications)
+const newsSection = ref<HTMLElement>()
+const scrollToNews = (): void => {
+  const target = newsSection.value
+  if (!target) return
+  target.focus({ preventScroll: true })
+  target.scrollIntoView({
+    behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth",
+    block: "start",
+  })
+}
 </script>
 
 <template>
@@ -53,20 +65,15 @@ const presentation = buildHomePresentation(news, publications)
           </RouterLink>
         </div>
       </div>
-      <div
-        class="signal-field"
-        aria-label="MAPL research areas"
-      >
-        <div><span>01</span><strong>Compression</strong><small>Image · Video · 3D/4D</small></div>
-        <div><span>02</span><strong>Vision</strong><small>Learning · Sensing · Understanding</small></div>
-        <div><span>03</span><strong>Systems</strong><small>Efficient · Adaptive · Deployable</small></div>
-      </div>
+      <ResearchSignals @news="scrollToNews" />
     </section>
 
     <section
       id="news-ledger"
+      ref="newsSection"
       class="home-section"
       aria-label="News"
+      tabindex="-1"
     >
       <SectionHeading
         title="News"
