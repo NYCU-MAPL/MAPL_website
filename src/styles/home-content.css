@@ -51,15 +51,15 @@
 .news-archive summary {
   min-block-size: var(--control-size);
   padding: var(--space-5) var(--space-4);
-  color: var(--color-white);
-  background: var(--color-forest-deep);
+  color: var(--color-forest-deep);
+  background: var(--color-paper-subdued);
   cursor: pointer;
   font-weight: 700;
 }
 
 .news-archive summary span {
   margin-inline-start: var(--space-3);
-  color: var(--color-moss);
+  color: var(--color-ink-muted);
   font-family: var(--font-mono);
   font-size: var(--text-label);
   font-weight: 500;
@@ -72,11 +72,6 @@
   padding: var(--space-6) var(--space-4);
   background: var(--color-paper);
   border-block-end: var(--border-hairline);
-}
-
-.home-section--publications {
-  padding-block: var(--space-16);
-  border-block-start: var(--border-strong);
 }
 
 .publication-highlights {

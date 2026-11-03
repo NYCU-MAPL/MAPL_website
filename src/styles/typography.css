@@ -16,7 +16,8 @@ h1,
 h2,
 h3 {
   font-family: var(--font-display);
-  font-weight: 400;
+  color: var(--color-forest);
+  font-weight: 600;
   text-wrap: balance;
 }
 
@@ -47,4 +48,15 @@ h3 {
   line-height: 1.2;
   letter-spacing: 0.12em;
   text-transform: uppercase;
+}
+
+/* Use Traditional Chinese glyphs and natural spacing for names and Chinese copy. */
+:where(:lang(zh)) {
+  font-family: var(--font-zh);
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 1.5;
+  line-break: strict;
+  word-break: normal;
+  overflow-wrap: break-word;
 }

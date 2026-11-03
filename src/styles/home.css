@@ -1,12 +1,15 @@
+.site-main:has(> .home-view) {
+  padding-block-start: var(--space-6);
+}
+
 .home-view {
   display: grid;
-  gap: var(--space-24);
+  gap: var(--space-16);
 }
 
 .home-hero {
   display: grid;
-  min-block-size: min(42rem, calc(100dvh - var(--header-size)));
-  border-block: var(--border-strong);
+  border-block-end: var(--border-hairline);
   background: var(--color-paper);
 }
 
@@ -14,20 +17,22 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: var(--space-12) var(--space-6);
+  padding: var(--space-4) var(--space-6) var(--space-10);
 }
 
 .home-hero h1 {
-  max-inline-size: 14ch;
+  max-inline-size: 16ch;
   margin-block-end: var(--space-8);
-  font-size: var(--text-display);
-  line-height: 0.94;
+  font-size: clamp(2.5rem, 5.2vw, 4.75rem);
+  font-weight: 650;
+  line-height: 1.08;
   letter-spacing: -0.045em;
 }
 
 .home-hero h1 em {
-  color: var(--color-forest);
-  font-weight: 400;
+  color: var(--color-copper);
+  font-style: normal;
+  font-weight: 650;
 }
 
 .home-hero__lead {
@@ -68,25 +73,25 @@
 .route-action:hover,
 .route-action--primary {
   color: var(--color-white);
-  background: var(--color-forest-deep);
+  background: var(--color-forest);
 }
 
 .route-action--primary:hover {
-  background: var(--color-forest);
+  background: var(--color-forest-deep);
 }
 
 .signal-field {
   display: grid;
-  color: var(--color-white);
-  background: var(--color-forest-deep);
-  border-inline-start: var(--border-accent);
+  color: var(--color-forest-deep);
+  background: var(--color-paper);
+  border-inline-start: var(--border-hairline);
 }
 
 .signal-field > * {
   display: grid;
   align-content: center;
   padding: var(--space-6);
-  border-block-end: var(--border-moss);
+  border-block-end: var(--border-hairline);
 }
 
 .signal-field span,
@@ -101,14 +106,27 @@
 
 .signal-field span,
 .signal-field small {
-  color: var(--color-moss);
+  color: var(--color-ink-muted);
+}
+
+/* Number markers echo the orange navigation dots in the lab slides. */
+.signal-field span {
+  display: grid;
+  inline-size: 1.875rem;
+  block-size: 1.875rem;
+  place-items: center;
+  color: var(--color-white);
+  background: var(--color-copper);
+  border-radius: 50%;
+  letter-spacing: 0;
 }
 
 .signal-field strong {
   margin-block: var(--space-2);
   font-family: var(--font-display);
   font-size: var(--text-h3);
-  font-weight: 400;
+  color: var(--color-forest);
+  font-weight: 600;
 }
 
 .signal-field a {
@@ -116,7 +134,7 @@
   min-block-size: var(--control-size);
   align-items: center;
   justify-content: space-between;
-  color: var(--color-white);
+  color: var(--color-forest);
   font-weight: 700;
   text-decoration: none;
 }
@@ -127,7 +145,7 @@
   }
 
   .home-hero__copy {
-    padding: var(--space-16) var(--space-12);
+    padding: var(--space-6) var(--space-12) var(--space-12);
   }
 
 }

@@ -20,8 +20,8 @@
 }
 
 .site-header__utility {
-  color: var(--color-white);
-  background: var(--color-forest-deep);
+  color: var(--color-forest-deep);
+  background: var(--color-shell);
 }
 
 .site-header__utility-inner {
@@ -52,7 +52,7 @@
 }
 
 .brand-lockup--inverted {
-  color: var(--color-white);
+  color: var(--color-ink);
 }
 
 .brand-lockup__mark {
@@ -72,6 +72,7 @@
   inline-size: var(--space-2);
   block-size: var(--space-2);
   background: var(--color-copper);
+  border-radius: 50%;
 }
 
 .brand-lockup__text {
@@ -81,9 +82,10 @@
 }
 
 .brand-lockup__text strong {
+  color: var(--color-forest);
   font-family: var(--font-display);
   font-size: var(--text-h3);
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing: -0.04em;
 }
 
@@ -98,7 +100,7 @@
 }
 
 .brand-lockup--inverted .brand-lockup__text small {
-  color: var(--color-moss);
+  color: var(--color-ink-muted);
 }
 
 .desktop-navigation {
@@ -160,13 +162,13 @@
 }
 
 .icon-button--inverted {
-  color: var(--color-white);
-  border-color: var(--color-white);
+  color: var(--color-forest-deep);
+  border-color: var(--color-rule);
 }
 
 .icon-button--inverted:hover {
   color: var(--color-forest-deep);
-  background: var(--color-white);
+  background: var(--color-paper-subdued);
 }
 
 @media (max-width: 30rem) {

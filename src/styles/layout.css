@@ -16,7 +16,7 @@
 
 .site-main {
   flex: 1;
-  padding-block: clamp(var(--space-16), 10vw, var(--space-24));
+  padding-block: clamp(var(--space-10), 6vw, var(--space-16));
 }
 
 .site-main:focus-visible {
