@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ArrowUpRight, ZoomIn } from "@lucide/vue"
+import { ArrowUpRight, Image as ImageIcon, ZoomIn } from "@lucide/vue"
 import { computed, ref } from "vue"
 
 import {
@@ -26,7 +26,7 @@ const abstractPanelId = `publication-${props.publication.id}-abstract-panel`
 
 <template>
   <article class="publication-card">
-    <figure class="publication-card__media">
+    <figure v-if="publication.image" class="publication-card__media">
       <button
         class="publication-card__image-trigger"
         type="button"
@@ -44,8 +44,16 @@ const abstractPanelId = `publication-${props.publication.id}-abstract-panel`
         <span class="publication-card__zoom" aria-hidden="true"><ZoomIn :size="16" /></span>
       </button>
     </figure>
+    <div
+      v-else
+      class="publication-card__media publication-card__media--placeholder"
+      role="img"
+      aria-label="Figure not yet available"
+    >
+      <ImageIcon :size="28" :stroke-width="1.5" aria-hidden="true" />
+    </div>
     <ImageLightbox
-      v-if="imageExpanded"
+      v-if="imageExpanded && publication.image"
       :src="resolveMediaPath(publication.image.src)"
       :alt="publication.image.alt"
       :label="`${publication.title} figure`"
@@ -67,6 +75,7 @@ const abstractPanelId = `publication-${props.publication.id}-abstract-panel`
         {{ publication.venue }}
       </p>
       <nav
+        v-if="actions.length > 0 || publication.summary"
         class="publication-card__actions"
         :aria-label="`${publication.title} resources`"
       >
@@ -84,6 +93,7 @@ const abstractPanelId = `publication-${props.publication.id}-abstract-panel`
           />
         </a>
         <button
+          v-if="publication.summary"
           :id="abstractTriggerId"
           class="publication-card__abstract-toggle"
           type="button"
@@ -95,7 +105,7 @@ const abstractPanelId = `publication-${props.publication.id}-abstract-panel`
         </button>
       </nav>
       <p
-        v-if="abstractExpanded"
+        v-if="abstractExpanded && publication.summary"
         :id="abstractPanelId"
         class="publication-card__summary"
         role="region"

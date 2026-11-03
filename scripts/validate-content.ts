@@ -5,7 +5,7 @@ import { homeSlides } from "../src/data/home-slides.ts"
 import { ContentValidationError } from "../src/lib/content/errors.ts"
 import { joinUsContent } from "../src/features/static-pages/content.ts"
 import { parseMembers } from "../src/lib/content/parse-members.ts"
-import { parseNews } from "../src/lib/content/parse-news.ts"
+import { parseNews, validateNewsPublications } from "../src/lib/content/parse-news.ts"
 import { parsePublications } from "../src/lib/content/parse-publications.ts"
 import type { ContentCollections } from "../src/lib/content/types.ts"
 import { auditMedia } from "./content/media-audit.ts"
@@ -39,7 +39,7 @@ const collectMedia = (collections: ContentCollections): readonly string[] => [
   "media/about/02-international-collaboration.jpg",
   ...collections.news.flatMap((item) => item.image === undefined ? [] : [item.image.src]),
   ...collections.members.flatMap((member) => member.image === undefined ? [] : [member.image.src]),
-  ...collections.publications.map((publication) => publication.image.src),
+  ...collections.publications.flatMap((publication) => publication.image === undefined ? [] : [publication.image.src]),
   ...homeSlides.map((slide) => slide.image),
   joinUsContent.image.src,
 ]
@@ -53,6 +53,7 @@ const run = async (): Promise<ValidationReport> => {
       "src/data/publications.json",
     ),
   }
+  validateNewsPublications(collections.news, collections.publications, "src/data/news.json")
   const media = await auditMedia(collectMedia(collections), resolve(root, "public"))
   return {
     records: {

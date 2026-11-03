@@ -66,18 +66,16 @@ const presentation = buildHomePresentation(news, publications)
     <section
       id="news-ledger"
       class="home-section"
-      aria-label="News ledger"
+      aria-label="News"
     >
       <SectionHeading
-        title="News ledger"
-        label="Current signals"
+        title="News"
         :level="2"
-      >
-        <p>Announcements, recognitions, and new work from the laboratory, ordered from the newest entry.</p>
-      </SectionHeading>
+      />
       <NewsLedger
         v-if="presentation.news.kind === 'populated'"
         :items="presentation.news.items"
+        :publications="publications"
       />
       <p
         v-else

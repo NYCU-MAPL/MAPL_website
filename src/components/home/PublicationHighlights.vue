@@ -21,6 +21,7 @@ const baseUrl = import.meta.env.BASE_URL
       class="publication-highlight"
     >
       <img
+        v-if="publication.image"
         :src="resolveMediaPath(baseUrl, publication.image.src)"
         :alt="publication.image.alt"
         width="720"
@@ -32,7 +33,7 @@ const baseUrl = import.meta.env.BASE_URL
           {{ formatPublicationDate(publication) }} · {{ publication.venue }}
         </p>
         <h3>{{ publication.title }}</h3>
-        <p>{{ publication.summary }}</p>
+        <p v-if="publication.summary">{{ publication.summary }}</p>
       </div>
     </article>
   </div>

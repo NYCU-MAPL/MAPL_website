@@ -2,7 +2,7 @@ import membersJson from "../../data/members.json" with { type: "json" }
 import newsJson from "../../data/news.json" with { type: "json" }
 import publicationsJson from "../../data/publications.json" with { type: "json" }
 import { parseMembers } from "./parse-members.ts"
-import { parseNews } from "./parse-news.ts"
+import { parseNews, validateNewsPublications } from "./parse-news.ts"
 import { parsePublications } from "./parse-publications.ts"
 import type { ContentCollections } from "./types.ts"
 
@@ -10,11 +10,15 @@ export const loadContentCollections = (
   news: unknown,
   members: unknown,
   publications: unknown,
-): ContentCollections => ({
-  news: parseNews(news, "news.json"),
-  members: parseMembers(members, "members.json"),
-  publications: parsePublications(publications, "publications.json"),
-})
+): ContentCollections => {
+  const collections = {
+    news: parseNews(news, "news.json"),
+    members: parseMembers(members, "members.json"),
+    publications: parsePublications(publications, "publications.json"),
+  }
+  validateNewsPublications(collections.news, collections.publications, "news.json")
+  return collections
+}
 
 export const content: ContentCollections = loadContentCollections(
   newsJson,

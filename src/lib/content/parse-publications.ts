@@ -4,6 +4,7 @@ import {
   ensureUniqueIds,
   objectValue,
   optionalInteger,
+  optionalString,
   parseId,
   parseImage,
   parseUrl,
@@ -27,6 +28,7 @@ const parseTopic = (object: JsonObject, context: ParseContext): PublicationTopic
     case "3d-gaussian-compression":
     case "4d-gaussian-compression":
     case "human-pose-estimation":
+    case "point-cloud-compression":
     case "image-restoration":
     case "video-synthesis":
     case "semantic-segmentation":
@@ -92,6 +94,8 @@ export const parsePublications = (input: unknown, source: string): readonly Publ
       fail(context, "month", "is required for conference publications")
     }
     const links = "links" in object ? parseLinks(object["links"], context) : undefined
+    const summary = optionalString(object, "summary", context)
+    const image = "image" in object ? parseImage(object["image"], context) : undefined
     return {
       id: parseId(object, context),
       title: requiredString(object, "title", context),
@@ -99,11 +103,11 @@ export const parsePublications = (input: unknown, source: string): readonly Publ
       venue: requiredString(object, "venue", context),
       year,
       ...(month === undefined ? {} : { month }),
-      summary: requiredString(object, "summary", context),
+      ...(summary === undefined ? {} : { summary }),
       topic: parseTopic(object, context),
       type,
       featured: requiredBoolean(object, "featured", context),
-      image: parseImage(object["image"], context),
+      ...(image === undefined ? {} : { image }),
       ...(links === undefined ? {} : { links }),
     }
   })

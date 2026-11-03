@@ -18,6 +18,7 @@ export const MEMBER_GROUPS = [
   "alumni",
 ] as const
 export const PUBLICATION_TYPES = ["conference", "journal"] as const
+export const NEWS_CATEGORIES = ["research", "people", "awards", "events", "opportunities"] as const
 // Research topic filters follow this manual display order.
 export const PUBLICATION_TOPICS = [
   "learned-image-compression",
@@ -25,6 +26,7 @@ export const PUBLICATION_TOPICS = [
   "3d-gaussian-compression",
   "4d-gaussian-compression",
   "human-pose-estimation",
+  "point-cloud-compression",
   "image-restoration",
   "video-synthesis",
   "semantic-segmentation",
@@ -41,6 +43,7 @@ export type MemberStatus = (typeof MEMBER_STATUSES)[number]
 export type MemberRole = (typeof MEMBER_ROLES)[number]
 export type MemberGroup = (typeof MEMBER_GROUPS)[number]
 export type PublicationType = (typeof PUBLICATION_TYPES)[number]
+export type NewsCategory = (typeof NEWS_CATEGORIES)[number]
 export type PublicationTopic = (typeof PUBLICATION_TOPICS)[number]
 
 export type ContentImage = {
@@ -52,6 +55,12 @@ export type NewsItem = {
   readonly id: string
   readonly date: string
   readonly title: string
+  readonly category: NewsCategory
+  readonly publicationIds?: readonly string[]
+  readonly inlineLink?: {
+    readonly text: string
+    readonly url: string
+  }
   readonly summary: string
   readonly url?: string
   readonly image?: ContentImage
@@ -88,11 +97,11 @@ export type Publication = {
   readonly venue: string
   readonly year: number
   readonly month?: number
-  readonly summary: string
+  readonly summary?: string
   readonly topic: PublicationTopic
   readonly type: PublicationType
   readonly featured: boolean
-  readonly image: ContentImage
+  readonly image?: ContentImage
   readonly links?: PublicationLinks
 }
 

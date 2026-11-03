@@ -180,6 +180,12 @@
   object-fit: contain;
 }
 
+.publication-card__media--placeholder {
+  display: grid;
+  place-items: center;
+  color: var(--color-moss);
+}
+
 .publication-card__image-trigger {
   position: relative;
   display: block;
@@ -222,6 +228,7 @@
 
 .publication-card__body {
   display: grid;
+  grid-column: 2;
   align-content: start;
   gap: var(--space-1);
   min-inline-size: 0;

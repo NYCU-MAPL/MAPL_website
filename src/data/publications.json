@@ -1,5 +1,77 @@
 [
   {
+    "id": "saga-sparse-4d-anchors-2026",
+    "title": "Gaussian Splatting-based Volumetric Video Compression with Sparse 4D Anchors",
+    "authors": [
+      "Ge Gao",
+      "Siyue Teng",
+      "Changqi Wang",
+      "Fan Zhang",
+      "Nantheera Anantrasirichai",
+      "Jui Chiu Chiang",
+      "Wen-Hsiao Peng",
+      "David Bull"
+    ],
+    "venue": "Advances in Neural Information Processing Systems (NeurIPS)",
+    "year": 2026,
+    "month": 10,
+    "summary": "SAGA compresses volumetric video using hierarchical sparse anchors in 4D space-time. Kernel interpolation and implicit neural decoders share features across anchors and Gaussian primitives, while a recurrent memory captures long-range dependencies for entropy coding to improve the rate-distortion trade-off.",
+    "topic": "4d-gaussian-compression",
+    "type": "conference",
+    "featured": true,
+    "image": {
+      "src": "media/publications/saga-neurips-2026.webp",
+      "alt": "SAGA hierarchical 4D anchors, volumetric video reconstruction, and rate-distortion comparison"
+    },
+    "links": {
+      "paper": "https://arxiv.org/abs/2609.33969",
+      "code": "https://github.com/ge1gao/SAGA-NeurIPS26"
+    }
+  },
+  {
+    "id": "nicer-perceptual-quality-adaptation-2026",
+    "title": "NICER: Neural Image Codecs with Randomness for Perceptual Quality Adaptation",
+    "authors": [
+      "Huu-Tai Phung",
+      "Chun-Hung Wu",
+      "Yen-Kuan Ho",
+      "Yu-Hsiang Lin",
+      "Tzu-Hsiang Chou",
+      "Leandro Weber Tavares",
+      "Guilherme Ribeiro Corrêa",
+      "Wen-Hsiao Peng"
+    ],
+    "venue": "IEEE Visual Communications and Image Processing (VCIP)",
+    "year": 2026,
+    "month": 10,
+    "topic": "learned-image-compression",
+    "type": "conference",
+    "featured": true
+  },
+  {
+    "id": "perceptual-3dgs-saliency-features-2026",
+    "title": "Perceptual 3D Gaussian Splatting with 3D-Anchored Saliency Features",
+    "authors": [
+      "Cheng-Wei Yang",
+      "Ming-Zhe He",
+      "Yun-Yu Lee",
+      "Fan-Yi Hsu",
+      "He-Bi Yang",
+      "Jing-Zhong Chen",
+      "Shin-Tzu Chu",
+      "Fan Zhang",
+      "Nantheera Anantrasirichai",
+      "Jui-Chiu Chiang",
+      "Wen-Hsiao Peng"
+    ],
+    "venue": "IEEE Visual Communications and Image Processing (VCIP)",
+    "year": 2026,
+    "month": 10,
+    "topic": "3d-gaussian-compression",
+    "type": "conference",
+    "featured": true
+  },
+  {
     "id": "adapt-any-codec-diffusion-2026",
     "title": "ADAPT: Any-Codec Diffusion-Based Adaptation for Per-Image Perception-Distortion Trade-Off",
     "authors": [
@@ -130,6 +202,30 @@
     "links": {
       "paper": "https://arxiv.org/abs/2512.20128",
       "code": "https://github.com/NYCU-MAPL/milliMamba"
+    }
+  },
+  {
+    "id": "mega-pcc-joint-geometry-attribute-compression-2026",
+    "title": "MEGA-PCC: A Mamba-based Efficient Approach for Joint Geometry and Attribute Point Cloud Compression",
+    "authors": [
+      "Kai-Hsiang Hsieh",
+      "Monyneath Yim",
+      "Wen-Hsiao Peng",
+      "Jui-Chiu Chiang"
+    ],
+    "venue": "IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)",
+    "year": 2026,
+    "month": 3,
+    "summary": "MEGA-PCC unifies geometry and attribute point cloud compression with a shared encoder, two decoders, and a Mamba-based entropy model. Its shared latent representation learns bitrate allocation during training, avoiding recoloring and exhaustive model matching while capturing spatial and channel-wise dependencies.",
+    "topic": "point-cloud-compression",
+    "type": "conference",
+    "featured": true,
+    "image": {
+      "src": "media/publications/mega-pcc-wacv-2026.webp",
+      "alt": "MEGA-PCC shared encoder and dual decoders compared with separate geometry and attribute compression and model matching"
+    },
+    "links": {
+      "paper": "https://arxiv.org/abs/2512.22463v1"
     }
   },
   {
