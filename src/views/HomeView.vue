@@ -2,8 +2,8 @@
 import { ArrowDown, ArrowRight } from "@lucide/vue"
 import { RouterLink } from "vue-router"
 
+import HomeSlider from "../components/home/HomeSlider.vue"
 import NewsLedger from "../components/home/NewsLedger.vue"
-import PublicationHighlights from "../components/home/PublicationHighlights.vue"
 import SectionHeading from "../components/ui/SectionHeading.vue"
 import { news, publications } from "../lib/content/index.ts"
 import { buildHomePresentation } from "../lib/presentation/home-about.ts"
@@ -19,6 +19,7 @@ const presentation = buildHomePresentation(news, publications)
       class="home-hero"
       aria-labelledby="home-title"
     >
+      <HomeSlider />
       <div class="home-hero__copy">
         <p class="eyebrow">
           MAPL · NYCU Computer Science
@@ -59,12 +60,6 @@ const presentation = buildHomePresentation(news, publications)
         <div><span>01</span><strong>Compression</strong><small>Image · Video · 3D/4D</small></div>
         <div><span>02</span><strong>Vision</strong><small>Learning · Sensing · Understanding</small></div>
         <div><span>03</span><strong>Systems</strong><small>Efficient · Adaptive · Deployable</small></div>
-        <a href="#news-ledger">Current signals
-          <ArrowDown
-            :size="18"
-            aria-hidden="true"
-          />
-        </a>
       </div>
     </section>
 
@@ -91,20 +86,6 @@ const presentation = buildHomePresentation(news, publications)
       >
         No news has been published yet. Please check back for laboratory updates.
       </p>
-    </section>
-
-    <section
-      class="home-section home-section--publications"
-      aria-label="Featured work"
-    >
-      <SectionHeading
-        title="Featured work"
-        label="Selected publications"
-        :level="2"
-      >
-        <p>Recent investigations spanning learned compression, dynamic scene representation, and machine perception.</p>
-      </SectionHeading>
-      <PublicationHighlights :publications="presentation.featuredPublications" />
     </section>
   </div>
 </template>

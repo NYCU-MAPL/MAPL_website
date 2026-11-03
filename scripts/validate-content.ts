@@ -1,6 +1,7 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises"
 import { dirname, resolve } from "node:path"
 
+import { homeSlides } from "../src/data/home-slides.ts"
 import { ContentValidationError } from "../src/lib/content/errors.ts"
 import { joinUsContent } from "../src/features/static-pages/content.ts"
 import { parseMembers } from "../src/lib/content/parse-members.ts"
@@ -36,6 +37,7 @@ const collectMedia = (collections: ContentCollections): readonly string[] => [
   ...collections.news.flatMap((item) => item.image === undefined ? [] : [item.image.src]),
   ...collections.members.flatMap((member) => member.image === undefined ? [] : [member.image.src]),
   ...collections.publications.map((publication) => publication.image.src),
+  ...homeSlides.map((slide) => slide.image),
   joinUsContent.image.src,
 ]
 
