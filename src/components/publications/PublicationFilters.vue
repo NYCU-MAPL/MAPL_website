@@ -26,7 +26,6 @@ const toggleYear = (year: number): void => {
   <form class="publication-filters" aria-label="Filter publications" @submit.prevent>
     <div class="publication-filters__intro">
       <span class="publication-filters__label">Select one or more research areas</span>
-      <button class="publication-filters__reset" type="button" @click="reset">All papers ↗</button>
     </div>
     <div class="publication-filters__topics" role="group" aria-label="Research area">
       <button
