@@ -59,6 +59,6 @@
 
 @media (min-width: 48rem) {
   .site-footer__grid {
-    grid-template-columns: minmax(16rem, 1.4fr) 1fr 1fr;
+    grid-template-columns: minmax(18rem, 1.4fr) 1fr 1fr;
   }
 }

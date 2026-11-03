@@ -13,7 +13,7 @@ defineProps<{
   <footer class="site-footer">
     <div class="shell-container site-footer__grid">
       <div class="site-footer__identity">
-        <BrandLockup inverted />
+        <BrandLockup inverted variant="header" />
         <p>
           National Yang Ming Chiao Tung University<br>
           Department of Computer Science

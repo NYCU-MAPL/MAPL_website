@@ -24,7 +24,7 @@ defineEmits<{
       </div>
     </div>
     <div class="shell-container site-header__main">
-      <BrandLockup />
+      <BrandLockup variant="header" />
       <nav
         class="desktop-navigation"
         aria-label="Primary navigation"
