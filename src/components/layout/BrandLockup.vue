@@ -5,7 +5,8 @@ import { RouterLink } from "vue-router"
 import { resolveMediaPath } from "../../lib/media-path.ts"
 
 // Original wordmark from legacy-static-site:pages/figures/home_black.png.
-const wordmarkUrl = resolveMediaPath("media/brand/mapl-wordmark.png")
+// Mask URLs consumed by bundled CSS otherwise resolve relative to /assets/.
+const wordmarkUrl = new URL(resolveMediaPath("media/brand/mapl-wordmark.png"), document.baseURI).href
 
 withDefaults(defineProps<{
   readonly inverted?: boolean
