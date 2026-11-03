@@ -31,7 +31,7 @@ export const joinUsContent = {
     profile: "https://www.cs.nycu.edu.tw/members/detail/wpeng?locale=en",
   },
   lab: {
-    location: "EC621",
+    location: "EC621 · EC714",
     phone: "+886-3-571-2121 ext. 54779",
     address: "1001 University Road, Hsinchu 30010, Taiwan",
   },
