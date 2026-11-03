@@ -97,7 +97,7 @@ const collaborationImageExpanded = ref(false)
         :label="`${presentation.currentCount} researchers and students`"
         :level="2"
       >
-        <p>A group organized by role, from visiting researchers to undergraduate students.</p>
+        <p>Our Ph.D., master's, and undergraduate students.</p>
       </SectionHeading>
       <button
         type="button"

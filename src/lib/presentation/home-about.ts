@@ -1,7 +1,6 @@
 import type { Member, MemberGroup, NewsItem, Publication } from "../content/types.ts"
 
 const CURRENT_GROUPS = [
-  { group: "visiting-researchers", title: "Visiting researchers" },
   { group: "phd-students", title: "Ph.D. students" },
   { group: "masters-students", title: "Master's students" },
   { group: "undergraduate-students", title: "Undergraduate students" },
