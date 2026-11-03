@@ -146,6 +146,14 @@ All intentional spacing derives from 4px.
 - **States**: static by default; interactive surfaces expose hover/focus through their contained link only.
 - **Layout**: auto-fit grid collapses to one column at compact widths with no horizontal scroll.
 
+### Publication Card / Abstract Disclosure
+
+- **Structure**: repeated rule-separated article with contained media, wrapping copper register, title, authors, venue, an always-present abstract button, an optional abstract region, and an unchanged wrapping resource nav.
+- **Compact/default state**: the abstract starts unrendered and each card owns its disclosure state independently. Tight token spacing and a reduced desktop media track keep the ledger dense without shrinking controls.
+- **Expanded state**: `Show abstract` changes to `Hide abstract` and reveals the complete summary as a region labeled by the trigger. Opening and closing are immediate with no height, width, margin, or padding animation.
+- **Responsive media**: figures retain `object-fit: contain`, cap their inline size on compact screens, and use a smaller token-derived desktop track so imagery never dominates or creates horizontal overflow.
+- **Accessibility**: the native 44px-minimum button exposes stable publication-derived `aria-controls` and `aria-expanded`; the rendered region points back with `aria-labelledby`. The trigger remains available when no resource links exist, and shared focus-visible treatment is preserved.
+
 ### Filter Group
 
 - **Structure**: labeled fieldset or nav-like control cluster prepared for Todo 6.
@@ -199,6 +207,7 @@ The strategy is **printerly mixed rules and tonal shift**. Paper sits on canvas;
 - Target WCAG 2.2 AA. Keyboard interaction must expose the same destinations and controls as pointer interaction.
 - Focus uses a visible 3px `--color-focus` outline with separation from the target; focus is never indicated by color alone.
 - Touch targets are at least 44 by 44 CSS pixels. Navigation labels remain text, not icon-only destinations.
+- Every publication abstract is independently collapsed by default. Its native button remains keyboard-operable and present regardless of resource links, changes visibly between `Show abstract` and `Hide abstract`, exposes stable `aria-expanded`/`aria-controls`, and labels the conditionally rendered region; disclosure uses no layout animation.
 - People-card identity links exist only when a website is present: portrait and displayed name identify the same member, open the same website in a new tab with `noopener noreferrer`, and exclude advisor details and the email-copy controls. Website names have no underline at rest; hover and keyboard focus underline only the primary displayed name while retaining the visible focus outline. The adjacent external indicator is decorative and absent for members without websites. Advisor email remains available as the final Advisor detail row after Office, with a visible `Email:` label followed by the address/copy button; Current people email rows remain beneath their identity copy and are controlled together by the default-off, right-aligned native `Show email` switch. The switch is keyboard-operable, exposes `role="switch"` and `aria-checked`, and communicates state through both knob position and color. Email copy controls are native buttons with stable member-specific labels, decorative icons, and adjacent polite atomic visible `Copied` or `Copy unavailable` feedback; current-member visible addresses cap at `16ch` with one-line ellipsis while the title, accessible label, and copied value remain complete. Per-card 1.2-second state restarts on repeat activation and its timer is cleared when rows hide or cards unmount. Clipboard rejection or unavailability invokes the readonly-textarea fallback, and total failure remains contained without navigation.
 - Drawer modal focus is contained while open; Escape, backdrop, close button, and route activation all have deterministic closure behavior.
 - Skip link is first in DOM order and moves keyboard focus to the main landmark.

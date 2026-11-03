@@ -2,6 +2,7 @@
 import { ArrowRight } from "@lucide/vue"
 import { RouterLink } from "vue-router"
 
+import { formatPublicationDate } from "../../features/publications/filters.ts"
 import type { Publication } from "../../lib/content/types.ts"
 import { resolveMediaPath } from "../../lib/presentation/home-about.ts"
 
@@ -28,7 +29,7 @@ const baseUrl = import.meta.env.BASE_URL
       >
       <div class="publication-highlight__content">
         <p class="publication-highlight__meta">
-          {{ publication.year }} · {{ publication.venue }}
+          {{ formatPublicationDate(publication) }} · {{ publication.venue }}
         </p>
         <h3>{{ publication.title }}</h3>
         <p>{{ publication.summary }}</p>
