@@ -18,14 +18,23 @@ export const MEMBER_GROUPS = [
   "alumni",
 ] as const
 export const PUBLICATION_TYPES = ["conference", "journal"] as const
+// Research topic filters follow this manual display order.
 export const PUBLICATION_TOPICS = [
   "learned-image-compression",
   "learned-video-compression",
-  "gaussian-splatting",
+  "3d-gaussian-compression",
+  "4d-gaussian-compression",
   "human-pose-estimation",
   "image-restoration",
   "video-synthesis",
   "semantic-segmentation",
+  "coding-for-machines",
+  "video-encoder-control",
+  "video-prediction",
+  "incremental-learning",
+  "visual-question-answering",
+  "generative-modeling",
+  "autonomous-flight",
 ] as const
 
 export type MemberStatus = (typeof MEMBER_STATUSES)[number]
@@ -78,6 +87,7 @@ export type Publication = {
   readonly authors: readonly string[]
   readonly venue: string
   readonly year: number
+  readonly month?: number
   readonly summary: string
   readonly topic: PublicationTopic
   readonly type: PublicationType

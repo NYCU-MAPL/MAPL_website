@@ -3,6 +3,7 @@ import {
   arrayValue,
   ensureUniqueIds,
   objectValue,
+  optionalInteger,
   parseId,
   parseImage,
   parseUrl,
@@ -15,7 +16,7 @@ import type { Publication, PublicationLinks, PublicationTopic, PublicationType }
 
 const PUBLICATION_KEYS = [
   "id", "title", "authors", "venue", "year", "summary", "topic", "type",
-  "featured", "image", "links",
+  "month", "featured", "image", "links",
 ] as const
 
 const parseTopic = (object: JsonObject, context: ParseContext): PublicationTopic => {
@@ -23,11 +24,19 @@ const parseTopic = (object: JsonObject, context: ParseContext): PublicationTopic
   switch (value) {
     case "learned-image-compression":
     case "learned-video-compression":
-    case "gaussian-splatting":
+    case "3d-gaussian-compression":
+    case "4d-gaussian-compression":
     case "human-pose-estimation":
     case "image-restoration":
     case "video-synthesis":
     case "semantic-segmentation":
+    case "coding-for-machines":
+    case "video-encoder-control":
+    case "video-prediction":
+    case "incremental-learning":
+    case "visual-question-answering":
+    case "generative-modeling":
+    case "autonomous-flight":
       return value
     default:
       return fail(context, "topic", "is not a recognized publication topic")
@@ -74,6 +83,14 @@ export const parsePublications = (input: unknown, source: string): readonly Publ
     strictKeys(object, PUBLICATION_KEYS, context)
     const year = requiredInteger(object, "year", context)
     if (year < 1990 || year > 2100) fail(context, "year", "must be between 1990 and 2100")
+    const type = parseType(object, context)
+    const month = "month" in object ? optionalInteger(object, "month", context) : undefined
+    if (month !== undefined && (month < 1 || month > 12)) {
+      fail(context, "month", "must be between 1 and 12")
+    }
+    if (type === "conference" && month === undefined) {
+      fail(context, "month", "is required for conference publications")
+    }
     const links = "links" in object ? parseLinks(object["links"], context) : undefined
     return {
       id: parseId(object, context),
@@ -81,15 +98,17 @@ export const parsePublications = (input: unknown, source: string): readonly Publ
       authors: parseAuthors(object, context),
       venue: requiredString(object, "venue", context),
       year,
+      ...(month === undefined ? {} : { month }),
       summary: requiredString(object, "summary", context),
       topic: parseTopic(object, context),
-      type: parseType(object, context),
+      type,
       featured: requiredBoolean(object, "featured", context),
       image: parseImage(object["image"], context),
       ...(links === undefined ? {} : { links }),
     }
   })
   return ensureUniqueIds(records, source).toSorted(
-    (left, right) => right.year - left.year || left.title.localeCompare(right.title),
+    (left, right) => right.year - left.year || (right.month ?? 0) - (left.month ?? 0) ||
+      left.title.localeCompare(right.title),
   )
 }

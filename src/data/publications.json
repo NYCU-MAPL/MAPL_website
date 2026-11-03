@@ -2,129 +2,1675 @@
   {
     "id": "adapt-any-codec-diffusion-2026",
     "title": "ADAPT: Any-Codec Diffusion-Based Adaptation for Per-Image Perception-Distortion Trade-Off",
-    "authors": ["Yen-Kuan Ho", "Feng-Chiu Lin", "Ting-Han Lin", "Huu-Tai Phung", "Ching-Chun Huang", "Alessandro Gnutti", "Wen-Hsiao Peng"],
+    "authors": [
+      "Yen-Kuan Ho",
+      "Feng-Chiu Lin",
+      "Ting-Han Lin",
+      "Huu-Tai Phung",
+      "Ching-Chun Huang",
+      "Alessandro Gnutti",
+      "Wen-Hsiao Peng"
+    ],
     "venue": "IEEE International Conference on Image Processing (ICIP)",
     "year": 2026,
+    "month": 9,
     "summary": "ADAPT is a training-free framework for controlling the perception-distortion trade-off with learned and traditional codecs. It combines per-image encoder optimization with a two-stage diffusion decoder that suppresses artifacts before restoring texture.",
     "topic": "learned-image-compression",
     "type": "conference",
     "featured": true,
-    "image": { "src": "media/publications/adapt-icip-2026.webp", "alt": "ADAPT diffusion-based image codec adaptation architecture" }
+    "image": {
+      "src": "media/publications/adapt-icip-2026.webp",
+      "alt": "ADAPT diffusion-based image codec adaptation architecture"
+    },
+    "links": {
+      "paper": "https://ieeexplore.ieee.org/document/11630121"
+    }
   },
   {
     "id": "ic4dgs-illumination-compensated-2026",
     "title": "IC-4DGS: Illumination-Compensated 4D Gaussian Splatting under Photometric Variations",
-    "authors": ["He-Bi Yang", "Ming-Zhe He", "Cheng-Wei Yang", "Jui-Chiu Chiang", "Yu-Lun Liu", "Wen-Hsiao Peng"],
+    "authors": [
+      "He-Bi Yang",
+      "Ming-Zhe He",
+      "Cheng-Wei Yang",
+      "Jui-Chiu Chiang",
+      "Yu-Lun Liu",
+      "Wen-Hsiao Peng"
+    ],
     "venue": "IEEE International Conference on Image Processing (ICIP)",
     "year": 2026,
+    "month": 9,
     "summary": "IC-4DGS addresses exposure and white-balance variation in dynamic Gaussian Splatting. Its view-dependent illumination-compensation networks separate photometric artifacts from the scene representation to improve optimization stability and rendering quality.",
-    "topic": "gaussian-splatting",
+    "topic": "4d-gaussian-compression",
     "type": "conference",
     "featured": true,
-    "image": { "src": "media/publications/ic4dgs-icip-2026.webp", "alt": "IC-4DGS illumination compensation overview" }
+    "image": {
+      "src": "media/publications/ic4dgs-icip-2026.webp",
+      "alt": "IC-4DGS illumination compensation overview"
+    },
+    "links": {
+      "paper": "https://ieeexplore.ieee.org/document/11630311"
+    }
   },
   {
     "id": "csgaussian-compression-segmentation-2026",
     "title": "CSGaussian: Progressive Rate-Distortion Compression and Segmentation for 3D Gaussian Splatting",
-    "authors": ["Yu-Jen Tseng", "Chia-Hao Kao", "Jing-Zhong Chen", "Alessandro Gnutti", "Shao-Yuan Lo", "Yen-Yu Lin", "Wen-Hsiao Peng"],
+    "authors": [
+      "Yu-Jen Tseng",
+      "Chia-Hao Kao",
+      "Jing-Zhong Chen",
+      "Alessandro Gnutti",
+      "Shao-Yuan Lo",
+      "Yen-Yu Lin",
+      "Wen-Hsiao Peng"
+    ],
     "venue": "IEEE Winter Conference on Applications of Computer Vision (WACV)",
     "year": 2026,
+    "month": 3,
     "summary": "CSGaussian unifies rate-distortion-optimized 3D Gaussian compression and semantic segmentation. It entropy-codes color and semantic attributes with an implicit neural hyperprior and uses compression-guided segmentation learning to retain rendering and segmentation quality.",
-    "topic": "gaussian-splatting",
+    "topic": "3d-gaussian-compression",
     "type": "conference",
     "featured": true,
-    "image": { "src": "media/publications/csgaussian-wacv-2026.webp", "alt": "CSGaussian compression and segmentation framework" },
-    "links": { "paper": "https://arxiv.org/abs/2601.12814" }
+    "image": {
+      "src": "media/publications/csgaussian-wacv-2026.webp",
+      "alt": "CSGaussian compression and segmentation framework"
+    },
+    "links": {
+      "paper": "https://arxiv.org/abs/2601.12814"
+    }
   },
   {
     "id": "ted-4dgs-compression-2026",
     "title": "TED-4DGS: Temporally Activated and Embedding-based Deformation for 4DGS Compression",
-    "authors": ["Cheng-Yuan Ho", "He-Bi Yang", "Jui-Chiu Chiang", "Yu-Lun Liu", "Wen-Hsiao Peng"],
+    "authors": [
+      "Cheng-Yuan Ho",
+      "He-Bi Yang",
+      "Jui-Chiu Chiang",
+      "Yu-Lun Liu",
+      "Wen-Hsiao Peng"
+    ],
     "venue": "IEEE Winter Conference on Applications of Computer Vision (WACV)",
     "year": 2026,
+    "month": 3,
     "summary": "TED-4DGS uses learnable temporal activation and per-anchor embeddings to build a compact dynamic Gaussian representation. An implicit hyperprior and channel-wise autoregressive model provide rate-distortion-optimized coding of anchor attributes.",
-    "topic": "gaussian-splatting",
+    "topic": "4d-gaussian-compression",
     "type": "conference",
     "featured": true,
-    "image": { "src": "media/publications/ted-4dgs-wacv-2026.webp", "alt": "TED-4DGS temporal activation and deformation framework" },
-    "links": { "paper": "https://arxiv.org/abs/2512.05446", "project": "https://nycu-mapl.github.io/TED-4DGS_page/" }
+    "image": {
+      "src": "media/publications/ted-4dgs-wacv-2026.webp",
+      "alt": "TED-4DGS temporal activation and deformation framework"
+    },
+    "links": {
+      "paper": "https://arxiv.org/abs/2512.05446",
+      "project": "https://nycu-mapl.github.io/TED-4DGS_page/"
+    }
   },
   {
     "id": "millimamba-radar-pose-2026",
     "title": "milliMamba: Specular-Aware Human Pose Estimation via Dual mmWave Radar with Multi-Frame Mamba Fusion",
-    "authors": ["Niraj Prakash Kini", "Shiau-Rung Tsai", "Guan-Hsun Lin", "Wen-Hsiao Peng", "Ching-Wen Ma", "Jenq-Neng Hwang"],
+    "authors": [
+      "Niraj Prakash Kini",
+      "Shiau-Rung Tsai",
+      "Guan-Hsun Lin",
+      "Wen-Hsiao Peng",
+      "Ching-Wen Ma",
+      "Jenq-Neng Hwang"
+    ],
     "venue": "IEEE Winter Conference on Applications of Computer Vision (WACV)",
     "year": 2026,
+    "month": 3,
     "summary": "milliMamba estimates 2D human pose from dual mmWave radar by modeling spatio-temporal dependencies in both encoding and decoding. Cross-view Mamba fusion and spatio-temporal cross-attention recover joints missing because of sparse specular reflections.",
     "topic": "human-pose-estimation",
     "type": "conference",
     "featured": true,
-    "image": { "src": "media/publications/millimamba-wacv-2026.webp", "alt": "milliMamba dual-radar pose estimation pipeline" },
-    "links": { "paper": "https://arxiv.org/abs/2512.20128", "code": "https://github.com/NYCU-MAPL/milliMamba" }
+    "image": {
+      "src": "media/publications/millimamba-wacv-2026.webp",
+      "alt": "milliMamba dual-radar pose estimation pipeline"
+    },
+    "links": {
+      "paper": "https://arxiv.org/abs/2512.20128",
+      "code": "https://github.com/NYCU-MAPL/milliMamba"
+    }
   },
   {
     "id": "hytip-video-coding-2025",
     "title": "HyTIP: Hybrid Temporal Information Propagation for Masked Conditional Residual Video Coding",
-    "authors": ["Yi-Hsin Chen", "Yi-Chen Yao", "Kuan-Wei Ho", "Chun-Hung Wu", "Huu-Tai Phung", "Martin Benjak", "Jörn Ostermann", "Wen-Hsiao Peng"],
+    "authors": [
+      "Yi-Hsin Chen",
+      "Yi-Chen Yao",
+      "Kuan-Wei Ho",
+      "Chun-Hung Wu",
+      "Huu-Tai Phung",
+      "Martin Benjak",
+      "Jörn Ostermann",
+      "Wen-Hsiao Peng"
+    ],
     "venue": "IEEE International Conference on Computer Vision (ICCV)",
     "year": 2025,
+    "month": 10,
     "summary": "HyTIP combines explicit decoded-frame recurrence with a small implicit feature buffer. The hybrid strategy improves learned video coding performance while reducing memory relative to hidden-state-only temporal propagation.",
     "topic": "learned-video-compression",
     "type": "conference",
     "featured": true,
-    "image": { "src": "media/publications/hytip-iccv-2025.webp", "alt": "HyTIP hybrid temporal information propagation architecture" },
-    "links": { "paper": "https://arxiv.org/abs/2508.02072", "code": "https://github.com/NYCU-MAPL/HyTIP" }
+    "image": {
+      "src": "media/publications/hytip-iccv-2025.webp",
+      "alt": "HyTIP hybrid temporal information propagation architecture"
+    },
+    "links": {
+      "paper": "https://arxiv.org/abs/2508.02072",
+      "code": "https://github.com/NYCU-MAPL/HyTIP"
+    }
   },
   {
     "id": "mh-lvc-video-coding-2025",
     "title": "MH-LVC: Multi-Hypothesis Temporal Prediction for Learned Conditional Residual Video Coding",
-    "authors": ["Huu-Tai Phung", "Zong-Lin Gao", "Yi-Chen Yao", "Kuan-Wei Ho", "Yi-Hsin Chen", "Yu-Hsiang Lin", "Alessandro Gnutti", "Wen-Hsiao Peng"],
+    "authors": [
+      "Huu-Tai Phung",
+      "Zong-Lin Gao",
+      "Yi-Chen Yao",
+      "Kuan-Wei Ho",
+      "Yi-Hsin Chen",
+      "Yu-Hsiang Lin",
+      "Alessandro Gnutti",
+      "Wen-Hsiao Peng"
+    ],
     "venue": "IEEE International Conference on Computer Vision (ICCV)",
     "year": 2025,
+    "month": 10,
     "summary": "MH-LVC uses long- and short-term decoded reference frames in conditional residual video coding. Its adaptive buffer management limits each prediction to two references while mitigating temporal error propagation and memory traffic.",
     "topic": "learned-video-compression",
     "type": "conference",
     "featured": true,
-    "image": { "src": "media/publications/mh-lvc-iccv-2025.webp", "alt": "MH-LVC multi-hypothesis temporal prediction architecture" },
-    "links": { "paper": "https://arxiv.org/abs/2510.12479", "code": "https://github.com/NYCU-MAPL/MHLVC" }
+    "image": {
+      "src": "media/publications/mh-lvc-iccv-2025.webp",
+      "alt": "MH-LVC multi-hypothesis temporal prediction architecture"
+    },
+    "links": {
+      "paper": "https://arxiv.org/abs/2510.12479",
+      "code": "https://github.com/NYCU-MAPL/MHLVC"
+    }
   },
   {
     "id": "conditional-video-compressors-restoration-2024",
     "title": "Using Conditional Video Compressors for Image Restoration",
-    "authors": ["Yi-Hsin Chen", "Yen-Kuan Ho", "Ting-Han Lin", "Wen-Hsiao Peng", "Ching-Chun Huang"],
+    "authors": [
+      "Yi-Hsin Chen",
+      "Yen-Kuan Ho",
+      "Ting-Han Lin",
+      "Wen-Hsiao Peng",
+      "Ching-Chun Huang"
+    ],
     "venue": "International Conference on Wireless and Optical Communications (WOCC)",
     "year": 2024,
+    "month": 10,
     "summary": "This work adapts a conditional video compressor to image denoising and deblurring by treating the degraded image as a temporal reference. A fully conditioned encoder, decoder, and prior network are trained end-to-end with scalar quantization.",
     "topic": "image-restoration",
     "type": "conference",
     "featured": false,
-    "image": { "src": "media/publications/conditional-restoration-wocc-2024.webp", "alt": "Conditional video compressor adapted for image restoration" },
-    "links": { "paper": "https://ieeexplore.ieee.org/document/10786066" }
+    "image": {
+      "src": "media/publications/conditional-restoration-wocc-2024.webp",
+      "alt": "Conditional video compressor adapted for image restoration"
+    },
+    "links": {
+      "paper": "https://ieeexplore.ieee.org/document/10786066"
+    }
   },
   {
     "id": "motif-video-super-resolution-2023",
     "title": "MoTIF: Learning Motion Trajectories with Local Implicit Neural Functions for Continuous Space-Time Video Super-Resolution",
-    "authors": ["Yi-Hsin Chen", "Si-Cun Chen", "Yen-Yu Lin", "Wen-Hsiao Peng"],
+    "authors": [
+      "Yi-Hsin Chen",
+      "Si-Cun Chen",
+      "Yen-Yu Lin",
+      "Wen-Hsiao Peng"
+    ],
     "venue": "IEEE International Conference on Computer Vision (ICCV)",
     "year": 2023,
+    "month": 10,
     "summary": "MoTIF performs continuous space-time video super-resolution with a local implicit neural function that learns forward motion trajectories for a continuum of pixels. Reliability-aware splatting and decoding support arbitrary spatial and temporal scaling factors.",
     "topic": "video-synthesis",
     "type": "conference",
     "featured": false,
-    "image": { "src": "media/publications/motif-iccv-2023.webp", "alt": "MoTIF continuous space-time video super-resolution framework" },
-    "links": { "paper": "https://arxiv.org/abs/2307.07988", "code": "https://github.com/sichun233746/MoTIF", "project": "https://sichun233746.github.io/MoTIF/" }
+    "image": {
+      "src": "media/publications/motif-iccv-2023.webp",
+      "alt": "MoTIF continuous space-time video super-resolution framework"
+    },
+    "links": {
+      "paper": "https://arxiv.org/abs/2307.07988",
+      "code": "https://github.com/sichun233746/MoTIF",
+      "project": "https://sichun233746.github.io/MoTIF/"
+    }
   },
   {
     "id": "dise-domain-adaptation-2019",
     "title": "All about Structure: Adapting Structural Information across Domains for Boosting Semantic Segmentation",
-    "authors": ["Wei-Lun Chang", "Hui-Po Wang", "Wen-Hsiao Peng", "Wei-Chen Chiu"],
+    "authors": [
+      "Wei-Lun Chang",
+      "Hui-Po Wang",
+      "Wen-Hsiao Peng",
+      "Wei-Chen Chiu"
+    ],
     "venue": "IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
     "year": 2019,
+    "month": 6,
     "summary": "DISE separates images into domain-invariant structure and domain-specific texture representations for unsupervised semantic-segmentation adaptation. The disentangled representation enables image translation and label transfer from synthetic to real-world domains.",
     "topic": "semantic-segmentation",
     "type": "conference",
     "featured": false,
-    "image": { "src": "media/publications/dise-cvpr-2019.webp", "alt": "DISE domain-invariant structure extraction framework" },
-    "links": { "paper": "https://arxiv.org/abs/1903.12212", "code": "https://github.com/a514514772/DISE-Domain-Invariant-Structure-Extraction", "project": "https://hui-po-wang.github.io/DISE-Domain-Invariant-Structure-Extraction/" }
+    "image": {
+      "src": "media/publications/dise-cvpr-2019.webp",
+      "alt": "DISE domain-invariant structure extraction framework"
+    },
+    "links": {
+      "paper": "https://arxiv.org/abs/1903.12212",
+      "code": "https://github.com/a514514772/DISE-Domain-Invariant-Structure-Extraction",
+      "project": "https://hui-po-wang.github.io/DISE-Domain-Invariant-Structure-Extraction/"
+    }
+  },
+  {
+    "id": "network-quantization-in-neural-video-coding-a-comparative-study-across-coding-frameworks-and-temporal-buffering-strategies-2026",
+    "title": "Network Quantization in Neural Video Coding: A Comparative Study Across Coding Frameworks and Temporal Buffering Strategies",
+    "authors": [
+      "Huu-Tai Phung",
+      "Yu-Hsiang Lin",
+      "Chun-Hung Wu",
+      "Ruhan Conceição",
+      "Tzu-Hsiang Chou",
+      "Marcelo Porto",
+      "Luciano Volcan Agostini",
+      "Wen-Hsiao Peng"
+    ],
+    "venue": "IEEE International Conference on Image Processing (ICIP)",
+    "year": 2026,
+    "month": 9,
+    "summary": "This study examines network quantization across neural video coding frameworks and temporal buffering strategies, with attention to cross-platform round-off errors. It identifies inter-frame decoding sensitivity and mixed precision as key factors in balancing performance and complexity.",
+    "topic": "learned-video-compression",
+    "type": "conference",
+    "featured": false,
+    "image": {
+      "src": "media/publications/network-quantization-in-neural-video-coding-a-comparative-study-across-coding-frameworks-and-temporal-buffering-strategies-2026.webp",
+      "alt": "Network Quantization in Neural Video Coding paper figure"
+    },
+    "links": {
+      "paper": "https://ieeexplore.ieee.org/abstract/document/11630476"
+    }
+  },
+  {
+    "id": "rate-distortion-complexity-analysis-of-parametric-video-codecs-2026",
+    "title": "Rate-Distortion-Complexity Analysis of Parametric Video Codecs",
+    "authors": [
+      "Ricardo L. de Queiroz",
+      "Diogo C. Garcia",
+      "Yi-Hsin Chen",
+      "Ruhan Conceição",
+      "Wen-Hsiao Peng",
+      "Luciano V. Agostini"
+    ],
+    "venue": "IEEE International Conference on Image Processing (ICIP)",
+    "year": 2026,
+    "month": 9,
+    "summary": "This work develops a rate-distortion-complexity analysis for comparing parametric video codecs beyond conventional two-dimensional metrics. It uses integrated Lagrangian costs to identify which codecs best suit different rate and complexity preferences.",
+    "topic": "learned-video-compression",
+    "type": "conference",
+    "featured": false,
+    "image": {
+      "src": "media/publications/rate-distortion-complexity-analysis-of-parametric-video-codecs-2026.webp",
+      "alt": "Rate-Distortion-Complexity Analysis of Parametric Video Codecs paper figure"
+    },
+    "links": {
+      "paper": "https://ieeexplore.ieee.org/document/11630299"
+    }
+  },
+  {
+    "id": "on-the-impact-of-quantization-precision-and-calibration-settings-applied-to-the-ssf-neural-video-decoder-2026",
+    "title": "On the Impact of Quantization Precision and Calibration Settings Applied to the SSF Neural Video Decoder",
+    "authors": [
+      "Ruhan Conceição",
+      "Wen-Hsiao Peng",
+      "Marcelo Porto",
+      "Luciano Agostini"
+    ],
+    "venue": "Journal of Integrated Circuits and Systems",
+    "year": 2026,
+    "summary": "This study evaluates post-training quantization of the SSF codec's hyperprior decoding path across bit depths, calibration settings, and P-frame chain lengths. INT8 limits compression-efficiency loss while INT12 nearly matches floating-point performance, with estimated hardware energy savings.",
+    "topic": "learned-video-compression",
+    "type": "journal",
+    "featured": false,
+    "image": {
+      "src": "media/publications/on-the-impact-of-quantization-precision-and-calibration-settings-applied-to-the-ssf-neural-video-decoder-2026.webp",
+      "alt": "On the Impact of Quantization Precision and Calibration paper figure"
+    },
+    "links": {
+      "paper": "https://jics.org.br/ojs/index.php/JICS/article/view/1086"
+    }
+  },
+  {
+    "id": "neural-b-frame-coding-tackling-domain-shift-issues-with-lightweight-online-motion-resolution-adaptation-2025",
+    "title": "Neural B-Frame Coding: Tackling Domain Shift Issues with Lightweight Online Motion Resolution Adaptation",
+    "authors": [
+      "Sang NguyenQuang",
+      "Xiem HoangVan",
+      "Wen-Hsiao Peng"
+    ],
+    "venue": "IEEE Transactions on Circuits and Systems II: Express Briefs (TCSII)",
+    "year": 2025,
+    "summary": "This work addresses motion-estimation domain shift in hierarchical B-frame coding with lightweight classifiers that select frame-downsampling factors. Binary, multi-class, and combined variants approach exhaustive-search coding performance while reducing computational complexity.",
+    "topic": "learned-video-compression",
+    "type": "journal",
+    "featured": false,
+    "image": {
+      "src": "media/publications/neural-b-frame-coding-tackling-domain-shift-issues-with-lightweight-online-motion-resolution-adaptation-2025.webp",
+      "alt": "Neural B-Frame Coding paper figure"
+    },
+    "links": {
+      "paper": "https://doi.org/10.1109/TCSII.2025.3632079",
+      "code": "https://github.com/NYCU-MAPL/Fast-OMRA"
+    }
+  },
+  {
+    "id": "a-cross-framework-study-of-temporal-information-buffering-strategies-for-learned-video-compression-2025",
+    "title": "A Cross-Framework Study of Temporal Information Buffering Strategies for Learned Video Compression",
+    "authors": [
+      "Kuan-Wei Ho",
+      "Yi-Hsin Chen",
+      "Martin Benjak",
+      "Jörn Ostermann",
+      "Wen-Hsiao Peng"
+    ],
+    "venue": "Picture Coding Symposium (PCS)",
+    "year": 2025,
+    "month": 12,
+    "summary": "This study compares explicit, implicit, and hybrid temporal buffering across residual, conditional, conditional-residual, and masked conditional-residual video coding frameworks. A unified evaluation clarifies how buffering choices affect learned video compression performance.",
+    "topic": "learned-video-compression",
+    "type": "conference",
+    "featured": false,
+    "image": {
+      "src": "media/publications/a-cross-framework-study-of-temporal-information-buffering-strategies-for-learned-video-compression-2025.webp",
+      "alt": "A Cross-Framework Study of Temporal Information Buffering Strategies paper figure"
+    },
+    "links": {
+      "paper": "https://arxiv.org/abs/2510.15426"
+    }
+  },
+  {
+    "id": "a-rate-quality-model-for-learned-video-coding-2025",
+    "title": "A Rate-Quality Model for Learned Video Coding",
+    "authors": [
+      "Sang NguyenQuang",
+      "Cheng-Wei Chen",
+      "Xiem HoangVan",
+      "Wen-Hsiao Peng"
+    ],
+    "venue": "Asia-Pacific Signal and Information Processing Association (APSIPA) Annual Summit and Conference",
+    "year": 2025,
+    "month": 10,
+    "summary": "This work models the rate-quality relationship of learned video codecs with RQNet, which predicts bitrate and quality from content and coding context. Online least-squares updates incorporate previously coded frames and reduce bitrate deviations with little added complexity.",
+    "topic": "learned-video-compression",
+    "type": "conference",
+    "featured": false,
+    "image": {
+      "src": "media/publications/a-rate-quality-model-for-learned-video-coding-2025.webp",
+      "alt": "A Rate-Quality Model for Learned Video Coding paper figure"
+    },
+    "links": {
+      "paper": "https://arxiv.org/abs/2505.02720"
+    }
+  },
+  {
+    "id": "conditional-residual-coding-with-explicit-implicit-temporal-buffering-for-learned-video-compression-2025",
+    "title": "Conditional Residual Coding with Explicit-Implicit Temporal Buffering for Learned Video Compression",
+    "authors": [
+      "Yi-Hsin Chen",
+      "Kuan-Wei Ho",
+      "Martin Benjak",
+      "Jörn Ostermann",
+      "Wen-Hsiao Peng"
+    ],
+    "venue": "IEEE International Conference on Multimedia and Expo (ICME)",
+    "year": 2025,
+    "month": 6,
+    "summary": "This work combines one decoded frame with a small set of learned features for explicit-implicit temporal buffering in conditional residual video coding. The hybrid buffer outperforms either reference type alone and can be reduced to roughly two video frames with little loss on 2K sequences.",
+    "topic": "learned-video-compression",
+    "type": "conference",
+    "featured": false,
+    "image": {
+      "src": "media/publications/conditional-residual-coding-with-explicit-implicit-temporal-buffering-for-learned-video-compression-2025.webp",
+      "alt": "Conditional Residual Coding with Explicit-Implicit Temporal Buffering for paper figure"
+    },
+    "links": {
+      "paper": "https://arxiv.org/abs/2508.01818"
+    }
+  },
+  {
+    "id": "cross-platform-neural-video-coding-a-case-study-2025",
+    "title": "Cross-Platform Neural Video Coding: A Case Study",
+    "authors": [
+      "Ruhan Conceição",
+      "Marcelo Porto",
+      "Wen-Hsiao Peng",
+      "Luciano Agostini"
+    ],
+    "venue": "IEEE International Symposium on Circuits and Systems (ISCAS)",
+    "year": 2025,
+    "month": 5,
+    "summary": "This case study shows how floating-point round-off can cause encoder-decoder mismatches when the SSF neural video codec runs across different platforms. Static quantization of the hyperprior decoding path mitigates severe quality degradation while constraining same-platform rate loss.",
+    "topic": "learned-video-compression",
+    "type": "conference",
+    "featured": false,
+    "image": {
+      "src": "media/publications/cross-platform-neural-video-coding-a-case-study-2025.webp",
+      "alt": "Cross-Platform Neural Video Coding paper figure"
+    },
+    "links": {
+      "paper": "https://arxiv.org/abs/2410.20145"
+    }
+  },
+  {
+    "id": "maskcrt-b-masked-conditional-residual-transformer-for-learned-b-frame-coding-2025",
+    "title": "MaskCRT-B: Masked Conditional Residual Transformer for Learned B-frame Coding",
+    "authors": [
+      "Zong-Lin Gao",
+      "Yi-Chen Yao",
+      "Kuan-Wei Ho",
+      "Yi-Hsin Chen",
+      "Wen-Hsiao Peng"
+    ],
+    "venue": "IEEE International Symposium on Circuits and Systems (ISCAS)",
+    "year": 2025,
+    "month": 5,
+    "summary": "MaskCRT-B applies masked conditional residual coding to hierarchical YUV420 B-frames with a joint YUV encoder, separate Y and UV decoders, and bidirectional adaptive fusion. The design improves prediction in occluded and disoccluded regions and surpasses the prior challenge codec.",
+    "topic": "learned-video-compression",
+    "type": "conference",
+    "featured": false,
+    "image": {
+      "src": "media/publications/maskcrt-b-masked-conditional-residual-transformer-for-learned-b-frame-coding-2025.webp",
+      "alt": "MaskCRT-B paper figure"
+    },
+    "links": {
+      "paper": "https://ieeexplore.ieee.org/document/11044251"
+    }
+  },
+  {
+    "id": "fast-omra-fast-online-motion-resolution-adaptation-for-neural-b-frame-coding-2025",
+    "title": "Fast-OMRA: Fast Online Motion Resolution Adaptation for Neural B-Frame Coding",
+    "authors": [
+      "Sang NguyenQuang",
+      "Zong-Lin Gao",
+      "Kuan-Wei Ho",
+      "Xiem HoangVan",
+      "Wen-Hsiao Peng"
+    ],
+    "venue": "IEEE Latin American Symposium on Circuits and Systems (LASCAS)",
+    "year": 2025,
+    "month": 2,
+    "summary": "Fast-OMRA uses lightweight binary and multi-class classifiers to choose motion-estimation downsampling factors for learned B-frame coding. The add-on classifiers address train-test GOP domain shift while approaching brute-force coding performance at substantially lower complexity.",
+    "topic": "learned-video-compression",
+    "type": "conference",
+    "featured": false,
+    "image": {
+      "src": "media/publications/fast-omra-fast-online-motion-resolution-adaptation-for-neural-b-frame-coding-2025.webp",
+      "alt": "Fast-OMRA paper figure"
+    },
+    "links": {
+      "paper": "https://arxiv.org/abs/2410.21763"
+    }
+  },
+  {
+    "id": "omra-online-motion-resolution-adaptation-to-remedy-domain-shift-in-learned-hierarchical-b-frame-coding-2024",
+    "title": "OMRA: Online Motion Resolution Adaptation to Remedy Domain Shift in Learned Hierarchical B-frame Coding",
+    "authors": [
+      "Zong-Lin Gao",
+      "Sang NguyenQuang",
+      "Wen-Hsiao Peng",
+      "Xiem HoangVan"
+    ],
+    "venue": "IEEE International Conference on Image Processing (ICIP)",
+    "year": 2024,
+    "month": 10,
+    "summary": "OMRA adapts the spatial resolution used for motion estimation on each frame to remedy train-test GOP domain shift in hierarchical B-frame codecs. It operates at inference time without retraining and improves compression performance across two learned codecs.",
+    "topic": "learned-video-compression",
+    "type": "conference",
+    "featured": false,
+    "image": {
+      "src": "media/publications/omra-online-motion-resolution-adaptation-to-remedy-domain-shift-in-learned-hierarchical-b-frame-coding-2024.webp",
+      "alt": "OMRA paper figure"
+    },
+    "links": {
+      "paper": "https://arxiv.org/abs/2402.12816"
+    }
+  },
+  {
+    "id": "on-the-rate-distortion-complexity-trade-offs-of-neural-video-coding-2024",
+    "title": "On the Rate-Distortion-Complexity Trade-offs of Neural Video Coding",
+    "authors": [
+      "Yi-Hsin Chen",
+      "Kuan-Wei Ho",
+      "Martin Benjak",
+      "Jörn Ostermann",
+      "Wen-Hsiao Peng"
+    ],
+    "venue": "IEEE International Workshop on Multimedia Signal Processing (MMSP)",
+    "year": 2024,
+    "month": 10,
+    "summary": "This study investigates rate-distortion-complexity trade-offs in neural video coding using DCVC as a common base. It compares conditional residual coding variants designed to avoid information bottlenecks without the high-resolution conditioning features that increase computation, memory, and model size.",
+    "topic": "learned-video-compression",
+    "type": "conference",
+    "featured": false,
+    "image": {
+      "src": "media/publications/on-the-rate-distortion-complexity-trade-offs-of-neural-video-coding-2024.webp",
+      "alt": "On the Rate-Distortion-Complexity Trade-offs of Neural Video Coding paper figure"
+    },
+    "links": {
+      "paper": "https://arxiv.org/abs/2410.03898"
+    }
+  },
+  {
+    "id": "maskcrt-masked-conditional-residual-transformer-for-learned-video-compression-2024",
+    "title": "MaskCRT: Masked Conditional Residual Transformer for Learned Video Compression",
+    "authors": [
+      "Yi-Hsin Chen",
+      "Hong-Sheng Xie",
+      "Cheng-Wei Chen",
+      "Zong-Lin Gao",
+      "Martin Benjak",
+      "Wen-Hsiao Peng",
+      "Jörn Ostermann"
+    ],
+    "venue": "IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)",
+    "year": 2024,
+    "summary": "MaskCRT learns a pixel-adaptive soft mask that blends conditional and conditional residual video coding according to prediction reliability. Its Transformer autoencoder and channel transform improve compression while using a simpler hyperprior entropy model.",
+    "topic": "learned-video-compression",
+    "type": "journal",
+    "featured": false,
+    "image": {
+      "src": "media/publications/maskcrt-masked-conditional-residual-transformer-for-learned-video-compression-2024.webp",
+      "alt": "MaskCRT paper figure"
+    },
+    "links": {
+      "paper": "https://arxiv.org/abs/2312.15829",
+      "code": "https://github.com/NYCU-MAPL/MaskCRT"
+    }
+  },
+  {
+    "id": "conditional-variational-autoencoders-for-hierarchical-b-frame-coding-2024",
+    "title": "Conditional Variational Autoencoders for Hierarchical B-Frame Coding",
+    "authors": [
+      "Zong-Lin Gao",
+      "Cheng-Wei Chen",
+      "Yi-Chen Yao",
+      "Cheng-Yuan Ho",
+      "Wen-Hsiao Peng"
+    ],
+    "venue": "IEEE International Symposium on Circuits and Systems (ISCAS)",
+    "year": 2024,
+    "month": 5,
+    "summary": "This lightweight hierarchical B-frame codec conditionally encodes YUV420 video with multi-scale features, frame-type adaptive coding, and a compact variational autoencoder. It improves compression over the prior CANF challenge codec while substantially reducing complexity.",
+    "topic": "learned-video-compression",
+    "type": "conference",
+    "featured": false,
+    "image": {
+      "src": "media/publications/conditional-variational-autoencoders-for-hierarchical-b-frame-coding-2024.webp",
+      "alt": "Conditional Variational Autoencoders for Hierarchical B-Frame Coding paper figure"
+    },
+    "links": {
+      "paper": "https://ieeexplore.ieee.org/document/10558111"
+    }
+  },
+  {
+    "id": "rate-adaptation-for-learned-two-layer-b-frame-coding-without-signaling-motion-information-2023",
+    "title": "Rate Adaptation for Learned Two-layer B-frame Coding without Signaling Motion Information",
+    "authors": [
+      "Hong-Sheng Xie",
+      "Yi-Hsin Chen",
+      "Wen-Hsiao Peng",
+      "Martin Benjak",
+      "Jörn Ostermann"
+    ],
+    "venue": "IEEE International Conference on Visual Communications and Image Processing (VCIP)",
+    "year": 2023,
+    "month": 12,
+    "summary": "This work adds per-frame base-layer rate adaptation to a two-layer B-frame codec that does not signal motion information. Feature modulation and online search strategies improve rate-distortion performance, with the best method delivering measurable bitrate savings over TLZMC.",
+    "topic": "learned-video-compression",
+    "type": "conference",
+    "featured": false,
+    "image": {
+      "src": "media/publications/rate-adaptation-for-learned-two-layer-b-frame-coding-without-signaling-motion-information-2023.webp",
+      "alt": "Rate Adaptation for Learned Two-layer B-frame Coding without paper figure"
+    },
+    "links": {
+      "paper": "https://ieeexplore.ieee.org/document/10402774"
+    }
+  },
+  {
+    "id": "learning-based-scalable-video-coding-with-spatial-and-temporal-prediction-2023",
+    "title": "Learning-Based Scalable Video Coding with Spatial and Temporal Prediction",
+    "authors": [
+      "Martin Benjak",
+      "Yi-Hsin Chen",
+      "Wen-Hsiao Peng",
+      "Jörn Ostermann"
+    ],
+    "venue": "IEEE International Conference on Visual Communications and Image Processing (VCIP)",
+    "year": 2023,
+    "month": 12,
+    "summary": "This scalable video codec combines a VVC low-resolution base layer with a learned enhancement layer conditioned on spatial and temporal predictions. It outperforms LCEVC and approaches full-resolution VVC on high-resolution content while retaining spatial scalability.",
+    "topic": "learned-video-compression",
+    "type": "conference",
+    "featured": false,
+    "image": {
+      "src": "media/publications/learning-based-scalable-video-coding-with-spatial-and-temporal-prediction-2023.webp",
+      "alt": "Learning-Based Scalable Video Coding with Spatial and Temporal paper figure"
+    },
+    "links": {
+      "paper": "https://ieeexplore.ieee.org/document/10402677"
+    }
+  },
+  {
+    "id": "hierarchical-b-frame-video-compression-using-two-layer-canf-without-motion-coding-2023",
+    "title": "Hierarchical B-frame Video Compression Using Two-layer CANF without Motion Coding",
+    "authors": [
+      "David Alexandre",
+      "Hsueh-Ming Hang",
+      "Wen-Hsiao Peng"
+    ],
+    "venue": "IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+    "year": 2023,
+    "month": 6,
+    "summary": "This two-layer CANF B-frame codec replaces full-resolution motion coding with a low-resolution base image and conditionally codes an enhancement layer. Eliminating motion transmission reduces computation while retaining competitive rate-distortion performance.",
+    "topic": "learned-video-compression",
+    "type": "conference",
+    "featured": false,
+    "image": {
+      "src": "media/publications/hierarchical-b-frame-video-compression-using-two-layer-canf-without-motion-coding-2023.webp",
+      "alt": "Hierarchical B-frame Video Compression Using Two-layer CANF without paper figure"
+    },
+    "links": {
+      "paper": "https://openaccess.thecvf.com/content/CVPR2023/html/Alexandre_Hierarchical_B-Frame_Video_Coding_Using_Two-Layer_CANF_Without_Motion_Coding_CVPR_2023_paper.html",
+      "code": "https://github.com/nycu-clab/tlzmc-cvpr",
+      "project": "https://nycu-clab.github.io/"
+    }
+  },
+  {
+    "id": "b-canf-adaptive-b-frame-coding-with-conditional-augmented-normalizing-flows-2023",
+    "title": "B-CANF: Adaptive B-frame Coding with Conditional Augmented Normalizing Flows",
+    "authors": [
+      "Mu-Jung Chen",
+      "Yi-Hsin Chen",
+      "Wen-Hsiao Peng"
+    ],
+    "venue": "IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)",
+    "year": 2023,
+    "summary": "B-CANF applies conditional augmented normalizing flows to learned B-frame compression with frame-type adaptive coding and reusable B*-frames. These mechanisms improve bit allocation and allow flexible GOP structures without a separate P-frame codec.",
+    "topic": "learned-video-compression",
+    "type": "journal",
+    "featured": false,
+    "image": {
+      "src": "media/publications/b-canf-adaptive-b-frame-coding-with-conditional-augmented-normalizing-flows-2023.webp",
+      "alt": "B-CANF paper figure"
+    },
+    "links": {
+      "paper": "https://arxiv.org/abs/2209.01769.pdf",
+      "code": "https://github.com/NYCU-MAPL/B-CANF",
+      "project": "https://nycu-mapl.github.io/B-CANF_Page/"
+    }
+  },
+  {
+    "id": "learned-hierarchical-b-frame-coding-with-adaptive-feature-modulation-for-yuv-4-2-0-content-2023",
+    "title": "Learned Hierarchical B-frame Coding with Adaptive Feature Modulation for YUV 4:2:0 Content",
+    "authors": [
+      "Mu-Jung Chen",
+      "Hong-Sheng Xie",
+      "Cheng Chien",
+      "Wen-Hsiao Peng",
+      "Hsueh-Ming Hang"
+    ],
+    "venue": "IEEE International Symposium on Circuits and Systems (ISCAS)",
+    "year": 2023,
+    "month": 5,
+    "summary": "This hierarchical B-frame codec targets YUV 4:2:0 video with conditional motion and inter-frame coding. Content- and frame-level adaptive feature modulation enables variable-rate operation in a single model and improves challenge-benchmark performance.",
+    "topic": "learned-video-compression",
+    "type": "conference",
+    "featured": false,
+    "image": {
+      "src": "media/publications/learned-hierarchical-b-frame-coding-with-adaptive-feature-modulation-for-yuv-4-2-0-content-2023.webp",
+      "alt": "Learned Hierarchical B-frame Coding with Adaptive Feature Modulation paper figure"
+    },
+    "links": {
+      "paper": "https://arxiv.org/abs/2212.14187",
+      "project": "https://personalworkingspace.github.io/MAPL-ISCAS2023-GC/"
+    }
+  },
+  {
+    "id": "content-adaptive-motion-rate-adaption-for-learned-video-compression-2022",
+    "title": "Content-adaptive Motion Rate Adaption for Learned Video Compression",
+    "authors": [
+      "Chih-Hsuan Lin",
+      "Yi-Hsin Chen",
+      "Wen-Hsiao Peng"
+    ],
+    "venue": "Picture Coding Symposium (PCS)",
+    "year": 2022,
+    "month": 12,
+    "summary": "This method learns a spatially adaptive motion bit-allocation map for each test sequence to reduce train-test domain gaps in video compression. Online optimization and look-ahead improve rate-distortion performance, especially for sequences with complex motion.",
+    "topic": "learned-video-compression",
+    "type": "conference",
+    "featured": false,
+    "image": {
+      "src": "media/publications/content-adaptive-motion-rate-adaption-for-learned-video-compression-2022.webp",
+      "alt": "Content-adaptive Motion Rate Adaption for Learned Video Compression paper figure"
+    },
+    "links": {
+      "paper": "https://arxiv.org/abs/2302.06293",
+      "project": "https://mapl.cs.nycu.edu.tw/PCS/"
+    }
+  },
+  {
+    "id": "canf-vc-conditional-augmented-normalizing-flows-for-video-compression-2022",
+    "title": "CANF-VC: Conditional Augmented Normalizing Flows for Video Compression",
+    "authors": [
+      "Yung-Han Ho",
+      "Chih-Peng Chang",
+      "Peng-Yu Chen",
+      "Alessandro Gnutti",
+      "Wen-Hsiao Peng"
+    ],
+    "venue": "European Conference on Computer Vision (ECCV)",
+    "year": 2022,
+    "month": 10,
+    "summary": "CANF-VC uses conditional augmented normalizing flows as a generative model for both motion and inter-frame coding. Its fully conditional architecture departs from traditional hybrid coding and improves compression on standard test datasets.",
+    "topic": "learned-video-compression",
+    "type": "conference",
+    "featured": false,
+    "image": {
+      "src": "media/publications/canf-vc-conditional-augmented-normalizing-flows-for-video-compression-2022.webp",
+      "alt": "CANF-VC paper figure"
+    },
+    "links": {
+      "paper": "https://arxiv.org/abs/2207.05315",
+      "project": "https://hongsheng416.github.io/CANFVC-project_page"
+    }
+  },
+  {
+    "id": "learned-video-compression-for-yuv-4-2-0-content-using-flow-based-conditional-inter-frame-coding-2022",
+    "title": "Learned Video Compression for YUV 4:2:0 Content Using Flow-Based Conditional Inter-Frame Coding",
+    "authors": [
+      "Yung-Han Ho",
+      "Chih-Hsuan Lin",
+      "Peng-Yu Chen",
+      "Mu-Jung Chen",
+      "Chih-Peng Chang",
+      "Wen-Hsiao Peng"
+    ],
+    "venue": "IEEE International Symposium on Circuits and Systems (ISCAS)",
+    "year": 2022,
+    "month": 5,
+    "summary": "This learned codec conditionally compresses YUV 4:2:0 video with a flow-based inter-frame model, lossless format transforms, and variable-rate adaptation. It addresses residual-coding and RGB-format inefficiencies while achieving competitive performance against x265.",
+    "topic": "learned-video-compression",
+    "type": "conference",
+    "featured": false,
+    "image": {
+      "src": "media/publications/learned-video-compression-for-yuv-4-2-0-content-using-flow-based-conditional-inter-frame-coding-2022.webp",
+      "alt": "Learned Video Compression for YUV 4 paper figure"
+    },
+    "links": {
+      "paper": "https://arxiv.org/abs/2210.08225"
+    }
+  },
+  {
+    "id": "p-frame-coding-proposal-by-nctu-parametric-video-prediction-through-backprop-based-motion-estimation-2020",
+    "title": "P-frame Coding Proposal by NCTU: Parametric Video Prediction through Backprop-based Motion Estimation",
+    "authors": [
+      "Yung-Han Ho",
+      "Chih-Chun Chan",
+      "David Alexandre",
+      "Wen-Hsiao Peng",
+      "Chih-Peng Chang"
+    ],
+    "venue": "IEEE Conference on Computer Vision and Pattern Recognition (CVPR) Workshops",
+    "year": 2020,
+    "month": 6,
+    "summary": "This P-frame proposal predicts video with parametric overlapped block motion compensation over a sparse set of critical pixels. Backpropagation-based motion estimation and critical-pixel dropout reduce motion overhead while improving prediction quality over optical-flow warping.",
+    "topic": "learned-video-compression",
+    "type": "conference",
+    "featured": false,
+    "image": {
+      "src": "media/publications/p-frame-coding-proposal-by-nctu-parametric-video-prediction-through-backprop-based-motion-estimation-2020.webp",
+      "alt": "P-frame Coding Proposal by NCTU paper figure"
+    },
+    "links": {
+      "paper": "https://openaccess.thecvf.com/content_CVPRW_2020/html/w7/Ho_P-Frame_Coding_Proposal_by_NCTU_Parametric_Video_Prediction_Through_Backprop-Based_CVPRW_2020_paper.html"
+    }
+  },
+  {
+    "id": "exploring-autoregressive-vision-foundation-models-for-image-compression-2025",
+    "title": "Exploring Autoregressive Vision Foundation Models for Image Compression",
+    "authors": [
+      "Huu-Tai Phung",
+      "Yu-Hsiang Lin",
+      "Yen-Kuan Ho",
+      "Wen-Hsiao Peng"
+    ],
+    "venue": "Picture Coding Symposium (PCS)",
+    "year": 2025,
+    "month": 12,
+    "summary": "This work repurposes autoregressive vision foundation models as low-rate image codecs by entropy-coding each token from previously coded tokens. Experiments show that some general-purpose models provide strong perceptual quality at extremely low bitrates.",
+    "topic": "learned-image-compression",
+    "type": "conference",
+    "featured": false,
+    "image": {
+      "src": "media/publications/exploring-autoregressive-vision-foundation-models-for-image-compression-2025.webp",
+      "alt": "Exploring Autoregressive Vision Foundation Models for Image Compression paper figure"
+    },
+    "links": {
+      "paper": "https://arxiv.org/abs/2509.05169"
+    }
+  },
+  {
+    "id": "learning-optimal-linear-block-transform-by-rate-distortion-minimization-2025",
+    "title": "Learning Optimal Linear Block Transform by Rate Distortion Minimization",
+    "authors": [
+      "Alessandro Gnutti",
+      "Chia-Hao Kao",
+      "Wen-Hsiao Peng",
+      "Riccardo Leonardi"
+    ],
+    "venue": "Data Compression Conference (DCC)",
+    "year": 2025,
+    "month": 3,
+    "summary": "The Rate Distortion Learned Transform is a linear block transform optimized directly for rate-distortion cost through end-to-end learning. It outperforms DCT and covariance-based transforms and improves a simulated VVC-like image compression pipeline.",
+    "topic": "learned-image-compression",
+    "type": "conference",
+    "featured": false,
+    "image": {
+      "src": "media/publications/learning-optimal-linear-block-transform-by-rate-distortion-minimization-2025.webp",
+      "alt": "Learning Optimal Linear Block Transform by Rate Distortion Minimization paper figure"
+    },
+    "links": {
+      "paper": "https://arxiv.org/abs/2411.18494",
+      "code": "https://github.com/JoeK6279/Rate_Distortion_Learned_Transform"
+    }
+  },
+  {
+    "id": "lidar-depth-map-guided-image-compression-model-2024",
+    "title": "LiDAR Depth Map Guided Image Compression Model",
+    "authors": [
+      "Alessandro Gnutti",
+      "Stefano Della Fiore",
+      "Mattia Savardi",
+      "Yi-Hsin Chen",
+      "Riccardo Leonardi",
+      "Wen-Hsiao Peng"
+    ],
+    "venue": "IEEE International Conference on Image Processing (ICIP)",
+    "year": 2024,
+    "month": 10,
+    "summary": "This learned image codec uses LiDAR depth maps as side information for both encoding and decoding RGB images. Its variable-rate Transformer model improves reconstruction quality and reduces bitrate compared with compression that omits depth guidance.",
+    "topic": "learned-image-compression",
+    "type": "conference",
+    "featured": false,
+    "image": {
+      "src": "media/publications/lidar-depth-map-guided-image-compression-model-2024.webp",
+      "alt": "LiDAR Depth Map Guided Image Compression Model paper figure"
+    },
+    "links": {
+      "paper": "https://arxiv.org/abs/2401.06517"
+    }
+  },
+  {
+    "id": "transformer-based-learned-image-compression-for-joint-decoding-and-denoising-2024",
+    "title": "Transformer-based Learned Image Compression for Joint Decoding and Denoising",
+    "authors": [
+      "Yi-Hsin Chen",
+      "Kuan-Wei Ho",
+      "Shiau-Rung Tsai",
+      "Guan-Hsun Lin",
+      "Alessandro Gnutti",
+      "Wen-Hsiao Peng",
+      "Riccardo Leonardi"
+    ],
+    "venue": "Picture Coding Symposium (PCS)",
+    "year": 2024,
+    "month": 6,
+    "summary": "This Transformer codec reconstructs either a standard or denoised image from the same compressed bitstream. Latent refinement and instance-specific prompts adapt a pretrained decoder for joint decoding and denoising with modest added size and computation.",
+    "topic": "learned-image-compression",
+    "type": "conference",
+    "featured": false,
+    "image": {
+      "src": "media/publications/transformer-based-learned-image-compression-for-joint-decoding-and-denoising-2024.webp",
+      "alt": "Transformer-based Learned Image Compression for Joint Decoding and paper figure"
+    },
+    "links": {
+      "paper": "https://arxiv.org/abs/2402.12888"
+    }
+  },
+  {
+    "id": "learning-based-conditional-image-compression-2024",
+    "title": "Learning-Based Conditional Image Compression",
+    "authors": [
+      "Tianma Shen",
+      "Wen-Hsiao Peng",
+      "Huang-Chia Shih",
+      "Ying Liu"
+    ],
+    "venue": "IEEE International Symposium on Circuits and Systems (ISCAS)",
+    "year": 2024,
+    "month": 5,
+    "summary": "This conditional image compression method first codes a low-resolution image and upsamples it with a pretrained super-resolution model. The result conditions a Transformer codec when compressing and reconstructing the target high-resolution image, improving rate-distortion performance.",
+    "topic": "learned-image-compression",
+    "type": "conference",
+    "featured": false,
+    "image": {
+      "src": "media/publications/learning-based-conditional-image-compression-2024.webp",
+      "alt": "Learning-Based Conditional Image Compression paper figure"
+    },
+    "links": {
+      "paper": "https://ieeexplore.ieee.org/document/10558571"
+    }
+  },
+  {
+    "id": "transformer-based-image-compression-with-variable-image-quality-objectives-2023",
+    "title": "Transformer-based Image Compression with Variable Image Quality Objectives",
+    "authors": [
+      "Chia-Hao Kao",
+      "Yi-Hsin Chen",
+      "Cheng Chien",
+      "Wei-Chen Chiu",
+      "Wen-Hsiao Peng"
+    ],
+    "venue": "Asia-Pacific Signal and Information Processing Association (APSIPA) Annual Summit and Conference",
+    "year": 2023,
+    "month": 10,
+    "summary": "This Transformer codec uses learned prompts to vary the image-quality objective according to user preference within one shared model. Content-adaptive prompt tokens condition encoding and decoding while retaining performance comparable to single-objective methods.",
+    "topic": "learned-image-compression",
+    "type": "conference",
+    "featured": false,
+    "image": {
+      "src": "media/publications/transformer-based-image-compression-with-variable-image-quality-objectives-2023.webp",
+      "alt": "Transformer-based Image Compression with Variable Image Quality Objectives paper figure"
+    },
+    "links": {
+      "paper": "https://arxiv.org/abs/2309.12717"
+    }
+  },
+  {
+    "id": "transformer-based-variable-rate-image-compression-with-region-of-interest-control-2023",
+    "title": "Transformer-based Variable-rate Image Compression With Region-of-interest Control",
+    "authors": [
+      "Chia-Hao Kao",
+      "Ying-Chieh Weng",
+      "Yi-Hsin Chen",
+      "Wei-Chen Chiu",
+      "Wen-Hsiao Peng"
+    ],
+    "venue": "IEEE International Conference on Image Processing (ICIP)",
+    "year": 2023,
+    "month": 10,
+    "summary": "This Transformer codec jointly supports variable-rate and region-of-interest image compression with one model. Prompt generators use image content, an ROI mask, and a rate parameter to produce adaptive conditioning tokens for the autoencoder.",
+    "topic": "learned-image-compression",
+    "type": "conference",
+    "featured": false,
+    "image": {
+      "src": "media/publications/transformer-based-variable-rate-image-compression-with-region-of-interest-control-2023.webp",
+      "alt": "Transformer-based Variable-rate Image Compression With Region-of-interest Control paper figure"
+    },
+    "links": {
+      "paper": "https://arxiv.org/abs/2305.10807.pdf",
+      "code": "https://github.com/NYCU-MAPL/Transformer_VariableROI",
+      "project": "https://joek6279.github.io/Prompt_VariableRateROI/"
+    }
+  },
+  {
+    "id": "anfic-image-compression-using-augmented-normalizing-flows-2021",
+    "title": "ANFIC: Image Compression Using Augmented Normalizing Flows",
+    "authors": [
+      "Yung-Han Ho",
+      "Chih-Chun Chan",
+      "Wen-Hsiao Peng",
+      "Hsueh-Ming Hang",
+      "Marek Domanski"
+    ],
+    "venue": "IEEE Open Journal of Circuits and Systems",
+    "year": 2021,
+    "month": 12,
+    "summary": "ANFIC stacks variational autoencoders within an augmented normalizing-flow framework for end-to-end image compression. Its invertible design supports a broad quality range and reaches competitive performance from low-rate to perceptually lossless coding.",
+    "topic": "learned-image-compression",
+    "type": "journal",
+    "featured": false,
+    "image": {
+      "src": "media/publications/anfic-image-compression-using-augmented-normalizing-flows-2021.webp",
+      "alt": "ANFIC paper figure"
+    },
+    "links": {
+      "paper": "https://arxiv.org/abs/2107.08470.pdf",
+      "code": "https://github.com/dororojames/ANFIC",
+      "project": "https://hongsheng416.github.io/ANFIC_project_page/"
+    }
+  },
+  {
+    "id": "end-to-end-learned-image-compression-with-augmented-normalizing-flows-2021",
+    "title": "End-to-End Learned Image Compression with Augmented Normalizing Flows",
+    "authors": [
+      "Yung-Han Ho",
+      "Chih-Chun Chan",
+      "Wen-Hsiao Peng",
+      "Hsueh-Ming Hang"
+    ],
+    "venue": "IEEE Conference on Computer Vision and Pattern Recognition (CVPR) Workshops",
+    "year": 2021,
+    "month": 6,
+    "summary": "This work generalizes variational-autoencoder image compression with augmented normalizing-flow transforms. Stacking more expressive transforms and adding post-processing improves bitrate savings over a hyperprior VAE baseline on Kodak images.",
+    "topic": "learned-image-compression",
+    "type": "conference",
+    "featured": false,
+    "image": {
+      "src": "media/publications/end-to-end-learned-image-compression-with-augmented-normalizing-flows-2021.webp",
+      "alt": "End-to-End Learned Image Compression with Augmented Normalizing Flows paper figure"
+    },
+    "links": {
+      "paper": "https://openaccess.thecvf.com/content/CVPR2021W/CLIC/html/Ho_End-to-End_Learned_Image_Compression_With_Augmented_Normalizing_Flows_CVPRW_2021_paper.html"
+    }
+  },
+  {
+    "id": "a-hybrid-layered-image-compressor-with-deep-learning-technique-2020",
+    "title": "A Hybrid Layered Image Compressor with Deep-Learning Technique",
+    "authors": [
+      "Wei-Cheng Lee",
+      "Chih-Peng Chang",
+      "Wen-Hsiao Peng",
+      "Hsueh-Ming Hang"
+    ],
+    "venue": "IEEE International Workshop on Multimedia Signal Processing (MMSP)",
+    "year": 2020,
+    "month": 9,
+    "summary": "This layered compressor combines a VVC intra-coded base image with a learned residual enhancement layer guided toward high-frequency regions. A neural synthesizer merges both signals, improving subjective quality at high compression ratios while remaining competitive in objective metrics.",
+    "topic": "learned-image-compression",
+    "type": "conference",
+    "featured": false,
+    "image": {
+      "src": "media/publications/a-hybrid-layered-image-compressor-with-deep-learning-technique-2020.webp",
+      "alt": "A Hybrid Layered Image Compressor with Deep-Learning Technique paper figure"
+    },
+    "links": {
+      "paper": "https://ieeexplore.ieee.org/document/9287130"
+    }
+  },
+  {
+    "id": "learned-image-compression-with-soft-bit-based-rate-distortion-optimization-2019",
+    "title": "Learned Image Compression With Soft Bit-based Rate-distortion Optimization",
+    "authors": [
+      "David Alexandre",
+      "Chih-Peng Chang",
+      "Wen-Hsiao Peng",
+      "Hsueh-Ming Hang"
+    ],
+    "venue": "IEEE International Conference on Image Processing (ICIP)",
+    "year": 2019,
+    "month": 10,
+    "summary": "This learned image codec represents quantization indices with differentiable soft bits for tightly coupled rate estimation and context-adaptive arithmetic coding. The formulation enables end-to-end rate-distortion optimization and competitive objective compression quality.",
+    "topic": "learned-image-compression",
+    "type": "conference",
+    "featured": false,
+    "image": {
+      "src": "media/publications/learned-image-compression-with-soft-bit-based-rate-distortion-optimization-2019.webp",
+      "alt": "Learned Image Compression With Soft Bit-based Rate-distortion Optimization paper figure"
+    },
+    "links": {
+      "paper": "https://arxiv.org/abs/1905.00190"
+    }
+  },
+  {
+    "id": "an-autoencoder-based-image-compressor-with-principle-component-analysis-and-soft-bit-rate-estimation-2019",
+    "title": "An Autoencoder-based Image Compressor with Principle Component Analysis and Soft-Bit Rate Estimation",
+    "authors": [
+      "Chih-Peng Chang",
+      "David Alexandre",
+      "Wen-Hsiao Peng",
+      "Hsueh-Ming Hang"
+    ],
+    "venue": "IEEE Conference on Computer Vision and Pattern Recognition (CVPR) Workshops",
+    "year": 2019,
+    "month": 6,
+    "summary": "This autoencoder-based image compressor uses residual blocks, learned importance maps, and quantization for bit allocation and rate control. Joint training balances distortion, perceptual quality, and estimated rate under a low bits-per-pixel constraint.",
+    "topic": "learned-image-compression",
+    "type": "conference",
+    "featured": false,
+    "image": {
+      "src": "media/publications/an-autoencoder-based-image-compressor-with-principle-component-analysis-and-soft-bit-rate-estimation-2019.webp",
+      "alt": "An Autoencoder-based Image Compressor with Principle Component Analysis paper figure"
+    },
+    "links": {
+      "paper": "https://openaccess.thecvf.com/content_CVPRW_2019/html/CLIC_2019/Chang_Description_of_Challenge_Proposal_by_NCTU_An_Autoencoder-based_Image_Compressor_CVPRW_2019_paper.html"
+    }
+  },
+  {
+    "id": "bridging-compressed-image-latents-and-multimodal-large-language-models-2025",
+    "title": "Bridging Compressed Image Latents and Multimodal Large Language Models",
+    "authors": [
+      "Chia-Hao Kao",
+      "Cheng Chien",
+      "Yu-Jen Tseng",
+      "Yi-Hsin Chen",
+      "Alessandro Gnutti",
+      "Shao-Yuan Lo",
+      "Wen-Hsiao Peng",
+      "Riccardo Leonardi"
+    ],
+    "venue": "International Conference on Learning Representations (ICLR)",
+    "year": 2025,
+    "month": 4,
+    "summary": "This framework adapts compressed image latents for multimodal large language model tasks using a lightweight transform neck and surrogate loss. It supports several codec-update scenarios while excluding most of the downstream MLLM from training, reducing complexity.",
+    "topic": "coding-for-machines",
+    "type": "conference",
+    "featured": false,
+    "image": {
+      "src": "media/publications/bridging-compressed-image-latents-and-multimodal-large-language-models-2025.webp",
+      "alt": "Bridging Compressed Image Latents and Multimodal Large Language Models paper figure"
+    },
+    "links": {
+      "paper": "https://arxiv.org/abs/2407.19651",
+      "code": "https://github.com/NYCU-MAPL/BridgingCompressionMLLM",
+      "project": "https://nycu-mapl.github.io/BridgingCompressionMLLM_page/"
+    }
+  },
+  {
+    "id": "transtic-transferring-transformer-based-image-compression-from-human-perception-to-machine-perception-2023",
+    "title": "TransTIC: Transferring Transformer-based Image Compression from Human Perception to Machine Perception",
+    "authors": [
+      "Yi-Hsin Chen",
+      "Ying-Chieh Weng",
+      "Chia-Hao Kao",
+      "Cheng Chien",
+      "Wei-Chen Chiu",
+      "Wen-Hsiao Peng"
+    ],
+    "venue": "IEEE International Conference on Computer Vision (ICCV)",
+    "year": 2023,
+    "month": 10,
+    "summary": "TransTIC transfers a Transformer image codec from human-oriented reconstruction to machine-vision tasks without fine-tuning the base codec. Instance-specific encoder prompts and task-specific decoder prompts improve rate-accuracy performance across downstream tasks.",
+    "topic": "coding-for-machines",
+    "type": "conference",
+    "featured": false,
+    "image": {
+      "src": "media/publications/transtic-transferring-transformer-based-image-compression-from-human-perception-to-machine-perception-2023.webp",
+      "alt": "TransTIC paper figure"
+    },
+    "links": {
+      "paper": "https://arxiv.org/abs/2306.05085",
+      "code": "https://github.com/NYCU-MAPL/TransTIC",
+      "project": "https://alan0817.github.io/TransTIC_project_page/"
+    }
+  },
+  {
+    "id": "cat-3dgs-pro-a-new-benchmark-for-efficient-3dgs-compression-2025",
+    "title": "CAT-3DGS Pro: A New Benchmark for Efficient 3DGS Compression",
+    "authors": [
+      "Yu-Ting Zhan",
+      "He-bi Yang",
+      "Cheng-Yuan Ho",
+      "Jui-Chiu Chiang",
+      "Wen-Hsiao Peng"
+    ],
+    "venue": "European Signal Processing Conference (EUSIPCO)",
+    "year": 2025,
+    "month": 9,
+    "summary": "CAT-3DGS Pro replaces a triplane hyperprior with a PCA-guided vector-matrix hyperprior and adds alternate rate-distortion optimization. The changes improve 3D Gaussian compression while accelerating training and decoding relative to CAT-3DGS.",
+    "topic": "3d-gaussian-compression",
+    "type": "conference",
+    "featured": false,
+    "image": {
+      "src": "media/publications/cat-3dgs-pro-a-new-benchmark-for-efficient-3dgs-compression-2025.webp",
+      "alt": "CAT-3DGS Pro paper figure"
+    },
+    "links": {
+      "paper": "https://arxiv.org/abs/2503.12862"
+    }
+  },
+  {
+    "id": "cat-3dgs-a-context-adaptive-triplane-approach-to-rate-distortion-optimized-3dgs-compression-2025",
+    "title": "CAT-3DGS: A Context-Adaptive Triplane Approach to Rate-Distortion-Optimized 3DGS Compression",
+    "authors": [
+      "Yu-Ting Zhan",
+      "Cheng-Yuan Ho",
+      "Hebi Yang",
+      "Yi-Hsin Chen",
+      "Jui Chiu Chiang",
+      "Yu-Lun Liu",
+      "Wen-Hsiao Peng"
+    ],
+    "venue": "International Conference on Learning Representations (ICLR)",
+    "year": 2025,
+    "month": 4,
+    "summary": "CAT-3DGS compresses sparse 3D Gaussian primitives with context-adaptive multi-scale triplanes and channel-wise autoregressive coding. View-frequency masking skips low-impact primitives, yielding rate-distortion-optimized scene representations for transmission and storage.",
+    "topic": "3d-gaussian-compression",
+    "type": "conference",
+    "featured": false,
+    "image": {
+      "src": "media/publications/cat-3dgs-a-context-adaptive-triplane-approach-to-rate-distortion-optimized-3dgs-compression-2025.webp",
+      "alt": "CAT-3DGS paper figure"
+    },
+    "links": {
+      "paper": "https://arxiv.org/abs/2503.00357",
+      "code": "https://github.com/NYCU-MAPL/CAT-3DGS",
+      "project": "https://nycu-mapl.github.io/CAT-3DGS_page/"
+    }
+  },
+  {
+    "id": "video-rescaling-networks-with-joint-optimization-strategies-for-downscaling-and-upscaling-2021",
+    "title": "Video Rescaling Networks with Joint Optimization Strategies for Downscaling and Upscaling",
+    "authors": [
+      "Yan-Cheng Huang",
+      "Yi-Hsin Chen",
+      "Cheng-You Lu",
+      "Hui-Po Wang",
+      "Wen-Hsiao Peng",
+      "Ching-Chun Huang"
+    ],
+    "venue": "IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+    "year": 2021,
+    "month": 6,
+    "summary": "This work jointly optimizes video downscaling and upscaling with invertible neural networks. LSTM-VRN uses temporal context, while MIMO-VRN rescales groups of frames together, improving reconstruction over image-based and separately optimized approaches.",
+    "topic": "video-synthesis",
+    "type": "conference",
+    "featured": false,
+    "image": {
+      "src": "media/publications/video-rescaling-networks-with-joint-optimization-strategies-for-downscaling-and-upscaling-2021.webp",
+      "alt": "Video Rescaling Networks with Joint Optimization Strategies for paper figure"
+    },
+    "links": {
+      "paper": "https://arxiv.org/abs/2103.14858",
+      "project": "https://ding3820.github.io/MIMO-VRN/"
+    }
+  },
+  {
+    "id": "transhupr-cross-view-fusion-transformer-for-human-pose-estimation-using-mmwave-radar-2024",
+    "title": "TransHuPR: Cross-View Fusion Transformer for Human Pose Estimation Using mmWave Radar",
+    "authors": [
+      "Niraj Prakash Kini",
+      "Ruey-Horng Shiue",
+      "Ryan Chandra",
+      "Wen-Hsiao Peng",
+      "Ching-Wen Ma",
+      "Jenq-Neng Hwang"
+    ],
+    "venue": "British Machine Vision Conference (BMVC)",
+    "year": 2024,
+    "month": 11,
+    "summary": "TransHuPR fuses front-projection features from two mmWave radars with a cross-view Transformer for 2D human pose estimation. The work also introduces a large, high-frame-rate dataset of single and mixed fast actions for radar pose evaluation.",
+    "topic": "human-pose-estimation",
+    "type": "conference",
+    "featured": false,
+    "image": {
+      "src": "media/publications/transhupr-cross-view-fusion-transformer-for-human-pose-estimation-using-mmwave-radar-2024.webp",
+      "alt": "TransHuPR paper figure"
+    },
+    "links": {
+      "paper": "https://bmvc2024.org/proceedings/686/",
+      "code": "https://github.com/nirajpkini/TransHuPR"
+    }
+  },
+  {
+    "id": "hupr-a-benchmark-for-human-pose-estimation-using-millimeter-wave-radar-2023",
+    "title": "HuPR: A Benchmark for Human Pose Estimation Using Millimeter Wave Radar",
+    "authors": [
+      "Shih-Po Lee",
+      "Niraj Prakash Kini",
+      "Wen-Hsiao Peng",
+      "Ching-Wen Ma",
+      "Jenq-Neng Hwang"
+    ],
+    "venue": "IEEE Winter Conference on Applications of Computer Vision (WACV)",
+    "year": 2023,
+    "month": 1,
+    "summary": "HuPR provides synchronized mmWave radar and monocular RGB data for radar-based human pose estimation. Its cross-modality training framework derives 2D joint supervision from a pretrained camera model, avoiding manual keypoint annotation.",
+    "topic": "human-pose-estimation",
+    "type": "conference",
+    "featured": false,
+    "image": {
+      "src": "media/publications/hupr-a-benchmark-for-human-pose-estimation-using-millimeter-wave-radar-2023.webp",
+      "alt": "HuPR paper figure"
+    },
+    "links": {
+      "paper": "https://arxiv.org/abs/2210.12564",
+      "code": "https://github.com/robert80203/HuPR-A-Benchmark-for-Human-Pose-Estimation-Using-Millimeter-Wave-Radar",
+      "project": "https://mapl.cs.nycu.edu.tw/HuPR/"
+    }
+  },
+  {
+    "id": "neural-frank-wolfe-policy-optimization-for-region-of-interest-intra-frame-coding-with-hevc-h-265-2022",
+    "title": "Neural Frank-Wolfe Policy Optimization for Region-of-Interest Intra-Frame Coding with HEVC/H.265",
+    "authors": [
+      "Yung-Han Ho",
+      "Chia-Hao Kao",
+      "Wen-Hsiao Peng",
+      "Ping-Chun Hsieh"
+    ],
+    "venue": "IEEE International Conference on Visual Communications and Image Processing (VCIP)",
+    "year": 2022,
+    "month": 12,
+    "summary": "This reinforcement-learning framework applies neural Frank-Wolfe policy optimization to coding-tree-unit bit allocation for ROI intra coding. Separate rate and distortion critics maximize ROI-weighted quality while enforcing a bitrate constraint.",
+    "topic": "video-encoder-control",
+    "type": "conference",
+    "featured": false,
+    "image": {
+      "src": "media/publications/neural-frank-wolfe-policy-optimization-for-region-of-interest-intra-frame-coding-with-hevc-h-265-2022.webp",
+      "alt": "Neural Frank-Wolfe Policy Optimization for Region-of-Interest Intra-Frame Coding paper figure"
+    },
+    "links": {
+      "paper": "https://arxiv.org/abs/2209.13210",
+      "project": "https://joek6279.github.io/NFWPO-Coding/"
+    }
+  },
+  {
+    "id": "a-dual-critic-reinforcement-learning-framework-for-frame-level-bit-allocation-in-hevc-h-265-2021",
+    "title": "A Dual-Critic Reinforcement Learning Framework for Frame-level Bit Allocation in HEVC/H.265",
+    "authors": [
+      "Yung-Han Ho",
+      "Guo-Lun Jin",
+      "Yun Liang",
+      "Wen-Hsiao Peng",
+      "Xiao-Bo Li"
+    ],
+    "venue": "Data Compression Conference (DCC)",
+    "year": 2021,
+    "month": 3,
+    "summary": "This method uses separate distortion and rate critics for frame-level HEVC bit allocation under a group-of-pictures bitrate constraint. The critics prioritize distortion when feasible and rate compliance when over budget, improving control and rate-distortion performance.",
+    "topic": "video-encoder-control",
+    "type": "conference",
+    "featured": false,
+    "image": {
+      "src": "media/publications/a-dual-critic-reinforcement-learning-framework-for-frame-level-bit-allocation-in-hevc-h-265-2021.webp",
+      "alt": "A Dual-Critic Reinforcement Learning Framework for Frame-level Bit paper figure"
+    },
+    "links": {
+      "paper": "https://arxiv.org/abs/2104.01735",
+      "project": "https://mapl.cs.nycu.edu.tw/RL_Rate_Control"
+    }
+  },
+  {
+    "id": "reinforcement-learning-for-hevc-h-265-intra-frame-rate-control-2018",
+    "title": "Reinforcement Learning for HEVC/H.265 Intra-Frame Rate Control",
+    "authors": [
+      "Jun-Hao Hu",
+      "Wen-Hsiao Peng",
+      "Chia-Hua Chung"
+    ],
+    "venue": "IEEE International Symposium on Circuits and Systems (ISCAS)",
+    "year": 2018,
+    "month": 5,
+    "summary": "This early reinforcement-learning approach selects a quantization parameter for each HEVC coding tree unit under a frame-level rate constraint. A Q-learning agent observes texture complexity and bit balance and performs comparably to HM-16.15 rate control.",
+    "topic": "video-encoder-control",
+    "type": "conference",
+    "featured": false,
+    "image": {
+      "src": "media/publications/reinforcement-learning-for-hevc-h-265-intra-frame-rate-control-2018.webp",
+      "alt": "Reinforcement Learning for HEVC/H.265 Intra-Frame Rate Control paper figure"
+    },
+    "links": {
+      "paper": "https://ieeexplore.ieee.org/document/8351575"
+    }
+  },
+  {
+    "id": "reinforcement-learning-for-hevc-h-265-frame-level-bit-allocation-2018",
+    "title": "Reinforcement Learning for HEVC/H.265 Frame-level Bit Allocation",
+    "authors": [
+      "Lian-Ching Chen",
+      "Jun-Hao Hu",
+      "Wen-Hsiao Peng"
+    ],
+    "venue": "IEEE International Conference on Digital Signal Processing (DSP)",
+    "year": 2018,
+    "month": 11,
+    "summary": "This work formulates dependent frame-level bit allocation in HEVC as a reinforcement-learning problem. A neural agent uses frame complexity and remaining bits to maximize cumulative quality, improving PSNR and reducing bitrate fluctuation over HM-16.15.",
+    "topic": "video-encoder-control",
+    "type": "conference",
+    "featured": false,
+    "image": {
+      "src": "media/publications/reinforcement-learning-for-hevc-h-265-frame-level-bit-allocation-2018.webp",
+      "alt": "Reinforcement Learning for HEVC/H.265 Frame-level Bit Allocation paper figure"
+    },
+    "links": {
+      "paper": "https://ieeexplore.ieee.org/document/8631541"
+    }
+  },
+  {
+    "id": "hevc-h-265-coding-unit-split-decision-using-deep-reinforcement-learning-2017",
+    "title": "HEVC/H.265 Coding Unit Split Decision Using Deep Reinforcement Learning",
+    "authors": [
+      "Chia-Hua Chung",
+      "Wen-Hsiao Peng",
+      "Jun-Hao Hu"
+    ],
+    "venue": "IEEE International Symposium on Intelligent Signal Processing and Communication Systems (ISPACS)",
+    "year": 2017,
+    "month": 11,
+    "summary": "This method learns HEVC coding-unit split decisions with a convolutional Q-network using samples and quantization parameters as state. Its reward estimates rate-distortion cost reduction, approaching full optimization while supporting broader decision uses.",
+    "topic": "video-encoder-control",
+    "type": "conference",
+    "featured": false,
+    "image": {
+      "src": "media/publications/hevc-h-265-coding-unit-split-decision-using-deep-reinforcement-learning-2017.webp",
+      "alt": "HEVC/H.265 Coding Unit Split Decision Using Deep Reinforcement Learning paper figure"
+    },
+    "links": {
+      "paper": "https://ieeexplore.ieee.org/document/8266543"
+    }
+  },
+  {
+    "id": "deep-video-prediction-through-sparse-motion-regularization-2020",
+    "title": "Deep Video Prediction Through Sparse Motion Regularization",
+    "authors": [
+      "Yung-Han Ho",
+      "Chih Chun Chan",
+      "Wen-Hsiao Peng"
+    ],
+    "venue": "IEEE International Conference on Image Processing (ICIP)",
+    "year": 2020,
+    "month": 10,
+    "summary": "This video prediction method combines parametric overlapped block motion compensation with reinforcement learning over sparse critical pixels. Separate networks identify pixels and estimate motion through iterative refinement, improving one- and multi-step prediction.",
+    "topic": "video-prediction",
+    "type": "conference",
+    "featured": false,
+    "image": {
+      "src": "media/publications/deep-video-prediction-through-sparse-motion-regularization-2020.webp",
+      "alt": "Deep Video Prediction Through Sparse Motion Regularization paper figure"
+    },
+    "links": {
+      "paper": "https://ieeexplore.ieee.org/document/9191154"
+    }
+  },
+  {
+    "id": "sme-net-sparse-motion-estimation-for-parametric-video-prediction-through-reinforcement-learning-2019",
+    "title": "SME-Net: Sparse Motion Estimation for Parametric Video Prediction through Reinforcement Learning",
+    "authors": [
+      "Yung-Han Ho",
+      "Chuan-Yuan Cho",
+      "Wen-Hsiao Peng",
+      "Guo-Lun Jin"
+    ],
+    "venue": "IEEE International Conference on Computer Vision (ICCV)",
+    "year": 2019,
+    "month": 10,
+    "summary": "SME-Net predicts video through sparse parametric motion rather than dense optical flow. Reinforcement-learned networks select critical pixels and estimate their motion vectors, enabling iterative future-frame refinement with fewer motion parameters.",
+    "topic": "video-prediction",
+    "type": "conference",
+    "featured": false,
+    "image": {
+      "src": "media/publications/sme-net-sparse-motion-estimation-for-parametric-video-prediction-through-reinforcement-learning-2019.webp",
+      "alt": "SME-Net paper figure"
+    },
+    "links": {
+      "paper": "https://openaccess.thecvf.com/content_ICCV_2019/html/Ho_SME-Net_Sparse_Motion_Estimation_for_Parametric_Video_Prediction_Through_Reinforcement_ICCV_2019_paper.html",
+      "project": "https://hackmd.io/BcC_oFbuQBSp5jWyzgHFwA?view"
+    }
+  },
+  {
+    "id": "gsvnet-guided-spatially-varying-convolution-for-fast-semantic-segmentation-on-video-2021",
+    "title": "GSVNet: Guided Spatially-Varying Convolution for Fast Semantic Segmentation on Video",
+    "authors": [
+      "Shih-Po Lee",
+      "Si-Cun Chen",
+      "Wen-Hsiao Peng"
+    ],
+    "venue": "IEEE International Conference on Multimedia and Expo (ICME)",
+    "year": 2021,
+    "month": 7,
+    "summary": "GSVNet accelerates video semantic segmentation by warping predictions with lightweight low-resolution flow and fusing adjacent frames through guided spatially varying convolution. It improves the accuracy-throughput trade-off while limiting non-keyframe feature extraction.",
+    "topic": "semantic-segmentation",
+    "type": "conference",
+    "featured": false,
+    "image": {
+      "src": "media/publications/gsvnet-guided-spatially-varying-convolution-for-fast-semantic-segmentation-on-video-2021.webp",
+      "alt": "GSVNet paper figure"
+    },
+    "links": {
+      "paper": "https://arxiv.org/abs/2103.08834",
+      "code": "https://github.com/robert80203/GSVNet",
+      "project": "https://mapl.cs.nycu.edu.tw/GSVNet/"
+    }
+  },
+  {
+    "id": "weakly-supervised-image-semantic-segmentation-using-graph-convolutional-networks-2021",
+    "title": "Weakly-Supervised Image Semantic Segmentation Using Graph Convolutional Networks",
+    "authors": [
+      "Shun-Yi Pan",
+      "Cheng-You Lu",
+      "Shih-Po Lee",
+      "Wen-Hsiao Peng"
+    ],
+    "venue": "IEEE International Conference on Multimedia and Expo (ICME)",
+    "year": 2021,
+    "month": 7,
+    "summary": "This weakly supervised segmentation method replaces unregularized random-walk propagation with a graph convolutional network learned separately for each training image. Laplacian and entropy regularization produce more complete pseudo-labels from image-level class supervision.",
+    "topic": "semantic-segmentation",
+    "type": "conference",
+    "featured": false,
+    "image": {
+      "src": "media/publications/weakly-supervised-image-semantic-segmentation-using-graph-convolutional-networks-2021.webp",
+      "alt": "Weakly-Supervised Image Semantic Segmentation Using Graph Convolutional Networks paper figure"
+    },
+    "links": {
+      "paper": "https://arxiv.org/abs/2103.16762",
+      "code": "https://github.com/Xavier-Pan/WSGCN",
+      "project": "https://mapl.cs.nycu.edu.tw/WSGCN/"
+    }
+  },
+  {
+    "id": "semantic-segmentation-on-compressed-video-using-block-motion-compensation-and-guided-inpainting-2020",
+    "title": "Semantic Segmentation on Compressed Video Using Block Motion Compensation and Guided Inpainting",
+    "authors": [
+      "Stefanie Tanujaya",
+      "Tieh Chu",
+      "Jia-Hao Liu",
+      "Wen-Hsiao Peng"
+    ],
+    "venue": "IEEE International Symposium on Circuits and Systems (ISCAS)",
+    "year": 2020,
+    "month": 10,
+    "summary": "This method propagates keyframe segmentation through compressed-video block motion vectors, then repairs accumulated prediction errors with guided inpainting. Non-local attention, pixel-adaptive convolution, and fusion improve accuracy with low non-keyframe complexity.",
+    "topic": "semantic-segmentation",
+    "type": "conference",
+    "featured": false,
+    "image": {
+      "src": "media/publications/semantic-segmentation-on-compressed-video-using-block-motion-compensation-and-guided-inpainting-2020.webp",
+      "alt": "Semantic Segmentation on Compressed Video Using Block Motion paper figure"
+    },
+    "links": {
+      "paper": "https://ieeexplore.ieee.org/abstract/document/9181054"
+    }
+  },
+  {
+    "id": "class-incremental-learning-with-rectified-feature-graph-preservation-2020",
+    "title": "Class-incremental Learning with Rectified Feature-Graph Preservation",
+    "authors": [
+      "Cheng-Hsun Lei",
+      "Yi-Hsin Chen",
+      "Wen-Hsiao Peng",
+      "Wei-Chen Chiu"
+    ],
+    "venue": "Asian Conference on Computer Vision (ACCV)",
+    "year": 2020,
+    "month": 11,
+    "summary": "This class-incremental learning method views distillation as feature-graph preservation and introduces weighted Euclidean regularization for old knowledge. Rectified cosine normalization increases class separation, reducing forgetting and balancing accuracy across classes.",
+    "topic": "incremental-learning",
+    "type": "conference",
+    "featured": false,
+    "image": {
+      "src": "media/publications/class-incremental-learning-with-rectified-feature-graph-preservation-2020.webp",
+      "alt": "Class-incremental Learning with Rectified Feature-Graph Preservation paper figure"
+    },
+    "links": {
+      "paper": "https://arxiv.org/abs/2012.08129",
+      "code": "https://github.com/yhchen12101/FGP-ICL"
+    }
+  },
+  {
+    "id": "learning-goal-oriented-visual-dialogue-imitating-and-surpassing-analytic-experts-2019",
+    "title": "Learning Goal-oriented Visual Dialogue: Imitating and Surpassing Analytic Experts",
+    "authors": [
+      "Yen-Wei Chang",
+      "Wen-Hsiao Peng"
+    ],
+    "venue": "IEEE International Conference on Multimedia and Expo (ICME)",
+    "year": 2019,
+    "month": 7,
+    "summary": "This goal-oriented visual-dialog method uses two analytic experts to generate demonstrations for imitation learning before reinforcement-learning refinement. The combination reduces the burden of a large policy search space and improves GuessWhat?! performance.",
+    "topic": "visual-question-answering",
+    "type": "conference",
+    "featured": false,
+    "image": {
+      "src": "media/publications/learning-goal-oriented-visual-dialogue-imitating-and-surpassing-analytic-experts-2019.webp",
+      "alt": "Learning Goal-oriented Visual Dialogue paper figure"
+    },
+    "links": {
+      "paper": "https://arxiv.org/abs/1907.10500"
+    }
+  },
+  {
+    "id": "learning-priors-for-adversarial-autoencoders-2018",
+    "title": "Learning Priors for Adversarial Autoencoders",
+    "authors": [
+      "Hui-Po Wang",
+      "Wen-Hsiao Peng",
+      "Wei-Jan Ko"
+    ],
+    "venue": "Asia-Pacific Signal and Information Processing Association (APSIPA)",
+    "year": 2018,
+    "month": 11,
+    "summary": "This work learns data-dependent priors for adversarial autoencoders by transforming simple distributions with code generators. The learned priors improve generated image quality, disentangled representations, and cross-domain text-to-image synthesis.",
+    "topic": "generative-modeling",
+    "type": "conference",
+    "featured": false,
+    "image": {
+      "src": "media/publications/learning-priors-for-adversarial-autoencoders-2018.webp",
+      "alt": "Learning Priors for Adversarial Autoencoders paper figure"
+    },
+    "links": {
+      "paper": "https://arxiv.org/abs/1909.04443"
+    }
+  },
+  {
+    "id": "learning-to-fly-with-a-video-generator-2021",
+    "title": "Learning to Fly with a Video Generator",
+    "authors": [
+      "Chia-Chun Chung",
+      "Wen-Hsiao Peng",
+      "Teng-Hu Cheng",
+      "Chia-Hau Yu"
+    ],
+    "venue": "IEEE International Conference on Visual Communications and Image Processing (VCIP)",
+    "year": 2021,
+    "month": 12,
+    "summary": "This model-based reinforcement-learning system trains a self-flying drone with Dreamer as a video-generating environment model. Predicting future frames from drone actions reduces costly environment interactions and supports learning an AirSim racing task.",
+    "topic": "autonomous-flight",
+    "type": "conference",
+    "featured": false,
+    "image": {
+      "src": "media/publications/learning-to-fly-with-a-video-generator-2021.webp",
+      "alt": "Learning to Fly with a Video Generator paper figure"
+    },
+    "links": {
+      "paper": "https://ieeexplore.ieee.org/document/9675414",
+      "project": "https://mapl.cs.nycu.edu.tw/AIDrone_VCIP/"
+    }
   }
 ]
