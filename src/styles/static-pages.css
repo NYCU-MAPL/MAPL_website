@@ -162,6 +162,49 @@
   background: var(--color-paper);
 }
 
+.join-view__student-contacts {
+  margin-block: var(--space-6);
+  padding-block-start: var(--space-5);
+  border-block-start: var(--border-hairline);
+}
+
+.join-view__student-contacts h3 {
+  margin: 0 0 var(--space-2);
+  font-size: 1.125rem;
+}
+
+.join-view__student-contacts p {
+  margin: 0 0 var(--space-4);
+  color: var(--color-ink-muted);
+}
+
+.join-view__student-contacts ul {
+  display: grid;
+  gap: var(--space-4);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.join-view__student-contacts li {
+  display: grid;
+  gap: var(--space-1);
+  min-inline-size: 0;
+}
+
+.join-view__student-contacts a {
+  justify-self: start;
+  color: var(--color-forest-deep);
+  overflow-wrap: anywhere;
+  text-decoration: none;
+}
+
+.join-view__student-contacts a:hover,
+.join-view__student-contacts a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: var(--space-1);
+}
+
 .join-view__contact dl {
   display: grid;
   margin-block: var(--space-6);

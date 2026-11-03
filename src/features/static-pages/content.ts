@@ -25,6 +25,10 @@ export const joinUsContent = {
     height: 585,
   },
   introSlides: "https://maplintro2027.pse.is/9lnn2m",
+  studentContacts: [
+    { name: "楊成偉", nickname: "Billy", email: "yangchengwei920428@gmail.com" },
+    { name: "朱驛庭", nickname: "Benjamin", email: "itingchu1005@gmail.com" },
+  ],
   professor: {
     name: "Prof. Wen-Hsiao Peng",
     email: "wpeng@cs.nycu.edu.tw",

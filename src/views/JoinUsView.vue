@@ -43,6 +43,16 @@ import "../styles/static-pages.css"
           Bring a question worth pursuing.
         </h2>
         <p>We welcome prospective PhD and master’s students interested in publication-oriented research. Undergraduate students can also explore research projects and international study or internship opportunities through the lab.</p>
+        <div class="join-view__student-contacts">
+          <h3>Questions about joining MAPL?</h3>
+          <p>Feel free to contact us with any questions about joining the lab.</p>
+          <ul>
+            <li v-for="contact in joinUsContent.studentContacts" :key="contact.email">
+              <strong><span lang="zh-Hant">{{ contact.name }}</span> ({{ contact.nickname }})</strong>
+              <a :href="`mailto:${contact.email}`">{{ contact.email }}</a>
+            </li>
+          </ul>
+        </div>
         <a
           class="static-view__primary-link"
           :href="joinUsContent.introSlides"
