@@ -98,7 +98,7 @@
 
 .brand-lockup__text small {
   margin-block-start: var(--space-1);
-  color: var(--color-ink-muted);
+  color: var(--color-shell-muted);
   font-size: var(--text-label);
   font-weight: 700;
   line-height: 1.25;
@@ -107,7 +107,7 @@
 }
 
 .brand-lockup--inverted .brand-lockup__text small {
-  color: var(--color-ink-muted);
+  color: var(--color-shell-muted);
 }
 
 .brand-lockup--header .brand-lockup__wordmark {

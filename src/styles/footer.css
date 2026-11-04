@@ -13,7 +13,7 @@
 .site-footer__identity p,
 .site-footer__address {
   margin-block: var(--space-6) 0;
-  color: var(--color-ink-muted);
+  color: var(--color-shell-muted);
   font-size: var(--text-small);
   font-style: normal;
 }
@@ -51,7 +51,7 @@
   gap: var(--space-3);
   margin-block-start: var(--space-12);
   padding-block-start: var(--space-4);
-  color: var(--color-ink-muted);
+  color: var(--color-shell-muted);
   font-family: var(--font-mono);
   font-size: var(--text-label);
   border-block-start: var(--border-hairline);

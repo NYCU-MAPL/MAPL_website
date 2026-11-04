@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ArrowUpRight, Download, Mail } from "@lucide/vue"
+import { Download } from "@lucide/vue"
 
 import JoinPathways from "../components/join/JoinPathways.vue"
 import SectionHeading from "../components/ui/SectionHeading.vue"
@@ -32,18 +32,37 @@ import "../styles/static-pages.css"
         <span>Research grows through shared work.</span>
       </figcaption>
     </figure>
-    <JoinPathways />
-    <div class="join-view__grid">
-      <section aria-labelledby="join-opportunities-title">
+    <div class="join-view__contact-block">
+      <header class="join-view__contact-heading">
         <p class="eyebrow">
           Open opportunities
         </p>
         <h2 id="join-opportunities-title">
           Contact us
         </h2>
-        <p>We welcome prospective PhD and master’s students interested in publication-oriented research. Undergraduate students can also explore research projects and international study or internship opportunities through the lab.</p>
-        <div class="join-view__student-contacts">
-          <h3>Questions about joining MAPL?</h3>
+      </header>
+      <div class="join-view__grid">
+        <section aria-labelledby="join-opportunities-title">
+          <p>We welcome prospective PhD and master’s students interested in publication-oriented research. Undergraduate students can also explore research projects and international study or internship opportunities through the lab.</p>
+          <a
+            class="static-view__primary-link"
+            :href="joinUsContent.introSlides"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Download
+              :size="18"
+              aria-hidden="true"
+            />
+            Open the 2027 lab introduction
+          </a>
+        </section>
+
+        <section
+          class="join-view__student-contacts"
+          aria-labelledby="join-student-contacts-title"
+        >
+          <h3 id="join-student-contacts-title">Questions about joining MAPL?</h3>
           <p>Feel free to contact us with any questions about joining the lab.</p>
           <ul>
             <li v-for="contact in joinUsContent.studentContacts" :key="contact.email">
@@ -51,59 +70,9 @@ import "../styles/static-pages.css"
               <a :href="`mailto:${contact.email}`">{{ contact.email }}</a>
             </li>
           </ul>
-        </div>
-        <a
-          class="static-view__primary-link"
-          :href="joinUsContent.introSlides"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <Download
-            :size="18"
-            aria-hidden="true"
-          />
-          Open the 2027 lab introduction
-        </a>
-      </section>
-
-      <aside
-        class="join-view__contact"
-        aria-labelledby="join-contact-title"
-      >
-        <p class="eyebrow">
-          Verified contact
-        </p>
-        <h2 id="join-contact-title">
-          Start with the lab.
-        </h2>
-        <dl>
-          <div><dt>Professor</dt><dd>{{ joinUsContent.professor.name }}</dd></div>
-          <div><dt>Laboratory</dt><dd>{{ joinUsContent.lab.location }}</dd></div>
-          <div><dt>Telephone</dt><dd>{{ joinUsContent.lab.phone }}</dd></div>
-          <div><dt>Address</dt><dd>{{ joinUsContent.lab.address }}</dd></div>
-        </dl>
-        <div class="join-view__contact-actions">
-          <a :href="`mailto:${joinUsContent.professor.email}`">
-            <Mail
-              :size="18"
-              aria-hidden="true"
-            />
-            Email Prof. Peng
-          </a>
-          <a
-            :href="joinUsContent.professor.profile"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Official profile
-            <ArrowUpRight
-              :size="18"
-              aria-hidden="true"
-            />
-          </a>
-        </div>
-      </aside>
+        </section>
+      </div>
     </div>
-
+    <JoinPathways />
   </section>
 </template>

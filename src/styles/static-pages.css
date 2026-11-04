@@ -7,9 +7,8 @@
   gap: var(--space-8);
 }
 
-.join-view__grid h2,
-.join-view__contact h2 {
-  margin-block: var(--space-3);
+.join-view__contact-heading h2 {
+  margin: var(--space-3) 0 0;
   font-family: var(--font-display);
   font-size: var(--text-h2);
   font-weight: 400;
@@ -88,19 +87,22 @@
   text-transform: uppercase;
 }
 
+.join-view__contact-block {
+  display: grid;
+  gap: var(--space-6);
+}
+
 .join-view__grid {
   display: grid;
+  align-items: start;
   gap: var(--space-8);
 }
 
-.join-view__grid > section,
-.join-view__contact {
-  padding-block-start: var(--space-6);
-  border-block-start: var(--border-strong);
+.join-view__grid > section {
+  min-inline-size: 0;
 }
 
-.static-view__primary-link,
-.join-view__contact-actions a {
+.static-view__primary-link {
   display: inline-flex;
   min-block-size: var(--control-size);
   align-items: center;
@@ -123,19 +125,11 @@
   background: var(--color-paper);
 }
 
-.join-view__contact {
-  background: var(--color-paper);
-}
-
-.join-view__student-contacts {
-  margin-block: var(--space-6);
-  padding-block-start: var(--space-5);
-  border-block-start: var(--border-hairline);
-}
-
 .join-view__student-contacts h3 {
   margin: 0 0 var(--space-2);
-  font-size: 1.125rem;
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  font-weight: 600;
+  line-height: 1.4;
 }
 
 .join-view__student-contacts p {
@@ -170,58 +164,8 @@
   text-underline-offset: var(--space-1);
 }
 
-.join-view__contact dl {
-  display: grid;
-  margin-block: var(--space-6);
-  border-block-start: var(--border-hairline);
-}
-
-.join-view__contact dl div {
-  display: grid;
-  gap: var(--space-2);
-  padding-block: var(--space-3);
-  border-block-end: var(--border-hairline);
-}
-
-.join-view__contact dt {
-  color: var(--color-ink-muted);
-  font-family: var(--font-mono);
-  font-size: var(--text-label);
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.join-view__contact dd {
-  font-weight: 600;
-}
-
-.join-view__contact-actions {
-  display: grid;
-  gap: var(--space-3);
-}
-
-.join-view__contact-actions a {
-  justify-content: space-between;
-  color: var(--color-forest-deep);
-  border: var(--border-strong);
-}
-
-.join-view__contact-actions a:hover {
-  color: var(--color-paper);
-  background: var(--color-forest-deep);
-}
-
 @media (min-width: 48rem) {
   .join-view__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .join-view__contact {
-    padding: var(--space-8);
-  }
-
-  .join-view__contact dl div {
-    grid-template-columns: 7rem 1fr;
   }
 }
