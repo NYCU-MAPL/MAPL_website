@@ -147,7 +147,7 @@ onBeforeUnmount(() => {
         aria-label="Primary navigation"
       >
         <div class="mobile-navigation__header">
-          <BrandLockup inverted />
+          <BrandLockup inverted variant="header" />
           <button
             ref="closeButton"
             class="icon-button icon-button--inverted"

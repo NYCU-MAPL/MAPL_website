@@ -145,13 +145,17 @@ export const parseImage = (
   field = "image",
 ): ContentImage => {
   const image = objectValue(value, context, field)
-  strictKeys(image, ["src", "alt"], context)
+  strictKeys(image, ["src", "thumbnailSrc", "alt"], context)
   const src = requiredString(image, "src", context)
   if (src.startsWith("/")) return fail(context, `${field}.src`, "must not be root-absolute")
   if (!MEDIA_PATTERN.test(src) || src.includes("..")) {
     return fail(context, `${field}.src`, "must be a relative media image path")
   }
-  return { src, alt: requiredString(image, "alt", context) }
+  const thumbnailSrc = optionalString(image, "thumbnailSrc", context)
+  if (thumbnailSrc !== undefined && (!MEDIA_PATTERN.test(thumbnailSrc) || thumbnailSrc.includes(".."))) {
+    return fail(context, `${field}.thumbnailSrc`, "must be a relative media image path")
+  }
+  return { src, ...(thumbnailSrc === undefined ? {} : { thumbnailSrc }), alt: requiredString(image, "alt", context) }
 }
 
 export const ensureUniqueIds = <T extends { readonly id: string }>(

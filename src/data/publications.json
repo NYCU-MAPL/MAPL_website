@@ -46,7 +46,11 @@
     "month": 10,
     "topic": "learned-image-compression",
     "type": "conference",
-    "featured": true
+    "featured": true,
+    "image": {
+      "src": "media/publications/nicer-vcip-2026.png",
+      "alt": "NICER neural image codec with randomness for perceptual quality adaptation"
+    }
   },
   {
     "id": "perceptual-3dgs-saliency-features-2026",
@@ -69,7 +73,11 @@
     "month": 10,
     "topic": "3d-gaussian-compression",
     "type": "conference",
-    "featured": true
+    "featured": true,
+    "image": {
+      "src": "media/publications/perceptual-3dgs-saliency-features-vcip-2026.png",
+      "alt": "Perceptual 3D Gaussian Splatting with 3D-Anchored Saliency Features"
+    }
   },
   {
     "id": "adapt-any-codec-diffusion-2026",
@@ -91,7 +99,8 @@
     "type": "conference",
     "featured": true,
     "image": {
-      "src": "media/publications/adapt-icip-2026.webp",
+      "src": "media/publications/originals/adapt-icip-2026.png",
+      "thumbnailSrc": "media/publications/adapt-icip-2026.webp",
       "alt": "ADAPT diffusion-based image codec adaptation architecture"
     },
     "links": {
@@ -117,7 +126,8 @@
     "type": "conference",
     "featured": true,
     "image": {
-      "src": "media/publications/ic4dgs-icip-2026.webp",
+      "src": "media/publications/originals/ic4dgs-icip-2026.png",
+      "thumbnailSrc": "media/publications/ic4dgs-icip-2026.webp",
       "alt": "IC-4DGS illumination compensation overview"
     },
     "links": {
@@ -144,7 +154,8 @@
     "type": "conference",
     "featured": true,
     "image": {
-      "src": "media/publications/csgaussian-wacv-2026.webp",
+      "src": "media/publications/originals/csgaussian-wacv-2026.png",
+      "thumbnailSrc": "media/publications/csgaussian-wacv-2026.webp",
       "alt": "CSGaussian compression and segmentation framework"
     },
     "links": {
@@ -169,7 +180,8 @@
     "type": "conference",
     "featured": true,
     "image": {
-      "src": "media/publications/ted-4dgs-wacv-2026.webp",
+      "src": "media/publications/originals/ted-4dgs-wacv-2026.png",
+      "thumbnailSrc": "media/publications/ted-4dgs-wacv-2026.webp",
       "alt": "TED-4DGS temporal activation and deformation framework"
     },
     "links": {
@@ -196,7 +208,8 @@
     "type": "conference",
     "featured": true,
     "image": {
-      "src": "media/publications/millimamba-wacv-2026.webp",
+      "src": "media/publications/originals/millimamba-wacv-2026.png",
+      "thumbnailSrc": "media/publications/millimamba-wacv-2026.webp",
       "alt": "milliMamba dual-radar pose estimation pipeline"
     },
     "links": {
@@ -249,7 +262,8 @@
     "type": "conference",
     "featured": true,
     "image": {
-      "src": "media/publications/hytip-iccv-2025.webp",
+      "src": "media/publications/originals/hytip-iccv-2025.png",
+      "thumbnailSrc": "media/publications/hytip-iccv-2025.webp",
       "alt": "HyTIP hybrid temporal information propagation architecture"
     },
     "links": {
@@ -278,7 +292,8 @@
     "type": "conference",
     "featured": true,
     "image": {
-      "src": "media/publications/mh-lvc-iccv-2025.webp",
+      "src": "media/publications/originals/mh-lvc-iccv-2025.png",
+      "thumbnailSrc": "media/publications/mh-lvc-iccv-2025.webp",
       "alt": "MH-LVC multi-hypothesis temporal prediction architecture"
     },
     "links": {
@@ -304,7 +319,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/conditional-restoration-wocc-2024.webp",
+      "src": "media/publications/originals/conditional-restoration-wocc-2024.png",
+      "thumbnailSrc": "media/publications/conditional-restoration-wocc-2024.webp",
       "alt": "Conditional video compressor adapted for image restoration"
     },
     "links": {
@@ -329,7 +345,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/motif-iccv-2023.webp",
+      "src": "media/publications/originals/motif-iccv-2023.png",
+      "thumbnailSrc": "media/publications/motif-iccv-2023.webp",
       "alt": "MoTIF continuous space-time video super-resolution framework"
     },
     "links": {
@@ -355,7 +372,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/dise-cvpr-2019.webp",
+      "src": "media/publications/originals/dise-cvpr-2019.png",
+      "thumbnailSrc": "media/publications/dise-cvpr-2019.webp",
       "alt": "DISE domain-invariant structure extraction framework"
     },
     "links": {
@@ -385,7 +403,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/network-quantization-in-neural-video-coding-a-comparative-study-across-coding-frameworks-and-temporal-buffering-strategies-2026.webp",
+      "src": "media/publications/originals/network-quantization-in-neural-video-coding-a-comparative-study-across-coding-frameworks-and-temporal-buffering-strategies-2026.png",
+      "thumbnailSrc": "media/publications/network-quantization-in-neural-video-coding-a-comparative-study-across-coding-frameworks-and-temporal-buffering-strategies-2026.webp",
       "alt": "Network Quantization in Neural Video Coding paper figure"
     },
     "links": {
@@ -411,7 +430,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/rate-distortion-complexity-analysis-of-parametric-video-codecs-2026.webp",
+      "src": "media/publications/originals/rate-distortion-complexity-analysis-of-parametric-video-codecs-2026.png",
+      "thumbnailSrc": "media/publications/rate-distortion-complexity-analysis-of-parametric-video-codecs-2026.webp",
       "alt": "Rate-Distortion-Complexity Analysis of Parametric Video Codecs paper figure"
     },
     "links": {
@@ -434,7 +454,8 @@
     "type": "journal",
     "featured": false,
     "image": {
-      "src": "media/publications/on-the-impact-of-quantization-precision-and-calibration-settings-applied-to-the-ssf-neural-video-decoder-2026.webp",
+      "src": "media/publications/originals/on-the-impact-of-quantization-precision-and-calibration-settings-applied-to-the-ssf-neural-video-decoder-2026.png",
+      "thumbnailSrc": "media/publications/on-the-impact-of-quantization-precision-and-calibration-settings-applied-to-the-ssf-neural-video-decoder-2026.webp",
       "alt": "On the Impact of Quantization Precision and Calibration paper figure"
     },
     "links": {
@@ -456,7 +477,8 @@
     "type": "journal",
     "featured": false,
     "image": {
-      "src": "media/publications/neural-b-frame-coding-tackling-domain-shift-issues-with-lightweight-online-motion-resolution-adaptation-2025.webp",
+      "src": "media/publications/originals/neural-b-frame-coding-tackling-domain-shift-issues-with-lightweight-online-motion-resolution-adaptation-2025.png",
+      "thumbnailSrc": "media/publications/neural-b-frame-coding-tackling-domain-shift-issues-with-lightweight-online-motion-resolution-adaptation-2025.webp",
       "alt": "Neural B-Frame Coding paper figure"
     },
     "links": {
@@ -482,7 +504,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/a-cross-framework-study-of-temporal-information-buffering-strategies-for-learned-video-compression-2025.webp",
+      "src": "media/publications/originals/a-cross-framework-study-of-temporal-information-buffering-strategies-for-learned-video-compression-2025.png",
+      "thumbnailSrc": "media/publications/a-cross-framework-study-of-temporal-information-buffering-strategies-for-learned-video-compression-2025.webp",
       "alt": "A Cross-Framework Study of Temporal Information Buffering Strategies paper figure"
     },
     "links": {
@@ -506,7 +529,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/a-rate-quality-model-for-learned-video-coding-2025.webp",
+      "src": "media/publications/originals/a-rate-quality-model-for-learned-video-coding-2025.png",
+      "thumbnailSrc": "media/publications/a-rate-quality-model-for-learned-video-coding-2025.webp",
       "alt": "A Rate-Quality Model for Learned Video Coding paper figure"
     },
     "links": {
@@ -531,7 +555,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/conditional-residual-coding-with-explicit-implicit-temporal-buffering-for-learned-video-compression-2025.webp",
+      "src": "media/publications/originals/conditional-residual-coding-with-explicit-implicit-temporal-buffering-for-learned-video-compression-2025.png",
+      "thumbnailSrc": "media/publications/conditional-residual-coding-with-explicit-implicit-temporal-buffering-for-learned-video-compression-2025.webp",
       "alt": "Conditional Residual Coding with Explicit-Implicit Temporal Buffering for paper figure"
     },
     "links": {
@@ -555,7 +580,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/cross-platform-neural-video-coding-a-case-study-2025.webp",
+      "src": "media/publications/originals/cross-platform-neural-video-coding-a-case-study-2025.png",
+      "thumbnailSrc": "media/publications/cross-platform-neural-video-coding-a-case-study-2025.webp",
       "alt": "Cross-Platform Neural Video Coding paper figure"
     },
     "links": {
@@ -580,7 +606,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/maskcrt-b-masked-conditional-residual-transformer-for-learned-b-frame-coding-2025.webp",
+      "src": "media/publications/originals/maskcrt-b-masked-conditional-residual-transformer-for-learned-b-frame-coding-2025.jpg",
+      "thumbnailSrc": "media/publications/maskcrt-b-masked-conditional-residual-transformer-for-learned-b-frame-coding-2025.webp",
       "alt": "MaskCRT-B paper figure"
     },
     "links": {
@@ -605,7 +632,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/fast-omra-fast-online-motion-resolution-adaptation-for-neural-b-frame-coding-2025.webp",
+      "src": "media/publications/originals/fast-omra-fast-online-motion-resolution-adaptation-for-neural-b-frame-coding-2025.png",
+      "thumbnailSrc": "media/publications/fast-omra-fast-online-motion-resolution-adaptation-for-neural-b-frame-coding-2025.webp",
       "alt": "Fast-OMRA paper figure"
     },
     "links": {
@@ -629,7 +657,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/omra-online-motion-resolution-adaptation-to-remedy-domain-shift-in-learned-hierarchical-b-frame-coding-2024.webp",
+      "src": "media/publications/originals/omra-online-motion-resolution-adaptation-to-remedy-domain-shift-in-learned-hierarchical-b-frame-coding-2024.png",
+      "thumbnailSrc": "media/publications/omra-online-motion-resolution-adaptation-to-remedy-domain-shift-in-learned-hierarchical-b-frame-coding-2024.webp",
       "alt": "OMRA paper figure"
     },
     "links": {
@@ -654,7 +683,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/on-the-rate-distortion-complexity-trade-offs-of-neural-video-coding-2024.webp",
+      "src": "media/publications/originals/on-the-rate-distortion-complexity-trade-offs-of-neural-video-coding-2024.png",
+      "thumbnailSrc": "media/publications/on-the-rate-distortion-complexity-trade-offs-of-neural-video-coding-2024.webp",
       "alt": "On the Rate-Distortion-Complexity Trade-offs of Neural Video Coding paper figure"
     },
     "links": {
@@ -680,7 +710,8 @@
     "type": "journal",
     "featured": false,
     "image": {
-      "src": "media/publications/maskcrt-masked-conditional-residual-transformer-for-learned-video-compression-2024.webp",
+      "src": "media/publications/originals/maskcrt-masked-conditional-residual-transformer-for-learned-video-compression-2024.png",
+      "thumbnailSrc": "media/publications/maskcrt-masked-conditional-residual-transformer-for-learned-video-compression-2024.webp",
       "alt": "MaskCRT paper figure"
     },
     "links": {
@@ -706,7 +737,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/conditional-variational-autoencoders-for-hierarchical-b-frame-coding-2024.webp",
+      "src": "media/publications/originals/conditional-variational-autoencoders-for-hierarchical-b-frame-coding-2024.png",
+      "thumbnailSrc": "media/publications/conditional-variational-autoencoders-for-hierarchical-b-frame-coding-2024.webp",
       "alt": "Conditional Variational Autoencoders for Hierarchical B-Frame Coding paper figure"
     },
     "links": {
@@ -731,7 +763,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/rate-adaptation-for-learned-two-layer-b-frame-coding-without-signaling-motion-information-2023.webp",
+      "src": "media/publications/originals/rate-adaptation-for-learned-two-layer-b-frame-coding-without-signaling-motion-information-2023.png",
+      "thumbnailSrc": "media/publications/rate-adaptation-for-learned-two-layer-b-frame-coding-without-signaling-motion-information-2023.webp",
       "alt": "Rate Adaptation for Learned Two-layer B-frame Coding without paper figure"
     },
     "links": {
@@ -755,7 +788,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/learning-based-scalable-video-coding-with-spatial-and-temporal-prediction-2023.webp",
+      "src": "media/publications/originals/learning-based-scalable-video-coding-with-spatial-and-temporal-prediction-2023.png",
+      "thumbnailSrc": "media/publications/learning-based-scalable-video-coding-with-spatial-and-temporal-prediction-2023.webp",
       "alt": "Learning-Based Scalable Video Coding with Spatial and Temporal paper figure"
     },
     "links": {
@@ -778,7 +812,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/hierarchical-b-frame-video-compression-using-two-layer-canf-without-motion-coding-2023.webp",
+      "src": "media/publications/originals/hierarchical-b-frame-video-compression-using-two-layer-canf-without-motion-coding-2023.png",
+      "thumbnailSrc": "media/publications/hierarchical-b-frame-video-compression-using-two-layer-canf-without-motion-coding-2023.webp",
       "alt": "Hierarchical B-frame Video Compression Using Two-layer CANF without paper figure"
     },
     "links": {
@@ -802,7 +837,8 @@
     "type": "journal",
     "featured": false,
     "image": {
-      "src": "media/publications/b-canf-adaptive-b-frame-coding-with-conditional-augmented-normalizing-flows-2023.webp",
+      "src": "media/publications/originals/b-canf-adaptive-b-frame-coding-with-conditional-augmented-normalizing-flows-2023.png",
+      "thumbnailSrc": "media/publications/b-canf-adaptive-b-frame-coding-with-conditional-augmented-normalizing-flows-2023.webp",
       "alt": "B-CANF paper figure"
     },
     "links": {
@@ -829,7 +865,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/learned-hierarchical-b-frame-coding-with-adaptive-feature-modulation-for-yuv-4-2-0-content-2023.webp",
+      "src": "media/publications/originals/learned-hierarchical-b-frame-coding-with-adaptive-feature-modulation-for-yuv-4-2-0-content-2023.png",
+      "thumbnailSrc": "media/publications/learned-hierarchical-b-frame-coding-with-adaptive-feature-modulation-for-yuv-4-2-0-content-2023.webp",
       "alt": "Learned Hierarchical B-frame Coding with Adaptive Feature Modulation paper figure"
     },
     "links": {
@@ -853,7 +890,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/content-adaptive-motion-rate-adaption-for-learned-video-compression-2022.webp",
+      "src": "media/publications/originals/content-adaptive-motion-rate-adaption-for-learned-video-compression-2022.png",
+      "thumbnailSrc": "media/publications/content-adaptive-motion-rate-adaption-for-learned-video-compression-2022.webp",
       "alt": "Content-adaptive Motion Rate Adaption for Learned Video Compression paper figure"
     },
     "links": {
@@ -879,7 +917,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/canf-vc-conditional-augmented-normalizing-flows-for-video-compression-2022.webp",
+      "src": "media/publications/originals/canf-vc-conditional-augmented-normalizing-flows-for-video-compression-2022.png",
+      "thumbnailSrc": "media/publications/canf-vc-conditional-augmented-normalizing-flows-for-video-compression-2022.webp",
       "alt": "CANF-VC paper figure"
     },
     "links": {
@@ -906,7 +945,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/learned-video-compression-for-yuv-4-2-0-content-using-flow-based-conditional-inter-frame-coding-2022.webp",
+      "src": "media/publications/originals/learned-video-compression-for-yuv-4-2-0-content-using-flow-based-conditional-inter-frame-coding-2022.png",
+      "thumbnailSrc": "media/publications/learned-video-compression-for-yuv-4-2-0-content-using-flow-based-conditional-inter-frame-coding-2022.webp",
       "alt": "Learned Video Compression for YUV 4 paper figure"
     },
     "links": {
@@ -931,7 +971,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/p-frame-coding-proposal-by-nctu-parametric-video-prediction-through-backprop-based-motion-estimation-2020.webp",
+      "src": "media/publications/originals/p-frame-coding-proposal-by-nctu-parametric-video-prediction-through-backprop-based-motion-estimation-2020.png",
+      "thumbnailSrc": "media/publications/p-frame-coding-proposal-by-nctu-parametric-video-prediction-through-backprop-based-motion-estimation-2020.webp",
       "alt": "P-frame Coding Proposal by NCTU paper figure"
     },
     "links": {
@@ -955,7 +996,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/exploring-autoregressive-vision-foundation-models-for-image-compression-2025.webp",
+      "src": "media/publications/originals/exploring-autoregressive-vision-foundation-models-for-image-compression-2025.png",
+      "thumbnailSrc": "media/publications/exploring-autoregressive-vision-foundation-models-for-image-compression-2025.webp",
       "alt": "Exploring Autoregressive Vision Foundation Models for Image Compression paper figure"
     },
     "links": {
@@ -979,7 +1021,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/learning-optimal-linear-block-transform-by-rate-distortion-minimization-2025.webp",
+      "src": "media/publications/originals/learning-optimal-linear-block-transform-by-rate-distortion-minimization-2025.png",
+      "thumbnailSrc": "media/publications/learning-optimal-linear-block-transform-by-rate-distortion-minimization-2025.webp",
       "alt": "Learning Optimal Linear Block Transform by Rate Distortion Minimization paper figure"
     },
     "links": {
@@ -1006,7 +1049,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/lidar-depth-map-guided-image-compression-model-2024.webp",
+      "src": "media/publications/originals/lidar-depth-map-guided-image-compression-model-2024.png",
+      "thumbnailSrc": "media/publications/lidar-depth-map-guided-image-compression-model-2024.webp",
       "alt": "LiDAR Depth Map Guided Image Compression Model paper figure"
     },
     "links": {
@@ -1033,7 +1077,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/transformer-based-learned-image-compression-for-joint-decoding-and-denoising-2024.webp",
+      "src": "media/publications/originals/transformer-based-learned-image-compression-for-joint-decoding-and-denoising-2024.png",
+      "thumbnailSrc": "media/publications/transformer-based-learned-image-compression-for-joint-decoding-and-denoising-2024.webp",
       "alt": "Transformer-based Learned Image Compression for Joint Decoding and paper figure"
     },
     "links": {
@@ -1057,7 +1102,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/learning-based-conditional-image-compression-2024.webp",
+      "src": "media/publications/originals/learning-based-conditional-image-compression-2024.png",
+      "thumbnailSrc": "media/publications/learning-based-conditional-image-compression-2024.webp",
       "alt": "Learning-Based Conditional Image Compression paper figure"
     },
     "links": {
@@ -1082,7 +1128,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/transformer-based-image-compression-with-variable-image-quality-objectives-2023.webp",
+      "src": "media/publications/originals/transformer-based-image-compression-with-variable-image-quality-objectives-2023.png",
+      "thumbnailSrc": "media/publications/transformer-based-image-compression-with-variable-image-quality-objectives-2023.webp",
       "alt": "Transformer-based Image Compression with Variable Image Quality Objectives paper figure"
     },
     "links": {
@@ -1107,7 +1154,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/transformer-based-variable-rate-image-compression-with-region-of-interest-control-2023.webp",
+      "src": "media/publications/originals/transformer-based-variable-rate-image-compression-with-region-of-interest-control-2023.png",
+      "thumbnailSrc": "media/publications/transformer-based-variable-rate-image-compression-with-region-of-interest-control-2023.webp",
       "alt": "Transformer-based Variable-rate Image Compression With Region-of-interest Control paper figure"
     },
     "links": {
@@ -1134,7 +1182,8 @@
     "type": "journal",
     "featured": false,
     "image": {
-      "src": "media/publications/anfic-image-compression-using-augmented-normalizing-flows-2021.webp",
+      "src": "media/publications/originals/anfic-image-compression-using-augmented-normalizing-flows-2021.png",
+      "thumbnailSrc": "media/publications/anfic-image-compression-using-augmented-normalizing-flows-2021.webp",
       "alt": "ANFIC paper figure"
     },
     "links": {
@@ -1160,7 +1209,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/end-to-end-learned-image-compression-with-augmented-normalizing-flows-2021.webp",
+      "src": "media/publications/originals/end-to-end-learned-image-compression-with-augmented-normalizing-flows-2021.png",
+      "thumbnailSrc": "media/publications/end-to-end-learned-image-compression-with-augmented-normalizing-flows-2021.webp",
       "alt": "End-to-End Learned Image Compression with Augmented Normalizing Flows paper figure"
     },
     "links": {
@@ -1184,7 +1234,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/a-hybrid-layered-image-compressor-with-deep-learning-technique-2020.webp",
+      "src": "media/publications/originals/a-hybrid-layered-image-compressor-with-deep-learning-technique-2020.png",
+      "thumbnailSrc": "media/publications/a-hybrid-layered-image-compressor-with-deep-learning-technique-2020.webp",
       "alt": "A Hybrid Layered Image Compressor with Deep-Learning Technique paper figure"
     },
     "links": {
@@ -1208,7 +1259,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/learned-image-compression-with-soft-bit-based-rate-distortion-optimization-2019.webp",
+      "src": "media/publications/originals/learned-image-compression-with-soft-bit-based-rate-distortion-optimization-2019.png",
+      "thumbnailSrc": "media/publications/learned-image-compression-with-soft-bit-based-rate-distortion-optimization-2019.webp",
       "alt": "Learned Image Compression With Soft Bit-based Rate-distortion Optimization paper figure"
     },
     "links": {
@@ -1232,7 +1284,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/an-autoencoder-based-image-compressor-with-principle-component-analysis-and-soft-bit-rate-estimation-2019.webp",
+      "src": "media/publications/originals/an-autoencoder-based-image-compressor-with-principle-component-analysis-and-soft-bit-rate-estimation-2019.png",
+      "thumbnailSrc": "media/publications/an-autoencoder-based-image-compressor-with-principle-component-analysis-and-soft-bit-rate-estimation-2019.webp",
       "alt": "An Autoencoder-based Image Compressor with Principle Component Analysis paper figure"
     },
     "links": {
@@ -1260,7 +1313,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/bridging-compressed-image-latents-and-multimodal-large-language-models-2025.webp",
+      "src": "media/publications/originals/bridging-compressed-image-latents-and-multimodal-large-language-models-2025.jpg",
+      "thumbnailSrc": "media/publications/bridging-compressed-image-latents-and-multimodal-large-language-models-2025.webp",
       "alt": "Bridging Compressed Image Latents and Multimodal Large Language Models paper figure"
     },
     "links": {
@@ -1288,7 +1342,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/transtic-transferring-transformer-based-image-compression-from-human-perception-to-machine-perception-2023.webp",
+      "src": "media/publications/originals/transtic-transferring-transformer-based-image-compression-from-human-perception-to-machine-perception-2023.png",
+      "thumbnailSrc": "media/publications/transtic-transferring-transformer-based-image-compression-from-human-perception-to-machine-perception-2023.webp",
       "alt": "TransTIC paper figure"
     },
     "links": {
@@ -1315,7 +1370,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/cat-3dgs-pro-a-new-benchmark-for-efficient-3dgs-compression-2025.webp",
+      "src": "media/publications/originals/cat-3dgs-pro-a-new-benchmark-for-efficient-3dgs-compression-2025.png",
+      "thumbnailSrc": "media/publications/cat-3dgs-pro-a-new-benchmark-for-efficient-3dgs-compression-2025.webp",
       "alt": "CAT-3DGS Pro paper figure"
     },
     "links": {
@@ -1342,7 +1398,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/cat-3dgs-a-context-adaptive-triplane-approach-to-rate-distortion-optimized-3dgs-compression-2025.webp",
+      "src": "media/publications/originals/cat-3dgs-a-context-adaptive-triplane-approach-to-rate-distortion-optimized-3dgs-compression-2025.jpg",
+      "thumbnailSrc": "media/publications/cat-3dgs-a-context-adaptive-triplane-approach-to-rate-distortion-optimized-3dgs-compression-2025.webp",
       "alt": "CAT-3DGS paper figure"
     },
     "links": {
@@ -1370,7 +1427,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/video-rescaling-networks-with-joint-optimization-strategies-for-downscaling-and-upscaling-2021.webp",
+      "src": "media/publications/originals/video-rescaling-networks-with-joint-optimization-strategies-for-downscaling-and-upscaling-2021.png",
+      "thumbnailSrc": "media/publications/video-rescaling-networks-with-joint-optimization-strategies-for-downscaling-and-upscaling-2021.webp",
       "alt": "Video Rescaling Networks with Joint Optimization Strategies for paper figure"
     },
     "links": {
@@ -1397,7 +1455,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/transhupr-cross-view-fusion-transformer-for-human-pose-estimation-using-mmwave-radar-2024.webp",
+      "src": "media/publications/originals/transhupr-cross-view-fusion-transformer-for-human-pose-estimation-using-mmwave-radar-2024.png",
+      "thumbnailSrc": "media/publications/transhupr-cross-view-fusion-transformer-for-human-pose-estimation-using-mmwave-radar-2024.webp",
       "alt": "TransHuPR paper figure"
     },
     "links": {
@@ -1423,7 +1482,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/hupr-a-benchmark-for-human-pose-estimation-using-millimeter-wave-radar-2023.webp",
+      "src": "media/publications/originals/hupr-a-benchmark-for-human-pose-estimation-using-millimeter-wave-radar-2023.png",
+      "thumbnailSrc": "media/publications/hupr-a-benchmark-for-human-pose-estimation-using-millimeter-wave-radar-2023.webp",
       "alt": "HuPR paper figure"
     },
     "links": {
@@ -1449,7 +1509,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/neural-frank-wolfe-policy-optimization-for-region-of-interest-intra-frame-coding-with-hevc-h-265-2022.webp",
+      "src": "media/publications/originals/neural-frank-wolfe-policy-optimization-for-region-of-interest-intra-frame-coding-with-hevc-h-265-2022.png",
+      "thumbnailSrc": "media/publications/neural-frank-wolfe-policy-optimization-for-region-of-interest-intra-frame-coding-with-hevc-h-265-2022.webp",
       "alt": "Neural Frank-Wolfe Policy Optimization for Region-of-Interest Intra-Frame Coding paper figure"
     },
     "links": {
@@ -1475,7 +1536,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/a-dual-critic-reinforcement-learning-framework-for-frame-level-bit-allocation-in-hevc-h-265-2021.webp",
+      "src": "media/publications/originals/a-dual-critic-reinforcement-learning-framework-for-frame-level-bit-allocation-in-hevc-h-265-2021.png",
+      "thumbnailSrc": "media/publications/a-dual-critic-reinforcement-learning-framework-for-frame-level-bit-allocation-in-hevc-h-265-2021.webp",
       "alt": "A Dual-Critic Reinforcement Learning Framework for Frame-level Bit paper figure"
     },
     "links": {
@@ -1499,7 +1561,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/reinforcement-learning-for-hevc-h-265-intra-frame-rate-control-2018.webp",
+      "src": "media/publications/originals/reinforcement-learning-for-hevc-h-265-intra-frame-rate-control-2018.png",
+      "thumbnailSrc": "media/publications/reinforcement-learning-for-hevc-h-265-intra-frame-rate-control-2018.webp",
       "alt": "Reinforcement Learning for HEVC/H.265 Intra-Frame Rate Control paper figure"
     },
     "links": {
@@ -1522,7 +1585,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/reinforcement-learning-for-hevc-h-265-frame-level-bit-allocation-2018.webp",
+      "src": "media/publications/originals/reinforcement-learning-for-hevc-h-265-frame-level-bit-allocation-2018.png",
+      "thumbnailSrc": "media/publications/reinforcement-learning-for-hevc-h-265-frame-level-bit-allocation-2018.webp",
       "alt": "Reinforcement Learning for HEVC/H.265 Frame-level Bit Allocation paper figure"
     },
     "links": {
@@ -1545,7 +1609,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/hevc-h-265-coding-unit-split-decision-using-deep-reinforcement-learning-2017.webp",
+      "src": "media/publications/originals/hevc-h-265-coding-unit-split-decision-using-deep-reinforcement-learning-2017.png",
+      "thumbnailSrc": "media/publications/hevc-h-265-coding-unit-split-decision-using-deep-reinforcement-learning-2017.webp",
       "alt": "HEVC/H.265 Coding Unit Split Decision Using Deep Reinforcement Learning paper figure"
     },
     "links": {
@@ -1568,7 +1633,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/deep-video-prediction-through-sparse-motion-regularization-2020.webp",
+      "src": "media/publications/originals/deep-video-prediction-through-sparse-motion-regularization-2020.png",
+      "thumbnailSrc": "media/publications/deep-video-prediction-through-sparse-motion-regularization-2020.webp",
       "alt": "Deep Video Prediction Through Sparse Motion Regularization paper figure"
     },
     "links": {
@@ -1592,7 +1658,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/sme-net-sparse-motion-estimation-for-parametric-video-prediction-through-reinforcement-learning-2019.webp",
+      "src": "media/publications/originals/sme-net-sparse-motion-estimation-for-parametric-video-prediction-through-reinforcement-learning-2019.png",
+      "thumbnailSrc": "media/publications/sme-net-sparse-motion-estimation-for-parametric-video-prediction-through-reinforcement-learning-2019.webp",
       "alt": "SME-Net paper figure"
     },
     "links": {
@@ -1616,7 +1683,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/gsvnet-guided-spatially-varying-convolution-for-fast-semantic-segmentation-on-video-2021.webp",
+      "src": "media/publications/originals/gsvnet-guided-spatially-varying-convolution-for-fast-semantic-segmentation-on-video-2021.png",
+      "thumbnailSrc": "media/publications/gsvnet-guided-spatially-varying-convolution-for-fast-semantic-segmentation-on-video-2021.webp",
       "alt": "GSVNet paper figure"
     },
     "links": {
@@ -1642,7 +1710,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/weakly-supervised-image-semantic-segmentation-using-graph-convolutional-networks-2021.webp",
+      "src": "media/publications/originals/weakly-supervised-image-semantic-segmentation-using-graph-convolutional-networks-2021.png",
+      "thumbnailSrc": "media/publications/weakly-supervised-image-semantic-segmentation-using-graph-convolutional-networks-2021.webp",
       "alt": "Weakly-Supervised Image Semantic Segmentation Using Graph Convolutional Networks paper figure"
     },
     "links": {
@@ -1668,7 +1737,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/semantic-segmentation-on-compressed-video-using-block-motion-compensation-and-guided-inpainting-2020.webp",
+      "src": "media/publications/originals/semantic-segmentation-on-compressed-video-using-block-motion-compensation-and-guided-inpainting-2020.png",
+      "thumbnailSrc": "media/publications/semantic-segmentation-on-compressed-video-using-block-motion-compensation-and-guided-inpainting-2020.webp",
       "alt": "Semantic Segmentation on Compressed Video Using Block Motion paper figure"
     },
     "links": {
@@ -1692,7 +1762,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/class-incremental-learning-with-rectified-feature-graph-preservation-2020.webp",
+      "src": "media/publications/originals/class-incremental-learning-with-rectified-feature-graph-preservation-2020.png",
+      "thumbnailSrc": "media/publications/class-incremental-learning-with-rectified-feature-graph-preservation-2020.webp",
       "alt": "Class-incremental Learning with Rectified Feature-Graph Preservation paper figure"
     },
     "links": {
@@ -1715,7 +1786,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/learning-goal-oriented-visual-dialogue-imitating-and-surpassing-analytic-experts-2019.webp",
+      "src": "media/publications/originals/learning-goal-oriented-visual-dialogue-imitating-and-surpassing-analytic-experts-2019.png",
+      "thumbnailSrc": "media/publications/learning-goal-oriented-visual-dialogue-imitating-and-surpassing-analytic-experts-2019.webp",
       "alt": "Learning Goal-oriented Visual Dialogue paper figure"
     },
     "links": {
@@ -1738,7 +1810,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/learning-priors-for-adversarial-autoencoders-2018.webp",
+      "src": "media/publications/originals/learning-priors-for-adversarial-autoencoders-2018.png",
+      "thumbnailSrc": "media/publications/learning-priors-for-adversarial-autoencoders-2018.webp",
       "alt": "Learning Priors for Adversarial Autoencoders paper figure"
     },
     "links": {
@@ -1762,7 +1835,8 @@
     "type": "conference",
     "featured": false,
     "image": {
-      "src": "media/publications/learning-to-fly-with-a-video-generator-2021.webp",
+      "src": "media/publications/originals/learning-to-fly-with-a-video-generator-2021.png",
+      "thumbnailSrc": "media/publications/learning-to-fly-with-a-video-generator-2021.webp",
       "alt": "Learning to Fly with a Video Generator paper figure"
     },
     "links": {

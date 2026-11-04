@@ -69,7 +69,6 @@ watch(
       label="MAPL · Research showcase"
       :level="1"
     >
-      <p>Selected work in visual data coding, neural media systems, and machine perception.</p>
     </SectionHeading>
 
     <div class="publications-view__controls">

@@ -40,7 +40,9 @@ const collectMedia = (collections: ContentCollections): readonly string[] => [
   "media/about/02-international-collaboration.jpg",
   ...collections.news.flatMap((item) => item.image === undefined ? [] : [item.image.src]),
   ...collections.members.flatMap((member) => member.image === undefined ? [] : [member.image.src]),
-  ...collections.publications.flatMap((publication) => publication.image === undefined ? [] : [publication.image.src]),
+  ...collections.publications.flatMap((publication) => publication.image === undefined
+    ? []
+    : [publication.image.src, ...(publication.image.thumbnailSrc ? [publication.image.thumbnailSrc] : [])]),
   ...homeSlides.map((slide) => slide.image),
   joinUsContent.image.src,
 ]

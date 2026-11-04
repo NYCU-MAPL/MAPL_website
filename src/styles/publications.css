@@ -8,16 +8,6 @@
   padding-block-end: var(--space-2);
 }
 
-.publications-view .section-heading__title {
-  margin-block-end: var(--space-3);
-  font-size: clamp(2.5rem, 5vw, 4rem);
-}
-
-.publications-view .section-heading__lead {
-  font-family: var(--font-ui);
-  font-size: var(--text-body);
-}
-
 .publications-view__controls {
   padding: var(--space-5) var(--space-6);
   background: var(--color-paper);
@@ -69,6 +59,17 @@
   text-align: start;
   cursor: pointer;
   transition: background-color var(--motion-micro), border-color var(--motion-micro), color var(--motion-micro);
+}
+
+.publication-filter-chip {
+  display: inline-flex;
+  max-inline-size: 100%;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.publication-filter-chip__icon {
+  flex: none;
 }
 
 .publication-filter-chip:hover,
@@ -155,7 +156,7 @@
 
 .publication-card {
   display: grid;
-  grid-template-columns: 11rem minmax(0, 1fr);
+  grid-template-columns: 12.1rem minmax(0, 1fr);
   align-items: start;
   gap: var(--space-6);
   min-inline-size: 0;
@@ -338,7 +339,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0 var(--space-4);
+  gap: var(--space-1);
 }
 
 .publication-card__actions a,
@@ -347,25 +348,36 @@
   min-block-size: var(--control-size);
   align-items: center;
   gap: var(--space-1);
-  padding: 0;
-  color: var(--color-forest);
+  padding: var(--space-1) var(--space-2);
+  color: var(--color-ink-muted);
   background: transparent;
   border: 0;
+  border-radius: var(--radius-control);
   font-size: var(--text-label);
   font-weight: 600;
   text-decoration: none;
+  white-space: nowrap;
   cursor: pointer;
+  transition: background-color var(--motion-micro), color var(--motion-micro);
 }
 
 .publication-card__actions a:hover,
-.publication-card__abstract-toggle:hover {
-  color: var(--color-forest-deep);
-  text-decoration: underline;
-  text-underline-offset: var(--space-1);
+.publication-card__actions a:focus-visible {
+  background: color-mix(in srgb, var(--color-copper) 10%, transparent);
 }
 
-.publication-card__abstract-toggle {
-  color: var(--color-ink-muted);
+.publication-card__actions a {
+  color: var(--color-copper);
+}
+
+.publication-card__actions a svg {
+  flex: none;
+}
+
+.publication-card__abstract-toggle:hover,
+.publication-card__abstract-toggle:focus-visible {
+  color: var(--color-ink);
+  background: var(--color-paper-subdued);
 }
 
 .publications-view__empty {
@@ -384,7 +396,7 @@
   }
 
   .publication-card {
-    grid-template-columns: 5rem minmax(0, 1fr);
+    grid-template-columns: 5.5rem minmax(0, 1fr);
     gap: var(--space-3);
   }
 

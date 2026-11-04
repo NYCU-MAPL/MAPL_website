@@ -7,10 +7,9 @@ import { resolveMediaPath } from "../../lib/presentation/home-about.ts"
 
 const props = withDefaults(defineProps<{
   readonly member: Member
-  readonly prominent?: boolean
   readonly showEmail?: boolean
 }>(), {
-  showEmail: true,
+  showEmail: false,
 })
 
 type CopyStatus = "idle" | "copied" | "error"
@@ -100,10 +99,7 @@ onUnmounted(resetCopyStatus)
 </script>
 
 <template>
-  <article
-    class="person-card"
-    :class="{ 'person-card--prominent': prominent, 'person-card--advisor': member.role === 'advisor' }"
-  >
+  <article class="person-card">
     <component
       :is="member.website ? 'a' : 'div'"
       class="person-card__portrait"
@@ -129,6 +125,7 @@ onUnmounted(resetCopyStatus)
     <div class="person-card__content">
       <component
         :is="member.website ? 'a' : 'div'"
+        class="person-card__identity"
         :class="{ 'person-card__name-link': member.website }"
         :href="member.website"
         :target="member.website ? '_blank' : undefined"
@@ -151,23 +148,16 @@ onUnmounted(resetCopyStatus)
             />
           </h3>
           <p
-            v-if="!member.affiliation"
+            v-if="member.role === 'advisor' || !member.affiliation"
             class="person-card__english-name"
-            :class="{ 'person-card__english-name--with-email': member.role !== 'advisor' && member.email && showEmail }"
+            :class="{ 'person-card__english-name--with-email': member.email && showEmail }"
           >
-            {{ member.name }}
-          </p>
-          <p
-            v-else-if="member.role === 'advisor'"
-            class="person-card__english-name"
-            :class="{ 'person-card__english-name--with-email': member.role !== 'advisor' && member.email && showEmail }"
-          >
-            Prof. {{ member.name }}
+            {{ member.role === 'advisor' ? `Prof. ${member.name}` : member.name }}
           </p>
           <p
             v-else
             class="person-card__english-name"
-            :class="{ 'person-card__english-name--with-email': member.role !== 'advisor' && member.email && showEmail }"
+            :class="{ 'person-card__english-name--with-email': member.email && showEmail }"
           >
             {{ member.affiliation }}
           </p>
@@ -175,7 +165,7 @@ onUnmounted(resetCopyStatus)
       </component>
 
       <button
-        v-if="member.role !== 'advisor' && member.email && showEmail"
+        v-if="member.email && showEmail"
         class="person-card__email-copy"
         type="button"
         :aria-label="`Copy ${member.name}'s email address`"
@@ -202,63 +192,12 @@ onUnmounted(resetCopyStatus)
         </span>
       </button>
       <span
-        v-if="member.role !== 'advisor' && member.email && showEmail"
+        v-if="member.email && showEmail"
         class="person-card__email-live"
         role="status"
         aria-live="polite"
         aria-atomic="true"
       >{{ copyFeedback }}</span>
-
-      <!-- 教授詳細資訊 -->
-      <div
-        v-if="member.role === 'advisor'"
-        class="person-card__advisor-info"
-      >
-        <p class="person-card__affiliation">
-          NYCU Computer Science
-        </p>
-        <p class="person-card__research">
-          <strong>Research:</strong> Machine/deep learning, Video coding
-        </p>
-        <p class="person-card__office">
-          <strong>Office:</strong> Room 431, Eng. Bldg 3
-        </p>
-        <p class="person-card__email">
-          <strong>Email:</strong>
-          <button
-            v-if="member.email && showEmail"
-            class="person-card__email-copy person-card__email-copy--advisor"
-            type="button"
-            :aria-label="`Copy ${member.name}'s email address`"
-            @click="copyEmail"
-          >
-            <span
-              class="person-card__email-address"
-              :title="member.email"
-            >{{ member.email }}</span>
-            <span class="person-card__copy-state">
-              <Check
-                v-if="copyStatus === 'copied'"
-                :size="14"
-                aria-hidden="true"
-              />
-              <Copy
-                v-else
-                :size="14"
-                aria-hidden="true"
-              />
-              <span aria-hidden="true">{{ copyFeedback }}</span>
-            </span>
-          </button>
-          <span
-            v-if="member.email && showEmail"
-            class="person-card__email-live"
-            role="status"
-            aria-live="polite"
-            aria-atomic="true"
-          >{{ copyFeedback }}</span>
-        </p>
-      </div>
     </div>
   </article>
 </template>

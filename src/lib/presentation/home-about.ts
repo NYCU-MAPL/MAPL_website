@@ -1,6 +1,7 @@
 import type { Member, MemberGroup, NewsItem, Publication } from "../content/types.ts"
 
 const CURRENT_GROUPS = [
+  { group: "advisor", title: "Advisor" },
   { group: "phd-students", title: "Ph.D. students" },
   { group: "masters-students", title: "Master's students" },
   { group: "undergraduate-students", title: "Undergraduate students" },
@@ -28,7 +29,6 @@ export type HomePresentation = Readonly<{
 }>
 
 export type AboutPresentation = Readonly<{
-  advisors: readonly Member[]
   currentGroups: readonly MemberGroupPresentation[]
   currentCount: number
   alumni:
@@ -70,7 +70,6 @@ export const buildAboutPresentation = (members: readonly Member[]): AboutPresent
   const alumniCount = alumniGroups.reduce((total, group) => total + group.count, 0)
 
   return {
-    advisors: membersInGroup(members, "advisor"),
     currentGroups,
     currentCount: currentGroups.reduce((total, group) => total + group.count, 0),
     alumni: alumniCount === 0

@@ -30,6 +30,7 @@
   max-inline-size: none;
   block-size: auto;
   object-fit: contain;
+  background: var(--color-white);
   box-shadow: 0 var(--space-4) var(--space-16) color-mix(in srgb, var(--color-ink) 35%, transparent);
   animation: image-lightbox-reveal var(--motion-standard);
 }

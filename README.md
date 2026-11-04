@@ -1,6 +1,6 @@
 # MAPL Website
 
-The MAPL website is a Vue 3 and Vite static site with five hash-routed pages: Home, About, Publications, Teaching, and Join Us.
+The MAPL website is a Vue 3 and Vite static site with five hash-routed pages: Home, Members, Publications, Teaching, and Join Us. The previous `/about` route redirects to `/members`.
 
 ## Local development
 

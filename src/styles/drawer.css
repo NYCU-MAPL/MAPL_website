@@ -34,6 +34,14 @@
   border-block-end: var(--border-hairline);
 }
 
+.mobile-navigation__header .brand-lockup__text small {
+  white-space: normal;
+}
+
+.mobile-navigation__header .icon-button {
+  flex: none;
+}
+
 .mobile-navigation__list li {
   border-block-end: var(--border-hairline);
 }

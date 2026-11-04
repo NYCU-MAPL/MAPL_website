@@ -9,7 +9,7 @@ import "../styles/home.css"
 import "../styles/home-content.css"
 
 const shortcuts = [
-  { to: "/about", label: "About", icon: Users },
+  { to: "/members", label: "Members", icon: Users },
   { to: "/publications", label: "Publications", icon: FileText },
   { to: "/join-us", label: "Join us", icon: UserPlus },
 ] as const

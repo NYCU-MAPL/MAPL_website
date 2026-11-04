@@ -3,17 +3,10 @@
   gap: var(--space-16);
 }
 
-.static-view__section {
-  display: grid;
+.teaching-view {
   gap: var(--space-8);
 }
 
-.static-view__section-heading {
-  max-inline-size: var(--measure-reading);
-}
-
-.static-view__section-heading h2,
-.teaching-view__resources h2,
 .join-view__grid h2,
 .join-view__contact h2 {
   margin-block: var(--space-3);
@@ -24,79 +17,49 @@
   text-wrap: balance;
 }
 
-.static-view__section-heading > p:last-child,
 .join-view__grid section > p:not(.eyebrow) {
   color: var(--color-ink-muted);
 }
 
 .course-list {
   display: grid;
-  gap: var(--space-8);
+  max-inline-size: 58rem;
+  border-block-start: var(--border-hairline);
 }
 
-.course-list .surface-panel {
-  position: relative;
-  display: grid;
-  align-content: start;
-  gap: var(--space-4);
-  min-block-size: 18rem;
-}
-
-.course-card__index {
-  color: var(--color-rule);
-  font-family: var(--font-display);
-  font-size: var(--text-h1);
-  line-height: 1;
-}
-
-.course-card__code {
-  color: var(--color-copper);
-  font-family: var(--font-mono);
-  font-size: var(--text-label);
-  font-weight: 700;
-  letter-spacing: 0.08em;
-}
-
-.course-list h3 {
-  font-family: var(--font-display);
-  font-size: var(--text-h3);
-  line-height: 1.2;
-}
-
-.course-list .surface-panel > p:last-child {
-  color: var(--color-ink-muted);
-}
-
-.teaching-view__resources {
-  display: grid;
-  gap: var(--space-8);
-  padding: var(--space-8);
-  color: var(--color-ink);
-  background: var(--color-paper);
-  border-block-start: var(--border-accent);
-}
-
-.teaching-view__resources .eyebrow {
-  color: var(--color-forest);
-}
-
-.teaching-view__resources nav {
-  display: grid;
-}
-
-.teaching-view__resources a {
-  display: flex;
-  min-block-size: var(--control-size);
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--space-3);
-  color: var(--color-forest);
+.course-list__item {
+  min-inline-size: 0;
+  padding-block: var(--space-6);
   border-block-end: var(--border-hairline);
-  text-decoration: none;
 }
 
-.teaching-view__resources a:hover {
-  color: var(--color-forest-deep);
+.course-list h2 {
+  margin: 0 0 var(--space-3);
+  color: var(--color-ink);
+  font-size: clamp(1.125rem, 2vw, 1.375rem);
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-wrap: pretty;
+}
+
+.course-list h2 span {
+  color: var(--color-ink-muted);
+  font-size: var(--text-small);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.course-list__semesters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr));
+  gap: var(--space-2) var(--space-6);
+  padding-inline-start: 1.25rem;
+  color: var(--color-ink-muted);
+  list-style: disc;
+}
+
+.course-list__semesters li::marker {
+  color: var(--color-forest);
 }
 
 .join-view__portrait {
@@ -248,14 +211,8 @@
 }
 
 @media (min-width: 48rem) {
-  .course-list,
   .join-view__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .teaching-view__resources {
-    grid-template-columns: minmax(0, 0.8fr) minmax(18rem, 1.2fr);
-    align-items: end;
   }
 
   .join-view__contact {

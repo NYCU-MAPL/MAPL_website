@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ArrowUpRight, Image as ImageIcon, ZoomIn } from "@lucide/vue"
+import { FileText, FlaskConical, Image as ImageIcon, ZoomIn } from "@lucide/vue"
 import { computed, ref } from "vue"
 
 import { authorWebsite } from "../../features/publications/authors.ts"
@@ -12,12 +12,14 @@ import {
 import { resolveMediaPath } from "../../lib/media-path.ts"
 import type { Publication } from "../../lib/content/types.ts"
 import ImageLightbox from "../ui/ImageLightbox.vue"
+import GitHubIcon from "../ui/GitHubIcon.vue"
 
 const props = defineProps<{
   readonly publication: Publication
 }>()
 
 const actions = publicationActions(props.publication)
+const actionIcons = { paper: FileText, code: GitHubIcon, project: FlaskConical }
 const isNew = computed(() => isRecentPublication(props.publication))
 const authors = computed(() => props.publication.authors.map((name, authorIndex) => ({
   name,
@@ -41,7 +43,7 @@ const abstractPanelId = `publication-${props.publication.id}-abstract-panel`
         @click="imageExpanded = true"
       >
         <img
-          :src="resolveMediaPath(publication.image.src)"
+          :src="resolveMediaPath(publication.image.thumbnailSrc ?? publication.image.src)"
           :alt="publication.image.alt"
           loading="lazy"
           decoding="async"
@@ -101,11 +103,12 @@ const abstractPanelId = `publication-${props.publication.id}-abstract-panel`
           target="_blank"
           rel="noreferrer"
         >
-          {{ action.label }}
-          <ArrowUpRight
+          <component
+            :is="actionIcons[action.kind]"
             :size="16"
             aria-hidden="true"
           />
+          <span>{{ action.label }}</span>
         </a>
         <button
           v-if="publication.summary"

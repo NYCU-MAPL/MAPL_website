@@ -1,7 +1,10 @@
 <script setup lang="ts">
-import { ArrowUpRight, ChevronDown } from "@lucide/vue"
-import { computed, ref, useId } from "vue"
+import { ArrowRight, ArrowUpRight, Award, CalendarDays, ChevronDown, FlaskConical, Grid2X2, UserPlus, Users } from "@lucide/vue"
+import { computed, nextTick, ref, useId } from "vue"
+import type { Component } from "vue"
+import { RouterLink } from "vue-router"
 
+import HighlightedText from "../ui/HighlightedText.vue"
 import type { NewsCategory, NewsItem, Publication } from "../../lib/content/types.ts"
 
 const props = defineProps<{
@@ -15,7 +18,10 @@ type PublicationHeadline = {
   readonly venue: string
   readonly href?: string
 }
-type NewsEntry = NewsItem & { readonly headlines: readonly PublicationHeadline[] }
+type NewsEntry = NewsItem & {
+  readonly headlines: readonly PublicationHeadline[]
+  readonly showSource: boolean
+}
 
 const presentedItems = computed((): readonly NewsEntry[] => {
   const publicationsById = new Map(props.publications.map((publication) => [publication.id, publication]))
@@ -25,43 +31,90 @@ const presentedItems = computed((): readonly NewsEntry[] => {
       const paper = publicationsById.get(id)
       return paper ? [paper] : []
     })
-    const headlines: readonly PublicationHeadline[] = !match ? [] : papers.length > 1
-      ? papers.map((paper) => ({
+    const allPapers = [
+      ...papers.map((paper) => ({ title: paper.title, href: paper.links?.paper })),
+      ...(item.additionalPapers ?? []).map((paper) => ({ title: paper.title, href: paper.url })),
+    ]
+    const headlines: readonly PublicationHeadline[] = !match ? [] : allPapers.length > 1
+      ? allPapers.map((paper) => ({
         title: paper.title.split(":")[0] ?? paper.title,
         fullTitle: paper.title,
         venue: match[2] ?? "",
-        ...(paper.links?.paper ? { href: paper.links.paper } : {}),
+        ...(paper.href ? { href: paper.href } : {}),
       }))
       : [{
         title: match[1] ?? item.title,
-        ...(papers[0] ? { fullTitle: papers[0].title } : {}),
+        ...(allPapers[0] ? { fullTitle: allPapers[0].title } : {}),
         venue: match[2] ?? "",
-        ...(papers[0]?.links?.paper ? { href: papers[0].links.paper } : {}),
+        ...(allPapers[0]?.href ? { href: allPapers[0].href } : {}),
       }]
-    return { ...item, headlines }
+    const announcementDuplicatesSource = item.resources?.some((resource) =>
+      resource.label.trim().toLowerCase() === "original announcement" && resource.url === item.url,
+    ) ?? false
+    return {
+      ...item,
+      headlines,
+      highlights: [...(item.highlights ?? []), ...allPapers.map((paper) => paper.title), ...(match?.[2] ? [match[2]] : [])],
+      showSource: Boolean(item.url && !headlines.some((headline) => headline.href === item.url) && !announcementDuplicatesSource),
+    }
   })
 })
 
-const PREVIEW_LIMIT = 8
+type NewsRange = "latest" | "recent" | "all"
 const categories = [
-  { value: "all", label: "All" },
-  { value: "research", label: "Research" },
-  { value: "people", label: "People" },
-  { value: "awards", label: "Awards" },
-  { value: "events", label: "Events" },
-  { value: "opportunities", label: "Opportunities" },
-] as const satisfies readonly { value: NewsCategory | "all"; label: string }[]
+  { value: "all", label: "All", icon: Grid2X2 },
+  { value: "research", label: "Research", icon: FlaskConical },
+  { value: "people", label: "People", icon: Users },
+  { value: "awards", label: "Awards", icon: Award },
+  { value: "events", label: "Events", icon: CalendarDays },
+  { value: "opportunities", label: "Opportunities", icon: UserPlus },
+] as const satisfies readonly { value: NewsCategory | "all"; label: string; icon: Component }[]
 
 const selectedCategory = ref<NewsCategory | "all">("all")
-const expanded = ref(false)
+const collapsedRange = computed(() => selectedCategory.value === "all" ? "latest" : "recent")
+const visibleRange = ref<NewsRange>("latest")
+const ledger = ref<HTMLDivElement>()
+const expandedDetailId = ref<string | null>(null)
+const toggleDetails = (id: string): void => {
+  expandedDetailId.value = expandedDetailId.value === id ? null : id
+}
 const timelineId = useId()
 const filteredItems = computed(() => presentedItems.value.filter((item) =>
   selectedCategory.value === "all" || item.category === selectedCategory.value,
 ))
-const visibleItems = computed(() => expanded.value
+const latestYear = computed(() => props.items.reduce((year, item) =>
+  Math.max(year, Number(item.date.slice(0, 4))), 0,
+))
+const latestItems = computed(() => filteredItems.value.filter((item) => Number(item.date.slice(0, 4)) === latestYear.value))
+const recentItems = computed(() => filteredItems.value.filter((item) => Number(item.date.slice(0, 4)) >= latestYear.value - 2))
+const collapsedItems = computed(() => collapsedRange.value === "latest" ? latestItems.value : recentItems.value)
+const visibleItems = computed(() => visibleRange.value === "all"
   ? filteredItems.value
-  : filteredItems.value.slice(0, PREVIEW_LIMIT),
+  : visibleRange.value === "recent" ? recentItems.value : latestItems.value,
 )
+const nextItems = computed(() => visibleRange.value === "latest" && recentItems.value.length > latestItems.value.length
+  ? recentItems.value
+  : filteredItems.value,
+)
+const moreCount = computed(() => nextItems.value.length - visibleItems.value.length)
+const toggleLabel = computed(() => visibleRange.value === "all"
+  ? `Show less: only ${collapsedRange.value === "latest" ? latestYear.value : `${latestYear.value - 2}–${latestYear.value}`} news`
+  : visibleRange.value === "latest" && nextItems.value.length < filteredItems.value.length
+    ? `Show more news through ${latestYear.value - 2}`
+    : "Show more: all news",
+)
+const toggleTimeline = async (): Promise<void> => {
+  if (visibleRange.value === "all") {
+    visibleRange.value = collapsedRange.value
+    expandedDetailId.value = null
+    await nextTick()
+    ledger.value?.scrollIntoView({ block: "start", behavior: "instant" })
+    return
+  }
+  visibleRange.value = visibleRange.value === "latest" && nextItems.value.length < filteredItems.value.length
+    ? "recent"
+    : "all"
+}
 const yearGroups = computed(() => {
   const groups = new Map<string, NewsEntry[]>()
   for (const item of visibleItems.value) {
@@ -75,7 +128,8 @@ const yearGroups = computed(() => {
 
 const selectCategory = (category: NewsCategory | "all"): void => {
   selectedCategory.value = category
-  expanded.value = false
+  visibleRange.value = collapsedRange.value
+  expandedDetailId.value = null
 }
 const displayDate = (date: string, includeYear = false): string =>
   new Intl.DateTimeFormat("en", {
@@ -86,7 +140,7 @@ const displayDate = (date: string, includeYear = false): string =>
 </script>
 
 <template>
-  <div class="news-ledger">
+  <div ref="ledger" class="news-ledger">
     <div class="news-filters" role="group" aria-label="News category">
       <button
         v-for="category in categories"
@@ -96,7 +150,10 @@ const displayDate = (date: string, includeYear = false): string =>
         :aria-pressed="selectedCategory === category.value"
         :aria-controls="timelineId"
         @click="selectCategory(category.value)"
-      >{{ category.label }}</button>
+      >
+        <component :is="category.icon" :size="16" aria-hidden="true" />
+        <span>{{ category.label }}</span>
+      </button>
     </div>
 
     <div :id="timelineId" class="news-timeline" aria-live="polite" aria-atomic="false">
@@ -142,16 +199,16 @@ const displayDate = (date: string, includeYear = false): string =>
                 </template>
               </template>
               <template v-else-if="item.inlineLink">
-                {{ item.title.split(item.inlineLink.text)[0] }}<a
+                <HighlightedText :text="item.title.split(item.inlineLink.text)[0] ?? ''" :highlights="item.highlights" /><a
                   :href="item.inlineLink.url"
                   target="_blank"
                   rel="noreferrer"
                   :aria-label="`${item.inlineLink.text} (opens in a new tab)`"
-                ><strong>{{ item.inlineLink.text }}</strong></a>{{ item.title.split(item.inlineLink.text)[1] }}
+                ><strong>{{ item.inlineLink.text }}</strong></a><HighlightedText :text="item.title.split(item.inlineLink.text)[1] ?? ''" :highlights="item.highlights" />
               </template>
-              <span v-else>{{ item.title }}</span>
+              <HighlightedText v-else :text="item.title" :highlights="item.highlights" />
               <a
-                v-if="item.url && !item.headlines.some((headline) => headline.href === item.url)"
+                v-if="item.showSource"
                 class="news-entry__source"
                 :href="item.url"
                 target="_blank"
@@ -159,24 +216,48 @@ const displayDate = (date: string, includeYear = false): string =>
                 :aria-label="`Source: ${item.title} (opens in a new tab)`"
                 :title="`Source: ${item.title}`"
               ><span>src</span><ArrowUpRight :size="16" aria-hidden="true" /></a>
+              <button
+                class="news-entry__details-toggle"
+                type="button"
+                :aria-expanded="expandedDetailId === item.id"
+                :aria-controls="`${timelineId}-${item.id}-details`"
+                :aria-label="`Details: ${item.title}`"
+                @click="toggleDetails(item.id)"
+              >Details<ChevronDown :size="14" aria-hidden="true" /></button>
             </p>
+            <div
+              v-if="expandedDetailId === item.id"
+              :id="`${timelineId}-${item.id}-details`"
+              class="news-entry__details"
+              role="region"
+              :aria-label="`${item.title} details`"
+            >
+              <p><HighlightedText :text="item.summary" :highlights="item.highlights" /></p>
+              <ul v-if="item.resources?.length" class="news-entry__resources">
+                <li v-for="resource in item.resources" :key="resource.url">
+                  <RouterLink v-if="resource.url.startsWith('/')" :to="resource.url">{{ resource.label }}<ArrowRight :size="14" aria-hidden="true" /></RouterLink>
+                  <a v-else :href="resource.url" target="_blank" rel="noreferrer">{{ resource.label }}<ArrowUpRight :size="14" aria-hidden="true" /></a>
+                </li>
+              </ul>
+            </div>
           </li>
         </ol>
       </section>
-      <p v-if="filteredItems.length === 0" class="news-ledger__empty">No news in this category yet.</p>
+      <p v-if="visibleItems.length === 0" class="news-ledger__empty">No news in this category{{ visibleRange === "all" ? " yet" : ` for ${visibleRange === "latest" ? latestYear : `${latestYear - 2}–${latestYear}`}` }}.</p>
     </div>
 
     <button
-      v-if="filteredItems.length > PREVIEW_LIMIT"
+      v-if="filteredItems.length > collapsedItems.length"
       class="news-ledger__toggle"
       type="button"
-      :aria-expanded="expanded"
+      :aria-expanded="visibleRange !== collapsedRange"
       :aria-controls="timelineId"
-      @click="expanded = !expanded"
+      :aria-label="toggleLabel"
+      @click="toggleTimeline"
     >
-      {{ expanded ? "Show less" : "Show older news" }}
-      <span v-if="!expanded">({{ filteredItems.length - PREVIEW_LIMIT }})</span>
-      <ChevronDown :size="16" aria-hidden="true" :class="{ 'is-expanded': expanded }" />
+      {{ visibleRange === "all" ? "Show less" : "Show more" }}
+      <span v-if="visibleRange !== 'all'">({{ moreCount }})</span>
+      <ChevronDown :size="16" aria-hidden="true" :class="{ 'is-expanded': visibleRange === 'all' }" />
     </button>
   </div>
 </template>

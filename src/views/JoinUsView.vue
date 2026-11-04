@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ArrowUpRight, Download, Mail } from "@lucide/vue"
 
+import JoinPathways from "../components/join/JoinPathways.vue"
 import SectionHeading from "../components/ui/SectionHeading.vue"
 import { joinUsContent } from "../features/static-pages/content.ts"
 import { resolveMediaPath } from "../lib/media-path.ts"
@@ -15,9 +16,7 @@ import "../styles/static-pages.css"
       title="Join MAPL"
       label="MAPL · Recruitment"
       :level="1"
-    >
-      <p>Work with us on visual data coding, machine learning, computer vision, and emerging neural media.</p>
-    </SectionHeading>
+    />
 
     <figure class="join-view__portrait">
       <img
@@ -33,14 +32,14 @@ import "../styles/static-pages.css"
         <span>Research grows through shared work.</span>
       </figcaption>
     </figure>
-
+    <JoinPathways />
     <div class="join-view__grid">
       <section aria-labelledby="join-opportunities-title">
         <p class="eyebrow">
           Open opportunities
         </p>
         <h2 id="join-opportunities-title">
-          Bring a question worth pursuing.
+          Contact us
         </h2>
         <p>We welcome prospective PhD and master’s students interested in publication-oriented research. Undergraduate students can also explore research projects and international study or internship opportunities through the lab.</p>
         <div class="join-view__student-contacts">
@@ -105,5 +104,6 @@ import "../styles/static-pages.css"
         </div>
       </aside>
     </div>
+
   </section>
 </template>

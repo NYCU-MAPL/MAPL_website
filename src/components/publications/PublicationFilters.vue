@@ -1,5 +1,8 @@
 <script setup lang="ts">
+import { Grid2X2 } from "@lucide/vue"
+
 import { ALL_FILTER, formatPublicationTag, type PublicationFilterOptions, type PublicationFilters } from "../../features/publications/filters.ts"
+import { publicationTopicIcons } from "../../features/publications/topic-icons.ts"
 import type { PublicationTopic } from "../../lib/content/types.ts"
 
 const props = defineProps<{
@@ -33,7 +36,10 @@ const toggleYear = (year: number): void => {
         type="button"
         :aria-pressed="filters.topics.length === 0"
         @click="emit('change', { ...props.filters, topics: [] })"
-      >All topics</button>
+      >
+        <Grid2X2 class="publication-filter-chip__icon" :size="16" aria-hidden="true" />
+        <span>All topics</span>
+      </button>
       <button
         v-for="topic in options.topics"
         :key="topic"
@@ -41,7 +47,10 @@ const toggleYear = (year: number): void => {
         type="button"
         :aria-pressed="filters.topics.includes(topic)"
         @click="toggleTopic(topic)"
-      >{{ formatPublicationTag(topic) }}</button>
+      >
+        <component :is="publicationTopicIcons[topic]" class="publication-filter-chip__icon" :size="16" aria-hidden="true" />
+        <span>{{ formatPublicationTag(topic) }}</span>
+      </button>
     </div>
     <div class="publication-filters__secondary">
       <div class="publication-filter-row" role="group" aria-label="Publication year">

@@ -1,15 +1,5 @@
 [
   {
-    "id": "saga-neurips-2026-accepted",
-    "date": "2026-10",
-    "title": "SAGA: Sparse 4D-anchor video compression accepted to NeurIPS 2026",
-    "publicationIds": ["saga-sparse-4d-anchors-2026"],
-    "category": "research",
-    "summary": "Congratulations to G. Gao, S. Teng, C. Wang, F. Zhang, N. Anantrasirichai, J.-C. Chiang, W.-H. Peng, and D. Bull on having the paper “Gaussian Splatting-based Volumetric Video Compression with Sparse 4D Anchors” accepted for publication at NeurIPS 2026.",
-    "url": "https://arxiv.org/abs/2609.33969",
-    "featured": true
-  },
-  {
     "id": "vcip-2026-papers-accepted",
     "date": "2026-10",
     "title": "Two MAPL papers accepted to VCIP 2026",
@@ -18,7 +8,19 @@
       "perceptual-3dgs-saliency-features-2026"
     ],
     "category": "research",
-    "summary": "Congratulations to Huu-Tai Phung, Chun-Hung Wu, Yen-Kuan Ho, Yu-Hsiang Lin, Tzu-Hsiang Chou, Leandro Weber Tavares, Guilherme Ribeiro Corrêa, and Wen-Hsiao Peng on having the paper “NICER: Neural Image Codecs with Randomness for Perceptual Quality Adaptation” accepted for publication at VCIP 2026. Congratulations to Cheng-Wei Yang, Ming-Zhe He, Yun-Yu Lee, Fan-Yi Hsu, He-Bi Yang, Jing-Zhong Chen, Shin-Tzu Chu, Fan Zhang, Nantheera Anantrasirichai, Jui-Chiu Chiang, and Wen-Hsiao Peng on having the paper “Perceptual 3D Gaussian Splatting with 3D-Anchored Saliency Features” accepted for publication at VCIP 2026.",
+    "summary": "“NICER: Neural Image Codecs with Randomness for Perceptual Quality Adaptation” was accepted for publication at VCIP 2026. Authors: Huu-Tai Phung, Chun-Hung Wu, Yen-Kuan Ho, Yu-Hsiang Lin, Tzu-Hsiang Chou, Leandro Weber Tavares, Guilherme Ribeiro Corrêa, Wen-Hsiao Peng.\n\n“Perceptual 3D Gaussian Splatting with 3D-Anchored Saliency Features” was accepted for publication at VCIP 2026. Authors: Cheng-Wei Yang, Ming-Zhe He, Yun-Yu Lee, Fan-Yi Hsu, He-Bi Yang, Jing-Zhong Chen, Shin-Tzu Chu, Fan Zhang, Nantheera Anantrasirichai, Jui-Chiu Chiang, Wen-Hsiao Peng.",
+    "featured": true
+  },
+  {
+    "id": "saga-neurips-2026-accepted",
+    "date": "2026-10",
+    "title": "SAGA accepted to NeurIPS 2026",
+    "publicationIds": [
+      "saga-sparse-4d-anchors-2026"
+    ],
+    "category": "research",
+    "summary": "“Gaussian Splatting-based Volumetric Video Compression with Sparse 4D Anchors” was accepted for publication at NeurIPS 2026. Authors: Ge Gao, Siyue Teng, Changqi Wang, Fan Zhang, Nantheera Anantrasirichai, Jui Chiu Chiang, Wen-Hsiao Peng, David Bull.",
+    "url": "https://arxiv.org/abs/2609.33969",
     "featured": true
   },
   {
@@ -26,39 +28,69 @@
     "date": "2026-09",
     "title": "MAPL is recruiting students",
     "category": "opportunities",
-    "summary": "MAPL is recruiting highly self-motivated students. The current laboratory introduction and interview information are available through the linked recruitment brief.",
-    "url": "https://maplintro2027.pse.is/9lnn2m",
-    "image": { "src": "media/join/nycu-engineering-building.jpg", "alt": "NYCU Engineering Building" },
-    "featured": true
+    "summary": "MAPL is recruiting self-motivated students. The 2027 laboratory introduction is available through the recruitment brief. For interviews or further details, contact Billy (yangchengwei920428@gmail.com) and Benjamin (itingchu1005@gmail.com).",
+    "image": {
+      "src": "media/join/nycu-engineering-building.jpg",
+      "alt": "NYCU Engineering Building"
+    },
+    "featured": true,
+    "resources": [
+      {
+        "label": "Lab introduction",
+        "url": "https://maplintro2027.pse.is/9lnn2m"
+      },
+      {
+        "label": "Join us",
+        "url": "/join-us"
+      }
+    ],
+    "highlights": [
+      "2027 laboratory introduction",
+      "Billy"
+    ]
   },
   {
     "id": "peng-merl-visiting-faculty-2026",
     "date": "2026-08",
     "title": "Prof. Peng joins MERL as Visiting Faculty",
-    "inlineLink": { "text": "MERL", "url": "https://www.merl.com/" },
+    "inlineLink": {
+      "text": "MERL",
+      "url": "https://www.merl.com/"
+    },
     "category": "people",
-    "summary": "Prof. Wen-Hsiao Peng is serving as Visiting Faculty at Mitsubishi Electric Research Laboratories in Massachusetts from August 2026 to January 2027.",
-    "url": "https://www.merl.com/people/wpeng",
-    "featured": true
+    "summary": "Prof. Wen-Hsiao Peng is Visiting Faculty at Mitsubishi Electric Research Laboratories (MERL), Massachusetts, USA, from August 2026 through January 2027.",
+    "featured": true,
+    "resources": [
+      {
+        "label": "Original announcement",
+        "url": "https://www.merl.com/people/wpeng"
+      }
+    ],
+    "highlights": [
+      "Visiting Faculty"
+    ]
   },
   {
     "id": "peng-hannover-part-time-professor-2026",
     "date": "2026-06",
     "title": "Prof. Peng appointed at Leibniz University Hannover",
-    "inlineLink": { "text": "Leibniz University Hannover", "url": "https://www.uni-hannover.de/" },
+    "inlineLink": {
+      "text": "Leibniz University Hannover",
+      "url": "https://www.uni-hannover.de/"
+    },
     "category": "people",
-    "summary": "Prof. Wen-Hsiao Peng is serving as Part-time Professor in Generative Models for Artificial Intelligence at Leibniz University Hannover from June 2026 to June 2028.",
-    "url": "https://www.tnt.uni-hannover.de/en/staff/peng/",
-    "featured": true
-  },
-  {
-    "id": "apsipa-immersive-visual-media-workshop-2026",
-    "date": "2026-05",
-    "title": "Workshop on Emerging and Immersive Visual Media",
-    "category": "events",
-    "summary": "The APSIPA Taipei Local Chapter and H & J Global Chair Program hosted a workshop organized by Prof. Wen-Hsiao Peng on multimodal Gaussian splatting, video-coding hardware, post-training quantization, and neural 3D/4D media coding.",
-    "url": "https://sites.google.com/view/apsipataiwan/news-events?authuser=3",
-    "featured": false
+    "summary": "Prof. Wen-Hsiao Peng is Part-time Professor in Generative Models for Artificial Intelligence at Leibniz University Hannover, Germany, from June 2026 through June 2028.",
+    "featured": true,
+    "resources": [
+      {
+        "label": "Original announcement",
+        "url": "https://www.tnt.uni-hannover.de/en/staff/peng/"
+      }
+    ],
+    "highlights": [
+      "Part-time Professor",
+      "Generative Models for Artificial Intelligence"
+    ]
   },
   {
     "id": "icip-2026-papers-accepted",
@@ -71,25 +103,54 @@
       "rate-distortion-complexity-analysis-of-parametric-video-codecs-2026"
     ],
     "category": "research",
-    "summary": "The paper “ADAPT: Any-Codec Diffusion-Based Adaptation for Per-Image Perception-Distortion Trade-Off” was accepted for publication at ICIP 2026. The paper “IC-4DGS: Illumination-Compensated 4D Gaussian Splatting under Photometric Variations” was accepted for publication at ICIP 2026. The paper “Network Quantization in Neural Video Coding: A Comparative Study Across Coding Frameworks and Temporal Buffering Strategies” was accepted for publication at ICIP 2026. The paper “Rate-Distortion-Complexity Analysis of Parametric Video Codecs” was accepted for publication at ICIP 2026.",
+    "summary": "“IC-4DGS: Illumination-Compensated 4D Gaussian Splatting under Photometric Variations” was accepted for publication at ICIP 2026. Authors: He-Bi Yang, Ming-Zhe He, Cheng-Wei Yang, Jui-Chiu Chiang, Yu-Lun Liu, Wen-Hsiao Peng.\n\n“Network Quantization in Neural Video Coding: A Comparative Study Across Coding Frameworks and Temporal Buffering Strategies” was accepted for publication at ICIP 2026. Authors: Huu-Tai Phung, Yu-Hsiang Lin, Chun-Hung Wu, Ruhan Conceição, Tzu-Hsiang Chou, Marcelo Porto, Luciano Volcan Agostini, Wen-Hsiao Peng.\n\n“ADAPT: Any-Codec Diffusion-Based Adaptation for Per-Image Perception-Distortion Trade-Off” was accepted for publication at ICIP 2026. Authors: Yen-Kuan Ho, Feng-Chiu Lin, Ting-Han Lin, Huu-Tai Phung, Ching-Chun Huang, Alessandro Gnutti, Wen-Hsiao Peng.\n\n“Rate-Distortion-Complexity Analysis of Parametric Video Codecs” was accepted for publication at ICIP 2026. Authors: Ricardo L. de Queiroz, Diogo C. Garcia, Yi-Hsin Chen, Ruhan Conceição, Wen-Hsiao Peng, Luciano V. Agostini.",
     "featured": true
+  },
+  {
+    "id": "apsipa-immersive-visual-media-workshop-2026",
+    "date": "2026-05",
+    "title": "Workshop on Emerging and Immersive Visual Media",
+    "category": "events",
+    "summary": "Organized by Prof. Wen-Hsiao Peng and hosted by the APSIPA Taipei Local Chapter and H&J Global Chair Program, the workshop covered Emerging and Immersive Visual Media: Hardware, Compression, and 3D/4D Representation.\nTopics included spatial-temporal multimodal Gaussian splatting, video-coding hardware, post-training quantization for overfitted image compression, and neural coding of 3D/4D multimedia representations.",
+    "featured": false,
+    "resources": [
+      {
+        "label": "Original announcement",
+        "url": "https://sites.google.com/view/apsipataiwan/news-events?authuser=3"
+      }
+    ]
   },
   {
     "id": "lidar-image-compression-tmm-2026",
     "date": "2026-04",
-    "title": "LiDAR-guided image compression paper accepted to TMM",
+    "title": "LiDAR-Guided Learned Image Compression for Machine Vision accepted to TMM 2026",
     "category": "research",
-    "summary": "The paper “LiDAR-Guided Learned Image Compression for Machine Vision” was accepted for publication in IEEE Transactions on Multimedia in 2026.",
-    "featured": false
+    "summary": "“LiDAR-Guided Learned Image Compression for Machine Vision” was accepted for publication in TMM 2026. Authors: C.-H. Kao, A. Gnutti, W.-H. Peng and R. Leonardi.",
+    "featured": false,
+    "additionalPapers": [
+      {
+        "title": "LiDAR-Guided Learned Image Compression for Machine Vision"
+      }
+    ]
   },
   {
     "id": "chen-ieee-taipei-dissertation-award-2026",
     "date": "2026-01",
     "title": "Yi-Hsin Chen wins IEEE Taipei Best PhD Dissertation Award",
     "category": "awards",
-    "summary": "Yi-Hsin Chen received the 2025 Best PhD Dissertation Award from the IEEE Taipei Section for work on contextual image and video coding.",
+    "summary": "Yi-Hsin Chen received the IEEE Taipei Section 2025 Best PhD Dissertation Award for “Contextual Image and Video Coding: Coding Frameworks, Temporal Buffering Strategies, and Applications.”",
     "url": "https://ieee.org.tw/%F0%9F%8E%89%E8%B3%80%E6%A6%9C%F0%9F%8E%89-2025-%E5%B9%B4-ieee-taipei-section-%E7%A2%A9%E5%8D%9A%E5%A3%AB%E8%AB%96%E6%96%87%E7%8D%8E-%E7%8D%B2%E7%8D%8E%E5%85%AC%E5%91%8A/",
-    "featured": false
+    "featured": false,
+    "resources": [
+      {
+        "label": "Original announcement",
+        "url": "https://ieee.org.tw/🎉賀榜🎉-2025-年-ieee-taipei-section-碩博士論文獎-獲獎公告/"
+      }
+    ],
+    "highlights": [
+      "IEEE Taipei Best PhD Dissertation Award",
+      "IEEE Taipei Section 2025 Best PhD Dissertation Award"
+    ]
   },
   {
     "id": "wacv-2026-papers-accepted",
@@ -102,70 +163,1527 @@
       "mega-pcc-joint-geometry-attribute-compression-2026"
     ],
     "category": "research",
-    "summary": "Four MAPL papers were accepted to WACV 2026: CSGaussian, milliMamba, TED-4DGS, and MEGA-PCC, covering joint 3D Gaussian compression and segmentation, radar pose estimation, 4D Gaussian compression, and joint geometry and attribute point cloud compression.",
+    "summary": "“TED-4DGS: Temporally Activated and Embedding-based Deformation for 4DGS Compression” was accepted for publication at WACV 2026. Authors: Cheng-Yuan Ho, He-Bi Yang, Jui-Chiu Chiang, Yu-Lun Liu, Wen-Hsiao Peng.\n\n“CSGaussian: Progressive Rate-Distortion Compression and Segmentation for 3D Gaussian Splatting” was accepted for publication at WACV 2026. Authors: Yu-Jen Tseng, Chia-Hao Kao, Jing-Zhong Chen, Alessandro Gnutti, Shao-Yuan Lo, Yen-Yu Lin, Wen-Hsiao Peng.\n\n“milliMamba: Specular-Aware Human Pose Estimation via Dual mmWave Radar with Multi-Frame Mamba Fusion” was accepted for publication at WACV 2026. Authors: Niraj Prakash Kini, Shiau-Rung Tsai, Guan-Hsun Lin, Wen-Hsiao Peng, Ching-Wen Ma, Jenq-Neng Hwang.\n\n“MEGA-PCC: A Mamba-based Efficient Approach for Joint Geometry and Attribute Point Cloud Compression” was accepted for publication at WACV 2026. Authors: Kai-Hsiang Hsieh, Monyneath Yim, Wen-Hsiao Peng, Jui-Chiu Chiang.",
     "featured": true
+  },
+  {
+    "id": "peng-eusipco-tutorial-2025",
+    "date": "2025-09",
+    "title": "Prof. Peng presents a learned image and video coding tutorial at EUSIPCO 2025",
+    "category": "events",
+    "featured": false,
+    "summary": "On September 8, 2025, Prof. Wen-Hsiao Peng presented “End-to-End Learned Image and Video Coding: Recent Advances and the Rate-Distortion-Complexity Trade-offs” at the European Signal Processing Conference (EUSIPCO) in Italy.",
+    "url": "https://eusipco2025.org/tutorials/#tutorial-6",
+    "resources": [
+      {
+        "label": "Original announcement",
+        "url": "https://eusipco2025.org/tutorials/#tutorial-6"
+      }
+    ]
   },
   {
     "id": "chen-tsc-thesis-award-2025",
     "date": "2025-09",
     "title": "Yi-Hsin Chen receives TSC doctoral thesis Excellence Award",
     "category": "awards",
-    "summary": "Yi-Hsin Chen received the Excellence Award in the doctoral division of the 18th TSC Thesis Award for work on learning-based contextual video coding.",
+    "summary": "Yi-Hsin Chen received the doctoral-division Excellence Award at the 18th TSC Thesis Award: AI Application Competition Award (崇越論文大賞). The awarded thesis is “Learning-Based Contextual Video Coding: Coding Frameworks and Temporal Buffering Strategies.”",
     "url": "https://www.cs.nycu.edu.tw/announcements/detail/13215",
-    "featured": false
+    "featured": false,
+    "resources": [
+      {
+        "label": "Original announcement",
+        "url": "https://www.cs.nycu.edu.tw/announcements/detail/13215"
+      }
+    ],
+    "highlights": [
+      "TSC doctoral thesis Excellence Award",
+      "Excellence Award",
+      "18th TSC Thesis Award: AI Application Competition Award (崇越論文大賞)"
+    ]
+  },
+  {
+    "id": "pcs-2025-papers-accepted",
+    "date": "2025-08",
+    "title": "Four MAPL papers accepted to PCS 2025",
+    "category": "research",
+    "featured": false,
+    "summary": "“Rate Distortion Learned Transform For Image Compression” was accepted for publication at PCS 2025. Authors: A. Gnutti, C.-H. Kao, W.-H. Peng, and R. Leonardi.\n\n“Scalable COOL-CHIC: Dual-Resolution Images from a Single Bitstream” was accepted for publication at PCS 2025. Authors: M. Benjak, Y.-H. Chen, W.-H. Peng, and J. Ostermann.\n\n“Exploring Autoregressive Vision Foundation Models for Image Compression” was accepted for publication at PCS 2025. Authors: Huu-Tai Phung, Yu-Hsiang Lin, Yen-Kuan Ho, Wen-Hsiao Peng.\n\n“A Cross-Framework Study of Temporal Information Buffering Strategies for Learned Video Compression” was accepted for publication at PCS 2025. Authors: Kuan-Wei Ho, Yi-Hsin Chen, Martin Benjak, Jörn Ostermann, Wen-Hsiao Peng.",
+    "publicationIds": [
+      "exploring-autoregressive-vision-foundation-models-for-image-compression-2025",
+      "a-cross-framework-study-of-temporal-information-buffering-strategies-for-learned-video-compression-2025"
+    ],
+    "additionalPapers": [
+      {
+        "title": "Rate Distortion Learned Transform For Image Compression"
+      },
+      {
+        "title": "Scalable COOL-CHIC: Dual-Resolution Images from a Single Bitstream"
+      }
+    ]
+  },
+  {
+    "id": "chen-ippr-dissertation-award-2025",
+    "date": "2025-08",
+    "title": "Yi-Hsin Chen receives the 18th IPPR PhD Dissertation Award",
+    "category": "awards",
+    "featured": false,
+    "summary": "Yi-Hsin Chen received the PhD Dissertation Award at the 18th Chinese Image Processing and Pattern Recognition Society (IPPR) thesis awards for “Contextual Image and Video Coding: Coding Frameworks, Temporal Buffering Strategies, and Applications.”",
+    "url": "https://ippr.org.tw/wp-content/uploads/2025/08/%E7%AC%AC18%E5%B1%86%E5%8D%9A%E7%A2%A9%E5%A3%AB%E8%AB%96%E6%96%87%E7%8D%8E%E7%8D%B2%E7%8D%8E%E5%90%8D%E5%96%AE.pdf",
+    "resources": [
+      {
+        "label": "Original announcement",
+        "url": "https://ippr.org.tw/wp-content/uploads/2025/08/%E7%AC%AC18%E5%B1%86%E5%8D%9A%E7%A2%A9%E5%A3%AB%E8%AB%96%E6%96%87%E7%8D%8E%E7%8D%B2%E7%8D%8E%E5%90%8D%E5%96%AE.pdf"
+      }
+    ],
+    "highlights": [
+      "18th IPPR PhD Dissertation Award",
+      "PhD Dissertation Award"
+    ]
+  },
+  {
+    "id": "apsipa-rate-quality-2025-accepted",
+    "date": "2025-08",
+    "title": "A Rate-Quality Model for Learned Video Coding accepted to APSIPA ASC 2025",
+    "category": "research",
+    "featured": false,
+    "summary": "“A Rate-Quality Model for Learned Video Coding” was accepted for publication at APSIPA ASC 2025. Authors: Sang NguyenQuang, Cheng-Wei Chen, Xiem HoangVan, Wen-Hsiao Peng.",
+    "publicationIds": [
+      "a-rate-quality-model-for-learned-video-coding-2025"
+    ]
+  },
+  {
+    "id": "icip-hybrid-video-coding-2025-accepted",
+    "date": "2025-07",
+    "title": "Learned Hybrid Video Coding for Human Perception and Multiple Machine Vision Tasks accepted to ICIP 2025",
+    "category": "research",
+    "featured": false,
+    "summary": "“Learned Hybrid Video Coding for Human Perception and Multiple Machine Vision Tasks” was accepted for publication at ICIP 2025. Authors: M. Benjak, S. Khan, Y.-H. Chen, W.-H. Peng, and J. Ostermann.",
+    "additionalPapers": [
+      {
+        "title": "Learned Hybrid Video Coding for Human Perception and Multiple Machine Vision Tasks"
+      }
+    ]
+  },
+  {
+    "id": "peng-yz-hsu-best-paper-award-2025",
+    "date": "2025-06",
+    "title": "Prof. Peng receives the Y. Z. Hsu Best Paper Award in ICT",
+    "category": "awards",
+    "featured": false,
+    "summary": "Prof. Wen-Hsiao Peng received the Far Eastern Y. Z. Hsu Foundation 2025 Best Paper Award in the Information and Communication Technology category (有庠科技論文獎).",
+    "url": "https://yzhsu.feg.com.tw/NewsPage.html?selectID=d8a4f6da-aac0-49ab-aebd-778c26ef6d6a",
+    "resources": [
+      {
+        "label": "Original announcement",
+        "url": "https://yzhsu.feg.com.tw/NewsPage.html?selectID=d8a4f6da-aac0-49ab-aebd-778c26ef6d6a"
+      }
+    ],
+    "highlights": [
+      "Y. Z. Hsu Best Paper Award",
+      "2025 Best Paper Award",
+      "有庠科技論文獎"
+    ]
+  },
+  {
+    "id": "peng-bristol-visit-2025",
+    "date": "2025-06",
+    "title": "Prof. Peng visits the University of Bristol and presents neural video coding research",
+    "category": "events",
+    "featured": false,
+    "summary": "Prof. Wen-Hsiao Peng visited the University of Bristol for research discussions and a lecture titled “On the Rate-Distortion-Complexity (RDC) Trade-offs of Neural Video Coding.” Two photographs from the academic visit are linked below.",
+    "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/photos/Visit_Bristrol/image_1.jpg",
+    "resources": [
+      {
+        "label": "Photo 1",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/photos/Visit_Bristrol/image_1.jpg"
+      },
+      {
+        "label": "Photo 2",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/photos/Visit_Bristrol/image_2.jpg"
+      }
+    ]
   },
   {
     "id": "hytip-mhlvc-iccv-2025",
     "date": "2025-06",
     "title": "HyTIP and MH-LVC accepted to ICCV 2025",
-    "publicationIds": ["hytip-video-coding-2025", "mh-lvc-video-coding-2025"],
+    "publicationIds": [
+      "hytip-video-coding-2025",
+      "mh-lvc-video-coding-2025"
+    ],
     "category": "research",
-    "summary": "Two MAPL papers on hybrid temporal information propagation and multi-hypothesis temporal prediction were accepted for publication at ICCV 2025.",
+    "summary": "“HyTIP: Hybrid Temporal Information Propagation for Masked Conditional Residual Video Coding” was accepted for publication at ICCV 2025. Authors: Yi-Hsin Chen, Yi-Chen Yao, Kuan-Wei Ho, Chun-Hung Wu, Huu-Tai Phung, Martin Benjak, Jörn Ostermann, Wen-Hsiao Peng.\n\n“MH-LVC: Multi-Hypothesis Temporal Prediction for Learned Conditional Residual Video Coding” was accepted for publication at ICCV 2025. Authors: Huu-Tai Phung, Zong-Lin Gao, Yi-Chen Yao, Kuan-Wei Ho, Yi-Hsin Chen, Yu-Hsiang Lin, Alessandro Gnutti, Wen-Hsiao Peng.",
     "featured": true
+  },
+  {
+    "id": "apsipa-ying-liu-coding-talk-2025",
+    "date": "2025-06",
+    "title": "Dr. Ying Liu gives an APSIPA lecture on conditional neural image and video coding",
+    "category": "events",
+    "featured": false,
+    "summary": "APSIPA Taiwan hosted Distinguished Lecturer Dr. Ying Liu for “Conditional Information-Aware Neural Image and Video Coding.” Prof. Wen-Hsiao Peng hosted the lecture, which covered conditional coding foundations, hybrid machine-human tasks, and multimodal visual coding.",
+    "url": "https://sites.google.com/view/apsipataiwan/news-events",
+    "resources": [
+      {
+        "label": "APSIPA Website",
+        "url": "https://sites.google.com/view/apsipataiwan/news-events"
+      },
+      {
+        "label": "Photo 1",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/photos/APSIPA_YingLiu/image_1.jpg"
+      },
+      {
+        "label": "Photo 2",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/photos/APSIPA_YingLiu/image_2.jpg"
+      }
+    ]
   },
   {
     "id": "apsipa-cosmos-workshop-2025",
     "date": "2025-06",
     "title": "APSIPA talk on Cosmos World Foundation Models",
     "category": "events",
-    "summary": "APSIPA Taiwan and the H&J Global Chair hosted an invited talk by Dr. Ming-Yu Liu on world foundation models for physical AI.",
-    "image": { "src": "media/news/apsipa-cosmos-workshop.jpg", "alt": "Participants at the APSIPA Cosmos World Foundation Models talk" },
-    "featured": false
+    "summary": "The APSIPA Taiwan and H&J Global Chair hosted Dr. Ming-Yu Liu for “Cosmos World Foundation Models for Physical AI.” The invited talk discussed world foundation models that support simulation and reasoning about the physical world. Three event photographs are linked below.",
+    "image": {
+      "src": "media/news/apsipa-cosmos-workshop.jpg",
+      "alt": "Participants at the APSIPA Cosmos World Foundation Models talk"
+    },
+    "featured": false,
+    "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/photos/APSIPA_MingYuLiu/image_1.jpg",
+    "resources": [
+      {
+        "label": "Photo 1",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/photos/APSIPA_MingYuLiu/image_1.jpg"
+      },
+      {
+        "label": "Photo 2",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/photos/APSIPA_MingYuLiu/image_2.jpg"
+      },
+      {
+        "label": "Photo 3",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/photos/APSIPA_MingYuLiu/image_3.jpg"
+      }
+    ]
+  },
+  {
+    "id": "cat-3dgs-pro-eusipco-2025-accepted",
+    "date": "2025-05",
+    "title": "CAT-3DGS Pro accepted to EUSIPCO 2025",
+    "category": "research",
+    "featured": false,
+    "summary": "“CAT-3DGS Pro: A New Benchmark for Efficient 3DGS Compression” was accepted for publication at EUSIPCO 2025. Authors: Yu-Ting Zhan, He-bi Yang, Cheng-Yuan Ho, Jui-Chiu Chiang, Wen-Hsiao Peng.",
+    "publicationIds": [
+      "cat-3dgs-pro-a-new-benchmark-for-efficient-3dgs-compression-2025"
+    ]
+  },
+  {
+    "id": "apsipa-taiwan-local-chapter-2025",
+    "date": "2025-05",
+    "title": "APSIPA Taiwan Local Chapter shares events and research activities",
+    "category": "events",
+    "featured": false,
+    "summary": "The APSIPA Taiwan Local Chapter website lists academic events, signal and information processing research activities, and regional collaborations.",
+    "url": "https://sites.google.com/view/apsipataiwan/home",
+    "resources": [
+      {
+        "label": "Visit Website",
+        "url": "https://sites.google.com/view/apsipataiwan/home"
+      }
+    ]
+  },
+  {
+    "id": "recruitment-march-2025",
+    "date": "2025-03",
+    "title": "2025 student recruitment (archived)",
+    "category": "opportunities",
+    "featured": false,
+    "summary": "Historical recruitment announcement from March 2025. Prospective students were invited to contact Kris at axzzreety.cs13@nycu.edu.tw. The announcement included the MAPL 2025 research introduction and Prof. Peng’s profile and email, wpeng@cs.nctu.edu.tw. For current recruitment, see the latest announcement or Join Us page.",
+    "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/research/MAPL_Intro/MAPL_2025.pdf",
+    "resources": [
+      {
+        "label": "join our lab",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/joinus.html"
+      },
+      {
+        "label": "PDF",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/research/MAPL_Intro/MAPL_2025.pdf"
+      },
+      {
+        "label": "Original announcement",
+        "url": "https://sites.google.com/g2.nctu.edu.tw/wpeng/cv"
+      }
+    ]
+  },
+  {
+    "id": "conditional-residual-icme-2025-accepted",
+    "date": "2025-03",
+    "title": "Conditional Residual Coding with Explicit-Implicit Temporal Buffering accepted to ICME 2025",
+    "category": "research",
+    "featured": false,
+    "summary": "“Conditional Residual Coding with Explicit-Implicit Temporal Buffering for Learned Video Compression” was accepted for publication at ICME 2025. Authors: Yi-Hsin Chen, Kuan-Wei Ho, Martin Benjak, Jörn Ostermann, Wen-Hsiao Peng.",
+    "publicationIds": [
+      "conditional-residual-coding-with-explicit-implicit-temporal-buffering-for-learned-video-compression-2025"
+    ]
+  },
+  {
+    "id": "peng-ufpel-visit-2025",
+    "date": "2025-02",
+    "title": "Prof. Peng visits UFPel and its IEEE Student Branch",
+    "category": "events",
+    "featured": false,
+    "summary": "Prof. Wen-Hsiao Peng visited the IEEE Student Branch at the Federal University of Pelotas (UFPel), Brazil, and delivered “Rate-Distortion-Complexity Trade-offs of Neural Video Coding.” The visit included academic exchanges between UFPel and NYCU. Two reports and four photographs are linked below.",
+    "url": "https://www.linkedin.com/posts/video-technology-research-group_vitech-vitechlab-international-activity-7299804387126697984-84fr",
+    "resources": [
+      {
+        "label": "Link1",
+        "url": "https://www.linkedin.com/posts/video-technology-research-group_vitech-vitechlab-international-activity-7299804387126697984-84fr"
+      },
+      {
+        "label": "Link2",
+        "url": "https://www.linkedin.com/posts/vit%C3%B3ria-fabricio-418a432b3_yesterday-i-had-the-pleasure-of-meeting-activity-7299134948525907968-rxXd"
+      },
+      {
+        "label": "Photo 1",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/photos/LASCAS2025/image_1.jpg"
+      },
+      {
+        "label": "Photo 2",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/photos/LASCAS2025/image_2.jpg"
+      },
+      {
+        "label": "Photo 3",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/photos/LASCAS2025/image_3.jpg"
+      },
+      {
+        "label": "Photo 4",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/photos/LASCAS2025/image_4.jpg"
+      }
+    ]
+  },
+  {
+    "id": "iscas-2025-papers-accepted",
+    "date": "2025-01",
+    "title": "Two MAPL papers accepted to ISCAS 2025",
+    "category": "research",
+    "featured": false,
+    "summary": "“Cross-Platform Neural Video Coding: A Case Study” was accepted for publication at ISCAS 2025. Authors: Ruhan Conceição, Marcelo Porto, Wen-Hsiao Peng, Luciano Agostini.\n\n“MaskCRT-B: Masked Conditional Residual Transformer for Learned B-frame Coding” was accepted for publication at ISCAS 2025. Authors: Zong-Lin Gao, Yi-Chen Yao, Kuan-Wei Ho, Yi-Hsin Chen, Wen-Hsiao Peng.",
+    "publicationIds": [
+      "cross-platform-neural-video-coding-a-case-study-2025",
+      "maskcrt-b-masked-conditional-residual-transformer-for-learned-b-frame-coding-2025"
+    ]
+  },
+  {
+    "id": "iclr-2025-papers-accepted",
+    "date": "2025-01",
+    "title": "Two MAPL papers accepted to ICLR 2025",
+    "category": "research",
+    "featured": false,
+    "summary": "“CAT-3DGS: A Context-Adaptive Triplane Approach to Rate-Distortion-Optimized 3DGS Compression” was accepted for publication at ICLR 2025. Authors: Yu-Ting Zhan, Cheng-Yuan Ho, Hebi Yang, Yi-Hsin Chen, Jui Chiu Chiang, Yu-Lun Liu, Wen-Hsiao Peng.\n\n“Bridging Compressed Image Latents and Multimodal Large Language Models” was accepted for publication at ICLR 2025. Authors: Chia-Hao Kao, Cheng Chien, Yu-Jen Tseng, Yi-Hsin Chen, Alessandro Gnutti, Shao-Yuan Lo, Wen-Hsiao Peng, Riccardo Leonardi.",
+    "publicationIds": [
+      "cat-3dgs-a-context-adaptive-triplane-approach-to-rate-distortion-optimized-3dgs-compression-2025",
+      "bridging-compressed-image-latents-and-multimodal-large-language-models-2025"
+    ]
   },
   {
     "id": "peng-ieee-fellow-2025",
     "date": "2024-12",
     "title": "Prof. Peng elevated to IEEE Fellow",
     "category": "awards",
-    "summary": "Prof. Wen-Hsiao Peng was elevated to IEEE Fellow, Class of 2025, for contributions to the design and implementation of video coding algorithms and standards.",
+    "summary": "Prof. Wen-Hsiao Peng was named IEEE Fellow, Class of 2025, for contributions to the design and implementation of video coding algorithms and standards.",
     "url": "https://ieee-cas.org/post/announcement/congratulations-2025-cas-society-class-ieee-fellows",
-    "featured": true
+    "featured": true,
+    "resources": [
+      {
+        "label": "IEEE Fellow",
+        "url": "https://ieee-cas.org/post/announcement/congratulations-2025-cas-society-class-ieee-fellows"
+      }
+    ],
+    "highlights": [
+      "IEEE Fellow"
+    ]
+  },
+  {
+    "id": "recruitment-november-2024",
+    "date": "2024-11",
+    "title": "2024 student recruitment (archived)",
+    "category": "opportunities",
+    "featured": false,
+    "summary": "Historical recruitment announcement from November 2024. The contact was Mick at mick20001108.cs12@nycu.edu.tw. It included the MAPL 2024 research introduction and Prof. Peng’s profile and email, wpeng@cs.nctu.edu.tw. For current recruitment, see the latest announcement or Join Us page.",
+    "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/research/MAPL_Intro/MAPL_2024_Mick.pdf",
+    "resources": [
+      {
+        "label": "join our lab",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/joinus.html"
+      },
+      {
+        "label": "PDF",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/research/MAPL_Intro/MAPL_2024_Mick.pdf"
+      },
+      {
+        "label": "Original announcement",
+        "url": "https://sites.google.com/g2.nctu.edu.tw/wpeng/cv"
+      }
+    ]
+  },
+  {
+    "id": "pcs-2025-call-for-papers",
+    "date": "2024-10",
+    "title": "PCS 2025 call for papers",
+    "category": "events",
+    "featured": false,
+    "summary": "Picture Coding Symposium (PCS) 2025 announced its call for papers. The original call and conference website are linked below.",
+    "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/research/PCS2025_CfP_f.pdf",
+    "resources": [
+      {
+        "label": "PDF",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/research/PCS2025_CfP_f.pdf"
+      },
+      {
+        "label": "Original announcement",
+        "url": "https://2025.picturecodingsymposium.org/"
+      }
+    ]
+  },
+  {
+    "id": "fast-omra-lascas-2025-accepted",
+    "date": "2024-10",
+    "title": "Fast-OMRA accepted to LASCAS 2025",
+    "category": "research",
+    "featured": false,
+    "summary": "“Fast-OMRA: Fast Online Motion Resolution Adaptation for Neural B-Frame Coding” was accepted for publication at LASCAS 2025. Authors: Sang NguyenQuang, Zong-Lin Gao, Kuan-Wei Ho, Xiem HoangVan, Wen-Hsiao Peng.",
+    "publicationIds": [
+      "fast-omra-fast-online-motion-resolution-adaptation-for-neural-b-frame-coding-2025"
+    ]
+  },
+  {
+    "id": "rdc-mmsp-2024-accepted",
+    "date": "2024-08",
+    "title": "On the Rate-Distortion-Complexity Trade-offs of Neural Video Coding accepted to MMSP 2024",
+    "category": "research",
+    "featured": false,
+    "summary": "“On the Rate-Distortion-Complexity Trade-offs of Neural Video Coding” was accepted for publication at MMSP 2024. Authors: Yi-Hsin Chen, Kuan-Wei Ho, Martin Benjak, Jörn Ostermann, Wen-Hsiao Peng.",
+    "publicationIds": [
+      "on-the-rate-distortion-complexity-trade-offs-of-neural-video-coding-2024"
+    ]
+  },
+  {
+    "id": "hj-global-chair-lee-huang-talks-2024",
+    "date": "2024-08",
+    "title": "H&J Global Chair talks by Yong Jae Lee and Jia-Bin Huang",
+    "category": "events",
+    "featured": false,
+    "summary": "H&J Global Chair invited talks, August 5–6, 2024, at NYCU, Room EC114.\nProf. Yong Jae Lee (University of Wisconsin–Madison, USA): “Learning to Understand Our Multimodal World” and “Generating Images and Detecting Them.”\nProf. Jia-Bin Huang (University of Maryland, USA): “Controllable Visual Imagination” and “Dynamic 3D Reconstruction in the Wild.”\nTimes: August 5, 13:30–17:15; August 6, 13:45–17:15.",
+    "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/research/華仁全球講座20240805.jpg",
+    "resources": [
+      {
+        "label": "Original announcement",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/research/華仁全球講座20240805.jpg"
+      }
+    ]
   },
   {
     "id": "transhupr-bmvc-2024",
     "date": "2024-07",
     "title": "TransHuPR accepted to BMVC 2024",
-    "publicationIds": ["transhupr-cross-view-fusion-transformer-for-human-pose-estimation-using-mmwave-radar-2024"],
+    "publicationIds": [
+      "transhupr-cross-view-fusion-transformer-for-human-pose-estimation-using-mmwave-radar-2024"
+    ],
     "category": "research",
-    "summary": "The paper “TransHuPR: Cross-View Fusion Transformer for Human Pose Estimation Using mmWave Radar” was accepted for publication at BMVC 2024.",
+    "summary": "“TransHuPR: Cross-View Fusion Transformer for Human Pose Estimation Using mmWave Radar” was accepted for publication at BMVC 2024. Authors: Niraj Prakash Kini, Ruey-Horng Shiue, Ryan Chandra, Wen-Hsiao Peng, Ching-Wen Ma, Jenq-Neng Hwang.",
     "featured": false
+  },
+  {
+    "id": "maskcrt-tcsvt-2024-accepted",
+    "date": "2024-07",
+    "title": "MaskCRT accepted to TCSVT 2024",
+    "category": "research",
+    "featured": false,
+    "summary": "“MaskCRT: Masked Conditional Residual Transformer for Learned Video Compression” was accepted for publication in TCSVT 2024. Authors: Yi-Hsin Chen, Hong-Sheng Xie, Cheng-Wei Chen, Zong-Lin Gao, Martin Benjak, Wen-Hsiao Peng, Jörn Ostermann.",
+    "publicationIds": [
+      "maskcrt-masked-conditional-residual-transformer-for-learned-video-compression-2024"
+    ]
+  },
+  {
+    "id": "visual-data-coding-workshop-2024",
+    "date": "2024-06",
+    "title": "Workshop on Visual Data Coding, Standards, and Quality Assessment",
+    "category": "events",
+    "featured": false,
+    "summary": "Workshop on Visual Data Coding, Standards, and Quality Assessment, June 11, 2024, 10:00–12:10, at NYCU, Room EC329.\nSpeakers: Prof. C.-C. Jay Kuo (University of Southern California, USA); Prof. Jörn Ostermann (Leibniz Universität Hannover, Germany); Prof. Jens-Rainer Ohm and PD Mathias Wien (RWTH Aachen University, Germany); Prof. Wen-Hsiao Peng (NYCU, Taiwan).",
+    "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/research/華仁全球講座20240611.jpg",
+    "resources": [
+      {
+        "label": "Original announcement",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/research/華仁全球講座20240611.jpg"
+      }
+    ]
+  },
+  {
+    "id": "peng-marc-collaboration-award-2024",
+    "date": "2024-06",
+    "title": "Prof. Peng receives MARC's Academia-Industry Collaboration Excellent Research Award",
+    "category": "awards",
+    "featured": false,
+    "summary": "Prof. Wen-Hsiao Peng received the First Academia-Industry Collaboration Excellent Research Award from the MediaTek Advanced Research Center (MARC).",
+    "highlights": [
+      "Academia-Industry Collaboration Excellent Research Award"
+    ]
   },
   {
     "id": "pcs-2024-program-chair",
     "date": "2024-06",
     "title": "Prof. Peng serves as PCS 2024 Technical Program Chair",
     "category": "people",
-    "summary": "Prof. Wen-Hsiao Peng served as Technical Program Chair of the 2024 Picture Coding Symposium in Taichung, Taiwan.",
+    "summary": "Prof. Wen-Hsiao Peng served as Technical Program Chair for Picture Coding Symposium (PCS) 2024 in Taichung, Taiwan. The conference website and seven photographs are linked below.",
     "url": "https://picturecoding.web.nycu.edu.tw/",
-    "featured": false
+    "featured": false,
+    "resources": [
+      {
+        "label": "Original announcement",
+        "url": "https://picturecoding.web.nycu.edu.tw/"
+      },
+      {
+        "label": "Photo 1",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/photos/PCS2024/image_1.jpg"
+      },
+      {
+        "label": "Photo 2",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/photos/PCS2024/image_2.jpg"
+      },
+      {
+        "label": "Photo 3",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/photos/PCS2024/image_3.jpg"
+      },
+      {
+        "label": "Photo 4",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/photos/PCS2024/image_4.jpg"
+      },
+      {
+        "label": "Photo 5",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/photos/PCS2024/image_5.jpg"
+      },
+      {
+        "label": "Photo 6",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/photos/PCS2024/image_6.jpg"
+      },
+      {
+        "label": "Photo 7",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/photos/PCS2024/image_7.jpg"
+      }
+    ]
+  },
+  {
+    "id": "omra-icip-2024-accepted",
+    "date": "2024-06",
+    "title": "OMRA accepted to ICIP 2024",
+    "category": "research",
+    "featured": false,
+    "summary": "“OMRA: Online Motion Resolution Adaptation to Remedy Domain Shift in Learned Hierarchical B-frame Coding” was accepted for publication at ICIP 2024. Authors: Zong-Lin Gao, Sang NguyenQuang, Wen-Hsiao Peng, Xiem HoangVan.",
+    "publicationIds": [
+      "omra-online-motion-resolution-adaptation-to-remedy-domain-shift-in-learned-hierarchical-b-frame-coding-2024"
+    ]
+  },
+  {
+    "id": "conditional-restoration-wocc-2024-accepted",
+    "date": "2024-06",
+    "title": "Using Conditional Video Compressors for Image Restoration accepted to WOCC 2024",
+    "category": "research",
+    "featured": false,
+    "summary": "“Using Conditional Video Compressors for Image Restoration” was accepted for publication at WOCC 2024. Authors: Yi-Hsin Chen, Yen-Kuan Ho, Ting-Han Lin, Wen-Hsiao Peng, Ching-Chun Huang.",
+    "publicationIds": [
+      "conditional-video-compressors-restoration-2024"
+    ]
+  },
+  {
+    "id": "peng-qualcomm-talk-2024",
+    "date": "2024-04",
+    "title": "Prof. Peng presents learned image and video compression at Qualcomm",
+    "category": "events",
+    "featured": false,
+    "summary": "At Qualcomm in San Diego, Prof. Wen-Hsiao Peng delivered “End-to-End Learned Image and Video Compression: Design, Implementation, and Computer Vision Applications.”"
+  },
+  {
+    "id": "joint-decoding-denoising-pcs-2024-accepted",
+    "date": "2024-02",
+    "title": "Transformer-based Learned Image Compression for Joint Decoding and Denoising accepted to PCS 2024",
+    "category": "research",
+    "featured": false,
+    "summary": "“Transformer-based Learned Image Compression for Joint Decoding and Denoising” was accepted for publication at PCS 2024. Authors: Yi-Hsin Chen, Kuan-Wei Ho, Shiau-Rung Tsai, Guan-Hsun Lin, Alessandro Gnutti, Wen-Hsiao Peng, Riccardo Leonardi.",
+    "publicationIds": [
+      "transformer-based-learned-image-compression-for-joint-decoding-and-denoising-2024"
+    ]
   },
   {
     "id": "peng-jetcas-editor-in-chief-2024",
     "date": "2024-01",
     "title": "Prof. Peng appointed JETCAS Editor-in-Chief",
     "category": "people",
-    "summary": "Prof. Wen-Hsiao Peng was appointed Editor-in-Chief of the IEEE Journal on Emerging and Selected Topics in Circuits and Systems.",
+    "summary": "Prof. Wen-Hsiao Peng was appointed Editor-in-Chief of the IEEE Journal on Emerging and Selected Topics in Circuits and Systems (JETCAS). The journal page and appointment announcement are linked below.",
     "url": "https://ieee-cas.org/publication/JETCAS",
-    "featured": false
+    "featured": false,
+    "resources": [
+      {
+        "label": "JETCAS",
+        "url": "https://ieee-cas.org/publication/JETCAS"
+      },
+      {
+        "label": "Original announcement",
+        "url": "https://www.linkedin.com/posts/ieeejetcas_meettheeditors-activity-7135642819343331328-8qy2/"
+      }
+    ],
+    "highlights": [
+      "JETCAS Editor-in-Chief",
+      "Editor-in-Chief"
+    ]
+  },
+  {
+    "id": "conditional-vae-iscas-2024-accepted",
+    "date": "2024-01",
+    "title": "Conditional Variational Autoencoders for Hierarchical B-Frame Coding accepted to ISCAS 2024",
+    "category": "research",
+    "featured": false,
+    "summary": "“Conditional Variational Autoencoders for Hierarchical B-Frame Coding” was accepted for publication at ISCAS 2024. Authors: Zong-Lin Gao, Cheng-Wei Chen, Yi-Chen Yao, Cheng-Yuan Ho, Wen-Hsiao Peng.",
+    "publicationIds": [
+      "conditional-variational-autoencoders-for-hierarchical-b-frame-coding-2024"
+    ]
+  },
+  {
+    "id": "peng-personal-profile-2023",
+    "date": "2023-11",
+    "title": "Prof. Peng shares his personal academic profile",
+    "category": "people",
+    "featured": false,
+    "summary": "The November 2023 announcement directed readers to Prof. Wen-Hsiao Peng’s personal academic webpage for his research and professional information.",
+    "url": "https://sites.google.com/g2.nctu.edu.tw/wpeng/cv",
+    "resources": [
+      {
+        "label": "Original announcement",
+        "url": "https://sites.google.com/g2.nctu.edu.tw/wpeng/cv"
+      }
+    ]
+  },
+  {
+    "id": "recruitment-october-2023",
+    "date": "2023-10",
+    "title": "2023 student recruitment (archived)",
+    "category": "opportunities",
+    "featured": false,
+    "summary": "Historical recruitment announcement from October 2023. The contact was Julie (Yi-Hsin Chen), yhchen12101@gmail.com. The announcement provided a MAPL research introduction and a link to the laboratory recruitment page. For current recruitment, see the latest announcement or Join Us page.",
+    "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/research/MAPL_Intro/MAPL.pdf",
+    "resources": [
+      {
+        "label": "PDF",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/research/MAPL_Intro/MAPL.pdf"
+      },
+      {
+        "label": "Original announcement",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/joinus.html"
+      }
+    ]
+  },
+  {
+    "id": "peng-iccv-tutorial-2023",
+    "date": "2023-10",
+    "title": "Prof. Peng presents a learned image and video compression tutorial at ICCV 2023",
+    "category": "events",
+    "featured": false,
+    "summary": "Prof. Wen-Hsiao Peng presented “Learned Image and Video Compression: Design, Implementation, and Computer Vision Applications” at ICCV 2023 in Paris. The tutorial website and seven photographs are linked below.",
+    "url": "https://nycu-mapl.github.io/ICCV2023_Learned_Image_and_Video_Compression_Tutorial/",
+    "resources": [
+      {
+        "label": "Learned Image and Video Compression: Design, Implementation, and Computer Vision Applications",
+        "url": "https://nycu-mapl.github.io/ICCV2023_Learned_Image_and_Video_Compression_Tutorial/"
+      },
+      {
+        "label": "Photo 1",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/photos/ICCV/image%20(1).jpeg"
+      },
+      {
+        "label": "Photo 2",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/photos/ICCV/image%20(2).jpeg"
+      },
+      {
+        "label": "Photo 3",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/photos/ICCV/image%20(3).jpeg"
+      },
+      {
+        "label": "Photo 4",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/photos/ICCV/image%20(4).jpeg"
+      },
+      {
+        "label": "Photo 5",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/photos/ICCV/image%20(5).jpeg"
+      },
+      {
+        "label": "Photo 6",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/photos/ICCV/image%20(6).jpeg"
+      },
+      {
+        "label": "Photo 7",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/photos/ICCV/image%20(7).jpeg"
+      }
+    ]
+  },
+  {
+    "id": "peng-hannover-anf-talk-2023",
+    "date": "2023-10",
+    "title": "Prof. Peng presents ANF-based image and video coding at Leibniz University Hannover",
+    "category": "events",
+    "featured": false,
+    "summary": "Prof. Wen-Hsiao Peng gave a talk on ANF-based learned image and video coding at Leibniz Universität Hannover, Germany. Three photographs are linked below.",
+    "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/photos/ICCV/image%20(13).jpeg",
+    "resources": [
+      {
+        "label": "Photo 1",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/photos/ICCV/image%20(13).jpeg"
+      },
+      {
+        "label": "Photo 2",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/photos/ICCV/image%20(12).jpeg"
+      },
+      {
+        "label": "Photo 3",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/photos/ICCV/image%20(11).jpeg"
+      }
+    ]
+  },
+  {
+    "id": "peng-brescia-cass-lecture-2023",
+    "date": "2023-10",
+    "title": "Prof. Peng gives an IEEE CASS Distinguished Lecture at the University of Brescia",
+    "category": "events",
+    "featured": false,
+    "summary": "At the University of Brescia, Italy, Prof. Wen-Hsiao Peng delivered the IEEE CASS Distinguished Lecture “End-to-End Learned Image and Video Compression: Design, Implementation, and Computer Vision Applications.” Lecture materials and three photographs are linked below.",
+    "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/research/CASS_2023.pdf",
+    "resources": [
+      {
+        "label": "IEEE CASS",
+        "url": "https://ieee-cas.org/"
+      },
+      {
+        "label": "End-to-End Learned Image and Video Compression: Design, Implementation, and Computer Vision Applications",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/research/CASS_2023.pdf"
+      },
+      {
+        "label": "Photo 1",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/photos/ICCV/image%20(8).jpeg"
+      },
+      {
+        "label": "Photo 2",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/photos/ICCV/image%20(9).jpeg"
+      },
+      {
+        "label": "Photo 3",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/photos/ICCV/image%20(10).jpeg"
+      }
+    ]
+  },
+  {
+    "id": "pcs-2024-call-for-papers",
+    "date": "2023-10",
+    "title": "PCS 2024 call for papers",
+    "category": "events",
+    "featured": false,
+    "summary": "Picture Coding Symposium (PCS) 2024 announced its call for papers. The original call and conference website are linked below.",
+    "url": "https://2024.picturecodingsymposium.org/wp-content/uploads/sites/426/2023/09/PCS24_CfP.pdf",
+    "resources": [
+      {
+        "label": "PDF",
+        "url": "https://2024.picturecodingsymposium.org/wp-content/uploads/sites/426/2023/09/PCS24_CfP.pdf"
+      },
+      {
+        "label": "Original announcement",
+        "url": "https://2024.picturecodingsymposium.org/"
+      }
+    ]
+  },
+  {
+    "id": "chen-tsc-thesis-awards-2023",
+    "date": "2023-10",
+    "title": "S.-C. Chen and Y.-C. Chen receive the 16th TSC Thesis Award",
+    "category": "awards",
+    "featured": false,
+    "summary": "S.-C. Chen and Y.-C. Chen received the Sixteenth TSC Thesis Award (崇越論文大賞). The award program and three photographs are linked below.",
+    "url": "https://thesis.topco-global.com/TopcoTRC/index.aspx",
+    "resources": [
+      {
+        "label": "TSC Thesis Award (崇越論文大賞)",
+        "url": "https://thesis.topco-global.com/TopcoTRC/index.aspx"
+      },
+      {
+        "label": "Photo 1",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/photos/ICCV/image%20(14).jpeg"
+      },
+      {
+        "label": "Photo 2",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/photos/ICCV/image%20(15).jpeg"
+      },
+      {
+        "label": "Photo 3",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/photos/ICCV/image%20(16).jpeg"
+      }
+    ],
+    "highlights": [
+      "16th TSC Thesis Award",
+      "Sixteenth TSC Thesis Award",
+      "崇越論文大賞"
+    ]
+  },
+  {
+    "id": "chen-brescia-hannover-talks-2023",
+    "date": "2023-10",
+    "title": "Yi-Hsin Chen presents prompt-conditioned image compression in Brescia and Hannover",
+    "category": "events",
+    "featured": false,
+    "summary": "Yi-Hsin Chen presented “Prompt-conditioned Transformer-based Image Compression” at the University of Brescia, Italy, and Leibniz Universität Hannover, Germany."
+  },
+  {
+    "id": "iccv-2023-papers-accepted",
+    "date": "2023-07",
+    "title": "Two MAPL papers accepted to ICCV 2023",
+    "category": "research",
+    "featured": false,
+    "summary": "“MoTIF: Learning Motion Trajectories with Local Implicit Neural Functions for Continuous Space-Time Video Super-Resolution” was accepted for publication at ICCV 2023. Authors: Yi-Hsin Chen, Si-Cun Chen, Yi-Hsin Chen, Yen-Yu Lin, Wen-Hsiao Peng.\n\n“TransTIC: Transferring Transformer-based Image Compression from Human Perception to Machine Perception” was accepted for publication at ICCV 2023. Authors: Yi-Hsin Chen, Ying-Chieh Weng, Chia-Hao Kao, Cheng Chien, Wei-Chen Chiu, Wen-Hsiao Peng.",
+    "publicationIds": [
+      "motif-video-super-resolution-2023",
+      "transtic-transferring-transformer-based-image-compression-from-human-perception-to-machine-perception-2023"
+    ]
+  },
+  {
+    "id": "b-canf-tcsvt-2023-accepted",
+    "date": "2023-07",
+    "title": "B-CANF accepted to TCSVT 2023",
+    "category": "research",
+    "featured": false,
+    "summary": "“B-CANF: Adaptive B-frame Coding with Conditional Augmented Normalizing Flows” was accepted for publication in TCSVT 2023. Authors: Mu-Jung Chen, Yi-Hsin Chen, Wen-Hsiao Peng.",
+    "publicationIds": [
+      "b-canf-adaptive-b-frame-coding-with-conditional-augmented-normalizing-flows-2023"
+    ]
+  },
+  {
+    "id": "peng-santa-clara-cass-lecture-2023",
+    "date": "2023-05",
+    "title": "Prof. Peng gives an IEEE CASS Distinguished Lecture at Santa Clara University",
+    "category": "events",
+    "featured": false,
+    "summary": "At Santa Clara University, USA, Prof. Wen-Hsiao Peng delivered “End-to-End Learned Image and Video Compression: Design, Implementation, and Computer Vision Applications” as an IEEE CASS Distinguished Lecture, jointly sponsored by APSIPA.",
+    "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/research/IEEE_CAS_DL_May_2023.pdf",
+    "resources": [
+      {
+        "label": "IEEE CASS",
+        "url": "https://ieee-cas.org/"
+      },
+      {
+        "label": "APSIPA",
+        "url": "http://www.apsipa.org/"
+      },
+      {
+        "label": "End-to-End Learned Image and Video Compression: Design, Implementation, and Computer Vision Applications",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/research/IEEE_CAS_DL_May_2023.pdf"
+      }
+    ]
+  },
+  {
+    "id": "iscas-creativity-award-2023",
+    "date": "2023-05",
+    "title": "MAPL receives the ISCAS 2023 neural video coding Top Creativity Award",
+    "category": "awards",
+    "featured": false,
+    "summary": "M.-J. Cheng, H.-S. Xie, C. Chien, W.-H. Peng, and H.-M. Hang received the IEEE ISCAS 2023 Grand Challenge on Neural Network-based Video Coding Top Creativity Award.",
+    "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/photos/ISCAS2023.png",
+    "resources": [
+      {
+        "label": "Top Creativity Award",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/photos/ISCAS2023.png"
+      }
+    ],
+    "highlights": [
+      "Top Creativity Award"
+    ]
+  },
+  {
+    "id": "two-layer-canf-cvpr-2023-accepted",
+    "date": "2023-03",
+    "title": "Hierarchical B-frame Video Compression Using Two-layer CANF without Motion Coding accepted to CVPR 2023",
+    "category": "research",
+    "featured": false,
+    "summary": "“Hierarchical B-frame Video Compression Using Two-layer CANF without Motion Coding” was accepted for publication at CVPR 2023. Authors: David Alexandre, Hsueh-Ming Hang, Wen-Hsiao Peng.",
+    "publicationIds": [
+      "hierarchical-b-frame-video-compression-using-two-layer-canf-without-motion-coding-2023"
+    ]
+  },
+  {
+    "id": "ostermann-signal-processing-talk-2023",
+    "date": "2023-03",
+    "title": "Prof. Jörn Ostermann gives an invited talk on signal processing",
+    "category": "events",
+    "featured": false,
+    "summary": "Prof. Jörn Ostermann (Leibniz Universität Hannover) gave the invited talk “Signal Processing at Institut für Informationsverarbeitung.”\nMarch 23, 2023, 10:30–11:30; NYCU Engineering Building 3, Room 345.",
+    "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/research/2023-03-23演講_海報A1.pdf",
+    "resources": [
+      {
+        "label": "Original announcement",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/research/2023-03-23演講_海報A1.pdf"
+      }
+    ]
+  },
+  {
+    "id": "peng-pcs-special-session-2022",
+    "date": "2022-12",
+    "title": "Prof. Peng organizes a PCS 2022 special session on practical learned coding",
+    "category": "events",
+    "featured": false,
+    "summary": "Prof. Wen-Hsiao Peng organized the special session “Towards Practical Learning-based Image and Video Coding” at Picture Coding Symposium (PCS) 2022."
+  },
+  {
+    "id": "ming-hsuan-yang-synthesis-talk-2022",
+    "date": "2022-12",
+    "title": "Prof. Ming-Hsuan Yang gives an invited talk on image and video synthesis",
+    "category": "events",
+    "featured": false,
+    "summary": "Prof. Ming-Hsuan Yang (University of California, Merced) gave the invited talk “Learning to synthesize Image and Video Content.”\nDecember 15, 2022, 13:20–16:20 Taiwan time (UTC+8). The historical announcement provided the Teams link https://reurl.cc/nZoa56."
+  },
+  {
+    "id": "ming-hsuan-yang-3d-reconstruction-talk-2022",
+    "date": "2022-12",
+    "title": "Prof. Ming-Hsuan Yang gives an invited talk on non-rigid 3D reconstruction",
+    "category": "events",
+    "featured": false,
+    "summary": "Prof. Ming-Hsuan Yang (University of California, Merced) gave the invited talk “Learning to Reconstruct Non-rigid 3D Objects from Videos.”\nDecember 14, 2022, 13:20–16:20 Taiwan time (UTC+8). The historical announcement provided the Teams link https://reurl.cc/nZoa56."
+  },
+  {
+    "id": "recruitment-november-2022",
+    "date": "2022-11",
+    "title": "November 2022 student recruitment (archived)",
+    "category": "opportunities",
+    "featured": false,
+    "summary": "Historical recruitment announcement from November 2022. The contact was Julie (Yi-Hsin Chen), yhchen12101@gmail.com; the announcement included the laboratory research introduction and recruitment page. For current recruitment, see the latest announcement or Join Us page.",
+    "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/research/MAPL_Intro/MAPL.pdf",
+    "resources": [
+      {
+        "label": "PDF",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/research/MAPL_Intro/MAPL.pdf"
+      },
+      {
+        "label": "Original announcement",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/joinus.html"
+      }
+    ]
+  },
+  {
+    "id": "peng-narl-platform-award-2022",
+    "date": "2022-11",
+    "title": "彭文孝教授榮獲國家實驗研究院研發服務平台亮點成果獎優等",
+    "category": "awards",
+    "featured": false,
+    "summary": "彭文孝教授榮獲國家實驗研究院 111 年（2022 年）研發服務平台「亮點成果獎優等」。原始成果照片與國網中心公告如下。",
+    "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/photos/TWCC_research_award.jpg",
+    "resources": [
+      {
+        "label": "「亮點成果獎優等」",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/photos/TWCC_research_award.jpg"
+      },
+      {
+        "label": "Original announcement",
+        "url": "https://www.nchc.org.tw/Message/MessageView?id=3816&menutype=0&sitemenuid=5&mid=46"
+      }
+    ],
+    "highlights": [
+      "亮點成果獎優等"
+    ]
+  },
+  {
+    "id": "karwowski-arithmetic-coding-talk-2022",
+    "date": "2022-11",
+    "title": "Dr. Damian Karwowski gives an invited talk on adaptive arithmetic coding",
+    "category": "events",
+    "featured": false,
+    "summary": "Dr. Damian Karwowski gave the invited talk “Advanced Adaptive Arithmetic Coding in Video Compression” on November 14, 2022, 14:30–15:30.",
+    "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/research/2022-11-14-Domanski_talk.pdf",
+    "resources": [
+      {
+        "label": "Original announcement",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/research/2022-11-14-Domanski_talk.pdf"
+      }
+    ]
+  },
+  {
+    "id": "domanski-video-coding-machines-talk-2022",
+    "date": "2022-11",
+    "title": "Prof. Marek Domański gives an invited talk on Video Coding for Machines",
+    "category": "events",
+    "featured": false,
+    "summary": "Prof. Marek Domański gave the invited talk “Video Coding for Machines – A review” on November 14, 2022, 13:20–14:10.",
+    "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/research/2022-11-14-Domanski_talk.pdf",
+    "resources": [
+      {
+        "label": "Original announcement",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/research/2022-11-14-Domanski_talk.pdf"
+      }
+    ]
+  },
+  {
+    "id": "apsipa-low-complexity-forum-2022",
+    "date": "2022-11",
+    "title": "APSIPA forum on low-complexity, low-power visual signal processing",
+    "category": "events",
+    "featured": false,
+    "summary": "APSIPA Forum on Intelligent Low-Complexity, Low-Power Visual Signal Processing Systems. Announced in November 2022; held December 1, 2022, 15:30–16:30 Taiwan time (UTC+8), 08:30–09:30 Germany time (UTC+1).\n15:30–15:33: opening remarks.\n15:33–15:50: “Towards Practical Learned Image and Video Compression,” Prof. Wen-Hsiao Peng (NYCU, Taiwan).\n15:50–16:10: “Real-time Learned Image Codec on FPGA,” Prof. Heming Sun (Waseda University, Japan).\n16:10–16:30: “Energy Optimizations in Client-Side Video Streaming,” Dr. Christian Herglotz (FAU, Germany).\nThe original event poster is linked below.",
+    "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/research/APSIPA_Forum_ILCLP-VSP-Fnl.pdf",
+    "resources": [
+      {
+        "label": "https://bit.ly/3OzaioQ",
+        "url": "https://bit.ly/3OzaioQ"
+      },
+      {
+        "label": "Original announcement",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/research/APSIPA_Forum_ILCLP-VSP-Fnl.pdf"
+      }
+    ]
+  },
+  {
+    "id": "peng-outstanding-electrical-engineering-professor-2022",
+    "date": "2022-10",
+    "title": "彭文孝教授榮獲中國電機工程學會傑出電機工程教授獎",
+    "category": "awards",
+    "featured": false,
+    "summary": "彭文孝教授榮獲中國電機工程學會 111 年（2022 年）「傑出電機工程教授獎」。",
+    "highlights": [
+      "傑出電機工程教授獎"
+    ]
+  },
+  {
+    "id": "hupr-wacv-2023-accepted",
+    "date": "2022-10",
+    "title": "HuPR accepted to WACV 2023",
+    "category": "research",
+    "featured": false,
+    "summary": "“HuPR: A Benchmark for Human Pose Estimation Using Millimeter Wave Radar” was accepted for publication at WACV 2023. Authors: Shih-Po Lee, Niraj Prakash Kini, Wen-Hsiao Peng, Ching-Wen Ma, Jenq-Neng Hwang.",
+    "publicationIds": [
+      "hupr-a-benchmark-for-human-pose-estimation-using-millimeter-wave-radar-2023"
+    ],
+    "url": "https://mapl.cs.nycu.edu.tw/HuPR/",
+    "resources": [
+      {
+        "label": "Project Page",
+        "url": "https://mapl.cs.nycu.edu.tw/HuPR/"
+      }
+    ]
+  },
+  {
+    "id": "peng-cass-coding-talk-2022",
+    "date": "2022-09",
+    "title": "Prof. Peng presents end-to-end learned image and video compression at CASS",
+    "category": "events",
+    "featured": false,
+    "summary": "Prof. Wen-Hsiao Peng gave the CASS talk “Advances in Design and Implementation of End-to-End Learned Image and Video Compression.” Lecture materials are linked below.",
+    "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/research/CASS_DL_Talk_2022Sep.pdf",
+    "resources": [
+      {
+        "label": "Advances in Design and Implementation of End-to-End Learned Image and Video Compression at CASS",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/research/CASS_DL_Talk_2022Sep.pdf"
+      }
+    ]
+  },
+  {
+    "id": "neural-frank-wolfe-vcip-2022-accepted",
+    "date": "2022-09",
+    "title": "Neural Frank-Wolfe Policy Optimization for ROI Intra-Frame Coding accepted to VCIP 2022",
+    "category": "research",
+    "featured": false,
+    "summary": "“Neural Frank-Wolfe Policy Optimization for Region-of-Interest Intra-Frame Coding with HEVC/H.265” was accepted for publication at VCIP 2022. Authors: Yung-Han Ho, Chia-Hao Kao, Wen-Hsiao Peng, Ping-Chun Hsieh.",
+    "publicationIds": [
+      "neural-frank-wolfe-policy-optimization-for-region-of-interest-intra-frame-coding-with-hevc-h-265-2022"
+    ],
+    "url": "https://arxiv.org/abs/2209.13210",
+    "resources": [
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/abs/2209.13210"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://joek6279.github.io/NFWPO-Coding/"
+      }
+    ]
+  },
+  {
+    "id": "motion-rate-adaption-pcs-2022-accepted",
+    "date": "2022-09",
+    "title": "Content-adaptive Motion Rate Adaption for Learned Video Compression accepted to PCS 2022",
+    "category": "research",
+    "featured": false,
+    "summary": "“Content-adaptive Motion Rate Adaption for Learned Video Compression” was accepted for publication at PCS 2022. Authors: Chih-Hsuan Lin, Yi-Hsin Chen, Wen-Hsiao Peng.",
+    "publicationIds": [
+      "content-adaptive-motion-rate-adaption-for-learned-video-compression-2022"
+    ],
+    "url": "https://arxiv.org/pdf/2302.06293",
+    "resources": [
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2302.06293"
+      },
+      {
+        "label": "Project Page",
+        "url": "https://mapl.cs.nycu.edu.tw/PCS/"
+      }
+    ]
+  },
+  {
+    "id": "peng-sbcci-tutorial-2022",
+    "date": "2022-08",
+    "title": "Prof. Peng presents a learning-based coding tutorial at SBCCI 2022",
+    "category": "events",
+    "featured": false,
+    "summary": "Prof. Wen-Hsiao Peng presented the tutorial “Recent Advances in Learning-based Image and Video Coding” at SBCCI 2022.",
+    "url": "https://www.linkedin.com/feed/update/urn:li:share:6963487445304635392",
+    "resources": [
+      {
+        "label": "Recent Advances in Learning-based Image and Video Coding at SBCCI 2022",
+        "url": "https://www.linkedin.com/feed/update/urn:li:share:6963487445304635392"
+      }
+    ]
+  },
+  {
+    "id": "ho-ippr-dissertation-award-2022",
+    "date": "2022-08",
+    "title": "Yung-Han Ho receives the 15th IPPR outstanding PhD thesis award",
+    "category": "awards",
+    "featured": false,
+    "summary": "Yung-Han Ho (Hector) received the 15th IPPR outstanding PhD thesis award.",
+    "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/photos/Hector_paper_award.png",
+    "resources": [
+      {
+        "label": "15th IPPR outstanding Ph.D. thesis award",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/photos/Hector_paper_award.png"
+      }
+    ],
+    "highlights": [
+      "15th IPPR outstanding PhD thesis award"
+    ]
+  },
+  {
+    "id": "canf-vc-eccv-2022-accepted",
+    "date": "2022-07",
+    "title": "CANF-VC accepted to ECCV 2022",
+    "category": "research",
+    "featured": false,
+    "summary": "“CANF-VC: Conditional Augmented Normalizing Flows for Video Compression” was accepted for publication at ECCV 2022. Authors: Yung-Han Ho, Chih-Peng Chang, Peng-Yu Chen, Alessandro Gnutti, Wen-Hsiao Peng.",
+    "publicationIds": [
+      "canf-vc-conditional-augmented-normalizing-flows-for-video-compression-2022"
+    ],
+    "url": "https://arxiv.org/abs/2207.05315?context=eess",
+    "resources": [
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/abs/2207.05315?context=eess"
+      },
+      {
+        "label": "code",
+        "url": "https://github.com/NYCU-MAPL/CANF-VC"
+      }
+    ]
+  },
+  {
+    "id": "iscas-performance-award-2022",
+    "date": "2022-06",
+    "title": "MAPL wins the ISCAS 2022 neural video coding Top Performance Award",
+    "category": "awards",
+    "featured": false,
+    "summary": "Y.-H. Ho, C.-H. Lin, P.-Y. Chen, M.-J. Chen, C.-P. Chang, W.-H. Peng, and H.-M. Hang won the IEEE ISCAS 2022 Grand Challenge on Neural Network-based Video Coding Top Performance Award in the End-to-end Track.",
+    "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/photos/ISCAS2022.jpg",
+    "resources": [
+      {
+        "label": "Track",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/photos/ISCAS2022.jpg"
+      }
+    ],
+    "highlights": [
+      "Top Performance Award"
+    ]
+  },
+  {
+    "id": "ho-phd-degree-2022",
+    "date": "2022-04",
+    "title": "Yung-Han Ho receives his PhD degree",
+    "category": "people",
+    "featured": false,
+    "summary": "Yung-Han Ho (Hector) received his PhD degree in April 2022."
+  },
+  {
+    "id": "recruitment-march-2022",
+    "date": "2022-03",
+    "title": "March 2022 student recruitment (archived)",
+    "category": "opportunities",
+    "featured": false,
+    "summary": "Historical recruitment announcement from March 2022. The contact was Julie (Yi-Hsin Chen), yhchen12101@gmail.com. The research introduction is linked below. For current recruitment, see the latest announcement or Join Us page.",
+    "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/research/MAPL_Intro/MAPL.pdf",
+    "resources": [
+      {
+        "label": "PDF",
+        "url": "https://mapl.cs.nycu.edu.tw/content_old/pages/research/MAPL_Intro/MAPL.pdf"
+      }
+    ]
+  },
+  {
+    "id": "peng-ieee-cass-distinguished-lecturer-2022",
+    "date": "2021-12",
+    "title": "Prof. Peng selected as IEEE CASS Distinguished Lecturer for 2022–2023",
+    "category": "people",
+    "featured": false,
+    "summary": "Prof. Wen-Hsiao Peng was selected as an IEEE Circuits and Systems Society (CASS) Distinguished Lecturer for the 2022–2023 term. The appointment was announced in December 2021.",
+    "highlights": [
+      "IEEE CASS Distinguished Lecturer",
+      "IEEE Circuits and Systems Society (CASS) Distinguished Lecturer"
+    ]
+  },
+  {
+    "id": "peng-hannover-anf-talk-2021",
+    "date": "2021-12",
+    "title": "Prof. Peng presents ANF-based learned image and video compression in Hannover",
+    "category": "events",
+    "featured": false,
+    "summary": "Prof. Wen-Hsiao Peng gave “Learned Image and Video Compression Using Augmented Normalizing Flows” at Leibniz Universität Hannover, Germany."
+  },
+  {
+    "id": "peng-fau-anf-talk-2021",
+    "date": "2021-12",
+    "title": "Prof. Peng presents ANF-based learned image and video compression at FAU",
+    "category": "events",
+    "featured": false,
+    "summary": "Prof. Wen-Hsiao Peng gave “Learned Image and Video Compression Using Augmented Normalizing Flows” at FAU Erlangen-Nürnberg, Germany."
+  },
+  {
+    "id": "recruitment-november-2021",
+    "date": "2021-11",
+    "title": "2021 student recruitment (archived)",
+    "category": "opportunities",
+    "featured": false,
+    "summary": "Historical recruitment announcement from November 2021. Prospective students were invited to contact Julie (Yi-Hsin Chen), yhchen12101@gmail.com. For current recruitment, see the latest announcement or Join Us page."
+  },
+  {
+    "id": "digitimes-learned-compression-2021",
+    "date": "2021-11",
+    "title": "DIGITIMES features MAPL's learning-based compression research",
+    "category": "research",
+    "featured": false,
+    "summary": "DIGITIMES reported on MAPL’s learning-based compression techniques in November 2021. The direct article is linked below.",
+    "url": "https://www.digitimes.com.tw/iot/article.asp?cat=130&cat1=40&cat2=140&id=0000622321_9C04NJCP1NG7J12RYJJZB",
+    "resources": [
+      {
+        "label": "Original announcement",
+        "url": "https://www.digitimes.com.tw/iot/article.asp?cat=130&cat1=40&cat2=140&id=0000622321_9C04NJCP1NG7J12RYJJZB"
+      }
+    ]
+  },
+  {
+    "id": "anfic-ojcas-2021-accepted",
+    "date": "2021-11",
+    "title": "ANFIC accepted to OJCAS 2021",
+    "category": "research",
+    "featured": false,
+    "summary": "“ANFIC: Image Compression Using Augmented Normalizing Flows” was accepted for publication in OJCAS 2021. Authors: Yung-Han Ho, Chih-Chun Chan, Wen-Hsiao Peng, Hsueh-Ming Hang, Marek Domanski.",
+    "publicationIds": [
+      "anfic-image-compression-using-augmented-normalizing-flows-2021"
+    ],
+    "url": "https://arxiv.org/pdf/2107.08470.pdf",
+    "resources": [
+      {
+        "label": "PDF",
+        "url": "https://arxiv.org/pdf/2107.08470.pdf"
+      }
+    ]
+  },
+  {
+    "id": "peng-sun-iscas-tutorial-2021",
+    "date": "2021-05",
+    "title": "Profs. Peng and Heming Sun present an ISCAS 2021 learned compression tutorial",
+    "category": "events",
+    "featured": false,
+    "summary": "Prof. Wen-Hsiao Peng and Prof. Heming Sun (Waseda University) presented the ISCAS 2021 tutorial “Advances in Design and Implementation of End-to-End Learned Image and Video Compression.”"
+  },
+  {
+    "id": "peng-apsipa-future-video-coding-panel-2021",
+    "date": "2021-04",
+    "title": "Prof. Peng joins APSIPA's Future of Video Coding panel",
+    "category": "events",
+    "featured": false,
+    "summary": "Prof. Wen-Hsiao Peng participated as a panelist in APSIPA’s “Future of Video Coding” panel. The event announcement and April 24, 2021 video recording are linked below.",
+    "url": "https://bit.ly/3eruXuD",
+    "resources": [
+      {
+        "label": "Original announcement",
+        "url": "https://bit.ly/3eruXuD"
+      },
+      {
+        "label": "April 24",
+        "url": "https://bit.ly/3b9dRQ1"
+      }
+    ]
+  },
+  {
+    "id": "video-rescaling-cvpr-2021-accepted",
+    "date": "2021-01",
+    "title": "Video Rescaling Networks accepted to CVPR 2021",
+    "category": "research",
+    "featured": false,
+    "summary": "“Video Rescaling Networks with Joint Optimization Strategies for Downscaling and Upscaling” was accepted for publication at CVPR 2021. Authors: Yan-Cheng Huang, Yi-Hsin Chen, Cheng-You Lu, Hui-Po Wang, Wen-Hsiao Peng, Ching-Chun Huang.",
+    "publicationIds": [
+      "video-rescaling-networks-with-joint-optimization-strategies-for-downscaling-and-upscaling-2021"
+    ],
+    "url": "https://openaccess.thecvf.com/content/CVPR2021/papers/Huang_Video_Rescaling_Networks_With_Joint_Optimization_Strategies_for_Downscaling_and_CVPR_2021_paper.pdf",
+    "resources": [
+      {
+        "label": "PDF",
+        "url": "https://openaccess.thecvf.com/content/CVPR2021/papers/Huang_Video_Rescaling_Networks_With_Joint_Optimization_Strategies_for_Downscaling_and_CVPR_2021_paper.pdf"
+      }
+    ]
+  },
+  {
+    "id": "vcip-2021-call-for-papers",
+    "date": "2021-01",
+    "title": "VCIP 2021 call for papers, tutorials, and special sessions",
+    "category": "events",
+    "featured": false,
+    "summary": "IEEE VCIP 2021 announced calls for papers, tutorials, and special sessions. The original call and conference website are linked below.",
+    "url": "https://kenzler-conferences.de/wp-content/uploads/2021/02/VCIP2021-Call-for-papers1.1.pdf",
+    "resources": [
+      {
+        "label": "PDF",
+        "url": "https://kenzler-conferences.de/wp-content/uploads/2021/02/VCIP2021-Call-for-papers1.1.pdf"
+      },
+      {
+        "label": "Original announcement",
+        "url": "https://www.vcip2021.org/"
+      }
+    ]
+  },
+  {
+    "id": "peng-vcip-tutorial-2020",
+    "date": "2020-12",
+    "title": "Prof. Peng presents an end-to-end learned compression tutorial at VCIP 2020",
+    "category": "events",
+    "featured": false,
+    "summary": "At VCIP 2020, Prof. Wen-Hsiao Peng presented the tutorial “Recent Advances in End-to-End Learned Image and Video Compression.”"
+  },
+  {
+    "id": "peng-dpvsa-lecture-2020",
+    "date": "2020-10",
+    "title": "Prof. Peng gives a DPVSA Distinguished Lecture on reinforcement learning for video coding",
+    "category": "events",
+    "featured": false,
+    "summary": "Prof. Wen-Hsiao Peng delivered the online DPVSA Distinguished Lecture “Application of reinforcement learning to video encoder control and video prediction” in Pelotas, Rio Grande do Sul, Brazil.",
+    "url": "https://wp.ufpel.edu.br/dpvsa/wen-hsiao-peng/",
+    "resources": [
+      {
+        "label": "online",
+        "url": "https://wp.ufpel.edu.br/dpvsa/wen-hsiao-peng/"
+      }
+    ]
+  },
+  {
+    "id": "learning-based-compression-ai-meetup-2020",
+    "date": "2020-07",
+    "title": "AI Meetup on learning-based image and video compression",
+    "category": "events",
+    "featured": false,
+    "summary": "AI Meetup: “Learning Based Image and Video Compression.”\nJuly 10, 2020, 11:00–12:00; National Chiao Tung University, Guangfu campus, Engineering Building 3, Room 122.\nOrganized by the NCTU Department of Computer Science AI project teams of Profs. Hsueh-Ming Hang and Wen-Hsiao Peng, with support from the Ministry of Science and Technology’s Pervasive Artificial Intelligence Research Center.",
+    "url": "https://forms.gle/qCbkSiDn1WowPXRZ8",
+    "resources": [
+      {
+        "label": "Original announcement",
+        "url": "https://forms.gle/qCbkSiDn1WowPXRZ8"
+      }
+    ]
+  },
+  {
+    "id": "peng-tcsvt-special-section-2020",
+    "date": "2020-06",
+    "title": "Prof. Peng co-organizes TCSVT's special section on learning-based compression",
+    "category": "people",
+    "featured": false,
+    "summary": "Prof. Wen-Hsiao Peng co-organized the IEEE TCSVT Special Section on Learning-based Image and Video Compression. The legacy homepage specified the July 2020 issue."
+  },
+  {
+    "id": "peng-jetcas-associate-editor-in-chief-2020",
+    "date": "2020-01",
+    "title": "Prof. Peng appointed JETCAS Associate Editor-in-Chief of Digital Communications",
+    "category": "people",
+    "featured": false,
+    "summary": "Prof. Wen-Hsiao Peng was appointed Associate Editor-in-Chief of Digital Communications for the IEEE Journal on Emerging and Selected Topics in Circuits and Systems (JETCAS).",
+    "highlights": [
+      "JETCAS Associate Editor-in-Chief",
+      "Associate Editor-in-Chief of Digital Communications"
+    ]
+  },
+  {
+    "id": "yoshinobu-kano-invited-talk-2019",
+    "date": "2019-09",
+    "title": "Prof. Yoshinobu Kano gives an invited talk on dialogue and mental disorder diagnosis",
+    "category": "events",
+    "featured": false,
+    "summary": "Prof. Yoshinobu Kano gave “Beyond end-to-end learning: Dialog system, sentence generation, and conversation analysis for automatic mental disorder diagnosis.”\nSeptember 30, 2019, 14:00–15:00; National Chiao Tung University, Engineering Building 3, Room EC321.",
+    "url": "https://mapl.cs.nycu.edu.tw/sample/20190930_Yoshinobu_Talk.pdf",
+    "resources": [
+      {
+        "label": "Original announcement",
+        "url": "https://mapl.cs.nycu.edu.tw/sample/20190930_Yoshinobu_Talk.pdf"
+      }
+    ]
+  },
+  {
+    "id": "wang-max-planck-internship-2019",
+    "date": "2019-07",
+    "title": "Hui-Po Wang admitted to a Max Planck Institute internship in Germany",
+    "category": "people",
+    "featured": false,
+    "summary": "Hui-Po Wang was admitted to an internship program at the Max Planck Institute, Germany."
+  },
+  {
+    "id": "peng-sungkyunkwan-apsipa-lecture-2019",
+    "date": "2019-03",
+    "title": "Prof. Peng gives an APSIPA Distinguished Lecture at Sungkyunkwan University",
+    "category": "events",
+    "featured": false,
+    "summary": "Prof. Wen-Hsiao Peng delivered the APSIPA Distinguished Lecture “Reinforcement Learning for Video Encoder Control and Video Prediction” at Sungkyunkwan University, Suwon, South Korea."
+  },
+  {
+    "id": "peng-tcsvt-associate-editor-2019",
+    "date": "2019-02",
+    "title": "Prof. Peng appointed TCSVT Associate Editor",
+    "category": "people",
+    "featured": false,
+    "summary": "Prof. Wen-Hsiao Peng was appointed Associate Editor of IEEE Transactions on Circuits and Systems for Video Technology (TCSVT).",
+    "highlights": [
+      "TCSVT Associate Editor",
+      "Associate Editor"
+    ]
+  },
+  {
+    "id": "wang-apsipa-best-paper-runner-up-2018",
+    "date": "2018-11",
+    "title": "Hui-Po Wang receives APSIPA ASC 2018 Best Paper Award runner-up",
+    "category": "awards",
+    "featured": false,
+    "summary": "Hui-Po Wang received the APSIPA ASC 2018 Best Paper Award (Runner-up) for “Learning Priors for Adversarial Autoencoders.”",
+    "highlights": [
+      "APSIPA ASC 2018 Best Paper Award runner-up",
+      "APSIPA ASC 2018 Best Paper Award (Runner-up)"
+    ]
+  },
+  {
+    "id": "peng-tongji-apsipa-lecture-2018",
+    "date": "2018-11",
+    "title": "Prof. Peng gives an APSIPA Distinguished Lecture on video rate control at Tongji University",
+    "category": "events",
+    "featured": false,
+    "summary": "Prof. Wen-Hsiao Peng delivered the APSIPA Distinguished Lecture “Reinforcement Learning for HEVC/H.265 Video Rate Control” at Tongji University, Shanghai, China."
+  },
+  {
+    "id": "peng-vspctc-chair-elect-2018",
+    "date": "2018-08",
+    "title": "Prof. Peng elected IEEE CASS VSPCTC Secretary and Chair-Elect",
+    "category": "people",
+    "featured": false,
+    "summary": "Prof. Wen-Hsiao Peng was elected Secretary (Chair-Elect) of the IEEE CASS Visual Signal Processing and Communications Technical Committee (VSPCTC).",
+    "url": "http://ieee-cas.org/community/technical-committees/visual-signal-processing-and-communications-technical-committee-vspc",
+    "resources": [
+      {
+        "label": "VSPC",
+        "url": "http://ieee-cas.org/community/technical-committees/visual-signal-processing-and-communications-technical-committee-vspc"
+      }
+    ],
+    "highlights": [
+      "Secretary and Chair-Elect",
+      "Secretary (Chair-Elect)"
+    ]
+  },
+  {
+    "id": "jetcas-immersive-video-special-issue-2018",
+    "date": "2018-03",
+    "title": "JETCAS special issue on Immersive Video Coding and Transmission calls for papers",
+    "category": "events",
+    "featured": false,
+    "summary": "The IEEE JETCAS special issue “Immersive Video Coding and Transmission” called for papers in March 2018 for the March 2019 issue. Guest editors: Mathias Wien, Jill Boyce, Thomas Stockhammer, and Wen-Hsiao Peng.",
+    "url": "https://mapl.cs.nycu.edu.tw/sample/JETCAS-CFP-ImmersiveVideoCodingAndTransmission_r1.pdf",
+    "resources": [
+      {
+        "label": "JETCAS",
+        "url": "https://mapl.cs.nycu.edu.tw/sample/JETCAS-CFP-ImmersiveVideoCodingAndTransmission_r1.pdf"
+      }
+    ]
+  },
+  {
+    "id": "wei-lun-chao-invited-talk-2017",
+    "date": "2017-02",
+    "title": "Dr. Wei-Lun (Harry) Chao gives an invited talk on shared representations",
+    "category": "events",
+    "featured": false,
+    "summary": "Dr. Wei-Lun (Harry) Chao gave “Identifying and modeling what to share for computer vision and machine learning” on January 4, 2017, 10:10–11:10, at National Chiao Tung University, Engineering Building 3, Room EC-015. The historical news archive lists this announcement under February 2017; that announcement month is retained.",
+    "url": "https://mapl.cs.nycu.edu.tw/sample/poster-0104%20Dr.%20Wei-Lun%20Chao_V2.pdf",
+    "resources": [
+      {
+        "label": "Info",
+        "url": "https://mapl.cs.nycu.edu.tw/sample/poster-0104%20Dr.%20Wei-Lun%20Chao_V2.pdf"
+      }
+    ]
+  },
+  {
+    "id": "peng-jetcas-senior-editorial-board-2017",
+    "date": "2017-02",
+    "title": "Prof. Peng elected to the JETCAS Senior Editorial Board",
+    "category": "people",
+    "featured": false,
+    "summary": "Prof. Wen-Hsiao Peng was elected Senior Editorial Board Member of IEEE Journal on Emerging and Selected Topics in Circuits and Systems (JETCAS).",
+    "url": "http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5503868",
+    "resources": [
+      {
+        "label": "IEEE JETCAS",
+        "url": "http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5503868"
+      }
+    ],
+    "highlights": [
+      "JETCAS Senior Editorial Board",
+      "Senior Editorial Board Member"
+    ]
+  },
+  {
+    "id": "peng-apsipa-distinguished-lecturer-2017",
+    "date": "2017-02",
+    "title": "Prof. Peng selected as APSIPA Distinguished Lecturer",
+    "category": "people",
+    "featured": false,
+    "summary": "Prof. Wen-Hsiao Peng was selected as Distinguished Lecturer of the Asia-Pacific Signal and Information Processing Association (APSIPA).",
+    "url": "http://apsipa.org/edu.htm",
+    "resources": [
+      {
+        "label": "APSIPA",
+        "url": "http://apsipa.org/edu.htm"
+      }
+    ],
+    "highlights": [
+      "APSIPA Distinguished Lecturer",
+      "Distinguished Lecturer"
+    ]
+  },
+  {
+    "id": "chang-rwth-exchange-2017",
+    "date": "2017-02",
+    "title": "Yan-Wei Chang admitted to the RWTH Aachen student exchange program",
+    "category": "people",
+    "featured": false,
+    "summary": "Yan-Wei Chang was admitted to the Student Exchange Program at RWTH Aachen University, Germany."
+  },
+  {
+    "id": "hsiao-wetech-stem-scholarship-2017",
+    "date": "2017-01",
+    "title": "Chi-Wei Hsiao receives the 2016 WeTech STEM Scholarship",
+    "category": "awards",
+    "featured": false,
+    "summary": "Undergraduate student Chi-Wei Hsiao (蕭棋薇) received the 2016 WeTech Science, Technology, Engineering and Math (STEM) Scholarship. The award was announced in January 2017.",
+    "highlights": [
+      "2016 WeTech STEM Scholarship",
+      "2016 WeTech Science, Technology, Engineering and Math (STEM) Scholarship"
+    ]
   }
 ]

@@ -9,7 +9,8 @@ import TeachingView from "../views/TeachingView.vue"
 
 const routes = [
   { path: "/", name: "home", component: HomeView },
-  { path: "/about", name: "about", component: AboutView },
+  { path: "/members", name: "members", component: AboutView },
+  { path: "/about", name: "about", redirect: "/members" },
   {
     path: "/publications",
     name: "publications",

@@ -22,7 +22,7 @@ const baseUrl = import.meta.env.BASE_URL
     >
       <img
         v-if="publication.image"
-        :src="resolveMediaPath(baseUrl, publication.image.src)"
+        :src="resolveMediaPath(baseUrl, publication.image.thumbnailSrc ?? publication.image.src)"
         :alt="publication.image.alt"
         width="720"
         height="420"

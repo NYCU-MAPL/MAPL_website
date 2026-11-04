@@ -3,13 +3,14 @@
 }
 
 .section-heading__title {
-  margin-block-end: var(--space-6);
+  margin-block-end: var(--space-3);
+  font-size: clamp(2.5rem, 5vw, 4rem);
 }
 
 .section-heading__lead {
   color: var(--color-ink-muted);
-  font-family: var(--font-display);
-  font-size: var(--text-lead);
+  font-family: var(--font-ui);
+  font-size: var(--text-body);
   line-height: 1.55;
 }
 

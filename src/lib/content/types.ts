@@ -48,6 +48,7 @@ export type PublicationTopic = (typeof PUBLICATION_TOPICS)[number]
 
 export type ContentImage = {
   readonly src: string
+  readonly thumbnailSrc?: string
   readonly alt: string
 }
 
@@ -57,11 +58,20 @@ export type NewsItem = {
   readonly title: string
   readonly category: NewsCategory
   readonly publicationIds?: readonly string[]
+  readonly additionalPapers?: readonly {
+    readonly title: string
+    readonly url?: string
+  }[]
+  readonly resources?: readonly {
+    readonly label: string
+    readonly url: string
+  }[]
   readonly inlineLink?: {
     readonly text: string
     readonly url: string
   }
   readonly summary: string
+  readonly highlights?: readonly string[]
   readonly url?: string
   readonly image?: ContentImage
   readonly featured: boolean

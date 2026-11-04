@@ -1,19 +1,54 @@
+const deepLearningSemesters = [
+  "Spring Semester 2026",
+  "Summer Semester 2025",
+  "Spring Semester 2025",
+  "Summer Semester 2024",
+  "Spring Semester 2024",
+  "Summer Semester 2023",
+  "Spring Semester 2023",
+  "Summer Semester 2022",
+  "Spring Semester 2022",
+  "Summer Semester 2021",
+] as const
+
 export const teachingContent = {
   courses: [
     {
+      code: "CSIC30153",
+      title: "Deep Learning",
+      pairedCourse: { code: "CSIC30154", title: "Deep Learning Labs" },
+      semesters: deepLearningSemesters,
+    },
+    {
       code: "IOC5184",
       title: "Deep Learning and Practice",
-      description: "Mathematical foundations, modern deep-learning methods, hands-on implementation, paper discussion, and project work.",
+      semesters: ["Spring Semester 2021", "Summer Semester 2020", "Spring Semester 2020", "Summer Semester 2019", "Spring Semester 2019"],
+    },
+    {
+      code: "IDS5009",
+      title: "Matrix Method in Data Science",
+      semesters: ["Fall Semester 2019"],
     },
     {
       code: "ILE5242",
       title: "Video Compression",
-      description: "Core image and video coding principles, motion-compensated prediction, transforms, entropy coding, and modern learned codecs.",
+      semesters: ["Fall Semester 2020", "Spring Semester 2013", "Spring Semester 2012", "Spring Semester 2009", "Spring Semester 2008"],
     },
-  ],
-  links: [
-    { label: "Current NYCU course timetable", href: "https://timetable.nycu.edu.tw/" },
-    { label: "NYCU CS graduate education", href: "https://www.cs.nycu.edu.tw/education/master?locale=en" },
+    {
+      code: "DCP2354",
+      title: "Linear Algebra",
+      semesters: ["Fall Semester 2017", "Fall Semester 2016", "Fall Semester 2013", "Fall Semester 2012", "Fall Semester 2010", "Fall Semester 2008"],
+    },
+    {
+      code: "IOC5127",
+      title: "Stochastic Processes",
+      semesters: ["Fall Semester 2017", "Spring Semester 2014", "Fall Semester 2012", "Fall Semester 2009"],
+    },
+    {
+      code: "DCP3351",
+      title: "Probability Theory",
+      semesters: ["Fall Semester 2014", "Spring Semester 2011", "Fall Semester 2010", "Spring Semester 2009"],
+    },
   ],
 } as const
 

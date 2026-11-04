@@ -68,8 +68,17 @@
 }
 
 @media (max-width: 30rem) {
+  .home-shortcuts {
+    gap: var(--space-1);
+  }
+
   .home-shortcut {
     gap: var(--space-1);
-    padding-inline: 0.375rem;
+    padding-inline: var(--space-1);
+  }
+
+  .home-shortcut svg {
+    inline-size: 1rem;
+    block-size: 1rem;
   }
 }
