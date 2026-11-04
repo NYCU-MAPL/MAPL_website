@@ -21,13 +21,13 @@ jobs:
   test:
     runs-on: windows-latest
     timeout-minutes: 10
-    strategy:
-      matrix:
-        shell: [powershell, pwsh]
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
           persist-credentials: false
-      - name: Test updates and failure recovery
-        shell: ${{ matrix.shell }}
+      - name: Test updates and failure recovery on Windows PowerShell 5.1
+        shell: powershell
+        run: .\tests\deployment\Run-Tests.ps1
+      - name: Test updates and failure recovery on PowerShell 7
+        shell: pwsh
         run: .\tests\deployment\Run-Tests.ps1
