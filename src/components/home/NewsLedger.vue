@@ -106,7 +106,7 @@ const displayDate = (date: string, includeYear = false): string =>
         class="news-year"
         :aria-labelledby="`${timelineId}-${group.year}`"
       >
-        <h3 :id="`${timelineId}-${group.year}`" class="news-year__heading">{{ group.year }}</h3>
+        <h2 :id="`${timelineId}-${group.year}`" class="news-year__heading">{{ group.year }}</h2>
         <ol class="news-year__entries">
           <li
             v-for="item in group.items"

@@ -4,346 +4,72 @@
 
 .home-view {
   display: grid;
-  gap: var(--space-16);
+  gap: var(--space-8);
+  max-inline-size: 68rem;
+  margin-inline: auto;
 }
 
-.home-hero {
-  display: grid;
-  border-block-end: var(--border-hairline);
-  background: var(--color-paper);
+.home-overview {
+  inline-size: min(100%, 32rem);
+  min-inline-size: 0;
+  justify-self: center;
 }
 
-.home-hero__copy {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: var(--space-4) var(--space-6) var(--space-10);
+.home-news__header {
+  margin-block-end: var(--space-6);
 }
 
-.home-hero h1 {
-  max-inline-size: 16ch;
-  margin-block-end: var(--space-8);
-  font-size: clamp(2.5rem, 5.2vw, 4.75rem);
-  font-weight: 650;
-  line-height: 1.08;
-  letter-spacing: -0.045em;
+.home-news__intro h1 {
+  margin: 0;
+  font-size: clamp(1.875rem, 3vw, 2.25rem);
+  line-height: 1.2;
 }
 
-.home-hero h1 em {
-  color: var(--color-copper);
-  font-style: normal;
-  font-weight: 650;
-}
-
-.home-hero__lead {
-  max-inline-size: 38rem;
-  margin-block-end: var(--space-8);
+.home-news__intro p {
+  margin: var(--space-1) 0 0;
   color: var(--color-ink-muted);
-  font-family: var(--font-display);
-  font-size: var(--text-lead);
+  font-size: var(--text-small);
 }
 
-.home-hero__actions {
+.home-shortcuts {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space-3);
+  justify-content: center;
+  gap: var(--space-2);
+  margin-block-start: var(--space-3);
 }
 
-.route-action,
-.text-action {
+.home-shortcut {
   display: inline-flex;
   min-block-size: var(--control-size);
   align-items: center;
   justify-content: center;
   gap: var(--space-2);
-  color: var(--color-forest);
-  font-size: var(--text-small);
-  font-weight: 700;
-  text-decoration-thickness: 1px;
-  text-underline-offset: var(--space-1);
-}
-
-.route-action {
-  padding-inline: var(--space-5);
-  border: var(--border-strong);
-  text-decoration: none;
-  transition: color var(--motion-micro), background-color var(--motion-micro);
-}
-
-.route-action:hover,
-.route-action--primary {
-  color: var(--color-white);
-  background: var(--color-forest);
-}
-
-.route-action--primary:hover {
-  background: var(--color-forest-deep);
-}
-
-.signal-field {
-  display: grid;
+  padding: var(--space-2) var(--space-3);
   color: var(--color-forest-deep);
-  background: var(--color-paper);
-  border-inline-start: var(--border-hairline);
-}
-
-.signal-card {
-  display: grid;
-  min-inline-size: 0;
-  align-content: center;
-  padding: var(--space-5) var(--space-6);
-  border-block-end: var(--border-hairline);
-  background: linear-gradient(120deg, var(--color-paper), var(--color-paper-subdued));
-  transition: background-color var(--motion-standard);
-}
-
-.signal-card__top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--space-4);
-}
-
-.signal-visual {
-  inline-size: min(52%, 10.5rem);
-  block-size: 4.5rem;
-  overflow: visible;
-  fill: var(--color-forest);
-  transition: transform var(--motion-standard);
-}
-
-.signal-visual__guide,
-.signal-vision__grid,
-.signal-vision__skeleton,
-.signal-vision__focus,
-.signal-systems__wire,
-.signal-systems__flow,
-.signal-systems__output {
-  fill: none;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-.signal-visual__guide,
-.signal-systems__wire {
-  stroke: var(--color-moss);
-  stroke-width: 1.25;
-}
-
-.signal-visual__accent {
-  fill: var(--color-copper);
-}
-
-.signal-compression__particle {
-  transform-box: fill-box;
-  transform-origin: center;
-  animation: signal-compress 6s cubic-bezier(0.45, 0, 0.2, 1) var(--delay) infinite;
-}
-
-.signal-compression__packed {
-  opacity: 0.15;
-  animation: signal-packed 6s ease-in-out infinite;
-}
-
-.signal-vision__grid {
-  stroke: var(--color-rule);
-  stroke-width: 0.75;
-}
-
-.signal-vision__skeleton {
-  stroke: var(--color-forest);
-  stroke-width: 1;
-  opacity: 0.3;
-}
-
-.signal-vision__point {
-  animation: signal-recognize 4.8s ease-in-out var(--delay) infinite;
-}
-
-.signal-vision__focus {
-  stroke: var(--color-copper);
-  stroke-width: 1.75;
-  transform-box: fill-box;
-  transform-origin: center;
-  animation: signal-focus 4.8s ease-in-out infinite;
-}
-
-.signal-vision__scanner {
-  stroke: var(--color-forest);
-  stroke-width: 1.5;
-  animation: signal-scan 4.8s ease-in-out infinite alternate;
-}
-
-.signal-systems__flow {
-  stroke: var(--color-copper);
-  stroke-width: 2;
-  stroke-dasharray: 7 145;
-  animation: signal-transmit 4s linear infinite;
-}
-
-.signal-systems__flow--second {
-  stroke: var(--color-forest);
-  animation-delay: -2s;
-}
-
-.signal-systems__node {
-  fill: var(--color-white);
-  stroke: var(--color-forest);
-  stroke-width: 1.5;
-}
-
-.signal-systems__core {
-  fill: var(--color-accent-soft);
-}
-
-.signal-systems__halo {
-  fill: none;
-  stroke: var(--color-copper);
-  stroke-width: 1;
-  transform-box: fill-box;
-  transform-origin: center;
-  animation: signal-process 4s ease-out infinite;
-}
-
-.signal-systems__output {
-  stroke: var(--color-forest);
-  stroke-width: 1.25;
-}
-
-.signal-field:not(.signal-field--active) .signal-visual * {
-  animation-play-state: paused;
-}
-
-@media (hover: hover) {
-  .signal-card:hover {
-    background: var(--color-accent-soft);
-  }
-
-  .signal-card:hover .signal-visual {
-    transform: translateY(-2px) scale(1.05);
-  }
-}
-
-@keyframes signal-compress {
-  0%, 15%, 100% { transform: translate(0, 0) scale(1); opacity: 0.7; }
-  55%, 70% { transform: translate(var(--dx), var(--dy)) scale(0.7); opacity: 1; }
-  80%, 90% { transform: translate(var(--dx), var(--dy)) scale(0.7); opacity: 0; }
-  95% { transform: translate(0, 0) scale(1); opacity: 0; }
-}
-
-@keyframes signal-packed {
-  0%, 15%, 100% { opacity: 0.15; }
-  60%, 80% { opacity: 0.8; }
-}
-
-@keyframes signal-scan {
-  0%, 10% { transform: translateX(0); }
-  90%, 100% { transform: translateX(95px); }
-}
-
-@keyframes signal-recognize {
-  0%, 100% { opacity: 0.35; }
-  45%, 65% { opacity: 1; }
-}
-
-@keyframes signal-focus {
-  0%, 100% { transform: scale(1.13); opacity: 0.45; }
-  45%, 70% { transform: scale(1); opacity: 1; }
-}
-
-@keyframes signal-transmit {
-  from { stroke-dashoffset: 152; }
-  to { stroke-dashoffset: 0; }
-}
-
-@keyframes signal-process {
-  0%, 100% { transform: scale(0.75); opacity: 0; }
-  35% { opacity: 0.5; }
-  85% { transform: scale(1.2); opacity: 0; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .signal-visual * {
-    animation: none !important;
-  }
-
-  .signal-card:hover .signal-visual {
-    transform: none;
-  }
-}
-
-.signal-card__index,
-.publication-highlight__meta,
-.news-entry time,
-.news-archive time {
-  font-family: var(--font-mono);
-  font-size: var(--text-label);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.signal-card__index,
-.signal-field small {
-  color: var(--color-ink-muted);
-}
-
-/* Number markers echo the orange navigation dots in the lab slides. */
-.signal-card__index {
-  display: grid;
-  inline-size: 1.875rem;
-  block-size: 1.875rem;
-  flex: none;
-  place-items: center;
-  color: var(--color-white);
-  background: var(--color-copper);
-  border-radius: 50%;
-  letter-spacing: 0;
-}
-
-.signal-field strong {
-  margin-block: var(--space-2);
-  font-family: var(--font-display);
-  font-size: var(--text-h3);
-  color: var(--color-forest);
-  font-weight: 600;
-}
-
-.signal-field__news {
-  display: flex;
-  min-block-size: var(--control-size);
-  align-items: center;
-  justify-content: space-between;
-  padding: var(--space-4) var(--space-6);
-  color: var(--color-forest);
-  background: transparent;
-  border: 0;
-  font-family: var(--font-ui);
+  border: var(--border-hairline);
+  border-radius: var(--radius-control);
   font-size: var(--text-small);
-  font-weight: 700;
-  cursor: pointer;
-  transition: background-color var(--motion-micro);
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color var(--motion-micro), border-color var(--motion-micro);
 }
 
-.signal-field__news:hover,
-.signal-field__news:focus-visible {
+.home-shortcut:hover,
+.home-shortcut:focus-visible {
   background: var(--color-accent-soft);
+  border-color: var(--color-moss);
 }
 
-.signal-field__news svg {
-  transition: transform var(--motion-micro);
-}
-
-.signal-field__news:hover svg {
-  transform: translateY(3px);
-}
-
-@media (min-width: 48rem) {
-  .home-hero {
-    grid-template-columns: minmax(0, 1.7fr) minmax(18rem, 0.7fr);
+@media (min-width: 64rem) {
+  .home-overview {
+    inline-size: min(100%, 48rem);
   }
+}
 
-  .home-hero__copy {
-    padding: var(--space-6) var(--space-12) var(--space-12);
+@media (max-width: 30rem) {
+  .home-shortcut {
+    gap: var(--space-1);
+    padding-inline: 0.375rem;
   }
-
 }

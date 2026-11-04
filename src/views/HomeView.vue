@@ -1,87 +1,46 @@
 <script setup lang="ts">
-import { ArrowRight } from "@lucide/vue"
-import { ref } from "vue"
+import { FileText, UserPlus, Users } from "@lucide/vue"
 import { RouterLink } from "vue-router"
 
 import HomeSlider from "../components/home/HomeSlider.vue"
 import NewsLedger from "../components/home/NewsLedger.vue"
-import ResearchSignals from "../components/home/ResearchSignals.vue"
-import SectionHeading from "../components/ui/SectionHeading.vue"
 import { news, publications } from "../lib/content/index.ts"
-import { buildHomePresentation } from "../lib/presentation/home-about.ts"
 import "../styles/home.css"
 import "../styles/home-content.css"
 
-const presentation = buildHomePresentation(news, publications)
-const newsSection = ref<HTMLElement>()
-const scrollToNews = (): void => {
-  const target = newsSection.value
-  if (!target) return
-  target.focus({ preventScroll: true })
-  target.scrollIntoView({
-    behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth",
-    block: "start",
-  })
-}
+const shortcuts = [
+  { to: "/about", label: "About", icon: Users },
+  { to: "/publications", label: "Publications", icon: FileText },
+  { to: "/join-us", label: "Join us", icon: UserPlus },
+] as const
 </script>
 
 <template>
   <div class="home-view">
-    <section
-      class="home-hero"
-      aria-labelledby="home-title"
-    >
+    <div class="home-overview">
       <HomeSlider />
-      <div class="home-hero__copy">
-        <p class="eyebrow">
-          MAPL · NYCU Computer Science
-        </p>
-        <h1 id="home-title">
-          Visual intelligence,<br><em>engineered to move.</em>
-        </h1>
-        <p class="home-hero__lead">
-          We study how images, video, and spatial media can be represented, understood, and delivered with greater intelligence and efficiency.
-        </p>
-        <div class="home-hero__actions">
-          <RouterLink
-            class="route-action route-action--primary"
-            to="/publications"
-          >
-            Read our research
-            <ArrowRight
-              :size="18"
-              aria-hidden="true"
-            />
-          </RouterLink>
-          <RouterLink
-            class="route-action"
-            to="/about"
-          >
-            Meet the lab
-            <ArrowRight
-              :size="18"
-              aria-hidden="true"
-            />
-          </RouterLink>
+      <nav class="home-shortcuts" aria-label="Explore MAPL">
+        <RouterLink
+          v-for="shortcut in shortcuts"
+          :key="shortcut.to"
+          class="home-shortcut"
+          :to="shortcut.to"
+        >
+          <component :is="shortcut.icon" :size="18" aria-hidden="true" />
+          <span>{{ shortcut.label }}</span>
+        </RouterLink>
+      </nav>
+    </div>
+    <section id="news-ledger" class="home-news" aria-labelledby="home-title">
+      <header class="home-news__header">
+        <div class="home-news__intro">
+          <h1 id="home-title">News</h1>
+          <p>Updates from the lab.</p>
         </div>
-      </div>
-      <ResearchSignals @news="scrollToNews" />
-    </section>
-
-    <section
-      id="news-ledger"
-      ref="newsSection"
-      class="home-section"
-      aria-label="News"
-      tabindex="-1"
-    >
-      <SectionHeading
-        title="News"
-        :level="2"
-      />
+      </header>
       <NewsLedger
-        v-if="presentation.news.kind === 'populated'"
-        :items="presentation.news.items"
+        v-if="news.length > 0"
+        :items="news"
         :publications="publications"
       />
       <p
