@@ -29,6 +29,7 @@
 }
 
 .news-filter:hover,
+.news-filter:focus-visible,
 .news-ledger__toggle:hover {
   background: var(--color-accent-soft);
   border-color: var(--color-moss);
@@ -123,7 +124,7 @@
 }
 
 .news-entry__headline strong {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .news-entry--recruiting {
@@ -143,7 +144,9 @@
 
 .news-entry__recruiting-badge {
   position: relative;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
   overflow: hidden;
   margin-inline-end: var(--space-2);
   padding: 0.125rem 0.5rem;
@@ -151,7 +154,7 @@
   background: var(--color-copper);
   border-radius: var(--radius-control);
   font-size: 0.6875rem;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.5;
   vertical-align: middle;
 }

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ArrowRight, ArrowUpRight, Award, CalendarDays, ChevronDown, FlaskConical, Grid2X2, UserPlus, Users } from "@lucide/vue"
+import { ArrowRight, ArrowUpRight, Award, CalendarDays, ChevronDown, FlaskConical, Grid2X2, Pin, UserPlus, Users } from "@lucide/vue"
 import { computed, nextTick, ref, useId } from "vue"
 import type { Component } from "vue"
 import { RouterLink } from "vue-router"
@@ -123,7 +123,13 @@ const yearGroups = computed(() => {
     if (group) group.push(item)
     else groups.set(year, [item])
   }
-  return [...groups].map(([year, items]) => ({ year, items }))
+  return [...groups].map(([year, items]) => ({
+    year,
+    items: items.toSorted((left, right) =>
+      Number(right.category === "opportunities" && right.featured)
+      - Number(left.category === "opportunities" && left.featured),
+    ),
+  }))
 })
 
 const selectCategory = (category: NewsCategory | "all"): void => {
@@ -176,7 +182,7 @@ const displayDate = (date: string, includeYear = false): string =>
               <span
                 v-if="item.category === 'opportunities' && item.featured"
                 class="news-entry__recruiting-badge"
-              >Recruiting</span>
+              ><Pin :size="12" role="img" aria-label="Pinned news" :aria-hidden="false" />Recruiting</span>
               <template v-if="item.headlines.length > 0">
                 <template v-if="item.headlines.length > 1">
                   {{ item.headlines.length }} papers accepted to <strong>{{ item.headlines[0]?.venue }}</strong>{{ ": " }}

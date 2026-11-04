@@ -73,7 +73,9 @@
 }
 
 .publication-filter-chip:hover,
-.publication-filter-row button:hover {
+.publication-filter-chip:focus-visible,
+.publication-filter-row button:hover,
+.publication-filter-row button:focus-visible {
   background: var(--color-paper-subdued);
   border-color: var(--color-moss);
 }
@@ -192,7 +194,7 @@
   display: block;
   inline-size: 100%;
   block-size: 100%;
-  padding: 0;
+  padding: var(--space-1);
   background: transparent;
   border: 0;
   cursor: zoom-in;
@@ -393,6 +395,11 @@
 @media (max-width: 40rem) {
   .publications-view__controls {
     padding: var(--space-4);
+  }
+
+  .publication-filter-chip {
+    min-block-size: 2rem;
+    padding-block: var(--space-1);
   }
 
   .publication-card {

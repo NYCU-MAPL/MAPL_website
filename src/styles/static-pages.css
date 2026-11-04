@@ -63,6 +63,8 @@
 }
 
 .join-view__portrait {
+  inline-size: min(100%, 56rem);
+  margin: 0 auto;
   background: var(--color-paper);
   border-block-end: var(--border-accent);
 }
