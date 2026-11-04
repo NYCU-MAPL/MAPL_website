@@ -131,7 +131,7 @@ function Publish-MaplWebsite {
         if ($file.PSIsContainer) { continue }
         $relative = $file.FullName.Substring($SourceDirectory.Length + 1).Replace('\', '/')
         $top = $relative.Split('/')[0]
-        if ($top -notin @('assets', 'media', 'index.html', '.nojekyll', 'CNAME', 'favicon.svg', 'favicon.ico', 'robots.txt', 'sitemap.xml')) { throw "Unexpected build entry: $relative" }
+        if ($top -notin @('assets', 'media', 'index.html', '.nojekyll', 'CNAME', 'favicon.svg', 'favicon.ico', 'robots.txt', 'sitemap.xml') -and $relative -cne 'licenses/octicons.txt') { throw "Unexpected build entry: $relative" }
         if ($relative -match '(?i)(^|/)(\.git|\.github|\.env)(/|\.|$)|\.(ps1|psm1|exe|bat|cmd|php|aspx?|pem|key)$') { throw "Non-static build entry: $relative" }
         $destination = Get-MaplChildPath $TargetDirectory $relative
         if (Test-Path -LiteralPath $destination -PathType Container) { throw "File conflicts with an existing directory: $relative" }

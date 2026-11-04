@@ -43,6 +43,7 @@ Start-ScheduledTask -TaskName 'MAPL Website Sync'
 ## 更新和回復方式
 
 - 下載鎖定同一個 commit 的 ZIP，檢查路徑、檔案類型、必要目錄，以及 HTML 引用的 JS/CSS 是否齊全。
+- 靜態檔案檢查也接受 GitHub icon 的授權檔 `licenses/octicons.txt`；其他未列入的頂層路徑仍會拒絕。
 - 只更新新版本提供的網站檔案，不刪除舊檔案，所以 `pages/papers`、舊 bundle 和其他既有下載連結會保留。`content` 以外的目錄不會被更新。
 - 將會被覆寫的檔案先完整備份到私有的 `data/backups`，再逐檔核對 SHA-256 並替換；`index.html` 最後更新。
 - 發生錯誤時會還原已覆寫的檔案。停電或程序中斷則在下次執行前恢復未完成的交易。新增的資源會保留，避免已開啟網頁的瀏覽器找不到 bundle。

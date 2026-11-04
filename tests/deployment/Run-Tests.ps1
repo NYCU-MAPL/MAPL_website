@@ -26,6 +26,7 @@ function New-Release([string] $Name, [string] $Version) {
     Put-File (Join-Path $directory 'index.html') ('<script type="module" src="./assets/' + $Version + '.js"></script>')
     Put-File (Join-Path $directory ('assets/' + $Version + '.js')) $Version
     Put-File (Join-Path $directory 'media/shared.txt') $Version
+    Put-File (Join-Path $directory 'licenses/octicons.txt') 'MIT License: GitHub Octicons'
     Put-File (Join-Path $directory '.nojekyll') ''
     return $directory
 }
@@ -42,6 +43,7 @@ try {
     $result = Publish-MaplWebsite $source $target $state ('a' * 40)
     Assert-True ((Read-File (Join-Path $target 'index.html')) -eq (Read-File (Join-Path $source 'index.html'))) 'HTML published'
     Assert-True ((Read-File (Join-Path $target 'media/shared.txt')) -eq 'version-one') 'Media updated'
+    Assert-True ((Read-File (Join-Path $target 'licenses/octicons.txt')) -eq 'MIT License: GitHub Octicons') 'Icon license published'
     foreach ($path in @('pages/papers/keep.pdf', 'assets/old.js')) { Assert-True (Test-Path -LiteralPath (Join-Path $target $path)) "Legacy file retained: $path" }
     Assert-True ((Read-File (Join-Path $root 'www/HuPR/index.html')) -eq 'project-page') 'Sibling project untouched'
     Assert-True ((Read-File (Join-Path $root 'www/filebrowser-marker')) -eq 'other-service') 'Sibling service untouched'
@@ -58,6 +60,13 @@ try {
     Assert-Throws { Publish-MaplWebsite $broken $target $state ('b' * 40) } 'Reject missing bundle'
     Assert-True ((Read-File (Join-Path $target 'index.html')) -eq $before) 'Incomplete build leaves HTML intact'
     Passed 'incomplete build rejected before any website changes'
+
+    $unexpected = New-Release 'source-unexpected-license' 'unexpected-license'
+    Put-File (Join-Path $unexpected 'licenses/unexpected.txt') 'unexpected file'
+    Assert-Throws { Publish-MaplWebsite $unexpected $target $state ('b' * 40) } 'Only the known icon license path is allowed'
+    Assert-True ((Read-File (Join-Path $target 'index.html')) -eq $before) 'Unexpected license leaves HTML intact'
+    Assert-True (-not (Test-Path -LiteralPath (Join-Path $target 'licenses/unexpected.txt'))) 'Unexpected license is not published'
+    Passed 'known icon license accepted and unexpected license entries rejected'
 
     $unsafe = New-Release 'source-unsafe' 'unsafe'
     Put-File (Join-Path $unsafe 'media/execute.ps1') 'untrusted code'
