@@ -1,0 +1,33 @@
+name: Test Windows deployment
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - scripts/deploy/**
+      - tests/deployment/**
+      - .github/workflows/test-windows-deployment.yml
+  pull_request:
+    paths:
+      - scripts/deploy/**
+      - tests/deployment/**
+      - .github/workflows/test-windows-deployment.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: windows-latest
+    timeout-minutes: 10
+    strategy:
+      matrix:
+        shell: [powershell, pwsh]
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: Test updates and failure recovery
+        shell: ${{ matrix.shell }}
+        run: .\tests\deployment\Run-Tests.ps1

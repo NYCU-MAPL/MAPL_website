@@ -39,3 +39,7 @@ Publication author links reuse member websites and a verified external-author di
 The `Deploy gh-pages` workflow runs on pushes to `main`. It installs the lockfile-pinned dependencies, builds the site, verifies `dist/.nojekyll`, and publishes the complete `dist/` tree to the `gh-pages` branch. The workflow publishes directly and does not require a separate CI workflow or local deployment simulation.
 
 The repository must be configured in **Settings > Pages > Build and deployment** to deploy from the `gh-pages` branch and the `/ (root)` folder. Vite uses `base: './'`, the application uses hash history, and `public/.nojekyll` is copied into every build so the generated site works from the repository Pages URL and the existing `/content/` path.
+
+## Windows / Apache deployment
+
+The Windows server can synchronize published `gh-pages` builds to `C:\xampp\www\content` every five minutes using the installer in `scripts/deploy`. It preserves legacy files, backs up overwritten files, publishes HTML last, and recovers interrupted updates. See [the installation and recovery guide](docs/windows-deployment.md). The server-side installer must be run once before synchronization is active.
