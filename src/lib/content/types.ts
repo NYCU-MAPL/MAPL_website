@@ -1,6 +1,7 @@
 export const MEMBER_STATUSES = ["advisor", "current", "alumni"] as const
 export const MEMBER_ROLES = [
   "advisor",
+  "research-assistant",
   "visiting-researcher",
   "phd-student",
   "masters-student",
@@ -9,6 +10,7 @@ export const MEMBER_ROLES = [
 ] as const
 export const MEMBER_GROUPS = [
   "advisor",
+  "research-assistants",
   "visiting-researchers",
   "phd-students",
   "masters-students",

@@ -108,8 +108,8 @@
     "nativeName": "何彥寬",
     "nickname": "Kris",
     "status": "current",
-    "role": "masters-student",
-    "group": "masters-students",
+    "role": "research-assistant",
+    "group": "research-assistants",
     "image": {
       "src": "media/people/yen-kuan-ho.webp",
       "alt": "Yen-Kuan Ho"
@@ -123,8 +123,8 @@
     "nativeName": "楊賀弼",
     "nickname": "Steven",
     "status": "current",
-    "role": "masters-student",
-    "group": "masters-students",
+    "role": "research-assistant",
+    "group": "research-assistants",
     "image": {
       "src": "media/people/he-bi-yang.webp",
       "alt": "He-Bi Yang"

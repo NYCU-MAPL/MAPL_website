@@ -2,6 +2,7 @@ import type { Member, MemberGroup, NewsItem, Publication } from "../content/type
 
 const CURRENT_GROUPS = [
   { group: "advisor", title: "Advisor" },
+  { group: "research-assistants", title: "Research Assistants" },
   { group: "phd-students", title: "Ph.D. students" },
   { group: "masters-students", title: "Master's students" },
   { group: "undergraduate-students", title: "Undergraduate students" },

@@ -20,12 +20,13 @@ const MEMBER_KEYS = [
 
 const ROLES_BY_STATUS = {
   advisor: ["advisor"],
-  current: ["visiting-researcher", "phd-student", "masters-student", "undergraduate-student"],
+  current: ["research-assistant", "visiting-researcher", "phd-student", "masters-student", "undergraduate-student"],
   alumni: ["alumnus"],
 } as const satisfies Readonly<Record<MemberStatus, readonly MemberRole[]>>
 
 const GROUPS_BY_ROLE = {
   advisor: ["advisor"],
+  "research-assistant": ["research-assistants"],
   "visiting-researcher": ["visiting-researchers"],
   "phd-student": ["phd-students"],
   "masters-student": ["masters-students"],
@@ -43,6 +44,7 @@ const parseRole = (object: JsonObject, context: ParseContext): MemberRole => {
   const value = requiredString(object, "role", context)
   switch (value) {
     case "advisor":
+    case "research-assistant":
     case "visiting-researcher":
     case "phd-student":
     case "masters-student":
@@ -58,6 +60,7 @@ const parseGroup = (object: JsonObject, context: ParseContext): MemberGroup => {
   const value = requiredString(object, "group", context)
   switch (value) {
     case "advisor":
+    case "research-assistants":
     case "visiting-researchers":
     case "phd-students":
     case "masters-students":
