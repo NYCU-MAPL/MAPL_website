@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Download } from "@lucide/vue"
+import { ClipboardList, Download } from "@lucide/vue"
 
 import JoinPathways from "../components/join/JoinPathways.vue"
 import SectionHeading from "../components/ui/SectionHeading.vue"
@@ -44,18 +44,26 @@ import "../styles/static-pages.css"
       <div class="join-view__grid">
         <section aria-labelledby="join-opportunities-title">
           <p>We welcome prospective PhD and master’s students interested in publication-oriented research. Undergraduate students can also explore research projects and international study or internship opportunities through the lab.</p>
-          <a
-            class="static-view__primary-link"
-            :href="joinUsContent.introSlides"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Download
-              :size="18"
-              aria-hidden="true"
-            />
-            Open the 2027 lab introduction
-          </a>
+          <div class="join-view__resources">
+            <a
+              class="static-view__primary-link"
+              :href="joinUsContent.introSlides"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Download :size="18" aria-hidden="true" />
+              Open the 2027 lab introduction
+            </a>
+            <a
+              class="static-view__primary-link static-view__primary-link--outline"
+              :href="joinUsContent.joiningForm"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <ClipboardList :size="18" aria-hidden="true" />
+              Fill out the joining form
+            </a>
+          </div>
         </section>
 
         <section

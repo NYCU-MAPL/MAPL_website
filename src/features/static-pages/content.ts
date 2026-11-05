@@ -60,6 +60,7 @@ export const joinUsContent = {
     height: 585,
   },
   introSlides: "https://maplintro2027.pse.is/9lnn2m",
+  joiningForm: "https://docs.google.com/forms/d/e/1FAIpQLSc6vMY9Us2TYLtKBNNI7epaFBzLNyXL8Ueu9rm24ppD26TUPw/viewform?usp=dialog",
   studentContacts: [
     { name: "楊成偉", nickname: "Billy", email: "yangchengwei920428@gmail.com" },
     { name: "朱驛庭", nickname: "Benjamin", email: "itingchu1005@gmail.com" },

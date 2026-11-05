@@ -112,8 +112,14 @@
   text-decoration: none;
 }
 
-.static-view__primary-link {
+.join-view__resources {
+  display: grid;
+  justify-items: start;
+  gap: var(--space-3);
   margin-block-start: var(--space-6);
+}
+
+.static-view__primary-link {
   color: var(--color-paper);
   background: var(--color-forest-deep);
   border: var(--border-strong);
@@ -123,6 +129,15 @@
 .static-view__primary-link:hover {
   color: var(--color-forest-deep);
   background: var(--color-paper);
+}
+
+.static-view__primary-link--outline {
+  color: var(--color-forest-deep);
+  background: transparent;
+}
+
+.static-view__primary-link--outline:hover {
+  background: var(--color-accent-soft);
 }
 
 .join-view__student-contacts h3 {

@@ -28,7 +28,7 @@
     "date": "2026-09",
     "title": "MAPL is recruiting students",
     "category": "opportunities",
-    "summary": "MAPL is recruiting self-motivated students. The 2027 laboratory introduction is available through the recruitment brief. For interviews or further details, contact 楊成偉 (Billy, yangchengwei920428@gmail.com) and 朱驛庭 (Benjamin, itingchu1005@gmail.com).",
+    "summary": "MAPL is recruiting self-motivated students. The 2027 laboratory introduction is available through the recruitment brief. Please complete the joining form. For interviews or further details, contact 楊成偉 (Billy, yangchengwei920428@gmail.com) and 朱驛庭 (Benjamin, itingchu1005@gmail.com).",
     "image": {
       "src": "media/join/nycu-engineering-building.jpg",
       "alt": "NYCU Engineering Building"
@@ -38,6 +38,10 @@
       {
         "label": "Lab introduction",
         "url": "https://maplintro2027.pse.is/9lnn2m"
+      },
+      {
+        "label": "Joining form",
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSc6vMY9Us2TYLtKBNNI7epaFBzLNyXL8Ueu9rm24ppD26TUPw/viewform?usp=dialog"
       },
       {
         "label": "Join us",
