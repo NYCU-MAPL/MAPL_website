@@ -20,9 +20,8 @@
     "nativeName": "Ruhan Conceição",
     "name": "Ruhan Conceição",
     "status": "current",
-    "role": "visiting-researcher",
-    "group": "visiting-researchers",
-    "affiliation": "Federal University of Pelotas, Brazil",
+    "role": "phd-student",
+    "group": "phd-students",
     "image": {
       "src": "media/people/ruhan-conceicao.webp",
       "alt": "Ruhan Conceição"
@@ -49,8 +48,8 @@
     "nativeName": "尼拉杰",
     "nickname": "Niraj",
     "status": "current",
-    "role": "phd-student",
-    "group": "phd-students",
+    "role": "research-assistant",
+    "group": "research-assistants",
     "image": {
       "src": "media/people/niraj-prakash-kini.webp",
       "alt": "Niraj Prakash Kini"
